@@ -1,0 +1,2 @@
+tocTab[tocTab.length] = new Array("0.2.1.1:1", "", "Package Structure", "EARoot/EA2/EA1/EA1/EA7039.htm", "176.png", "32277", "0", "", "Package diagram0","{74AF157E-24F7-4af7-A9B2-1DBACFE97536}");
+tocTab[tocTab.length] = new Array("0.2.1.1.1", "1", "«applicationSchema» Addresses", "EARoot/EA2/EA1/EA1/EA7041.htm", "4.png", "", "", "{75CA1AA1-8AD7-469d-A71C-C338ADDFAB3A}", "Package");

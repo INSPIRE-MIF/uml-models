@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("0.2.3.21.1.3.1.6:1", "", "Extended Thermal Network", "EARoot/EA2/EA3/EA21/EA1/EA3/EA1/EA6/EA9712.htm", "175.png", "32640", "0", "", "Logical diagram0","{E34E73C3-C819-4375-85E7-DC9872090776}");
+tocTab[tocTab.length] = new Array("0.2.3.21.1.3.1.6:2", "", "«codeList» ThermalAppurtenanceTypeExtendedValue", "EARoot/EA2/EA3/EA21/EA1/EA3/EA1/EA6/EA9714.htm", "5.png", "60177", "0", "", "Class0","{6518B368-F4ED-4c00-908B-D734D7EA8C09}");
+tocTab[tocTab.length] = new Array("0.2.3.21.1.3.1.6:3", "", "«featureType» ThermalPipeExtended", "EARoot/EA2/EA3/EA21/EA1/EA3/EA1/EA6/EA9715.htm", "5.png", "60179", "0", "", "Class0","{CA793AA7-32ED-4cc3-A2FC-4A978229AE44}");
+tocTab[tocTab.length] = new Array("0.2.3.21.1.3.1.6:4", "", "«codeList» ThermalPipeTypeValue", "EARoot/EA2/EA3/EA21/EA1/EA3/EA1/EA6/EA9716.htm", "5.png", "60180", "0", "", "Class0","{E9C5246C-E798-4295-AECE-B94F6818DC83}");
+tocTab[tocTab.length] = new Array("0.2.3.21.1.3.1.6:5", "", "«codeList» ThermalProductTypeExtendedValue", "EARoot/EA2/EA3/EA21/EA1/EA3/EA1/EA6/EA9717.htm", "5.png", "60178", "0", "", "Class0","{6DC03A91-77C3-417a-B04B-993DBBB8AA92}");

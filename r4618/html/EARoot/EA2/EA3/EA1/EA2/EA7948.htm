@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title></title>
+<link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("", " : "))</script>  : Public   Note</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">7/8/2012 11:25:32 AM</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">7/8/2012 11:30:39 AM</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Frans van Diepen</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{8D376838-1820-4bda-8C3F-9D873958063D}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA7942.htm">AF codelist 2</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">Example Values&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_01_Cereals for the production of grain (including seed)&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_01_01_Common wheat and spelt&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_01_02_Durum wheat&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_01_03_Rye&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_01_04_Barley&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_01_05_Oats&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_01_06_Grain maize&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_01_07_Rice&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_01_99_Other cereals for the production of grain&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_02_Dried pulses and protein crops for the production of grain (including seed and mixtures of cereals and pulses)&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_02_01_Dried pulses and protein crops of which peas, field beans and sweet lupins&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_03_Potatoes (including early potatoes and seed potatoes)&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_04_Sugar beet (excluding seed)&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_05_Fodder roots and brassicas (excluding seed)&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_06_Industrial crops&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_06_01_Tobacco&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_06_02_Hops&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_06_03_Cotton&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_06_04_Rape and turnip rape&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_06_05_Sunflower&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_06_06_Soya&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_06_07_Linseed (oil flax)&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_06_08_Other oil seed crops&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_06_09_Flax&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_06_10_Hemp&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_06_11_Other fibre crops&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_06_12_Aromatic plants, medicinal and culinary plants&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_06_99_Other industrial crops not mentioned elsewhere&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_07_Fresh vegetables, melons and strawberries of which:&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_07_01_Outdoor or under low (not accessible) protective cover&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_07_01_01_Open field&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_07_01_02_Market gardening&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_07_02_Under glass or other (accessible) protective cover&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_08_Flowers and ornamental plants (excluding nurseries)&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_08_01_Outdoor or under low (not accessible) protective cover&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_08_02_Under glass or other (accessible) protective cover&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_09_Plants harvested green&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_09_01_Temporary grass&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_09_02_Other plants harvested green&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_09_02_01_Green maize&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_09_02_02_Leguminous plants&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_09_02_99_Other plants harvested green not mentioned elsewhere&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_10_Arable land seed and seedlings&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_11_Other arable land crops&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_01_12_Fallow land&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_02_Kitchen gardens&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_03_Permanent grassland&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_03_01_Permanent grassland Pasture and meadow, excluding rough grazings&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_03_02_Permanent grassland Rough grazings&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_03_03_Permanent grassland no longer used for production purposes and eligible for the payment of subsidies&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_04_Permanent crops&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_04_01_Fruit and berry plantations&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_04_01_01_Fruit species, of which:&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_04_01_01_01_Fruit of temperate climate zones&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_04_01_01_02_Fruit of subtropical climate zones&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_04_01_02_Berry species&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_04_01_03_Nuts&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_04_02_Citrus plantations&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_04_03_Olive plantations&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_04_03_01_Normally producing table olives&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_04_03_02_/Normally producing olives for oil production&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_04_04_Vineyards, of which normally producing:&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_04_04_01_Quality wine&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_04_04_02_Other wines&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_04_04_03_Table grapes&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_04_04_04_Raisins&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_04_05_Nurseries&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_04_06_Other permanent crops&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_04_06_01_Other permanent crops of which Christmas trees(1) &lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_04_07_Permanent crops under glass&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_06_Mushrooms,&#160; energy crops and genetically modified crops&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_06_01_Mushrooms&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_06_03_Energy crops (for the production of biofuels or other renewable energy)&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_06_03_01_Energy crops of which on set-aside area&lt;br /&gt;&lt;/p&gt;&lt;p&gt;2_06_04_Genetically modified crops&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</div>
+
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

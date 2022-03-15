@@ -1,0 +1,572 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Statistical Units Vector::Evolution</title>
+<link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Evolution", " : "))</script>  : Public  &lt;&lt;voidable&gt;&gt; Class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">4/20/2011 5:18:48 PM</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">12/3/2012 11:44:16 AM</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">julien Gaffuri</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{D45E0A1D-BE35-40c5-BE67-2E19A34BED07}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA9574.htm">Time</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">-- Name --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Evolution&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;-- Definition --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Representation of vector statistical unit evolution.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Attribute</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../../../../EA1/EA3/EA7/EA1/EA3/EA1/EA1568.htm">DateTime</a></i><br /><strong>&nbsp;&nbsp;date</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes17337')" style="text-decoration: none; color: #000000;"></BR><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes17337" border="0" />Details:
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes17337_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes17337_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes17337_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes17337_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes17337_03" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			-- Name --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Date&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;-- Definition --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;The date when the change occured.&lt;br /&gt;&lt;/p&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="EA9582.htm">EvolutionTypeValue</a></i><br /><strong>&nbsp;&nbsp;evolutionType</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes17338')" style="text-decoration: none; color: #000000;"></BR><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes17338" border="0" />Details:
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes17338_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes17338_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes17338_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes17338_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes17338_03" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					obligation=technicalGuidance<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			-- Name --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Evolution type&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;-- Definition --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;The type of evolution.&lt;br /&gt;&lt;/p&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../../../../EA1/EA3/EA7/EA1/EA1/EA1/EA1367.htm">Area</a></i><br /><strong>&nbsp;&nbsp;areaVariation</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes17339')" style="text-decoration: none; color: #000000;"></BR><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes17339" border="0" />Details:
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes17339_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes17339_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes17339_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td>&lt;&lt;voidable&gt;&gt;</td>
+						</tr>
+						<tr id="DetailsImageAttributes17339_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes17339_03" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			-- Name --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Area variation&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;-- Definition --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;The area variation during the evolution. This attribute has to be populated only if the type is &quot;change&quot;.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../../../../EA1/EA3/EA7/EA1/EA3/EA4/EA1606.htm">Integer</a></i><br /><strong>&nbsp;&nbsp;populationVariation</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes17340')" style="text-decoration: none; color: #000000;"></BR><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes17340" border="0" />Details:
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes17340_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes17340_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes17340_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td>&lt;&lt;voidable&gt;&gt;</td>
+						</tr>
+						<tr id="DetailsImageAttributes17340_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes17340_03" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			-- Name --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Population variation&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;-- Definition --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;The population variation during the evolution. This attribute has to be populated only if the type is &quot;change&quot;.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>
+	</table>
+</div>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA9588.htm">«featureType» VectorStatisticalUnit</a><br />
+						Class «version» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> finalUnitVersions<br />
+						-- Definition --
+All the final unit versions concerned by the evolution.	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink17341" onclick="parent.toggleDiv('detailsDIVLink17341','DetailsImageLink17341')" />Details:
+							<div id="detailsDIVLink17341" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA9588.htm">«featureType» VectorStatisticalUnit</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> evolutions<br />
+						-- Definition --
+All the evolutions the statistical unit has encountered.
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> units<br />
+						-- Definition --
+All the units concerned by the evolution.	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink17342" onclick="parent.toggleDiv('detailsDIVLink17342','DetailsImageLink17342')" />Details:
+							<div id="detailsDIVLink17342" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">-- Definition --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Association between a statistical unit and all the changes that occured on it.&lt;br /&gt;&lt;/p&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA9588.htm">«featureType» VectorStatisticalUnit</a><br />
+						Class «version» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> initialUnitVersions<br />
+						-- Definition --
+All the initial unit versions concerned by the evolution.	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink17343" onclick="parent.toggleDiv('detailsDIVLink17343','DetailsImageLink17343')" />Details:
+							<div id="detailsDIVLink17343" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">byValuePropertyType</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario17344" onclick="parent.toggleDiv('detailsDIVScenario17344','DetailsImageScenario17344')" />Details:
+						<div id="detailsDIVScenario17344" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: Create a property type that requires that the instance is encoded inline (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">gmlMixin</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario17345" onclick="parent.toggleDiv('detailsDIVScenario17345','DetailsImageScenario17345')" />Details:
+						<div id="detailsDIVScenario17345" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: true | false<br />Default: false<br />Description: Identifies the feature type as a mixin type that will not be encoded as a separate element/type in the GML encoding.<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">inspireConcept</td>
+				<td width="50%" class="TableRow" valign="top">FIXME</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario17346" onclick="parent.toggleDiv('detailsDIVScenario17346','DetailsImageScenario17346')" />Details:
+						<div id="detailsDIVScenario17346" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Default: FIXME<br />Description: URN reference to the feature concept in the INSPIRE Feature Concept Dictionary Register<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">isCollection</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario17347" onclick="parent.toggleDiv('detailsDIVScenario17347','DetailsImageScenario17347')" />Details:
+						<div id="detailsDIVScenario17347" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: true | false<br />Default: false<br />Description: Identifies the feature type as a feature collection.<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">noPropertyType</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario17348" onclick="parent.toggleDiv('detailsDIVScenario17348','DetailsImageScenario17348')" />Details:
+						<div id="detailsDIVScenario17348" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: Surpress creation of a standard property type that supports inline or by-reference encoding (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">xsdEncodingRule</td>
+				<td width="50%" class="TableRow" valign="top">iso19136_2007_INSPIRE_Extensions</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario17349" onclick="parent.toggleDiv('detailsDIVScenario17349','DetailsImageScenario17349')" />Details:
+						<div id="detailsDIVScenario17349" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions<br />Default: iso19136_2007_INSPIRE_Extensions<br />Description: XML Schema encoding rule to apply<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="ConstraintsTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+			  	<tr>
+					<td width="80%" class="TableHeading">Constraint</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Status</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">ConsistencyConstraint</td>
+					<td width="10%" class="TableRow">OCL</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints17350" onclick="parent.toggleDiv('detailsDIVConstraints17350','DetailsImageConstraints17350')" />Details:
+							<div id="detailsDIVConstraints17350" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">/* Evolution representations shall be consistent with the versions of the concerned objects. */</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">CreationConstraint</td>
+					<td width="10%" class="TableRow">OCL</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints17351" onclick="parent.toggleDiv('detailsDIVConstraints17351','DetailsImageConstraints17351')" />Details:
+							<div id="detailsDIVConstraints17351" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">/* An evolution with a typeValue &quot;creation&quot; shall not have any initial unit versions and only one final one. */</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">ChangeConstraint</td>
+					<td width="10%" class="TableRow">OCL</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints17352" onclick="parent.toggleDiv('detailsDIVConstraints17352','DetailsImageConstraints17352')" />Details:
+							<div id="detailsDIVConstraints17352" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">/* An evolution with a typeValue &quot;change&quot; shall have one initial unit version and one final one. */</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">DeletionConstraint</td>
+					<td width="10%" class="TableRow">OCL</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints17353" onclick="parent.toggleDiv('detailsDIVConstraints17353','DetailsImageConstraints17353')" />Details:
+							<div id="detailsDIVConstraints17353" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">/* An evolution with a typeValue &quot;deletion&quot; shall have one initial unit version and no final one. */</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">AggregationConstraint</td>
+					<td width="10%" class="TableRow">OCL</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints17354" onclick="parent.toggleDiv('detailsDIVConstraints17354','DetailsImageConstraints17354')" />Details:
+							<div id="detailsDIVConstraints17354" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">/* An evolution with a typeValue &quot;aggregation&quot; shall have at least two initial unit versions (the units to be aggregated) and a single final one (the resulting aggregation). */</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">SplittingConstraint</td>
+					<td width="10%" class="TableRow">OCL</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints17355" onclick="parent.toggleDiv('detailsDIVConstraints17355','DetailsImageConstraints17355')" />Details:
+							<div id="detailsDIVConstraints17355" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">/* An evolution with a typeValue &quot;splitting&quot; shall have a single initial unit version (the unit to split), and at least two final ones (the units resulting from the splitting). */</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

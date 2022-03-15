@@ -1,0 +1,9 @@
+tocTab[tocTab.length] = new Array("0.1.2.7.3:1", "", "Context Diagram : GeologicSamplingMethod", "EARoot/EA1/EA2/EA7/EA3/EA469.htm", "175.png", "30236", "0", "", "Class diagram0","{585289E3-EF67-4a98-A426-A04531BE3DF8}");
+tocTab[tocTab.length] = new Array("0.1.2.7.3:2", "", "Context Diagram : GeologicSpecimenPreparation", "EARoot/EA1/EA2/EA7/EA3/EA471.htm", "175.png", "30237", "0", "", "Class diagram0","{B2771829-C89C-4bfe-9C02-C891A30013F7}");
+tocTab[tocTab.length] = new Array("0.1.2.7.3:3", "", "Context Diagram : ReferenceSpecimen", "EARoot/EA1/EA2/EA7/EA3/EA473.htm", "175.png", "30238", "0", "", "Class diagram0","{2D9182B5-97EF-4f1a-89E5-F1BA6B39D29F}");
+tocTab[tocTab.length] = new Array("0.1.2.7.3:4", "", "Summary diagram: GeologicSpecimen", "EARoot/EA1/EA2/EA7/EA3/EA475.htm", "175.png", "30235", "0", "", "Logical diagram0","{BD56823B-2220-4ee5-BE38-4772C1175236}");
+tocTab[tocTab.length] = new Array("0.1.2.7.3:5", "", "«FeatureType» GeologicSamplingMethod", "EARoot/EA1/EA2/EA7/EA3/EA481.htm", "5.png", "55748", "0", "", "Class0","{7694DED9-A4F1-4913-BBD8-F553EF63B4A9}");
+tocTab[tocTab.length] = new Array("0.1.2.7.3:6", "", "«FeatureType» GeologicSpecimenPreparation", "EARoot/EA1/EA2/EA7/EA3/EA482.htm", "5.png", "55747", "0", "", "Class0","{4BB2AA9B-0978-41a2-917E-8C9B8324C471}");
+tocTab[tocTab.length] = new Array("0.1.2.7.3:7", "", "«FeatureType» ReferenceSpecimen", "EARoot/EA1/EA2/EA7/EA3/EA483.htm", "5.png", "55749", "0", "", "Class0","{A953E1E0-629C-4e85-A72E-737CDDDCFAE9}");
+tocTab[tocTab.length] = new Array("0.1.2.7.3:8", "", "«CodeList» GeologicSamplingMethodTerm", "EARoot/EA1/EA2/EA7/EA3/EA484.htm", "5.png", "55745", "0", "", "Class0","{350188A6-E42A-4318-8640-032968C997B5}");
+tocTab[tocTab.length] = new Array("0.1.2.7.3:9", "", "«CodeList» GeologicSpecimenPreparationTerm", "EARoot/EA1/EA2/EA7/EA3/EA485.htm", "5.png", "55752", "0", "", "Class0","{E871872B-9089-4d08-9706-53520D4D01B6}");

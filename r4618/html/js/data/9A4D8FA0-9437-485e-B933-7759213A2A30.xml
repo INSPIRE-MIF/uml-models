@@ -1,0 +1,7 @@
+tocTab[tocTab.length] = new Array("0.2.3.1.1:1", "", "AF Feature types and data types", "EARoot/EA2/EA3/EA1/EA1/EA7930.htm", "175.png", "32432", "0", "", "Logical diagram0","{A2FEF510-F91F-45f2-99FE-D0ABEBA969BE}");
+tocTab[tocTab.length] = new Array("0.2.3.1.1:2", "", "AF Code lists", "EARoot/EA2/EA3/EA1/EA1/EA7932.htm", "175.png", "32433", "0", "", "Logical diagram0","{3B7F8347-F29C-49e7-A523-C3343CFC5C56}");
+tocTab[tocTab.length] = new Array("0.2.3.1.1:3", "", "«codeList» LivestockSpeciesValue", "EARoot/EA2/EA3/EA1/EA1/EA7935.htm", "5.png", "58813", "0", "", "Class0","{DC21A811-966C-4814-932E-5EF137095BC2}");
+tocTab[tocTab.length] = new Array("0.2.3.1.1:4", "", "«codeList» AquacultureSpeciesValue", "EARoot/EA2/EA3/EA1/EA1/EA7936.htm", "5.png", "58815", "0", "", "Class0","{E6A42913-03FC-4540-AA7E-D127E6922ECA}");
+tocTab[tocTab.length] = new Array("0.2.3.1.1:5", "", "«dataType» FarmAnimalSpecies", "EARoot/EA2/EA3/EA1/EA1/EA7937.htm", "5.png", "58816", "0", "", "Class0","{FE55B0BF-158A-47f1-AE2E-CC82CFD15D86}");
+tocTab[tocTab.length] = new Array("0.2.3.1.1:6", "", "«featureType» Holding", "EARoot/EA2/EA3/EA1/EA1/EA7938.htm", "5.png", "58811", "0", "", "Class0","{88F5B693-78B0-4cba-91E1-6111AD7A084A}");
+tocTab[tocTab.length] = new Array("0.2.3.1.1:7", "", "«featureType» Site", "EARoot/EA2/EA3/EA1/EA1/EA7939.htm", "5.png", "58812", "0", "", "Class0","{9413602C-A7F2-404b-9061-F98CB2853EA4}");

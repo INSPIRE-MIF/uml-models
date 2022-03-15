@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.1.4.2.11:1", "", "Timeseries-domain-range", "EARoot/EA1/EA4/EA2/EA11/EA6958.htm", "175.png", "32266", "0", "", "Logical diagram0","{BB0410CF-494A-4e79-B85D-14386FB12431}");
+tocTab[tocTab.length] = new Array("0.1.4.2.11:2", "", "«FeatureType» AnnotationCoverage", "EARoot/EA1/EA4/EA2/EA11/EA6960.htm", "5.png", "58171", "0", "", "Class0","{D2D21861-599A-49b5-9D33-E16AE5C430B7}");
+tocTab[tocTab.length] = new Array("0.1.4.2.11:3", "", "«FeatureType» TimeseriesDomainRange", "EARoot/EA1/EA4/EA2/EA11/EA6961.htm", "5.png", "58172", "0", "", "Class0","{F9E1D7D3-7C2F-48ab-91F3-2AE1B7475EDC}");
+tocTab[tocTab.length] = new Array("0.1.4.2.11.1", "1", "«RequirementsClass» Measurement (Domain Range) Timeseries", "EARoot/EA1/EA4/EA2/EA11/EA6962.htm", "4.png", "", "", "{9DE386DB-BF28-40e3-B5BD-AEADCA971EB9}", "Package");

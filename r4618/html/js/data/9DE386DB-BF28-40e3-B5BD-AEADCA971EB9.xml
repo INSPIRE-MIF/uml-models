@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.1.4.2.11.1:1", "", "Measurement (Domain Range) Timeseries", "EARoot/EA1/EA4/EA2/EA11/EA1/EA6963.htm", "175.png", "32267", "0", "", "Logical diagram0","{E676AD12-F88A-446e-87D7-AB210510E6E8}");
+tocTab[tocTab.length] = new Array("0.1.4.2.11.1:2", "", "«Type» AnnotationCoverage", "EARoot/EA1/EA4/EA2/EA11/EA1/EA6965.htm", "5.png", "58175", "0", "", "Class0","{9538F25F-10B0-4bf0-A5BC-F5BCC444CCE8}");
+tocTab[tocTab.length] = new Array("0.1.4.2.11.1:3", "", "«DataType» CV_AttributeValuesMeasure", "EARoot/EA1/EA4/EA2/EA11/EA1/EA6966.htm", "5.png", "58176", "0", "", "Class0","{F6EF3942-810A-4021-AA1F-D038ED4E19AC}");
+tocTab[tocTab.length] = new Array("0.1.4.2.11.1:4", "", "«FeatureType» MeasurementTimeseriesDomainRange", "EARoot/EA1/EA4/EA2/EA11/EA1/EA6967.htm", "5.png", "58174", "0", "", "Class0","{4411F274-95FE-42b6-80EC-B4D8EAB4AA10}");

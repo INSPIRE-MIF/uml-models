@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("0.2.3.8.2:1", "", "Coverage HB", "EARoot/EA2/EA3/EA8/EA2/EA8834.htm", "175.png", "32536", "0", "", "Logical diagram0","{37AD92F1-1CB2-4e8f-BC10-F77A0228E597}");
+tocTab[tocTab.length] = new Array("0.2.3.8.2:2", "", "Overview HB", "EARoot/EA2/EA3/EA8/EA2/EA8836.htm", "175.png", "32535", "0", "", "Logical diagram0","{2CFAC12E-27F8-4b4e-B9EA-C80280636241}");
+tocTab[tocTab.length] = new Array("0.2.3.8.2:3", "", "«featureType» Habitat", "EARoot/EA2/EA3/EA8/EA2/EA8842.htm", "5.png", "59509", "0", "", "Class0","{19A49470-72DA-47cc-8D44-84C3F44E6519}");
+tocTab[tocTab.length] = new Array("0.2.3.8.2:4", "", "«featureType» HabitatDistributionCoverage", "EARoot/EA2/EA3/EA8/EA2/EA8843.htm", "5.png", "59513", "0", "", "Class0","{B0B6C377-20E5-4b6a-B0EB-8E318157299E}");
+tocTab[tocTab.length] = new Array("0.2.3.8.2:5", "", "«featureType» HabitatDistributionUnit", "EARoot/EA2/EA3/EA8/EA2/EA8844.htm", "5.png", "59514", "0", "", "Class0","{BF971800-4E58-4fcb-A293-A7ADF282B7EA}");

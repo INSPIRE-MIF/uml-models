@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("0.3.1.6.3.1:1", "", "Gridded Observation Types", "EARoot/EA3/EA1/EA6/EA3/EA1/EA9062.htm", "175.png", "27554", "0", "", "Logical diagram0","{729523F8-5A5D-4d4b-B255-D21A707C9253}");
+tocTab[tocTab.length] = new Array("0.3.1.6.3.1:2", "", "GridObservation", "EARoot/EA3/EA1/EA6/EA3/EA1/EA9064.htm", "175.png", "27556", "0", "", "Logical diagram0","{C05494F0-B541-4440-9E9D-2886D3348712}");
+tocTab[tocTab.length] = new Array("0.3.1.6.3.1:3", "", "GridSeriesObservation", "EARoot/EA3/EA1/EA6/EA3/EA1/EA9066.htm", "175.png", "27555", "0", "", "Logical diagram0","{E869EB9A-9580-4a3e-8322-F4DC1C79D410}");
+tocTab[tocTab.length] = new Array("0.3.1.6.3.1:4", "", "«featureType» GridObservation", "EARoot/EA3/EA1/EA6/EA3/EA1/EA9080.htm", "5.png", "50479", "0", "", "Class0","{EE2CE9EA-86AA-42a2-9219-2336A22E0392}");
+tocTab[tocTab.length] = new Array("0.3.1.6.3.1:5", "", "«featureType» GridSeriesObservation", "EARoot/EA3/EA1/EA6/EA3/EA1/EA9081.htm", "5.png", "50475", "0", "", "Class0","{869E5252-E5F3-4745-92BD-434F55DA4F32}");

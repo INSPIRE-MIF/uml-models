@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("0.2.3.21.1.1.2:1", "", "Core Administrative and Social Governmental Services", "EARoot/EA2/EA3/EA21/EA1/EA1/EA2/EA9639.htm", "175.png", "32629", "0", "", "Logical diagram0","{4EE7FEC8-CD71-4e78-B950-1928E3A0F2CF}");
+tocTab[tocTab.length] = new Array("0.2.3.21.1.1.2:2", "", "«featureType» GovernmentalService", "EARoot/EA2/EA3/EA21/EA1/EA1/EA2/EA9642.htm", "5.png", "60128", "0", "", "Class0","{64CCF59C-3FEE-40f5-B049-2F641178F930}");
+tocTab[tocTab.length] = new Array("0.2.3.21.1.1.2:3", "", "«union» AreaOfResponsibilityType", "EARoot/EA2/EA3/EA21/EA1/EA1/EA2/EA9643.htm", "5.png", "60130", "0", "", "Class0","{B5FD327A-09E2-4807-9C53-430E56DD9C45}");
+tocTab[tocTab.length] = new Array("0.2.3.21.1.1.2:4", "", "«union» ServiceLocationType", "EARoot/EA2/EA3/EA21/EA1/EA1/EA2/EA9644.htm", "5.png", "60126", "0", "", "Class0","{2747B727-4800-4778-A17C-AF905EA78937}");
+tocTab[tocTab.length] = new Array("0.2.3.21.1.1.2:5", "", "«codeList» ServiceTypeValue", "EARoot/EA2/EA3/EA21/EA1/EA1/EA2/EA9645.htm", "5.png", "60127", "0", "", "Class0","{3F355386-A721-46ad-B7C3-A05614B863ED}");

@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("0.2.1.8:1", "", "Protected Sites", "EARoot/EA2/EA1/EA8/EA7335.htm", "176.png", "27331", "0", "", "Package diagram0","{2FC68FAC-173D-49d3-A36D-BE0C547FB503}");
+tocTab[tocTab.length] = new Array("0.2.1.8.1", "1", "«applicationSchema» Protected Sites Full", "EARoot/EA2/EA1/EA8/EA7337.htm", "4.png", "", "", "{619CC977-7996-4a11-97A2-44ACA4C3D06C}", "Package");
+tocTab[tocTab.length] = new Array("0.2.1.8.2", "1", "«applicationSchema» Protected Sites Natura2000", "EARoot/EA2/EA1/EA8/EA7338.htm", "4.png", "", "", "{7E53D691-106A-4361-B849-4A4BA08BEC41}", "Package");
+tocTab[tocTab.length] = new Array("0.2.1.8.3", "1", "«applicationSchema» Protected Sites Simple", "EARoot/EA2/EA1/EA8/EA7339.htm", "4.png", "", "", "{FF4BB2BB-F149-47d9-ADB1-DD0C6D6E22F0}", "Package");
+tocTab[tocTab.length] = new Array("0.2.1.8.4", "1", "Protected Sites Use Case Model", "EARoot/EA2/EA1/EA8/EA7340.htm", "4.png", "", "", "{AA998B06-17E6-40e9-9627-3B7BB76BCE8F}", "Package");

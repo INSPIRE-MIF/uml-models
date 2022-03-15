@@ -1,0 +1,7 @@
+tocTab[tocTab.length] = new Array("0.2.3.10.3:1", "", "Land Use Classification", "EARoot/EA2/EA3/EA10/EA3/EA8968.htm", "175.png", "32554", "0", "", "Logical diagram0","{88EAA317-18C0-4617-85D1-0F8DFA8DCBC6}");
+tocTab[tocTab.length] = new Array("0.2.3.10.3:2", "", "«dataType» HILUCSPercentage", "EARoot/EA2/EA3/EA10/EA3/EA8972.htm", "5.png", "59607", "0", "", "Class0","{3F40DC7A-017D-4434-8401-B001073A9C9B}");
+tocTab[tocTab.length] = new Array("0.2.3.10.3:3", "", "«union» HILUCSPresence", "EARoot/EA2/EA3/EA10/EA3/EA8973.htm", "5.png", "59611", "0", "", "Class0","{D879D86B-C3FE-48f1-9173-0058697AB9D5}");
+tocTab[tocTab.length] = new Array("0.2.3.10.3:4", "", "«codeList» HILUCSValue", "EARoot/EA2/EA3/EA10/EA3/EA8974.htm", "5.png", "59606", "0", "", "Class0","{39624B13-0F07-47be-BEAE-72019009C164}");
+tocTab[tocTab.length] = new Array("0.2.3.10.3:5", "", "«codeList» LandUseClassificationValue", "EARoot/EA2/EA3/EA10/EA3/EA8975.htm", "5.png", "59610", "0", "", "Class0","{C6620ED7-8B4F-4c9e-A765-2F8D582814DE}");
+tocTab[tocTab.length] = new Array("0.2.3.10.3:6", "", "«dataType» SpecificPercentage", "EARoot/EA2/EA3/EA10/EA3/EA8976.htm", "5.png", "59605", "0", "", "Class0","{3839E285-020F-4692-9D13-556FBE459A60}");
+tocTab[tocTab.length] = new Array("0.2.3.10.3:7", "", "«union» SpecificPresence", "EARoot/EA2/EA3/EA10/EA3/EA8977.htm", "5.png", "59612", "0", "", "Class0","{E9C18688-5288-4e20-ADEF-A4765FC6A000}");

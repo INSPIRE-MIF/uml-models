@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Protected Sites Simple</title>
+<link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA7387.png" usemap="#EA7387" border="0" />
+
+<MAP NAME="EA7387">
+<area shape="rect" coords="521,373,741,458" href="EA7402.htm" target="_self">
+<area shape="rect" coords="599,281,899,351" href="EA7401.htm" target="_self">
+<area shape="rect" coords="184,269,320,339" href="EA7400.htm" target="_self">
+<area shape="rect" coords="254,370,496,650" href="EA7393.htm" target="_self">
+<area shape="rect" coords="778,378,963,515" href="EA7392.htm" target="_self">
+<area shape="rect" coords="10,365,220,476" href="EA7394.htm" target="_self">
+<area shape="rect" coords="21,10,352,194" href="EA7398.htm" target="_self">
+<area shape="rect" coords="25,890,970,1038" href="EA7388.htm" target="_self">
+<area shape="rect" coords="400,134,651,191" href="EA7391.htm" target="_self">
+<area shape="rect" coords="418,693,651,843" href="EA7389.htm" target="_self">
+<area shape="rect" coords="28,686,342,811" href="EA7390.htm" target="_self">
+<area shape="rect" coords="690,696,852,850" href="EA7399.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">Protected Sites Simple : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">9/12/2008 5:25:33 PM</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">2/9/2010 11:50:26 AM</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">friisan</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{ED7E00D4-3378-4457-A644-283880B9331E}</td>
+		</tr>
+	</table>
+	
+</div>
+ 
+</body>
+</html>

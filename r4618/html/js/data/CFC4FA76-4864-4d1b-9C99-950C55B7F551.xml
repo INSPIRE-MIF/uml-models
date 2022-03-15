@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.2.3.21.1.3.2:1", "", "Utility Networks - IMKL Use Case", "EARoot/EA2/EA3/EA21/EA1/EA3/EA2/EA9722.htm", "180.png", "32642", "0", "", "Use Case diagram0","{571E4309-D195-4ae7-9639-7E5BAC432153}");
+tocTab[tocTab.length] = new Array("0.2.3.21.1.3.2:2", "", "Cables and Lines information portal", "EARoot/EA2/EA3/EA21/EA1/EA3/EA2/EA9724.htm", "7.png", "60185", "0", "", "UseCase0","{BB7AA608-35FF-4e50-B96C-D4D9DE0F56FC}");
+tocTab[tocTab.length] = new Array("0.2.3.21.1.3.2:3", "", "Managing authority", "EARoot/EA2/EA3/EA21/EA1/EA3/EA2/EA9725.htm", "6.png", "60183", "0", "", "Actor0","{2F291619-8419-4253-923E-12B6C59F1B70}");
+tocTab[tocTab.length] = new Array("0.2.3.21.1.3.2:4", "", "Plan applicant", "EARoot/EA2/EA3/EA21/EA1/EA3/EA2/EA9726.htm", "6.png", "60184", "0", "", "Actor0","{5BF02C82-5CE9-4b50-8A04-5F261DE8B638}");

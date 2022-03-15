@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Ex 6 Fig C11 RoofGarden</title>
+<link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA5789.png" usemap="#EA5789" border="0" />
+
+<MAP NAME="EA5789">
+<area shape="rect" coords="440,526,676,584" href="EA5858.htm" target="_self">
+<area shape="rect" coords="134,468,376,504" href="EA5934.htm" target="_self">
+<area shape="rect" coords="440,452,676,510" href="EA5866.htm" target="_self">
+<area shape="rect" coords="179,520,355,566" href="EA5932.htm" target="_self">
+<area shape="rect" coords="440,378,676,436" href="EA5840.htm" target="_self">
+<area shape="rect" coords="440,243,676,288" href="EA5860.htm" target="_self">
+<area shape="rect" coords="86,72,410,106" href="EA5929.htm" target="_self">
+<area shape="rect" coords="175,174,351,222" href="EA5930.htm" target="_self">
+<area shape="rect" coords="135,354,377,390" href="EA5931.htm" target="_self">
+<area shape="rect" coords="440,304,676,362" href="EA5863.htm" target="_self">
+<area shape="rect" coords="440,169,676,227" href="EA5834.htm" target="_self">
+<area shape="rect" coords="440,108,676,153" href="EA5872.htm" target="_self">
+<area shape="rect" coords="175,288,355,338" href="EA5925.htm" target="_self">
+<area shape="rect" coords="180,406,356,452" href="EA5928.htm" target="_self">
+<area shape="rect" coords="135,238,377,272" href="EA5933.htm" target="_self">
+<area shape="rect" coords="135,122,377,158" href="EA5926.htm" target="_self">
+<area shape="rect" coords="10,10,165,56" href="EA5927.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">Ex 6 Fig C11 RoofGarden : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">2/19/2010 7:32:24 PM</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">8/3/2010 12:42:36 PM</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">CDOBrien</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{1BFBC027-FA62-45ea-9579-09FBB859072C}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">This example illustrates a more complex &quot;on Top&quot; relationship. It describes a building with a rooftop garden. All of the vegetation layers are &quot;onTop&quot; of the building. &lt;br /&gt;&lt;/p&gt;&lt;p&gt;The model shows a class EL_BuildingWithRoofGarden composed of elements that correspond to instances of the metaclasses from LCML. The class EL_BuildingWithRoofGarden has been built up with the first layer representing the abiotic surface element building. A first layer of herbaceous growth is then defined with the &quot;onTop&quot; relation to the abiotic surface layer containing the building. This puts the herbaceous growth form on top of the building. The third layer and fourth layer are of trees. each of these are also on top of the building. For simplicity no attributes have been defined to characterize the elements in this example.&lt;br /&gt;&lt;/p&gt;</div>
+
+</div>
+ 
+</body>
+</html>

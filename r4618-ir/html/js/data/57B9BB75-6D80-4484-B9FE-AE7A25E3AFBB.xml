@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("0.1.2.3:1", "", "Timescale package dependencies", "EARoot/EA1/EA2/EA3/EA280.htm", "176.png", "25178", "0", "", "Package diagram0","{E03950E1-1FBD-45b3-9D3D-5AEA6B29F3F6}");
+tocTab[tocTab.length] = new Array("0.1.2.3.1", "1", "«Leaf» GSSP", "EARoot/EA1/EA2/EA3/EA284.htm", "4.png", "", "", "{9ABFF0A2-601A-4674-9BA8-47D7CFD29D2C}", "Package");
+tocTab[tocTab.length] = new Array("0.1.2.3.2", "1", "«Leaf» TimeScale", "EARoot/EA1/EA2/EA3/EA285.htm", "4.png", "", "", "{A60E6FCB-4200-4b71-83A0-17EC90A6A2EB}", "Package");

@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("0.2.1.2.3.2.2:1", "", "Discovery of unit related data", "EARoot/EA2/EA1/EA2/EA3/EA2/EA2/EA7153.htm", "180.png", "32303", "0", "", "Use Case diagram0","{2F722E9D-7A55-4ccf-898B-555455F6B167}");
+tocTab[tocTab.length] = new Array("0.2.1.2.3.2.2:2", "", "Discovery of unit related data", "EARoot/EA2/EA1/EA2/EA3/EA2/EA2/EA7155.htm", "7.png", "58293", "0", "", "UseCase0","{6EA97B5D-B02B-4952-81C5-6973A420FD17}");
+tocTab[tocTab.length] = new Array("0.2.1.2.3.2.2:3", "", "Display list of resources", "EARoot/EA2/EA1/EA2/EA3/EA2/EA2/EA7156.htm", "7.png", "58292", "0", "", "UseCase0","{1528FA31-D5E6-4865-B96E-D4F4BBA255B0}");
+tocTab[tocTab.length] = new Array("0.2.1.2.3.2.2:4", "", "Prepare query ", "EARoot/EA2/EA1/EA2/EA3/EA2/EA2/EA7157.htm", "7.png", "58294", "0", "", "UseCase0","{969ED091-0251-42cc-A8D1-C3D319885821}");
+tocTab[tocTab.length] = new Array("0.2.1.2.3.2.2:5", "", "Search catalogue", "EARoot/EA2/EA1/EA2/EA3/EA2/EA2/EA7158.htm", "7.png", "58295", "0", "", "UseCase0","{AA4D6017-A41C-452f-B843-4043BABDF66F}");

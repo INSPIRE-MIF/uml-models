@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("0.2.3.5:1", "", "BuildingsOverview", "EARoot/EA2/EA3/EA5/EA8211.htm", "176.png", "32473", "0", "", "Package diagram0","{A4801B38-0BE2-4631-9470-4F29EBD12626}");
+tocTab[tocTab.length] = new Array("0.2.3.5.1", "1", "BU", "EARoot/EA2/EA3/EA5/EA8215.htm", "4.png", "", "", "{B26F779D-47D8-4ba0-8B02-95EB56E29612}", "Package");
+tocTab[tocTab.length] = new Array("0.2.3.5.2", "1", "«applicationSchema» BuildingsExtendedBase", "EARoot/EA2/EA3/EA5/EA8216.htm", "4.png", "", "", "{01B3928E-408A-4b0e-8837-E73718913611}", "Package");
+tocTab[tocTab.length] = new Array("0.2.3.5.3", "1", "«applicationSchema» BuildingsExtended2D", "EARoot/EA2/EA3/EA5/EA8217.htm", "4.png", "", "", "{4B72E10C-E438-4b25-A509-C7F61E5AC30C}", "Package");
+tocTab[tocTab.length] = new Array("0.2.3.5.4", "1", "«applicationSchema» BuildingsExtended3D", "EARoot/EA2/EA3/EA5/EA8218.htm", "4.png", "", "", "{7AF9A36A-1DA5-404f-A71B-5682A48E2076}", "Package");
+tocTab[tocTab.length] = new Array("0.2.3.5.5", "1", "Use Cases BU", "EARoot/EA2/EA3/EA5/EA8219.htm", "4.png", "", "", "{45CAE721-8FE5-4bf6-84D7-50AD7D3E71E2}", "Package");

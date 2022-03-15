@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("0.2.3.7.1", "1", "«applicationSchema» EnvironmentalMonitoringFacilities", "EARoot/EA2/EA3/EA7/EA8508.htm", "4.png", "", "", "{4D1E952B-0626-4826-97EC-52269D969A55}", "Package");
+tocTab[tocTab.length] = new Array("0.2.3.7.2", "1", "InstanceDiagrams", "EARoot/EA2/EA3/EA7/EA8509.htm", "4.png", "", "", "{A5EA4347-5663-4335-B6CA-4BAC79FDEC8D}", "Package");
+tocTab[tocTab.length] = new Array("0.2.3.7.3", "1", "UseCases", "EARoot/EA2/EA3/EA7/EA8510.htm", "4.png", "", "", "{0AC266B7-F2C0-4637-91F8-8C92E045923F}", "Package");

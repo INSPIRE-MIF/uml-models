@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("0.3.1.1.1", "1", "«applicationSchema» Coverages (Base)", "EARoot/EA3/EA1/EA1/EA9806.htm", "4.png", "", "", "{3BE128D2-92BB-4578-9BE8-F9D935E2DE5E}", "Package");
+tocTab[tocTab.length] = new Array("0.3.1.1.2", "1", "«applicationSchema» Coverages (Domain and Range)", "EARoot/EA3/EA1/EA1/EA9807.htm", "4.png", "", "", "{2AD69678-4D05-4d2f-A711-C95E70D267FC}", "Package");
+tocTab[tocTab.length] = new Array("0.3.1.1.3", "1", "«deprecated» Coverages (Geometry-Value Pairs)", "EARoot/EA3/EA1/EA1/EA9808.htm", "4.png", "", "", "{DF440245-F316-4d7d-AD3D-428C3E31F34B}", "Package");

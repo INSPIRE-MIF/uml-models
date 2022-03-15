@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("0.1.3.23.4.2:1", "", "Figur XXX - Feature Based Information", "EARoot/EA1/EA3/EA23/EA4/EA2/EA3786.htm", "175.png", "31362", "0", "", "Logical diagram0","{0115CA3B-A984-42b5-A9C1-6EEDCE0ADF11}");
+tocTab[tocTab.length] = new Array("0.1.3.23.4.2:2", "", "DPS_ApplicationSchema", "EARoot/EA1/EA3/EA23/EA4/EA2/EA3789.htm", "5.png", "56809", "0", "", "Class0","{5113C465-B4EB-45d9-AA10-33262AB9A241}");
+tocTab[tocTab.length] = new Array("0.1.3.23.4.2:3", "", "DPS_FeatureBasedDataInformation", "EARoot/EA1/EA3/EA23/EA4/EA2/EA3790.htm", "5.png", "56808", "0", "", "Class0","{43C3AAEB-6D78-4a46-8C27-51BBCA36E79F}");

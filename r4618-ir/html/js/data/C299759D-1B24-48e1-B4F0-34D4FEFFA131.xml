@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("0.1.3.37.1.1.11:1", "", "Context diagram: OM_TimeSeriesObservation", "EARoot/EA1/EA3/EA37/EA1/EA1/EA11/EA6522.htm", "175.png", "27163", "0", "", "Logical diagram0","{26960DFB-ACDE-4450-AC28-BE910E5452C8}");
+tocTab[tocTab.length] = new Array("0.1.3.37.1.1.11:2", "", "Summary: Time series observations", "EARoot/EA1/EA3/EA37/EA1/EA1/EA11/EA6524.htm", "175.png", "27162", "0", "", "Logical diagram0","{4678CAC9-089D-407b-9429-393E5A76CDCF}");
+tocTab[tocTab.length] = new Array("0.1.3.37.1.1.11:3", "", "«FeatureType» OM_TimeSeriesObservation", "EARoot/EA1/EA3/EA37/EA1/EA1/EA11/EA6526.htm", "5.png", "48712", "0", "", "Class0","{6DBFBE46-70AE-49a3-8122-94C3DADEB94E}");

@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.2.1.2.3.2.1:1", "", "Filtering data", "EARoot/EA2/EA1/EA2/EA3/EA2/EA1/EA7168.htm", "180.png", "27292", "0", "", "Use Case diagram0","{F64D718D-C4C3-4d2a-AE76-23EF7B95D76E}");
+tocTab[tocTab.length] = new Array("0.2.1.2.3.2.1:2", "", "Display data", "EARoot/EA2/EA1/EA2/EA3/EA2/EA1/EA7170.htm", "7.png", "49099", "0", "", "UseCase0","{36F8B9D3-D843-4100-B125-AB5E01655EE9}");
+tocTab[tocTab.length] = new Array("0.2.1.2.3.2.1:3", "", "Filtering data", "EARoot/EA2/EA1/EA2/EA3/EA2/EA1/EA7171.htm", "7.png", "49098", "0", "", "UseCase0","{288398C4-95D7-4c9c-B81C-34B5D1D3D9BC}");
+tocTab[tocTab.length] = new Array("0.2.1.2.3.2.1:4", "", "Select administrative units", "EARoot/EA2/EA1/EA2/EA3/EA2/EA1/EA7172.htm", "7.png", "49100", "0", "", "UseCase0","{6A06EA88-7776-48fe-9CC4-7A8E83FD0E55}");

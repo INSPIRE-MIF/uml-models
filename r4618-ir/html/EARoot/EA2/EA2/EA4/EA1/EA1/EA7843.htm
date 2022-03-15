@@ -1,0 +1,818 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Orthoimagery::OrthoimageCoverage</title>
+<link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("OrthoimageCoverage", " : "))</script>  : Public  &lt;&lt;featureType&gt;&gt; Class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">6/27/2010 12:10:53 AM</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">10/12/2012 3:25:59 PM</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">PYCurtinot</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{5585629B-9D62-411e-A687-C8573468085E}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA7835.htm">Orthoimagery-Overview</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">-- Name --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;orthoimage coverage&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;-- Definition --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Raster image of the Earth surface that has been geometrically corrected (&quot;orthorectified&quot;) to remove distortion caused by differences in elevation, sensor tilt and, optionally, by sensor optics.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;-- Description --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;NOTE 1 An orthoimage coverage is a continuous coverage based on a rectified quadrilateral grid. It is provided with an interpolation method to evaluate value records at any direct position within its domain. &lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;NOTE 2 An orthoimage coverage can be derived from one single input image or from different input images which have been mosaicked and merged together.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;NOTE 3 An orthoimage coverage may be an aggregation of subsets extracted from other orthoimage coverages. For the avoidance of data duplication, this kind of aggregated orthoimage is dynamically constructed thanks to references to the contributing orthoimage coverages .&lt;br /&gt;&lt;/p&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Attribute</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../../../../../EA3/EA2/EA1/EA9156.htm">Identifier</a></i><br /><strong>&nbsp;&nbsp;inspireId</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes12423')" style="text-decoration: none; color: #000000;"></BR><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes12423" border="0" />Details:
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes12423_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes12423_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes12423_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes12423_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes12423_03" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			-- Name --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;inspire identifier&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;-- Definition --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;External object identifier of the spatial object.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;-- Description --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;NOTE An external object identifier is a unique object identifier published by the responsible body, which may be used by external applications to reference the spatial object. The identifier is an identifier of the spatial object, not an identifier of the real-world phenomenon.&lt;br /&gt;&lt;/p&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../../../../../EA1/EA3/EA13/EA14/EA2728.htm">EX_Extent</a></i><br /><strong>&nbsp;&nbsp;domainExtent</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes12424')" style="text-decoration: none; color: #000000;"></BR><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes12424" border="0" />Details:
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes12424_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes12424_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes12424_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes12424_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes12424_03" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			-- Name --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;domain extent&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;-- Definition --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Extent of the spatiotemporal domain of the coverage.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;-- Description --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;SOURCE [ISO 19123]&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;NOTE 1 The data type EX_Extent is defined in ISO 19103. Extents may be specified in both space and time.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;NOTE 2 The domain extent shall be specified in space at least by using a subtype of EX_GeographicExtent (EX_BoundingPolygon, EX_GeographicBoundingBox or EX_GeographicDescription).&#160; The whole geographic extent of the orthoimage coverage is affected, including areas where grid points hold nil reason values.&lt;br /&gt;&lt;/p&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../../../../../EA1/EA3/EA6/EA1/EA2/EA1054.htm">GM_MultiSurface</a></i><br /><strong>&nbsp;&nbsp;footprint</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes12425')" style="text-decoration: none; color: #000000;"></BR><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes12425" border="0" />Details:
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes12425_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes12425_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes12425_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td>&lt;&lt;voidable&gt;&gt;</td>
+						</tr>
+						<tr id="DetailsImageAttributes12425_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes12425_03" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			-- Name --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;footprint&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;-- Definition --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Geographic area enclosing valid data of the orthoimage coverage.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;-- Description --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;NOTE 1 The footprint shall be enclosed in the geographic domain extent that it refines.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;NOTE 2 This property is mandatory if the OrthoimageCoverage instance is an aggregation of other OrthoimageCoverage instances or if mosaic elements are provided.&lt;br /&gt;&lt;/p&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="EA7840.htm">InterpolationMethodValue</a></i><br /><strong>&nbsp;&nbsp;interpolationType</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes12426')" style="text-decoration: none; color: #000000;"></BR><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes12426" border="0" />Details:
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes12426_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes12426_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td>nearestneighbor</td>
+						</tr>
+						<tr id="DetailsImageAttributes12426_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes12426_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes12426_03" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					obligation=implementingRule<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			-- Name --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;interpolation type&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;-- Definition --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Mathematical method which shall be used to evaluate a continuous coverage, i.e. determine the values of the coverage at any direct position within the domain of the coverage.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;-- Description --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;NOTE 1 Nearestneighbor is set as a default value in case where this information is omitted by data producers.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;NOTE 2 A continuous grid coverage that uses nearest neighbour interpolation acts as a discrete surface coverage.&lt;br /&gt;&lt;/p&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../../../../../EA1/EA3/EA7/EA1/EA3/EA5/EA1643.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;name</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes12427')" style="text-decoration: none; color: #000000;"></BR><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes12427" border="0" />Details:
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes12427_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes12427_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes12427_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td>&lt;&lt;voidable&gt;&gt;</td>
+						</tr>
+						<tr id="DetailsImageAttributes12427_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes12427_03" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			-- Name --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;name&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;-- Definition --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Free text name of the orthoimage coverage.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;-- Description --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;NOTE This field is intended to hold a name that a data provider may use in addition to the inspire identifier&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;EXAMPLE 1 &quot;Orthofoto&#39;s, middenschalig, kleur, provincie Limburg, opname 2011&quot; is the name used by the Flemish Geographic Information Agency (AGIV) to indicate the OrthoImageCoverage Instance holding the orthophotomosaic covering the administrative unit &#39;provincie Limburg&#39; at a resolution of 25 cm &#39;middenschalig&#39; acquired in the year 2011 &#39;opname 2011&#39;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;EXAMPLE 2&#160; &quot;BDOrtho coverage on Savoie at 50 cm - 2011&quot; could be the name of an OrthoimageCoverage instance corresponding to a subset of the BDOrtho product of IGN France, the orthophoto of the &quot;department&quot; Savoie (an administrative unit) at a resolution of 50 cm.&lt;br /&gt;&lt;/p&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../../../../../EA1/EA3/EA9/EA1/EA1820.htm">TM_Period</a></i><br /><strong>&nbsp;&nbsp;phenomenonTime</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes12428')" style="text-decoration: none; color: #000000;"></BR><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes12428" border="0" />Details:
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes12428_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes12428_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes12428_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td>&lt;&lt;voidable&gt;&gt;</td>
+						</tr>
+						<tr id="DetailsImageAttributes12428_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes12428_03" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			-- Name --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;phenomenon time&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;-- Definition --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Description of the observation/acquisition extent in time.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;-- Description --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;NOTE 1 This temporal extent refers to the range in time in which the image(s) contributing to the orthoImage coverage has/have been acquired.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;NOTE 2 When the acquisition is considered as instantaneous, despite the exposure time, the end date and time can be identical to the begin date and time.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;EXAMPLE 1 begin: 2011-10-30 end: 2011-10-30&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;EXAMPLE 2 begin: 2011-06-07T14:31:02Z end: 2011-06-07T16:10:54Z.&lt;br /&gt;&lt;/p&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../../../../../EA1/EA3/EA9/EA2/EA1892.htm">TM_Position</a></i><br /><strong>&nbsp;&nbsp;beginLifespanVersion</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes12429')" style="text-decoration: none; color: #000000;"></BR><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes12429" border="0" />Details:
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes12429_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes12429_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes12429_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td>&lt;&lt;voidable&gt;&gt;</td>
+						</tr>
+						<tr id="DetailsImageAttributes12429_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes12429_03" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			-- Name --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;begin lifespan version&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;-- Definition --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Temporal position at which this version of the spatial object was inserted or changed in the spatial data set.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;-- Description --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;NOTE Since this information is not always automatically recorded by a system, but can be captured manually, the provision of the time is not required here. That is the reason why TM_Position was chosen as value type instead of DateTime, which is, however, commonly used in other INSPIRE data specifications.&lt;br /&gt;&lt;/p&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../../../../../EA1/EA3/EA9/EA2/EA1892.htm">TM_Position</a></i><br /><strong>&nbsp;&nbsp;endLifespanVersion</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes12430')" style="text-decoration: none; color: #000000;"></BR><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes12430" border="0" />Details:
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes12430_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes12430_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes12430_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td>&lt;&lt;voidable&gt;&gt;</td>
+						</tr>
+						<tr id="DetailsImageAttributes12430_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes12430_03" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			-- Name --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;end lifespan version&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;-- Definition --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Temporal position at which this version of the spatial object was superseded or retired from the spatial data set.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;-- Description --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;NOTE Since this information is not always automatically recorded by a system, but can be captured manually, the provision of the time is not required here. That is the reason why TM_Position was chosen as value type instead of DateTime, which is, however, commonly used in other INSPIRE data specifications.&lt;br /&gt;&lt;/p&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>
+	</table>
+</div>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA7843.htm">«featureType» OrthoimageCoverage</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> contributingOrthoimageCoverage<br />
+						-- Definition --
+Reference to the orthoimage coverages that compose an aggregated orthoimage coverage.
+
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink12431" onclick="parent.toggleDiv('detailsDIVLink12431','DetailsImageLink12431')" />Details:
+							<div id="detailsDIVLink12431" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">-- Name --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;contributing orthoimage coverage&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;-- Definition --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Reference to the orthoimage coverages that compose an aggregated orthoimage coverage.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA7841.htm">«featureType» MosaicElement</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> mosaicElement<br />
+						-- Definition --
+Spatial representation of the acquisition time of a mosaicked orthoimage coverage.
+
+-- Description --
+NOTE This association shall be used only when the orthoimage coverage is a mosaic.	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink12432" onclick="parent.toggleDiv('detailsDIVLink12432','DetailsImageLink12432')" />Details:
+							<div id="detailsDIVLink12432" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">-- Name --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;mosaic element&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;-- Definition --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Spatial representation of the acquisition time of a mosaicked orthoimage coverage.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;-- Description --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;NOTE This association shall be used only when the orthoimage coverage is a mosaic.&lt;br /&gt;&lt;/p&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA7843.htm">«featureType» OrthoimageCoverage</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> contributingOrthoimageCoverage<br />
+						-- Definition --
+Reference to the orthoimage coverages that compose an aggregated orthoimage coverage.
+
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink12433" onclick="parent.toggleDiv('detailsDIVLink12433','DetailsImageLink12433')" />Details:
+							<div id="detailsDIVLink12433" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">-- Name --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;contributing orthoimage coverage&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;-- Definition --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Reference to the orthoimage coverages that compose an aggregated orthoimage coverage.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">byValuePropertyType</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario12434" onclick="parent.toggleDiv('detailsDIVScenario12434','DetailsImageScenario12434')" />Details:
+						<div id="detailsDIVScenario12434" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: Create a property type that requires that the instance is encoded inline (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">gmlMixin</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario12435" onclick="parent.toggleDiv('detailsDIVScenario12435','DetailsImageScenario12435')" />Details:
+						<div id="detailsDIVScenario12435" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: true | false<br />Default: false<br />Description: Identifies the feature type as a mixin type that will not be encoded as a separate element/type in the GML encoding.<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">inspireConcept</td>
+				<td width="50%" class="TableRow" valign="top">FIXME</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario12436" onclick="parent.toggleDiv('detailsDIVScenario12436','DetailsImageScenario12436')" />Details:
+						<div id="detailsDIVScenario12436" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Default: FIXME<br />Description: URN reference to the feature concept in the INSPIRE Feature Concept Dictionary Register<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">isCollection</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario12437" onclick="parent.toggleDiv('detailsDIVScenario12437','DetailsImageScenario12437')" />Details:
+						<div id="detailsDIVScenario12437" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: true | false<br />Default: false<br />Description: Identifies the feature type as a feature collection.<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">noPropertyType</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario12438" onclick="parent.toggleDiv('detailsDIVScenario12438','DetailsImageScenario12438')" />Details:
+						<div id="detailsDIVScenario12438" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: Surpress creation of a standard property type that supports inline or by-reference encoding (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">xsdEncodingRule</td>
+				<td width="50%" class="TableRow" valign="top">iso19136_2007_INSPIRE_Extensions</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario12439" onclick="parent.toggleDiv('detailsDIVScenario12439','DetailsImageScenario12439')" />Details:
+						<div id="detailsDIVScenario12439" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions<br />Default: iso19136_2007_INSPIRE_Extensions<br />Description: XML Schema encoding rule to apply<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="ConstraintsTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+			  	<tr>
+					<td width="80%" class="TableHeading">Constraint</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Status</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">domainDimensionIs2</td>
+					<td width="10%" class="TableRow">OCL</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints12440" onclick="parent.toggleDiv('detailsDIVConstraints12440','DetailsImageConstraints12440')" />Details:
+							<div id="detailsDIVConstraints12440" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">/* The dimension of the grid used shall always be 2 */&lt;br /&gt;&lt;/p&gt;&lt;p&gt;inv: domainSet.dimension=2&lt;br /&gt;&lt;/p&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">originDimensionIs2</td>
+					<td width="10%" class="TableRow">OCL</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints12441" onclick="parent.toggleDiv('detailsDIVConstraints12441','DetailsImageConstraints12441')" />Details:
+							<div id="detailsDIVConstraints12441" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">/* The origin of the grid shall be described in two dimensions */&lt;br /&gt;&lt;/p&gt;&lt;p&gt;inv: domainSet.origin.dimension=2&lt;br /&gt;&lt;/p&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">domainRequiresCRS</td>
+					<td width="10%" class="TableRow">OCL</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints12442" onclick="parent.toggleDiv('detailsDIVConstraints12442','DetailsImageConstraints12442')" />Details:
+							<div id="detailsDIVConstraints12442" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">/* The coordinate reference system used to reference the grid shall be provided */&lt;br /&gt;&lt;/p&gt;&lt;p&gt;inv: domainSet.origin.coordinateReferenceSystem-&gt;notEmpty()&lt;br /&gt;&lt;/p&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">domainExtentContainsGeographicElement</td>
+					<td width="10%" class="TableRow">OCL</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints12443" onclick="parent.toggleDiv('detailsDIVConstraints12443','DetailsImageConstraints12443')" />Details:
+							<div id="detailsDIVConstraints12443" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">/*The domainExtent attribute shall be at least populated with a subtype of EX_GeographicExtent*/&lt;br /&gt;&lt;/p&gt;&lt;p&gt;inv: domainExtent.geographicElement-&gt;size()&gt;=1&lt;br /&gt;&lt;/p&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">rangeSetValuesAreOfTypeInteger</td>
+					<td width="10%" class="TableRow">OCL</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints12444" onclick="parent.toggleDiv('detailsDIVConstraints12444','DetailsImageConstraints12444')" />Details:
+							<div id="detailsDIVConstraints12444" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">/* The values in the range set shall be described by the Integer type*/&lt;br /&gt;&lt;/p&gt;&lt;p&gt;inv: rangeSet-&gt;forAll(v | v.oclIsKindOf(Integer))&lt;br /&gt;&lt;/p&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">identicalOffsetVectorsWithinOrthoimageAggregation</td>
+					<td width="10%" class="TableRow">OCL</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints12445" onclick="parent.toggleDiv('detailsDIVConstraints12445','DetailsImageConstraints12445')" />Details:
+							<div id="detailsDIVConstraints12445" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">/*All the OrthoimageCoverage instances to which an aggregated OrthoimageCoverage instance refers shall share the same orientation of grid axes and the same grid spacing in each direction*/ &lt;br /&gt;&lt;/p&gt;&lt;p&gt;Inv: contributingOrthoimageCoverage-&gt;forAll(v | v.domainSet.offsetVectors = self.domainSet.offsetVectors)&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">acquisitionTimeRequired</td>
+					<td width="10%" class="TableRow">OCL</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints12446" onclick="parent.toggleDiv('detailsDIVConstraints12446','DetailsImageConstraints12446')" />Details:
+							<div id="detailsDIVConstraints12446" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">/* The acquisition time of the orthoimage coverage shall be provided through the phenomenonTime attribute or the mosaicElement association*/&lt;br /&gt;&lt;/p&gt;&lt;p&gt;inv: phenomenonTime-&gt;notEmpty() or mosaicElement-&gt;notEmpty()&lt;br /&gt;&lt;/p&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="15%" class="TableHeading">Type</td>
+					<td width="15%" class="TableHeading">Connection</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA7843.htm">«featureType» OrthoimageCoverage</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="40%" class="TableRow" valign="top">-- Name --
+contributing orthoimage coverage
+
+-- Definition --
+Reference to the orthoimage coverages that compose an aggregated orthoimage coverage.
+
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../../EA3/EA1/EA1/EA2/EA8962.htm">«featureType» RectifiedGridCoverage</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Generalization</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

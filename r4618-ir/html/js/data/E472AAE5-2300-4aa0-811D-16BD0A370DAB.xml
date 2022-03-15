@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("0.2.2.3.3:1", "", "LandCoverCoreVector", "EARoot/EA2/EA2/EA3/EA3/EA7823.htm", "175.png", "27402", "0", "", "Logical diagram0","{7929AF4E-9C6C-4c5f-BECF-02972D6E149A}");
+tocTab[tocTab.length] = new Array("0.2.2.3.3:2", "", "«featureType» LandCoverDataset", "EARoot/EA2/EA2/EA3/EA3/EA7827.htm", "5.png", "49533", "0", "", "Class0","{0F0A471C-A0BB-46b5-83E5-F7C834397705}");
+tocTab[tocTab.length] = new Array("0.2.2.3.3:3", "", "«dataType» LandCoverObservation", "EARoot/EA2/EA2/EA3/EA3/EA7828.htm", "5.png", "49536", "0", "", "Class0","{BC545E8C-848D-474a-8A1D-05AA95473745}");
+tocTab[tocTab.length] = new Array("0.2.2.3.3:4", "", "«featureType» LandCoverUnit", "EARoot/EA2/EA2/EA3/EA3/EA7829.htm", "5.png", "49538", "0", "", "Class0","{E1721E4D-3352-46d6-92FE-A2636F866DCE}");
+tocTab[tocTab.length] = new Array("0.2.2.3.3:5", "", "«dataType» LandCoverValue", "EARoot/EA2/EA2/EA3/EA3/EA7830.htm", "5.png", "49537", "0", "", "Class0","{D213BC6B-FEC2-4361-8B19-59BAA60FDAC4}");

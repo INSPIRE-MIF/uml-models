@@ -1,0 +1,14 @@
+tocTab[tocTab.length] = new Array("0.1.2.1.2:1", "", "Context Diagram : BeddingDescription", "EARoot/EA1/EA2/EA1/EA2/EA94.htm", "175.png", "25132", "0", "", "Class diagram0","{24509BF3-A3F6-47c8-A247-E67F3716ECCF}");
+tocTab[tocTab.length] = new Array("0.1.2.1.2:2", "", "Context Diagram : CompositionPart", "EARoot/EA1/EA2/EA1/EA2/EA96.htm", "175.png", "25133", "0", "", "Class diagram0","{96EDB4C2-C8F2-4d44-906B-0FA3296C5FBA}");
+tocTab[tocTab.length] = new Array("0.1.2.1.2:3", "", "Context Diagram : GeologicUnitPart", "EARoot/EA1/EA2/EA1/EA2/EA98.htm", "175.png", "25134", "0", "", "Class diagram0","{715B1382-45E2-4eed-970B-1849E53FBD79}");
+tocTab[tocTab.length] = new Array("0.1.2.1.2:4", "", "Context diagram : GeologicUnit", "EARoot/EA1/EA2/EA1/EA2/EA100.htm", "175.png", "25131", "0", "", "Logical diagram0","{8A708452-33DA-4f25-AD8F-9406F5EC8B19}");
+tocTab[tocTab.length] = new Array("0.1.2.1.2:5", "", "Summary diagram : Geologic Unit", "EARoot/EA1/EA2/EA1/EA2/EA102.htm", "175.png", "25130", "0", "", "Logical diagram0","{D8047CDE-683D-45ae-8E36-ABD1CA6D57CE}");
+tocTab[tocTab.length] = new Array("0.1.2.1.2:6", "", "«FeatureType» GeologicUnit", "EARoot/EA1/EA2/EA1/EA2/EA109.htm", "5.png", "46356", "0", "", "Class0","{C96D5553-6325-448c-B97C-23A4A08C9397}");
+tocTab[tocTab.length] = new Array("0.1.2.1.2:7", "", "«DataType» BeddingDescription", "EARoot/EA1/EA2/EA1/EA2/EA110.htm", "5.png", "46353", "0", "", "Class0","{8F878436-E52F-40ce-B549-FCBE208E90C1}");
+tocTab[tocTab.length] = new Array("0.1.2.1.2:8", "", "«DataType» CompositionPart", "EARoot/EA1/EA2/EA1/EA2/EA111.htm", "5.png", "46360", "0", "", "Class0","{F23A1618-D54F-449e-8026-CAEB37D30819}");
+tocTab[tocTab.length] = new Array("0.1.2.1.2:9", "", "«DataType» GeologicUnitPart", "EARoot/EA1/EA2/EA1/EA2/EA112.htm", "5.png", "46354", "0", "", "Class0","{96CD55CA-7209-4d2a-A626-03F9AF5487BF}");
+tocTab[tocTab.length] = new Array("0.1.2.1.2:10", "", "«CodeList» CompositionPartRoleTerm", "EARoot/EA1/EA2/EA1/EA2/EA113.htm", "5.png", "46349", "0", "", "Class0","{22C4584C-EA17-4cf7-A9D0-BBDC4C8AA81C}");
+tocTab[tocTab.length] = new Array("0.1.2.1.2:11", "", "«CodeList» AlterationTypeTerm", "EARoot/EA1/EA2/EA1/EA2/EA114.htm", "5.png", "46355", "0", "", "Class0","{C869F8FD-65A4-4e5d-8B01-17D1C1557A41}");
+tocTab[tocTab.length] = new Array("0.1.2.1.2:12", "", "«CodeList» GeologicUnitPartRoleTerm", "EARoot/EA1/EA2/EA1/EA2/EA115.htm", "5.png", "46350", "0", "", "Class0","{47A4BC46-CEE9-458c-AD33-E648BAFA432A}");
+tocTab[tocTab.length] = new Array("0.1.2.1.2:13", "", "«CodeList» GeologicUnitTypeTerm", "EARoot/EA1/EA2/EA1/EA2/EA116.htm", "5.png", "46357", "0", "", "Class0","{CD6CEE6C-8A95-4869-B0C7-B32954E0D820}");
+tocTab[tocTab.length] = new Array("0.1.2.1.2:14", "", "«CodeList» RankTerm", "EARoot/EA1/EA2/EA1/EA2/EA117.htm", "5.png", "46359", "0", "", "Class0","{F072EE2D-CF47-4690-AB58-3B9E139E5DAD}");

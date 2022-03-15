@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Base Types 2</title>
+<link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Base Types 2", " : "))</script>  : Public  &lt;&lt;applicationSchema&gt;&gt; Package</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">6/2/2011 2:17:26 PM</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">2/22/2012 1:38:32 PM</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Clemens Portele</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{71D84CAE-C00D-42e0-B0C3-5947071F3E85}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../../EA2/EA3/EA2/EA3/EA8142.htm">Area Management,  Restriction and Regulation Zones</a>, <a href="../../EA2/EA3/EA7/EA1/EA8511.htm">EnvironmentalMonitoringFacilities</a>, <a href="../../EA2/EA3/EA8/EA8815.htm">Dependencies HB</a>, <a href="../../EA2/EA3/EA10/EA8925.htm">Land Use Package Structure</a>, <a href="../../EA2/EA3/EA15/EA2/EA9169.htm">PD</a>, <a href="../../EA2/EA3/EA19/EA9461.htm">Dependencies SD</a>, <a href="../EA9768.htm">INSPIRE Generic Conceptual Model - Overview</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">-- Definition --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;schema for additional basic types used by multiple themes&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;-- Description --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;NOTE	The additional types specified with Annex II/III data specifications are placed in a separate schema to maintain backwards compatibility.&lt;br /&gt;&lt;/p&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">targetNamespace</td>
+				<td width="50%" class="TableRow" valign="top">http://inspire.ec.europa.eu/schemas/base2/1.0</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario18930" onclick="parent.toggleDiv('detailsDIVScenario18930','DetailsImageScenario18930')" />Details:
+						<div id="detailsDIVScenario18930" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Default: FIXME<br />Description: Target XML namespace of the application schema<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">version</td>
+				<td width="50%" class="TableRow" valign="top">1.0</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario18931" onclick="parent.toggleDiv('detailsDIVScenario18931','DetailsImageScenario18931')" />Details:
+						<div id="detailsDIVScenario18931" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Default: FIXME<br />Description: Current version of the application schema<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">xmlns</td>
+				<td width="50%" class="TableRow" valign="top">base2</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario18932" onclick="parent.toggleDiv('detailsDIVScenario18932','DetailsImageScenario18932')" />Details:
+						<div id="detailsDIVScenario18932" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Default: FIXME<br />Description: Namespace prefix to be used as short form of the target namespace<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">xsdDocument</td>
+				<td width="50%" class="TableRow" valign="top">BaseTypes2.xsd</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario18933" onclick="parent.toggleDiv('detailsDIVScenario18933','DetailsImageScenario18933')" />Details:
+						<div id="detailsDIVScenario18933" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Default: FIXME<br />Description: Name of an XML Schema document to create representing the content of this package<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">xsdEncodingRule</td>
+				<td width="50%" class="TableRow" valign="top">iso19136_2007_INSPIRE_Extensions</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario18934" onclick="parent.toggleDiv('detailsDIVScenario18934','DetailsImageScenario18934')" />Details:
+						<div id="detailsDIVScenario18934" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions<br />Default: iso19136_2007_INSPIRE_Extensions<br />Description: XML Schema encoding rule to apply<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="15%" class="TableHeading">Type</td>
+					<td width="15%" class="TableHeading">Connection</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA3/EA19/EA9464.htm">«applicationSchema» SpeciesDistribution</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA3/EA15/EA9156.htm">«applicationSchema» Population distribution - demography</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA3/EA10/EA8930.htm">«applicationSchema» Planned Land Use</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA3/EA8/EA8818.htm">«applicationSchema» HabitatsAndBiotopesDistribution</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA3/EA7/EA8508.htm">«applicationSchema» EnvironmentalMonitoringFacilities</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA3/EA2/EA8038.htm">«applicationSchema» Area Management Restriction and Regulation Zones</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

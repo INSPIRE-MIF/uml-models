@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.1.3.23.6:1", "", "Context Diagram: DPS_DataQualityInformation", "EARoot/EA1/EA3/EA23/EA6/EA3796.htm", "175.png", "31366", "0", "", "Logical diagram0","{07ED2C6C-AF4B-4e91-BB75-AC7D68690FFF}");
+tocTab[tocTab.length] = new Array("0.1.3.23.6:2", "", "Fig E.4 - Specification Data Quality", "EARoot/EA1/EA3/EA23/EA6/EA3798.htm", "175.png", "31365", "0", "", "Logical diagram0","{1B36E8DC-4FEB-4c92-ADC5-77BF3632C71A}");
+tocTab[tocTab.length] = new Array("0.1.3.23.6:3", "", "Fig E.4B - Specification Data Quality Elements", "EARoot/EA1/EA3/EA23/EA6/EA3800.htm", "175.png", "31367", "0", "", "Logical diagram0","{4BB88A0A-88D9-4789-8B61-6B5E3C51AB6F}");
+tocTab[tocTab.length] = new Array("0.1.3.23.6:4", "", "DPS_DataQualityInformation", "EARoot/EA1/EA3/EA23/EA6/EA3803.htm", "5.png", "56812", "0", "", "Class0","{DC4E22E3-6C75-4d6c-8BC1-6F107C048D44}");

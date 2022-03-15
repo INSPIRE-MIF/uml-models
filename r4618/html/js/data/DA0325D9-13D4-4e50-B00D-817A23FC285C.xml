@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("0.2.3.12:1", "", "Package structure", "EARoot/EA2/EA3/EA12/EA9045.htm", "176.png", "32565", "0", "", "Package diagram0","{A67FBDF4-D82B-4253-968E-EC547D3CBB4A}");
+tocTab[tocTab.length] = new Array("0.2.3.12.1", "1", "«applicationSchema» MineralResources", "EARoot/EA2/EA3/EA12/EA9047.htm", "4.png", "", "", "{EF9B969D-839F-4684-BE12-F24CB0CDCA1A}", "Package");
+tocTab[tocTab.length] = new Array("0.2.3.12.2", "1", "«applicationSchema» MineralResourcesExtension", "EARoot/EA2/EA3/EA12/EA9048.htm", "4.png", "", "", "{91AEEF78-5280-440c-8309-B4EE0F7EC0A9}", "Package");

@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("0.2.1.3.1:1", "", "CadastralParcels", "EARoot/EA2/EA1/EA3/EA1/EA7184.htm", "175.png", "32308", "0", "", "Logical diagram0","{C01D7889-3C58-482e-98E9-70E139346445}");
+tocTab[tocTab.length] = new Array("0.2.1.3.1:2", "", "«featureType» BasicPropertyUnit", "EARoot/EA2/EA1/EA3/EA1/EA7186.htm", "5.png", "58317", "0", "", "Class0","{F8CD3E10-7544-46bc-AC03-C77ECC19A0FD}");
+tocTab[tocTab.length] = new Array("0.2.1.3.1:3", "", "«featureType» CadastralBoundary", "EARoot/EA2/EA1/EA3/EA1/EA7187.htm", "5.png", "58314", "0", "", "Class0","{480B28D4-9AEB-4c95-B1DD-78A7DD655794}");
+tocTab[tocTab.length] = new Array("0.2.1.3.1:4", "", "«codeList» CadastralZoningLevelValue", "EARoot/EA2/EA1/EA3/EA1/EA7188.htm", "5.png", "58316", "0", "", "Class0","{A20CFED7-05EB-4a8a-8ECB-DEA58E20AD59}");
+tocTab[tocTab.length] = new Array("0.2.1.3.1:5", "", "«featureType» CadastralParcel", "EARoot/EA2/EA1/EA3/EA1/EA7189.htm", "5.png", "58315", "0", "", "Class0","{641C7873-3C60-4fce-9031-63F4E38E8DB9}");
+tocTab[tocTab.length] = new Array("0.2.1.3.1:6", "", "«featureType» CadastralZoning", "EARoot/EA2/EA1/EA3/EA1/EA7190.htm", "5.png", "58313", "0", "", "Class0","{0FE3311F-9950-49f1-B289-C9DA938D20B2}");

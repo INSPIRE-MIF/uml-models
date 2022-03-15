@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("0.2.3.20.1:1", "", "NUTS", "EARoot/EA2/EA3/EA20/EA1/EA9561.htm", "176.png", "32617", "0", "", "Package diagram0","{BF6F8EB5-3E85-45f1-81D1-3879C5D9E239}");
+tocTab[tocTab.length] = new Array("0.2.3.20.1:2", "", "NUTS", "EARoot/EA2/EA3/EA20/EA1/EA9563.htm", "175.png", "32616", "0", "", "Logical diagram0","{454A7DA1-8AD4-4545-9446-004DEF85F8E0}");
+tocTab[tocTab.length] = new Array("0.2.3.20.1:3", "", "«codeList» NUTSLevelValue", "EARoot/EA2/EA3/EA20/EA1/EA9566.htm", "5.png", "60074", "0", "", "Class0","{1222F3FD-8C04-4142-ABB6-B8979178089E}");
+tocTab[tocTab.length] = new Array("0.2.3.20.1:4", "", "«featureType» NUTSRegion", "EARoot/EA2/EA3/EA20/EA1/EA9567.htm", "5.png", "60077", "0", "", "Class0","{BEF71490-FC4F-4390-85C8-F9C88987110F}");
+tocTab[tocTab.length] = new Array("0.2.3.20.1:5", "", "«featureType» NUTSTessellation", "EARoot/EA2/EA3/EA20/EA1/EA9568.htm", "5.png", "60075", "0", "", "Class0","{5B101470-D7BD-41ab-A762-3B6A6CA17A26}");

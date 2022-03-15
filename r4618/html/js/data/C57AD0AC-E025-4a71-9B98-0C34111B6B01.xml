@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.3.1.6.2:1", "", "Process", "EARoot/EA3/EA1/EA6/EA2/EA9905.htm", "175.png", "32670", "0", "", "Logical diagram0","{190D2E8F-43C7-4146-9ECE-689C74E5C87F}");
+tocTab[tocTab.length] = new Array("0.3.1.6.2:2", "", "«featureType» Process", "EARoot/EA3/EA1/EA6/EA2/EA9907.htm", "5.png", "60310", "0", "", "Class0","{0B2960F1-4303-4027-8CEB-F5B0B325D1D7}");
+tocTab[tocTab.length] = new Array("0.3.1.6.2:3", "", "«dataType» ProcessParameter", "EARoot/EA3/EA1/EA6/EA2/EA9908.htm", "5.png", "60311", "0", "", "Class0","{6CA240AE-C72E-4a2d-9E4F-37F595D6665B}");
+tocTab[tocTab.length] = new Array("0.3.1.6.2:4", "", "«codeList» ProcessParameterNameValue", "EARoot/EA3/EA1/EA6/EA2/EA9909.htm", "5.png", "60312", "0", "", "Class0","{BE5CDA38-531B-4553-86D8-89D0D6B0E4BB}");

@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("0.3.1.6:1", "", "Package structure", "EARoot/EA3/EA1/EA6/EA9890.htm", "176.png", "32666", "0", "", "Package diagram0","{1E7D83FC-9349-46db-9A50-E1C6FD70129E}");
+tocTab[tocTab.length] = new Array("0.3.1.6:2", "", "Observations Pattern - Overview", "EARoot/EA3/EA1/EA6/EA9892.htm", "177.png", "32665", "0", "", "Object diagram0","{D3E91795-A28E-4794-97B6-AFB48EBEF916}");
+tocTab[tocTab.length] = new Array("0.3.1.6.1", "1", "«applicationSchema» Observation References", "EARoot/EA3/EA1/EA6/EA9894.htm", "4.png", "", "", "{3B677913-ACEB-4dae-A174-E451A9EB3CCE}", "Package");
+tocTab[tocTab.length] = new Array("0.3.1.6.2", "1", "«applicationSchema» Processes", "EARoot/EA3/EA1/EA6/EA9895.htm", "4.png", "", "", "{C57AD0AC-E025-4a71-9B98-0C34111B6B01}", "Package");
+tocTab[tocTab.length] = new Array("0.3.1.6.3", "1", "«applicationSchema» Specialised Observations", "EARoot/EA3/EA1/EA6/EA9896.htm", "4.png", "", "", "{B07499FC-9B4D-4e78-8BC9-96AF7D8DD9C9}", "Package");
+tocTab[tocTab.length] = new Array("0.3.1.6.4", "1", "«applicationSchema» Observable Properties", "EARoot/EA3/EA1/EA6/EA9897.htm", "4.png", "", "", "{23A2AB9E-FE7C-4861-87DD-68973CC103A0}", "Package");

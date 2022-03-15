@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("0.1.3.2:1", "", "Context Diagram: LanguageCode", "EARoot/EA1/EA3/EA2/EA664.htm", "175.png", "25256", "0", "", "Logical diagram0","{1AAB0546-6A5E-4db7-ADBD-CF948FF5535F}");
+tocTab[tocTab.length] = new Array("0.1.3.2:2", "", "Language", "EARoot/EA1/EA3/EA2/EA666.htm", "175.png", "25255", "0", "", "Logical diagram0","{ABC739BC-71A8-48c9-81AF-E0DB31103C76}");
+tocTab[tocTab.length] = new Array("0.1.3.2:3", "", "«CodeList» LanguageCode", "EARoot/EA1/EA3/EA2/EA668.htm", "5.png", "46668", "0", "", "Class0","{4666C0A4-FC3B-4e9c-8D57-F185B17A1537}");

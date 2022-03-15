@@ -1,0 +1,7 @@
+tocTab[tocTab.length] = new Array("0.2.2.4.1:1", "", "Orthoimagery-Overview", "EARoot/EA2/EA2/EA4/EA1/EA7896.htm", "175.png", "32431", "0", "", "Logical diagram0","{CB7490BB-86F2-495e-8607-B5AC903ED793}");
+tocTab[tocTab.length] = new Array("0.2.2.4.1:2", "", "«featureType» AggregatedMosaicElement", "EARoot/EA2/EA2/EA4/EA1/EA7898.htm", "5.png", "58779", "0", "", "Class0","{1E0770E6-ED44-46fc-8CFB-1F485951FE9D}");
+tocTab[tocTab.length] = new Array("0.2.2.4.1:3", "", "«codeList» InterpolationMethodValue", "EARoot/EA2/EA2/EA4/EA1/EA7901.htm", "5.png", "58783", "0", "", "Class0","{E508815C-46A2-4b88-AAEC-20A685B91034}");
+tocTab[tocTab.length] = new Array("0.2.2.4.1:4", "", "«featureType» MosaicElement", "EARoot/EA2/EA2/EA4/EA1/EA7902.htm", "5.png", "58784", "0", "", "Class0","{FB68A73C-BA55-4f5c-8C04-BAEF3586C1BA}");
+tocTab[tocTab.length] = new Array("0.2.2.4.1:5", "", "«dataType» OrthoimageAggregation", "EARoot/EA2/EA2/EA4/EA1/EA7903.htm", "5.png", "58782", "0", "", "Class0","{C76BB567-B1AF-43f1-B606-AA6437DA0AF9}");
+tocTab[tocTab.length] = new Array("0.2.2.4.1:6", "", "«featureType» OrthoimageCoverage", "EARoot/EA2/EA2/EA4/EA1/EA7904.htm", "5.png", "58780", "0", "", "Class0","{5585629B-9D62-411e-A687-C8573468085E}");
+tocTab[tocTab.length] = new Array("0.2.2.4.1:7", "", "«featureType» SingleMosaicElement", "EARoot/EA2/EA2/EA4/EA1/EA7905.htm", "5.png", "58781", "0", "", "Class0","{A005B6F9-CE22-4671-B5A7-C367DB10B617}");

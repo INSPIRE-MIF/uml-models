@@ -1,0 +1,9 @@
+tocTab[tocTab.length] = new Array("0.2.3.2.4:1", "", "WFD", "EARoot/EA2/EA3/EA2/EA4/EA8156.htm", "175.png", "32462", "0", "", "Logical diagram0","{9C2C4A2B-7782-49ac-BD22-929663AD314A}");
+tocTab[tocTab.length] = new Array("0.2.3.2.4:2", "", "WFD - relations to other themes", "EARoot/EA2/EA3/EA2/EA4/EA8158.htm", "175.png", "32463", "0", "", "Logical diagram0","{4AC8F2E9-7243-4621-9CB5-150FC5DFB79E}");
+tocTab[tocTab.length] = new Array("0.2.3.2.4:3", "", "«featureType» WFDCoastalWater", "EARoot/EA2/EA3/EA2/EA4/EA8168.htm", "5.png", "58982", "0", "", "Class0","{68766471-F3D1-4678-A3F0-5E384702DA44}");
+tocTab[tocTab.length] = new Array("0.2.3.2.4:4", "", "«featureType» WFDGroundWaterBody", "EARoot/EA2/EA3/EA2/EA4/EA8169.htm", "5.png", "58981", "0", "", "Class0","{487CC08C-5037-454c-A0A0-C3544BCCDE52}");
+tocTab[tocTab.length] = new Array("0.2.3.2.4:5", "", "«featureType» WFDLake", "EARoot/EA2/EA3/EA2/EA4/EA8170.htm", "5.png", "58979", "0", "", "Class0","{2702962F-F5FE-4efd-909E-5A92CB943859}");
+tocTab[tocTab.length] = new Array("0.2.3.2.4:6", "", "«featureType» WFDRiver", "EARoot/EA2/EA3/EA2/EA4/EA8171.htm", "5.png", "58983", "0", "", "Class0","{88F7925B-FA88-4106-8865-4736D273EDC5}");
+tocTab[tocTab.length] = new Array("0.2.3.2.4:7", "", "«featureType» WFDRiverOrLake", "EARoot/EA2/EA3/EA2/EA4/EA8172.htm", "5.png", "58978", "0", "", "Class0","{19DEFDA5-0A1D-40c9-9672-F9BFD30343CC}");
+tocTab[tocTab.length] = new Array("0.2.3.2.4:8", "", "«featureType» WFDSurfaceWaterBody", "EARoot/EA2/EA3/EA2/EA4/EA8173.htm", "5.png", "58984", "0", "", "Class0","{967B8DC4-5C1F-4d7b-98A3-1B2AD2F3F513}");
+tocTab[tocTab.length] = new Array("0.2.3.2.4:9", "", "«featureType» WFDTransitionalWater", "EARoot/EA2/EA3/EA2/EA4/EA8174.htm", "5.png", "58980", "0", "", "Class0","{2B1683F6-AF0C-433b-91D1-26DB5CDF8B36}");

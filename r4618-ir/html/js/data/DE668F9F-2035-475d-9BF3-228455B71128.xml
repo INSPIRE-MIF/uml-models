@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("0.1.4.2.15:1", "", "CategoricalTimeseriesInterleaved", "EARoot/EA1/EA4/EA2/EA15/EA7005.htm", "175.png", "27262", "0", "", "Logical diagram0","{4B15F7D4-AA6C-4fe1-8857-685D2EA5FFC6}");
+tocTab[tocTab.length] = new Array("0.1.4.2.15:2", "", "«Type» CategoricalTimeseriesTVP", "EARoot/EA1/EA4/EA2/EA15/EA7007.htm", "5.png", "48995", "0", "", "Class0","{28F5C57A-D222-4447-9185-F35475D0B55F}");
+tocTab[tocTab.length] = new Array("0.1.4.2.15:3", "", "«Type» CategoryTimeValuePair", "EARoot/EA1/EA4/EA2/EA15/EA7008.htm", "5.png", "48996", "0", "", "Class0","{29CCFCDB-886E-4aac-A940-3AEFE527279B}");

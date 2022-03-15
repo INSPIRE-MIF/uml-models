@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.2.2.1", "1", "Elevation", "EARoot/EA2/EA2/EA7648.htm", "4.png", "", "", "{23422E05-5D32-4eb2-99C8-C1FE515E6ADF}", "Package");
+tocTab[tocTab.length] = new Array("0.2.2.2", "1", "Geology", "EARoot/EA2/EA2/EA7649.htm", "4.png", "", "", "{D3D8F0C6-21AD-4256-9236-4EFFF1B06DCB}", "Package");
+tocTab[tocTab.length] = new Array("0.2.2.3", "1", "Land Cover", "EARoot/EA2/EA2/EA7650.htm", "4.png", "", "", "{E8BD5C9C-1012-4ac1-ACFA-141D0C3F9445}", "Package");
+tocTab[tocTab.length] = new Array("0.2.2.4", "1", "Orthoimagery", "EARoot/EA2/EA2/EA7651.htm", "4.png", "", "", "{DD8499C6-B0AB-4aa7-8A05-7C3A7E6B962C}", "Package");

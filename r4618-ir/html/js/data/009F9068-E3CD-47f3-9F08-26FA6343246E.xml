@@ -1,0 +1,2 @@
+tocTab[tocTab.length] = new Array("0.2.2.3.2:1", "", "LandCoverCoreRaster", "EARoot/EA2/EA2/EA3/EA2/EA7819.htm", "175.png", "27401", "0", "", "Logical diagram0","{81454280-8D0D-4dfb-9805-666941C6352D}");
+tocTab[tocTab.length] = new Array("0.2.2.3.2:2", "", "«featureType» LandCoverGridCoverage", "EARoot/EA2/EA2/EA3/EA2/EA7822.htm", "5.png", "49531", "0", "", "Class0","{AC23DD93-750F-4e5e-9A38-C9DAD733CAD9}");

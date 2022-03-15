@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("0.2.2.2.1", "1", "«applicationSchema» Geology", "EARoot/EA2/EA2/EA2/EA7710.htm", "4.png", "", "", "{02AE73BB-B9F3-4982-8327-708BCA451974}", "Package");
+tocTab[tocTab.length] = new Array("0.2.2.2.2", "1", "«applicationSchema» Hydrogeology", "EARoot/EA2/EA2/EA2/EA7711.htm", "4.png", "", "", "{53BDFA50-C245-470d-BCB5-6FBDFEAC09C2}", "Package");
+tocTab[tocTab.length] = new Array("0.2.2.2.3", "1", "«applicationSchema» Geophysics", "EARoot/EA2/EA2/EA2/EA7712.htm", "4.png", "", "", "{80B58652-015A-49c8-8702-F87CBADAB2E2}", "Package");

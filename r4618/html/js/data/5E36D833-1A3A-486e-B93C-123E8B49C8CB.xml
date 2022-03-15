@@ -1,0 +1,10 @@
+tocTab[tocTab.length] = new Array("0.1.3.32.2:1", "", "Context Diagram: LocalisedCharacterString", "EARoot/EA1/EA3/EA32/EA2/EA6115.htm", "175.png", "32055", "0", "", "Logical diagram0","{EDFC2772-F4A4-4e9c-9D59-B7CB417C4264}");
+tocTab[tocTab.length] = new Array("0.1.3.32.2:2", "", "Context Diagram: PT_FreeText", "EARoot/EA1/EA3/EA32/EA2/EA6117.htm", "175.png", "32053", "0", "", "Logical diagram0","{F96088C8-67E0-4e3b-B0E0-70E426FA07B9}");
+tocTab[tocTab.length] = new Array("0.1.3.32.2:3", "", "Context Diagram: PT_Locale", "EARoot/EA1/EA3/EA32/EA2/EA6119.htm", "175.png", "32054", "0", "", "Logical diagram0","{0739FCBC-2FEB-4250-8EDB-7C45039FE352}");
+tocTab[tocTab.length] = new Array("0.1.3.32.2:4", "", "Context Diagram: PT_LocaleContainer", "EARoot/EA1/EA3/EA32/EA2/EA6121.htm", "175.png", "32056", "0", "", "Logical diagram0","{4650594F-022A-4704-998B-A0580F949105}");
+tocTab[tocTab.length] = new Array("0.1.3.32.2:5", "", "Fig3 - Free text and Localized Character String", "EARoot/EA1/EA3/EA32/EA2/EA6123.htm", "175.png", "32052", "0", "", "Logical diagram0","{ABD59516-16FC-4bb2-BCF5-115943ABBA27}");
+tocTab[tocTab.length] = new Array("0.1.3.32.2:6", "", "Fig5 - Translation container", "EARoot/EA1/EA3/EA32/EA2/EA6125.htm", "175.png", "32051", "0", "", "Logical diagram0","{BE38F2FD-CD08-4301-A5B4-E2612D1D1D7F}");
+tocTab[tocTab.length] = new Array("0.1.3.32.2:7", "", "LocalisedCharacterString", "EARoot/EA1/EA3/EA32/EA2/EA6127.htm", "5.png", "57760", "0", "", "Class0","{AE1AC547-B120-4488-A63F-60A8A7441D7A}");
+tocTab[tocTab.length] = new Array("0.1.3.32.2:8", "", "PT_FreeText", "EARoot/EA1/EA3/EA32/EA2/EA6128.htm", "5.png", "57761", "0", "", "Class0","{F8A23D50-CB8F-4c91-BD7F-C2082467D81A}");
+tocTab[tocTab.length] = new Array("0.1.3.32.2:9", "", "PT_Locale", "EARoot/EA1/EA3/EA32/EA2/EA6129.htm", "5.png", "57758", "0", "", "Class0","{4F7072DC-5423-4978-8EA2-1DE43135931B}");
+tocTab[tocTab.length] = new Array("0.1.3.32.2:10", "", "PT_LocaleContainer", "EARoot/EA1/EA3/EA32/EA2/EA6130.htm", "5.png", "57759", "0", "", "Class0","{7072D0FC-9509-4477-8956-2318C3ABA0D8}");

@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.1.3.37.1.6:1", "", "Context diagram: GFI_Feature", "EARoot/EA1/EA3/EA37/EA1/EA6/EA6620.htm", "175.png", "32202", "0", "", "Logical diagram0","{E18F49E0-DC65-45b5-8409-4CEC74112422}");
+tocTab[tocTab.length] = new Array("0.1.3.37.1.6:2", "", "Figure C.1: GFI general feature instance", "EARoot/EA1/EA3/EA37/EA1/EA6/EA6622.htm", "175.png", "32203", "0", "", "Logical diagram0","{32EE7901-4027-4594-8B11-4016E402B290}");
+tocTab[tocTab.length] = new Array("0.1.3.37.1.6:3", "", "«informative» GFI_DomainFeature", "EARoot/EA1/EA3/EA37/EA1/EA6/EA6624.htm", "5.png", "57961", "0", "", "Class0","{07E09557-E0A2-41c1-867A-DC1D1FC46998}");
+tocTab[tocTab.length] = new Array("0.1.3.37.1.6:4", "", "«FeatureType» GFI_Feature", "EARoot/EA1/EA3/EA37/EA1/EA6/EA6625.htm", "5.png", "57962", "0", "", "Class0","{3121FA5D-B116-4cc7-87D9-50DD48C8BC94}");

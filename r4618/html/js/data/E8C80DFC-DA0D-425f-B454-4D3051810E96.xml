@@ -1,0 +1,14 @@
+tocTab[tocTab.length] = new Array("0.1.4.1.2:1", "", "Abstract Base Classes", "EARoot/EA1/EA4/EA1/EA2/EA6793.htm", "175.png", "32230", "0", "", "Logical diagram0","{FD302935-56E5-4193-A2A0-197EECA10750}");
+tocTab[tocTab.length] = new Array("0.1.4.1.2:2", "", "Other Base Types", "EARoot/EA1/EA4/EA1/EA2/EA6795.htm", "175.png", "32229", "0", "", "Logical diagram0","{7CD41406-81A5-46e3-955C-212776B1E0B3}");
+tocTab[tocTab.length] = new Array("0.1.4.1.2:3", "", "Pairs of Scalars", "EARoot/EA1/EA4/EA1/EA2/EA6797.htm", "175.png", "32228", "0", "", "Logical diagram0","{EBCF5454-17FA-4dfc-B78E-4FAD2BAD3C85}");
+tocTab[tocTab.length] = new Array("0.1.4.1.2:4", "", "«Type» AbstractSWE", "EARoot/EA1/EA4/EA1/EA2/EA6799.htm", "5.png", "58083", "0", "", "Class0","{306C02A6-CEDD-49ac-94B8-0FD8A9D72F52}");
+tocTab[tocTab.length] = new Array("0.1.4.1.2:5", "", "«Type» AbstractSWEIdentifiable", "EARoot/EA1/EA4/EA1/EA2/EA6800.htm", "5.png", "58092", "0", "", "Class0","{F32513AE-B309-4e54-875D-7ACFC9CE0F37}");
+tocTab[tocTab.length] = new Array("0.1.4.1.2:6", "", "«DataType» EncodedValues", "EARoot/EA1/EA4/EA1/EA2/EA6801.htm", "5.png", "58082", "0", "", "Class0","{2AD5712E-E1C2-4ecb-BE0D-95A60F2D165F}");
+tocTab[tocTab.length] = new Array("0.1.4.1.2:7", "", "«DataType» IntegerPair", "EARoot/EA1/EA4/EA1/EA2/EA6802.htm", "5.png", "58090", "0", "", "Class0","{D202E053-E514-4e40-8F50-E39D824A07C2}");
+tocTab[tocTab.length] = new Array("0.1.4.1.2:8", "", "«DataType» NilValue", "EARoot/EA1/EA4/EA1/EA2/EA6803.htm", "5.png", "58084", "0", "", "Class0","{3221C38B-4D83-454d-AA06-F50F7B5DE291}");
+tocTab[tocTab.length] = new Array("0.1.4.1.2:9", "", "«DataType» RealPair", "EARoot/EA1/EA4/EA1/EA2/EA6804.htm", "5.png", "58088", "0", "", "Class0","{7CC041F6-2336-4e00-8449-6769B54FB852}");
+tocTab[tocTab.length] = new Array("0.1.4.1.2:10", "", "«Union» TimeIso8601", "EARoot/EA1/EA4/EA1/EA2/EA6805.htm", "5.png", "58089", "0", "", "Class0","{93B686F2-3C98-4255-BDD4-D5D1444337AF}");
+tocTab[tocTab.length] = new Array("0.1.4.1.2:11", "", "«DataType» TimePair", "EARoot/EA1/EA4/EA1/EA2/EA6806.htm", "5.png", "58085", "0", "", "Class0","{360F4350-798D-43a7-A28F-FA924E94E0A1}");
+tocTab[tocTab.length] = new Array("0.1.4.1.2:12", "", "«Union» TimePosition", "EARoot/EA1/EA4/EA1/EA2/EA6807.htm", "5.png", "58087", "0", "", "Class0","{67022533-2B3E-4f58-B5C7-577A44D39A84}");
+tocTab[tocTab.length] = new Array("0.1.4.1.2:13", "", "«DataType» TokenPair", "EARoot/EA1/EA4/EA1/EA2/EA6808.htm", "5.png", "58091", "0", "", "Class0","{EE99A510-8FAB-4ab5-BE5C-65EAB7D6D857}");
+tocTab[tocTab.length] = new Array("0.1.4.1.2:14", "", "«DataType» UnitReference", "EARoot/EA1/EA4/EA1/EA2/EA6809.htm", "5.png", "58086", "0", "", "Class0","{480B5DB3-98D9-4c95-A214-0FA4CE970B85}");

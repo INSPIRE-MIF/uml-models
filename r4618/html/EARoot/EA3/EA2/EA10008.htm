@@ -1,0 +1,456 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Base Types</title>
+<link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Base Types", " : "))</script>  : Public  &lt;&lt;applicationSchema&gt;&gt; Package</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">9/10/2006 6:59:33 PM</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">2/22/2012 1:38:32 PM</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{B9C45EDB-0E51-4ac0-A093-49F519BB64EF}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../../EA2/EA1/EA1/EA7039.htm">Package Structure</a>, <a href="../../EA2/EA1/EA2/EA7080.htm">package structure</a>, <a href="../../EA2/EA1/EA3/EA7176.htm">Cadastral Parcels</a>, <a href="../../EA2/EA1/EA6/EA7203.htm">Dependencies</a>, <a href="../../EA2/EA1/EA7/EA7237.htm">Hydrography package imports</a>, <a href="../../EA2/EA1/EA8/EA7315.htm">Protected Sites</a>, <a href="../../EA2/EA2/EA1/EA7654.htm">Elevation: Package dependencies</a>, <a href="../../EA2/EA2/EA4/EA7893.htm">Package Structure</a>, <a href="../../EA2/EA3/EA2/EA3/EA8142.htm">Area Management,  Restriction and Regulation Zones</a>, <a href="../../EA2/EA3/EA3/EA1/EA8176.htm">Package Structure</a>, <a href="../../EA2/EA3/EA4/EA1/EA8196.htm">Dependencies BR</a>, <a href="../../EA2/EA3/EA6/EA8449.htm">Package Structure</a>, <a href="../../EA2/EA3/EA7/EA1/EA8511.htm">EnvironmentalMonitoringFacilities</a>, <a href="../../EA2/EA3/EA8/EA8815.htm">Dependencies HB</a>, <a href="../../EA2/EA3/EA10/EA8952.htm">Land Use Package Structure</a>, <a href="../../EA2/EA3/EA13/EA9112.htm">Package Structure</a>, <a href="../../EA2/EA3/EA14/EA9172.htm">Package Structure</a>, <a href="../../EA2/EA3/EA15/EA2/EA9194.htm">PD</a>, <a href="../../EA2/EA3/EA17/EA9345.htm">Package Structure</a>, <a href="../../EA2/EA3/EA18/EA9382.htm">Soil dependencies</a>, <a href="../../EA2/EA3/EA19/EA9488.htm">Dependencies SD</a>, <a href="../../EA2/EA3/EA20/EA9553.htm">StatisticalUnits</a>, <a href="../EA9795.htm">INSPIRE Generic Conceptual Model - Overview</a>, <a href="../EA1/EA5/EA9865.htm">Dependencies</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">-- Definition --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;schema for basic types used by multiple themes&lt;br /&gt;&lt;/p&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">targetNamespace</td>
+				<td width="50%" class="TableRow" valign="top">http://inspire.ec.europa.eu/schemas/base/3.3</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario19516" onclick="parent.toggleDiv('detailsDIVScenario19516','DetailsImageScenario19516')" />Details:
+						<div id="detailsDIVScenario19516" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Default: FIXME<br />Description: Target XML namespace of the application schema<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">version</td>
+				<td width="50%" class="TableRow" valign="top">3.3</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario19517" onclick="parent.toggleDiv('detailsDIVScenario19517','DetailsImageScenario19517')" />Details:
+						<div id="detailsDIVScenario19517" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Default: FIXME<br />Description: Current version of the application schema<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">xmlns</td>
+				<td width="50%" class="TableRow" valign="top">base</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario19518" onclick="parent.toggleDiv('detailsDIVScenario19518','DetailsImageScenario19518')" />Details:
+						<div id="detailsDIVScenario19518" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Default: FIXME<br />Description: Namespace prefix to be used as short form of the target namespace<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">xsdDocument</td>
+				<td width="50%" class="TableRow" valign="top">BaseTypes.xsd</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario19519" onclick="parent.toggleDiv('detailsDIVScenario19519','DetailsImageScenario19519')" />Details:
+						<div id="detailsDIVScenario19519" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Default: FIXME<br />Description: Name of an XML Schema document to create representing the content of this package<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">xsdEncodingRule</td>
+				<td width="50%" class="TableRow" valign="top">iso19136_2007_INSPIRE_Extensions</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario19520" onclick="parent.toggleDiv('detailsDIVScenario19520','DetailsImageScenario19520')" />Details:
+						<div id="detailsDIVScenario19520" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions<br />Default: iso19136_2007_INSPIRE_Extensions<br />Description: XML Schema encoding rule to apply<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="15%" class="TableHeading">Type</td>
+					<td width="15%" class="TableHeading">Connection</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA3/EA20/EA9558.htm">«applicationSchema» Statistical Units Vector</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA3/EA20/EA9557.htm">«applicationSchema» Statistical Units Grid</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA3/EA19/EA9493.htm">«applicationSchema» SpeciesDistributionExtension</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA3/EA19/EA9491.htm">«applicationSchema» SpeciesDistribution</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA3/EA19/EA9492.htm">«deprecated» SpeciesDistribution - Coverage</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA3/EA18/EA9384.htm">«applicationSchema» Soil</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA3/EA17/EA9349.htm">«applicationSchema» Sea Regions</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA3/EA15/EA9183.htm">«applicationSchema» Population distribution - demography</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA3/EA14/EA9174.htm">«applicationSchema» Oceanographic Geographical Features</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA3/EA13/EA9115.htm">«informative» Floods_Example_Model</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA3/EA10/EA8956.htm">«applicationSchema» Land Use Nomenclature</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA3/EA10/EA8957.htm">«applicationSchema» Planned Land Use</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA3/EA8/EA8819.htm">«deprecated» HabitatsAndBiotopes - Coverage</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA3/EA8/EA8820.htm">«applicationSchema» HabitatsAndBiotopesDistribution</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA3/EA8/EA8818.htm">«applicationSchema» HabitatsAndBiotopes</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA3/EA8/EA8817.htm">«deprecated» Habitats and Biotopes-Annex1</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA3/EA7/EA8508.htm">«applicationSchema» EnvironmentalMonitoringFacilities</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA3/EA6/EA8454.htm">«applicationSchema» Energy Resources Vector</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA3/EA6/EA8454.htm">«applicationSchema» Energy Resources Vector</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA3/EA6/EA8455.htm">«applicationSchema» Energy Resources Coverage</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA3/EA6/EA8455.htm">«applicationSchema» Energy Resources Coverage</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA3/EA6/EA8453.htm">«applicationSchema» Energy Resources Base</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA3/EA5/EA8213.htm">«deprecated» BuildingCore2D</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA3/EA4/EA8190.htm">«applicationSchema» Bio-geographicalRegions</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA3/EA3/EA8175.htm">«applicationSchema» Atmospheric Conditions and Meteorological Geographical Features</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA3/EA2/EA8038.htm">«applicationSchema» Area Management Restriction and Regulation Zones</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA3/EA2/EA8040.htm">«applicationSchema» Water Framework Directive</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA3/EA7923.htm">Soil</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA2/EA4/EA7895.htm">«applicationSchema» Orthoimagery</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA2/EA3/EA7857.htm">«applicationSchema» LandCoverVector</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA2/EA3/EA7856.htm">«applicationSchema» LandCoverRaster</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA2/EA1/EA7657.htm">«applicationSchema» ElevationBaseTypes</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA2/EA1/EA7660.htm">«applicationSchema» ElevationTIN</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA2/EA1/EA7659.htm">«applicationSchema» ElevationVectorElements</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA2/EA1/EA7658.htm">«applicationSchema» ElevationGridCoverage</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA1/EA9/EA7409.htm">«applicationSchema» Common Transport Elements</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA1/EA8/EA7319.htm">«applicationSchema» Protected Sites Simple</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA1/EA8/EA7317.htm">«applicationSchema» Protected Sites Full</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA1/EA7/EA7243.htm">«applicationSchema» Hydro - Physical Waters</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA1/EA6/EA7206.htm">«applicationSchema» Geographical Names</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA1/EA3/EA7178.htm">«applicationSchema» CadastralParcels</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA1/EA2/EA7084.htm">«applicationSchema» MaritimeUnits</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA1/EA2/EA7083.htm">«applicationSchema» AdministrativeUnits</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA1/EA1/EA7041.htm">«applicationSchema» Addresses</a></td>
+					<td width="15%" class="TableRow" valign="top">Package</td>
+					<td width="15%" class="TableRow" valign="top">Dependency</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

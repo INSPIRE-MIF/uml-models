@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.2.3.2.1", "1", "«applicationSchema» Controlled Activities", "EARoot/EA2/EA3/EA2/EA8039.htm", "4.png", "", "", "{10FF2A54-1906-4ca2-9596-B9713E9EE899}", "Package");
+tocTab[tocTab.length] = new Array("0.2.3.2.2", "1", "«informative» Annex E: Extension examples", "EARoot/EA2/EA3/EA2/EA8037.htm", "4.png", "", "", "{3BCED2D6-6CC7-45fb-A44E-F0BD2E9BC639}", "Package");
+tocTab[tocTab.length] = new Array("0.2.3.2.3", "1", "«applicationSchema» Area Management Restriction and Regulation Zones", "EARoot/EA2/EA3/EA2/EA8038.htm", "4.png", "", "", "{C2E4A058-2E2B-4f39-9C0A-8A2C1DBCAB8A}", "Package");
+tocTab[tocTab.length] = new Array("0.2.3.2.4", "1", "«applicationSchema» Water Framework Directive", "EARoot/EA2/EA3/EA2/EA8040.htm", "4.png", "", "", "{153D0361-DAF4-48a8-9D88-131A942CD792}", "Package");

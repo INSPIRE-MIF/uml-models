@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("0.2.3.21.1.3.1.3:1", "", "Extended Oil, Gas & Chemicals Network", "EARoot/EA2/EA3/EA21/EA1/EA3/EA1/EA3/EA9702.htm", "175.png", "32637", "0", "", "Logical diagram0","{17354B48-2E96-474a-B8C3-06A334BC40E2}");
+tocTab[tocTab.length] = new Array("0.2.3.21.1.3.1.3:2", "", "«featureType» OilGasChemicalsPipeExtended", "EARoot/EA2/EA3/EA21/EA1/EA3/EA1/EA3/EA9704.htm", "5.png", "60173", "0", "", "Class0","{68F6C862-D1C0-40a5-96ED-303776FAD0B1}");
+tocTab[tocTab.length] = new Array("0.2.3.21.1.3.1.3:3", "", "«codeList» OilGasChemicalsPipeTypeValue", "EARoot/EA2/EA3/EA21/EA1/EA3/EA1/EA3/EA9705.htm", "5.png", "60174", "0", "", "Class0","{82775B06-ECEF-43a2-8A32-AC890B148DFF}");

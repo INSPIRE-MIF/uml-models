@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Profile Observation</title>
+<link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA9947.png" usemap="#EA9947" border="0" />
+
+<MAP NAME="EA9947">
+<area shape="rect" coords="510,585,625,674" href="EA9954.htm" target="_self">
+<area shape="rect" coords="390,693,681,838" href="EA9956.htm" target="_self">
+<area shape="rect" coords="22,614,287,695" href="EA9952.htm" target="_self">
+<area shape="rect" coords="53,774,379,840" href="EA9958.htm" target="_self">
+<area shape="rect" coords="438,358,545,446" href="../EA1/EA9902.htm" target="_self">
+<area shape="rect" coords="427,240,542,315" href="../EA1/EA9899.htm" target="_self">
+<area shape="rect" coords="32,392,170,495" href="../EA1/EA9900.htm" target="_self">
+<area shape="rect" coords="211,307,429,381" href="../../../../../EA1/EA3/EA37/EA1/EA5/EA6619.htm" target="_self">
+<area shape="rect" coords="214,171,438,241" href="../../../../../EA1/EA3/EA37/EA1/EA1/EA9/EA6498.htm" target="_self">
+<area shape="rect" coords="507,506,607,561" href="EA9957.htm" target="_self">
+<area shape="rect" coords="232,25,396,121" href="../../../../../EA1/EA3/EA37/EA1/EA1/EA1/EA6473.htm" target="_self">
+<area shape="rect" coords="202,513,426,579" href="EA9962.htm" target="_self">
+<area shape="rect" coords="10,0,692,872" href="EA9963.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">Profile Observation : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">1/3/2012 3:23:00 PM</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">4/20/2012 11:35:13 AM</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">dlowe</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{68BD0F04-B9C8-4c86-945A-F75938BA06CE}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">-- Name --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;ProfileObservation&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;-- Definition --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;A ProfileObservation is an Observsation that represents a single&#160; instantaneous &#39;profile&#39;&#160; of a property along a vertical line in space.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;-- Description --&lt;br /&gt;&lt;/p&gt;&lt;p&gt;A ProfileObservation is an Observsation that represents a single&#160; instantaneous &#39;profile&#39;&#160; of a property along a vertical line in space.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;The result of a ProfileObservation is a discrete coverage with respective domain elements having the same temporal component (the instantaneous sampling time) and spatial locations laid out along the sampling curve.&lt;br /&gt;&lt;/p&gt;</div>
+
+</div>
+ 
+</body>
+</html>

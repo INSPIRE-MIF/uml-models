@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("0.2.2.3.1:1", "", "Land Cover - Placeholders & Candidate types", "EARoot/EA2/EA2/EA3/EA1/EA7858.htm", "175.png", "32424", "0", "", "Logical diagram0","{218FED10-0CA0-4e00-9BBD-30BD55BDBA42}");
+tocTab[tocTab.length] = new Array("0.2.2.3.1:2", "", "«codeList» CurrentUse", "EARoot/EA2/EA2/EA3/EA1/EA7861.htm", "5.png", "58755", "0", "", "Class0","{66A72079-6A64-41f6-8534-19801932C856}");
+tocTab[tocTab.length] = new Array("0.2.2.3.1:3", "", "«placeholder» GlacierSnowfield", "EARoot/EA2/EA2/EA3/EA1/EA7862.htm", "5.png", "58756", "0", "", "Class0","{6A7627F3-AB2A-4752-99AB-BA220A0D5454}");
