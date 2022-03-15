@@ -13,8 +13,8 @@ For each version, different formats are available:
   - [APPROVED](https://fabiovinci.github.io/uml-models/r4618-ir/html)
   - [DRAFT](https://fabiovinci.github.io/uml-models/r4618/html)
 - **UML models for Enterprise Architect (EAP, XMI)**: Zip archive containing the INSPIRE UML models as an EA project file and XMI exports. These can be used by developers for importing the INSPIRE data models in Enterprise Architect (EA) (or other UML modeling tools).
-  - [APPROVED](/r4618-ir/ea+xmi)
-  - [DRAFT](/r4618/ea+xmi)
+  - [APPROVED](/r4618-ir/ea+xmi/EAXMI.zip)
+  - [DRAFT](/r4618/ea+xmi/EAXMI.zip)
 
 
 ## Governance and release process
