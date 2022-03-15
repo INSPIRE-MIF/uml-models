@@ -4,13 +4,15 @@ The purpose of this repository is to manage the changes to the INSPIRE UML model
 
 The INSPIRE UML models are available in two different versions:
 
-* **[APPROVED](/r4618-ir) (IR data models)**: this version contains only those data models that are contained in the amendment to the Implementing Rules for Annex I+II+III themes.
-* **[DRAFT](/4618) (TG extended data models)**: this version combines the data models contained in the amendment to the Implementing Rules (see above) and the extended data models contained in the data specification Technical Guidelines (but not in the IRs).Please note that the extended data models not included in the IRs should be considered as draft and therefore be used with caution.
+- **[APPROVED](/r4618-ir) (IR data models)**: this version contains only those data models that are contained in the amendment to the Implementing Rules for Annex I+II+III themes.
+- **[DRAFT](/r4618) (TG extended data models)**: this version combines the data models contained in the amendment to the Implementing Rules (see above) and the extended data models contained in the data specification Technical Guidelines (but not in the IRs).Please note that the extended data models not included in the IRs should be considered as draft and therefore be used with caution.
 
 For each version, different formats are available:
 
-* **HTML view of UML models**: an interactive HTML view of the complete UML data models is available. This view includes detailed definitions of spatial object types, data types, enumerations and code lists and UML class diagrams.
-* **UML models for Enterprise Architect (EAP, XMI)**: Zip archive containing the INSPIRE UML models as an EA project file and XMI exports. These can be used by developers for importing the INSPIRE data models in Enterprise Architect (EA) (or other UML modeling tools). 
+- **HTML view of UML models**: an interactive HTML view of the complete UML data models is available. This view includes detailed definitions of spatial object types, data types, enumerations and code lists and UML class diagrams.
+  - [APPROVED](https://fabiovinci.github.io/uml-models/r4618-ir/html/)
+- **UML models for Enterprise Architect (EAP, XMI)**: Zip archive containing the INSPIRE UML models as an EA project file and XMI exports. These can be used by developers for importing the INSPIRE data models in Enterprise Architect (EA) (or other UML modeling tools).
+  - [DRAFT](https://fabiovinci.github.io/uml-models/r4618/html/)
 
 ## Governance and release process
 
