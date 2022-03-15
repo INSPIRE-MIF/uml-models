@@ -5,4 +5,4 @@ This distribution contains only those data models that are contained in the amen
 - [Feature catalogue](fc)
 - [HTML view](html)
 - [Mapping Tables](mapping)
-- [EA project / XMI](ea+xmi)
+- [EA project / XMI](ea+xmi/EAXMI.zip)
