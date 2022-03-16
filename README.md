@@ -4,8 +4,8 @@ The purpose of this repository is to manage the changes to the INSPIRE UML model
 
 The INSPIRE UML models are available in two different versions:
 
-- **[APPROVED](r4618-ir) (IR data models)**: this version contains only those data models that are contained in the amendment to the Implementing Rules for Annex I+II+III themes.
-- **[DRAFT](r4618) (TG extended data models)**: this version combines the data models contained in the amendment to the Implementing Rules (see above) and the extended data models contained in the data specification Technical Guidelines (but not in the IRs).Please note that the extended data models not included in the IRs should be considered as draft and therefore be used with caution.
+- **[APPROVED](r4618-ir) (IR data models)**: this version contains only those data models that are contained in the Implementing Rules for Annex I+II+III themes.
+- **[DRAFT](r4618) (TG extended data models)**: this version combines the data models contained in the Implementing Rules and the extended data models contained in the data specification Technical Guidelines (but not in the IRs). Please note that the extended data models not included in the IRs should be considered as draft and therefore be used with caution.
 
 For each version, different formats are available:
 
