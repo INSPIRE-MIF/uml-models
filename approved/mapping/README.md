@@ -1,6 +1,6 @@
 # Mapping Tables
 
-- [Activity Complex Mapping Table](Activity Complex Mapping Table)
+- [Activity Complex Mapping Table](Activity%20Complex%20Mapping%20Table.xml)
 - [Addresses Mapping Table](Addresses Mapping Table.xml)
 - [AdministrativeAndSocialGovernmentalServices Mapping Table](AdministrativeAndSocialGovernmentalServices Mapping Table.xml)
 - [AdministrativeUnits Mapping Table](AdministrativeUnits Mapping Table.xml)
