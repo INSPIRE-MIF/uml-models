@@ -10,8 +10,8 @@ The INSPIRE UML models are available in two different versions:
 For each version, different formats are available:
 
 - **HTML view of UML models**: an interactive HTML view of the complete UML data models is available. This view includes detailed definitions of spatial object types, data types, enumerations and code lists and UML class diagrams.
-  - [APPROVED](https://fabiovinci.github.io/uml-models/approved/html)
-  - [DRAFT](https://fabiovinci.github.io/uml-models/draft/html)
+  - [APPROVED](https://inspire-mif.github.io/uml-models/approved/html)
+  - [DRAFT](https://inspire-mif.github.io/uml-models/draft/html)
 - **UML models for Enterprise Architect (EAP, XMI)**: Zip archive containing the INSPIRE UML models as an EA project file and XMI exports. These can be used by developers for importing the INSPIRE data models in Enterprise Architect (EA) (or other UML modeling tools).
   - [APPROVED](/approved/ea+xmi/EAXMI.zip)
   - [DRAFT](/draft/ea+xmi/EAXMI.zip)
