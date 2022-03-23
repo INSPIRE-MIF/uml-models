@@ -1,0 +1,7 @@
+tocTab[tocTab.length] = new Array("0.1.3.19:1", "", "Context Diagram: Package Clients of Service Metadata", "EARoot/EA1/EA3/EA19/EA3438.htm", "175.png", "31243", "0", "", "Logical diagram0","{7E831E2B-2CE1-4028-8E02-1BC1728662E3}");
+tocTab[tocTab.length] = new Array("0.1.3.19:2", "", "Context Diagram: Package Clients of Service Model", "EARoot/EA1/EA3/EA19/EA3440.htm", "175.png", "31241", "0", "", "Logical diagram0","{5A37482A-7692-4caa-B437-DDD6CB70368B}");
+tocTab[tocTab.length] = new Array("0.1.3.19:3", "", "Context Diagram: Package Suppliers of Service Metadata", "EARoot/EA1/EA3/EA19/EA3442.htm", "175.png", "31242", "0", "", "Logical diagram0","{5A9367F3-C40B-46bb-B963-673D3578B7E9}");
+tocTab[tocTab.length] = new Array("0.1.3.19:4", "", "Context Diagram: Package Suppliers of Service Model", "EARoot/EA1/EA3/EA19/EA3444.htm", "175.png", "31240", "0", "", "Logical diagram0","{CAF1A5F7-1688-43a1-BDED-6A606D586A0F}");
+tocTab[tocTab.length] = new Array("0.1.3.19:5", "", "Main", "EARoot/EA1/EA3/EA19/EA3446.htm", "175.png", "31239", "0", "", "Logical diagram0","{19177B14-D8F8-43ce-9B86-7A7AE45C2A7E}");
+tocTab[tocTab.length] = new Array("0.1.3.19.1", "1", "«Leaf» Service Metadata", "EARoot/EA1/EA3/EA19/EA3448.htm", "4.png", "", "", "{4A91FCF3-D25A-4870-8F88-F1E6E31774D2}", "Package");
+tocTab[tocTab.length] = new Array("0.1.3.19.2", "1", "«Leaf» Service Model", "EARoot/EA1/EA3/EA19/EA3449.htm", "4.png", "", "", "{61DB5DDD-66B3-47a7-801E-D24236B6D9EA}", "Package");

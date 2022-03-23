@@ -1,0 +1,10 @@
+tocTab[tocTab.length] = new Array("0.1.3.7.1.3.1:1", "", "Context Diagram: ClockTime", "EARoot/EA1/EA3/EA7/EA1/EA3/EA1/EA1553.htm", "175.png", "30580", "0", "", "Logical diagram0","{9066C89E-2D5F-4714-A054-AC117C7846BB}");
+tocTab[tocTab.length] = new Array("0.1.3.7.1.3.1:2", "", "Context Diagram: Date", "EARoot/EA1/EA3/EA7/EA1/EA3/EA1/EA1555.htm", "175.png", "30575", "0", "", "Logical diagram0","{4579922F-5111-4b87-8611-8953156AD23C}");
+tocTab[tocTab.length] = new Array("0.1.3.7.1.3.1:3", "", "Context Diagram: DatePrecision", "EARoot/EA1/EA3/EA7/EA1/EA3/EA1/EA1557.htm", "175.png", "30577", "0", "", "Logical diagram0","{E17AC96B-1287-4224-948C-1A3245F838A1}");
+tocTab[tocTab.length] = new Array("0.1.3.7.1.3.1:4", "", "Context Diagram: DateTime", "EARoot/EA1/EA3/EA7/EA1/EA3/EA1/EA1559.htm", "175.png", "30578", "0", "", "Logical diagram0","{A2112E8E-E491-474b-B61C-436E307DA054}");
+tocTab[tocTab.length] = new Array("0.1.3.7.1.3.1:5", "", "Date and Time", "EARoot/EA1/EA3/EA7/EA1/EA3/EA1/EA1561.htm", "175.png", "30579", "0", "", "Logical diagram0","{013605B7-2E5E-451e-82DD-229D38E710B8}");
+tocTab[tocTab.length] = new Array("0.1.3.7.1.3.1:6", "", "Main", "EARoot/EA1/EA3/EA7/EA1/EA3/EA1/EA1563.htm", "175.png", "30576", "0", "", "Logical diagram0","{47581C14-E897-447e-98A3-D9527886D427}");
+tocTab[tocTab.length] = new Array("0.1.3.7.1.3.1:7", "", "«Type» ClockTime", "EARoot/EA1/EA3/EA7/EA1/EA3/EA1/EA1565.htm", "5.png", "56148", "0", "", "Class0","{47C07903-9CF4-47d3-AB12-B656977FC995}");
+tocTab[tocTab.length] = new Array("0.1.3.7.1.3.1:8", "", "«Type» Date", "EARoot/EA1/EA3/EA7/EA1/EA3/EA1/EA1566.htm", "5.png", "56150", "0", "", "Class0","{8F39BC74-02D2-4a24-A39F-61FC4650AC98}");
+tocTab[tocTab.length] = new Array("0.1.3.7.1.3.1:9", "", "«Type» DatePrecision", "EARoot/EA1/EA3/EA7/EA1/EA3/EA1/EA1567.htm", "5.png", "56151", "0", "", "Class0","{FB2D0F96-15C4-4ebc-AB06-D9A6FAF6459E}");
+tocTab[tocTab.length] = new Array("0.1.3.7.1.3.1:10", "", "«Type» DateTime", "EARoot/EA1/EA3/EA7/EA1/EA3/EA1/EA1568.htm", "5.png", "56149", "0", "", "Class0","{826D309F-74BD-4536-B57D-05D7F792B82C}");

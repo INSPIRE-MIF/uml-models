@@ -1,0 +1,10 @@
+tocTab[tocTab.length] = new Array("0.1.3.7.1.3.5:1", "", "Character String", "EARoot/EA1/EA3/EA7/EA1/EA3/EA5/EA1611.htm", "175.png", "30600", "0", "", "Logical diagram0","{F0D07B9B-2872-47f4-8AE3-1A2B3C6AD6AB}");
+tocTab[tocTab.length] = new Array("0.1.3.7.1.3.5:2", "", "Context Diagram: Character", "EARoot/EA1/EA3/EA7/EA1/EA3/EA5/EA1613.htm", "175.png", "30596", "0", "", "Logical diagram0","{3E2F723C-A18B-4c71-847D-A5EBBD982994}");
+tocTab[tocTab.length] = new Array("0.1.3.7.1.3.5:3", "", "Context Diagram: CharacterSetCode", "EARoot/EA1/EA3/EA7/EA1/EA3/EA5/EA1615.htm", "175.png", "30598", "0", "", "Logical diagram0","{C81C8983-7142-45e8-ACA9-9EB59541B6BB}");
+tocTab[tocTab.length] = new Array("0.1.3.7.1.3.5:4", "", "Context Diagram: CharacterString", "EARoot/EA1/EA3/EA7/EA1/EA3/EA5/EA1617.htm", "175.png", "30597", "0", "", "Logical diagram0","{B10AA7ED-FCFA-4483-A386-5D9CBE05C7BC}");
+tocTab[tocTab.length] = new Array("0.1.3.7.1.3.5:5", "", "Context Diagram: Sequence&lt;Character&gt;", "EARoot/EA1/EA3/EA7/EA1/EA3/EA5/EA1619.htm", "175.png", "30599", "0", "", "Logical diagram0","{1696ED89-BC06-43c5-9409-FC9BCA307F8F}");
+tocTab[tocTab.length] = new Array("0.1.3.7.1.3.5:6", "", "«Type» Character", "EARoot/EA1/EA3/EA7/EA1/EA3/EA5/EA1621.htm", "5.png", "56164", "0", "", "Class0","{297B0B2A-F6E8-43cd-B712-28AF4879CD41}");
+tocTab[tocTab.length] = new Array("0.1.3.7.1.3.5:7", "", "«CodeList» CharacterSetCode", "EARoot/EA1/EA3/EA7/EA1/EA3/EA5/EA1622.htm", "5.png", "56168", "0", "", "Class0","{F14E01C3-21C3-4722-8A67-07C06E84A058}");
+tocTab[tocTab.length] = new Array("0.1.3.7.1.3.5:8", "", "«Type» CharacterString", "EARoot/EA1/EA3/EA7/EA1/EA3/EA5/EA1623.htm", "5.png", "56166", "0", "", "Class0","{AF7C81A6-B1C1-4469-A09F-B97989024A14}");
+tocTab[tocTab.length] = new Array("0.1.3.7.1.3.5:9", "", "«Type» OCL", "EARoot/EA1/EA3/EA7/EA1/EA3/EA5/EA1624.htm", "5.png", "56165", "0", "", "Class0","{40CE2D60-26F8-4478-8E43-799AAB3F3A89}");
+tocTab[tocTab.length] = new Array("0.1.3.7.1.3.5:10", "", "«Type» Sequence&lt;Character&gt;", "EARoot/EA1/EA3/EA7/EA1/EA3/EA5/EA1625.htm", "5.png", "56167", "0", "", "Class0","{D09896E2-176C-4fea-81AF-9EB395766959}");

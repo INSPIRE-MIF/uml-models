@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("0.2.3.19.2:1", "", "Grid", "EARoot/EA2/EA3/EA19/EA2/EA8823.htm", "175.png", "27517", "0", "", "Logical diagram0","{750F05EB-D748-477b-B6D4-31C3E7727AA9}");
+tocTab[tocTab.length] = new Array("0.2.3.19.2:2", "", "«dataType» GridPosition", "EARoot/EA2/EA3/EA19/EA2/EA8825.htm", "5.png", "50306", "0", "", "Class0","{E0CEB038-8FB2-496d-B8BA-3284B5C88A04}");
+tocTab[tocTab.length] = new Array("0.2.3.19.2:3", "", "«featureType» StatisticalGrid", "EARoot/EA2/EA3/EA19/EA2/EA8826.htm", "5.png", "50303", "0", "", "Class0","{4031D777-FF89-4e42-8CF5-63DF8FA1FEE0}");
+tocTab[tocTab.length] = new Array("0.2.3.19.2:4", "", "«featureType» StatisticalGridCell", "EARoot/EA2/EA3/EA19/EA2/EA8827.htm", "5.png", "50305", "0", "", "Class0","{8E596C87-DAB3-4d45-89AA-361974FCA6BB}");
+tocTab[tocTab.length] = new Array("0.2.3.19.2:5", "", "«union» StatisticalGridResolution", "EARoot/EA2/EA3/EA19/EA2/EA8828.htm", "5.png", "50304", "0", "", "Class0","{8D9B6325-F49A-4a07-BE2A-50D9AE663223}");

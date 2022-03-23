@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("0.2.3.8:1", "", "Dependencies HB", "EARoot/EA2/EA3/EA8/EA8815.htm", "176.png", "32533", "0", "", "Package diagram0","{EF35A7F6-AE01-4864-878A-DF451549A7CB}");
+tocTab[tocTab.length] = new Array("0.2.3.8.1", "1", "«deprecated» Habitats and Biotopes-Annex1", "EARoot/EA2/EA3/EA8/EA8817.htm", "4.png", "", "", "{0FE29E6D-538C-4bff-92E1-E40FA9193942}", "Package");
+tocTab[tocTab.length] = new Array("0.2.3.8.2", "1", "«deprecated» HabitatsAndBiotopes - Coverage", "EARoot/EA2/EA3/EA8/EA8819.htm", "4.png", "", "", "{D3E03A75-7130-41c9-9079-0B56773A6F8E}", "Package");
+tocTab[tocTab.length] = new Array("0.2.3.8.3", "1", "«applicationSchema» HabitatsAndBiotopes", "EARoot/EA2/EA3/EA8/EA8818.htm", "4.png", "", "", "{1FD4001A-13BB-439f-BD03-CCA50E1C774D}", "Package");
+tocTab[tocTab.length] = new Array("0.2.3.8.4", "1", "«applicationSchema» HabitatsAndBiotopesDistribution", "EARoot/EA2/EA3/EA8/EA8820.htm", "4.png", "", "", "{8C504B9A-87F9-4461-BF4D-4E2A8DB6C59D}", "Package");

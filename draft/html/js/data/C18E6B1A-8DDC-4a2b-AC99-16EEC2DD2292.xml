@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("0.1.3.28.6:1", "", "Context Diagram: CompassPoint", "EARoot/EA1/EA3/EA28/EA6/EA5137.htm", "175.png", "31853", "0", "", "Logical diagram0","{70ACBE0A-BFBF-41ad-B544-60ABA7FDA8B3}");
+tocTab[tocTab.length] = new Array("0.1.3.28.6:2", "", "Context Diagram: Direction", "EARoot/EA1/EA3/EA28/EA6/EA5139.htm", "175.png", "31852", "0", "", "Logical diagram0","{C7D365F7-BDEF-4dbb-B7B2-B65E1695095B}");
+tocTab[tocTab.length] = new Array("0.1.3.28.6:3", "", "Figure D.65 ? Direction", "EARoot/EA1/EA3/EA28/EA6/EA5141.htm", "175.png", "31851", "0", "", "Logical diagram0","{8DE8E057-4833-453b-836E-BE2BC3D9C3B8}");
+tocTab[tocTab.length] = new Array("0.1.3.28.6:4", "", "«Enumeration» CompassPoint", "EARoot/EA1/EA3/EA28/EA6/EA5143.htm", "5.png", "57180", "0", "", "Class0","{6BE5505F-A022-49a8-B8C4-D89ED7583698}");
+tocTab[tocTab.length] = new Array("0.1.3.28.6:5", "", "«Union» Direction", "EARoot/EA1/EA3/EA28/EA6/EA5144.htm", "5.png", "57181", "0", "", "Class0","{B39664BE-DF7B-4c25-9F43-EEDC93DF9E7C}");

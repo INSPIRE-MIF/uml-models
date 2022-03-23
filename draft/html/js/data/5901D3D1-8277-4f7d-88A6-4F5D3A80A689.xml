@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.2.2.3.3:1", "", "LandCoverNomenclature", "EARoot/EA2/EA2/EA3/EA3/EA7876.htm", "175.png", "32427", "0", "", "Logical diagram0","{48F6D1F5-0005-449b-9354-AA9D552B9EFA}");
+tocTab[tocTab.length] = new Array("0.2.2.3.3:2", "", "«codeList» CorineValue", "EARoot/EA2/EA2/EA3/EA3/EA7878.htm", "5.png", "58769", "0", "", "Class0","{E023A3AF-C3FF-4eb2-8EB1-B9428D7CB094}");
+tocTab[tocTab.length] = new Array("0.2.2.3.3:3", "", "«codeList» LandCoverClassValue", "EARoot/EA2/EA2/EA3/EA3/EA7879.htm", "5.png", "58767", "0", "", "Class0","{554CC337-5F08-4896-B546-CDA59B3292A0}");
+tocTab[tocTab.length] = new Array("0.2.2.3.3:4", "", "«dataType» LandCoverNomenclature", "EARoot/EA2/EA2/EA3/EA3/EA7880.htm", "5.png", "58768", "0", "", "Class0","{AB6A8E09-98FB-4b98-9A88-861383F21900}");

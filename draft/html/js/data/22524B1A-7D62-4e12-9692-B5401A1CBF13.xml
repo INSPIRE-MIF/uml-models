@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.2.3.19.2:1", "", "Coverage SD", "EARoot/EA2/EA3/EA19/EA2/EA9505.htm", "175.png", "32612", "0", "", "Logical diagram0","{4F17CEB3-6828-40be-AB8D-E7F961DF41A7}");
+tocTab[tocTab.length] = new Array("0.2.3.19.2:2", "", "Overview SD", "EARoot/EA2/EA3/EA19/EA2/EA9507.htm", "175.png", "32611", "0", "", "Logical diagram0","{C81656BB-8FBD-4cf9-B595-CEF8C4CC9084}");
+tocTab[tocTab.length] = new Array("0.2.3.19.2:3", "", "«featureType» SpeciesDistributionCoverage", "EARoot/EA2/EA3/EA19/EA2/EA9515.htm", "5.png", "60033", "0", "", "Class0","{E82EB42E-464D-4f4a-A60C-2BE197C9EFEA}");
+tocTab[tocTab.length] = new Array("0.2.3.19.2:4", "", "«featureType» SpeciesDistributionUnitCoverage", "EARoot/EA2/EA3/EA19/EA2/EA9516.htm", "5.png", "60028", "0", "", "Class0","{4594F4EC-8754-4252-9BF5-2AA4963B72FA}");

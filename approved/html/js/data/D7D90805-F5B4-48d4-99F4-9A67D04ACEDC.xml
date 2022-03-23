@@ -1,0 +1,12 @@
+tocTab[tocTab.length] = new Array("0.1.3.15.4:1", "", "Context Diagram: MI_Band", "EARoot/EA1/EA3/EA15/EA4/EA2946.htm", "175.png", "26049", "0", "", "Logical diagram0","{1D2C8480-E64F-449b-806B-867EA7CE2090}");
+tocTab[tocTab.length] = new Array("0.1.3.15.4:2", "", "Context Diagram: MI_BandDefinition", "EARoot/EA1/EA3/EA15/EA4/EA2948.htm", "175.png", "26047", "0", "", "Logical diagram0","{3B324B97-71D1-40e3-BF20-D4799A3D3ABE}");
+tocTab[tocTab.length] = new Array("0.1.3.15.4:3", "", "Context Diagram: MI_CoverageDescription", "EARoot/EA1/EA3/EA15/EA4/EA2950.htm", "175.png", "26050", "0", "", "Logical diagram0","{174675D1-AF06-4975-AFD8-C49ADAC8B195}");
+tocTab[tocTab.length] = new Array("0.1.3.15.4:4", "", "Context Diagram: MI_ImageDescription", "EARoot/EA1/EA3/EA15/EA4/EA2952.htm", "175.png", "26048", "0", "", "Logical diagram0","{5D2B587E-F680-4e9a-AC55-3B964E063E03}");
+tocTab[tocTab.length] = new Array("0.1.3.15.4:5", "", "Fig A.7 - Content information", "EARoot/EA1/EA3/EA15/EA4/EA2954.htm", "175.png", "26046", "0", "", "Logical diagram0","{FBD2AB8F-1140-4f8a-B7A3-02BD61414565}");
+tocTab[tocTab.length] = new Array("0.1.3.15.4:6", "", "MI_Band", "EARoot/EA1/EA3/EA15/EA4/EA2956.htm", "5.png", "47369", "0", "", "Class0","{7EE51687-12B8-42b5-BEF1-EE15F978F2B8}");
+tocTab[tocTab.length] = new Array("0.1.3.15.4:7", "", "«CodeList» MI_BandDefinition", "EARoot/EA1/EA3/EA15/EA4/EA2957.htm", "5.png", "47373", "0", "", "Class0","{E1F3A40C-D9FC-4f8c-A754-6C0E6D6CAFA5}");
+tocTab[tocTab.length] = new Array("0.1.3.15.4:8", "", "MI_CoverageDescription", "EARoot/EA1/EA3/EA15/EA4/EA2958.htm", "5.png", "47371", "0", "", "Class0","{AE5F8877-8E4A-4a8f-B8D3-B3DE6321804A}");
+tocTab[tocTab.length] = new Array("0.1.3.15.4:9", "", "MI_ImageDescription", "EARoot/EA1/EA3/EA15/EA4/EA2959.htm", "5.png", "47374", "0", "", "Class0","{F59686CD-0ED4-4def-9603-B952E43E875D}");
+tocTab[tocTab.length] = new Array("0.1.3.15.4:10", "", "«CodeList» MI_PolarisationOrientationCode", "EARoot/EA1/EA3/EA15/EA4/EA2960.htm", "5.png", "47370", "0", "", "Class0","{A5377685-3C7D-447a-BC32-68329974050E}");
+tocTab[tocTab.length] = new Array("0.1.3.15.4:11", "", "MI_RangeElementDescription", "EARoot/EA1/EA3/EA15/EA4/EA2961.htm", "5.png", "47368", "0", "", "Class0","{52C15416-BBD2-42c2-98E3-BA7E5506D6E1}");
+tocTab[tocTab.length] = new Array("0.1.3.15.4:12", "", "«CodeList» MI_TransferFunctionTypeCode", "EARoot/EA1/EA3/EA15/EA4/EA2962.htm", "5.png", "47372", "0", "", "Class0","{DE9FAF7F-67B8-492e-A1D2-48CC38D2987D}");

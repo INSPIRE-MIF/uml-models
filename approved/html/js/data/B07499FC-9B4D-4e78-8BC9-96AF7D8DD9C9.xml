@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.3.1.6.3:1", "", "Specialised Observations  - Overview", "EARoot/EA3/EA1/EA6/EA3/EA9053.htm", "175.png", "27553", "0", "", "Logical diagram0","{B0352BA5-A541-4ff1-A6FF-A16078859E4C}");
+tocTab[tocTab.length] = new Array("0.3.1.6.3.1", "1", "«leaf» Gridded Observations", "EARoot/EA3/EA1/EA6/EA3/EA9056.htm", "4.png", "", "", "{6BBCD581-CEEF-4a40-9544-00C2E8C5FD66}", "Package");
+tocTab[tocTab.length] = new Array("0.3.1.6.3.2", "1", "«leaf» Point Observations", "EARoot/EA3/EA1/EA6/EA3/EA9058.htm", "4.png", "", "", "{33893E4A-0407-4dd0-9271-32CA704366A8}", "Package");
+tocTab[tocTab.length] = new Array("0.3.1.6.3.3", "1", "«leaf» Trajectory and Profile Observations", "EARoot/EA3/EA1/EA6/EA3/EA9060.htm", "4.png", "", "", "{F023FA74-4F30-429b-8304-3011246C3C98}", "Package");

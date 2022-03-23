@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.2.3.21.1.3.3.7:1", "", "Water Network", "EARoot/EA2/EA3/EA21/EA1/EA3/EA3/EA7/EA9790.htm", "175.png", "32654", "0", "", "Logical diagram0","{6D0E1DDA-338B-481e-8E82-E3D8B6CE446B}");
+tocTab[tocTab.length] = new Array("0.2.3.21.1.3.3.7:2", "", "«codeList» WaterAppurtenanceTypeValue", "EARoot/EA2/EA3/EA21/EA1/EA3/EA3/EA7/EA9792.htm", "5.png", "60228", "0", "", "Class0","{1D4157C4-CD57-4c06-86D7-F254446D0001}");
+tocTab[tocTab.length] = new Array("0.2.3.21.1.3.3.7:3", "", "«featureType» WaterPipe", "EARoot/EA2/EA3/EA21/EA1/EA3/EA3/EA7/EA9793.htm", "5.png", "60227", "0", "", "Class0","{1774991C-9287-41c0-8E82-206A40306998}");
+tocTab[tocTab.length] = new Array("0.2.3.21.1.3.3.7:4", "", "«codeList» WaterTypeValue", "EARoot/EA2/EA3/EA21/EA1/EA3/EA3/EA7/EA9794.htm", "5.png", "60229", "0", "", "Class0","{7A422E94-0003-461a-A9E2-77778395D557}");

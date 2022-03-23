@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.2.1.2.3.2.5:1", "", "Boundary based analysis", "EARoot/EA2/EA1/EA2/EA3/EA2/EA5/EA7169.htm", "180.png", "32306", "0", "", "Use Case diagram0","{2B77054D-76BC-4a6b-A829-617DE5D9F86A}");
+tocTab[tocTab.length] = new Array("0.2.1.2.3.2.5:2", "", "Boundary based analysis", "EARoot/EA2/EA1/EA2/EA3/EA2/EA5/EA7171.htm", "7.png", "58304", "0", "", "UseCase0","{BCAE0FC0-3441-4fd1-8760-BD05ED0F8FB5}");
+tocTab[tocTab.length] = new Array("0.2.1.2.3.2.5:3", "", "Perform analysis", "EARoot/EA2/EA1/EA2/EA3/EA2/EA5/EA7172.htm", "7.png", "58302", "0", "", "UseCase0","{0D78EB4A-7B92-4f97-826C-BACA0D6A4BAE}");
+tocTab[tocTab.length] = new Array("0.2.1.2.3.2.5:4", "", "Select part of a boundary", "EARoot/EA2/EA1/EA2/EA3/EA2/EA5/EA7173.htm", "7.png", "58303", "0", "", "UseCase0","{7F04E75A-802C-46d5-B1E6-2F12241D61AB}");

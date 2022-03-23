@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.1.4.2.12:1", "", "Categorical (Domain Range) Timeseries", "EARoot/EA1/EA4/EA2/EA12/EA6968.htm", "175.png", "32268", "0", "", "Logical diagram0","{CCEF2088-09B2-47de-974B-884CC84F95C5}");
+tocTab[tocTab.length] = new Array("0.1.4.2.12:2", "", "«Type» AnnotationCoverage", "EARoot/EA1/EA4/EA2/EA12/EA6970.htm", "5.png", "58179", "0", "", "Class0","{ED44682D-8DAE-4d3a-9269-25153BC18920}");
+tocTab[tocTab.length] = new Array("0.1.4.2.12:3", "", "«FeatureType» CategoricalTimeseriesDomainRange", "EARoot/EA1/EA4/EA2/EA12/EA6971.htm", "5.png", "58178", "0", "", "Class0","{5B9A34CF-827C-48ac-9151-5398CBFDA18C}");
+tocTab[tocTab.length] = new Array("0.1.4.2.12:4", "", "«DataType» WML_AttributeValuesMeasure", "EARoot/EA1/EA4/EA2/EA12/EA6972.htm", "5.png", "58177", "0", "", "Class0","{2AAEE393-F1B9-4ec2-8CD6-F4718BD83555}");

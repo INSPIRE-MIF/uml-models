@@ -1,0 +1,9 @@
+tocTab[tocTab.length] = new Array("0.2.3.6.1:1", "", "EnergyResourcesBase: Overview", "EARoot/EA2/EA3/EA6/EA1/EA8457.htm", "175.png", "32495", "0", "", "Logical diagram0","{B02467AC-705D-4dd6-9888-2AC4EEC4F15D}");
+tocTab[tocTab.length] = new Array("0.2.3.6.1:2", "", "«codeList» ClassificationAndQuantificationFrameworkValue", "EARoot/EA2/EA3/EA6/EA1/EA8462.htm", "5.png", "59214", "0", "", "Class0","{1DF72F13-923F-4064-9115-9A131C8CF4C4}");
+tocTab[tocTab.length] = new Array("0.2.3.6.1:3", "", "«codeList» FossilFuelClassValue", "EARoot/EA2/EA3/EA6/EA1/EA8463.htm", "5.png", "59215", "0", "", "Class0","{2A298DF3-C1C7-4445-A144-4B2EA3CC567B}");
+tocTab[tocTab.length] = new Array("0.2.3.6.1:4", "", "«codeList» FossilFuelValue", "EARoot/EA2/EA3/EA6/EA1/EA8464.htm", "5.png", "59222", "0", "", "Class0","{FAACE861-ED32-4918-8C26-EF3FD289E065}");
+tocTab[tocTab.length] = new Array("0.2.3.6.1:5", "", "«codeList» RenewableAndWasteValue", "EARoot/EA2/EA3/EA6/EA1/EA8465.htm", "5.png", "59217", "0", "", "Class0","{3409A4D4-76FF-4cb3-A780-25825EC62E81}");
+tocTab[tocTab.length] = new Array("0.2.3.6.1:6", "", "«dataType» VerticalExtentRangeType", "EARoot/EA2/EA3/EA6/EA1/EA8466.htm", "5.png", "59216", "0", "", "Class0","{2F959726-F3B3-4c6c-AC9C-EE43D1C43625}");
+tocTab[tocTab.length] = new Array("0.2.3.6.1:7", "", "«dataType» VerticalExtentType", "EARoot/EA2/EA3/EA6/EA1/EA8467.htm", "5.png", "59213", "0", "", "Class0","{1C2B4649-A39E-4c21-8B37-EAA73B2D2131}");
+tocTab[tocTab.length] = new Array("0.2.3.6.1:8", "", "«union» VerticalExtentValue", "EARoot/EA2/EA3/EA6/EA1/EA8468.htm", "5.png", "59221", "0", "", "Class0","{DA872B75-13EC-45d9-9C45-EF2A462F851C}");
+tocTab[tocTab.length] = new Array("0.2.3.6.1:9", "", "«codeList» VerticalReferenceValue", "EARoot/EA2/EA3/EA6/EA1/EA8469.htm", "5.png", "59220", "0", "", "Class0","{5716FFB8-300F-4793-B100-D856CDC4B2F7}");

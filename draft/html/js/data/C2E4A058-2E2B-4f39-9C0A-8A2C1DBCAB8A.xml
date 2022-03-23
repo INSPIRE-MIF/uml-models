@@ -1,0 +1,7 @@
+tocTab[tocTab.length] = new Array("0.2.3.2.3:1", "", "Area Management, Restriction and Regulation Zones", "EARoot/EA2/EA3/EA2/EA3/EA8142.htm", "176.png", "32460", "0", "", "Package diagram0","{FA2C5664-CEBE-42f8-AD97-3C43D970AF4D}");
+tocTab[tocTab.length] = new Array("0.2.3.2.3:2", "", "Area Management, Restriction and Regulation Zones", "EARoot/EA2/EA3/EA2/EA3/EA8144.htm", "175.png", "32459", "0", "", "Logical diagram0","{694A9A05-A1F1-4d52-8E8D-517869834472}");
+tocTab[tocTab.length] = new Array("0.2.3.2.3:3", "", "Codelists", "EARoot/EA2/EA3/EA2/EA3/EA8146.htm", "175.png", "32461", "0", "", "Logical diagram0","{1E227567-93A4-472d-8EC5-F48D93E033C2}");
+tocTab[tocTab.length] = new Array("0.2.3.2.3:4", "", "«codeList» EnvironmentalDomain", "EARoot/EA2/EA3/EA2/EA3/EA8151.htm", "5.png", "58973", "0", "", "Class0","{7508A45F-5D8C-4f95-8552-B3CEF487CB71}");
+tocTab[tocTab.length] = new Array("0.2.3.2.3:5", "", "«featureType» ManagementRestrictionOrRegulationZone", "EARoot/EA2/EA3/EA2/EA3/EA8153.htm", "5.png", "58970", "0", "", "Class0","{4DD5AC35-4CEC-4825-8D54-FB4825BD49ED}");
+tocTab[tocTab.length] = new Array("0.2.3.2.3:6", "", "«codeList» SpecialisedZoneTypeCode", "EARoot/EA2/EA3/EA2/EA3/EA8154.htm", "5.png", "58974", "0", "", "Class0","{8491B863-3C0B-4a23-8372-79FE716B10DC}");
+tocTab[tocTab.length] = new Array("0.2.3.2.3:7", "", "«codeList» ZoneTypeCode", "EARoot/EA2/EA3/EA2/EA3/EA8155.htm", "5.png", "58969", "0", "", "Class0","{0D7887A2-445E-4975-A675-76C9004B3D97}");

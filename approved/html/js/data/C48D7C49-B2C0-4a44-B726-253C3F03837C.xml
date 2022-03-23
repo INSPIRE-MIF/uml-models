@@ -1,0 +1,2 @@
+tocTab[tocTab.length] = new Array("0.1.4.2.9:1", "", "Interleaved Measurement Timeseries Observation", "EARoot/EA1/EA4/EA2/EA9/EA6950.htm", "175.png", "27251", "0", "", "Logical diagram0","{04969FB6-AD72-4243-9868-9FEA724242FC}");
+tocTab[tocTab.length] = new Array("0.1.4.2.9:2", "", "«FeatureType» MeasurementTimeseriesTVPObservation", "EARoot/EA1/EA4/EA2/EA9/EA6952.htm", "5.png", "48962", "0", "", "Class0","{597674AF-0BB6-4230-8A25-B4D9E45974C4}");

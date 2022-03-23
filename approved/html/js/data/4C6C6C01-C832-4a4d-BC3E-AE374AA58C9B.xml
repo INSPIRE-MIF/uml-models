@@ -1,0 +1,2 @@
+tocTab[tocTab.length] = new Array("0.1.3.37.1.1.9:1", "", "Context diagram: OM_DiscreteCoverageObservation", "EARoot/EA1/EA3/EA37/EA1/EA1/EA9/EA6516.htm", "175.png", "27160", "0", "", "Logical diagram0","{918411C0-9456-4f1f-A252-9293A9C4A49A}");
+tocTab[tocTab.length] = new Array("0.1.3.37.1.1.9:2", "", "«FeatureType» OM_DiscreteCoverageObservation", "EARoot/EA1/EA3/EA37/EA1/EA1/EA9/EA6518.htm", "5.png", "48710", "0", "", "Class0","{713BDBED-90B0-467c-A7F5-5FE6AC16791B}");

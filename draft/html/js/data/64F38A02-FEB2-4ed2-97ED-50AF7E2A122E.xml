@@ -1,0 +1,2 @@
+tocTab[tocTab.length] = new Array("0.2.2.2.3.1", "1", "«applicationSchema» Geophysics", "EARoot/EA2/EA2/EA2/EA3/EA7790.htm", "4.png", "", "", "{80B58652-015A-49c8-8702-F87CBADAB2E2}", "Package");
+tocTab[tocTab.length] = new Array("0.2.2.2.3.2", "1", "«applicationSchema» GeophysicsExtension", "EARoot/EA2/EA2/EA2/EA3/EA7791.htm", "4.png", "", "", "{ECB3451E-8BC6-4e6f-B7C8-546EE95701D9}", "Package");

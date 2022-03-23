@@ -1,0 +1,7 @@
+tocTab[tocTab.length] = new Array("0.2.3.1.3.2.4:1", "", "Reporting", "EARoot/EA2/EA3/EA1/EA3/EA2/EA4/EA8013.htm", "180.png", "32444", "0", "", "Use Case diagram0","{3130D88E-5FD5-43ee-95DC-59BA2CD4175F}");
+tocTab[tocTab.length] = new Array("0.2.3.1.3.2.4:2", "", "Report Animal health", "EARoot/EA2/EA3/EA1/EA3/EA2/EA4/EA8015.htm", "7.png", "58871", "0", "", "UseCase0","{767A1FEE-9818-46ab-A801-908032877CA3}");
+tocTab[tocTab.length] = new Array("0.2.3.1.3.2.4:3", "", "Report environmental issues", "EARoot/EA2/EA3/EA1/EA3/EA2/EA4/EA8016.htm", "7.png", "58870", "0", "", "UseCase0","{71725009-682C-4b1a-9863-C4BA5854944E}");
+tocTab[tocTab.length] = new Array("0.2.3.1.3.2.4:4", "", "Report food safety", "EARoot/EA2/EA3/EA1/EA3/EA2/EA4/EA8017.htm", "7.png", "58873", "0", "", "UseCase0","{AD2EC9C1-CC0F-4d77-8A8B-5C2FBE8560A4}");
+tocTab[tocTab.length] = new Array("0.2.3.1.3.2.4:5", "", "Report sanitary issues (plant and animal)", "EARoot/EA2/EA3/EA1/EA3/EA2/EA4/EA8018.htm", "7.png", "58872", "0", "", "UseCase0","{AD0DA2FF-E82E-4bce-BE7F-7C4A6B17CBCA}");
+tocTab[tocTab.length] = new Array("0.2.3.1.3.2.4:6", "", "Report statistics AF", "EARoot/EA2/EA3/EA1/EA3/EA2/EA4/EA8019.htm", "7.png", "58875", "0", "", "UseCase0","{D82FF22F-10CD-4609-B758-484FACDC697D}");
+tocTab[tocTab.length] = new Array("0.2.3.1.3.2.4:7", "", "Reporting", "EARoot/EA2/EA3/EA1/EA3/EA2/EA4/EA8020.htm", "7.png", "58874", "0", "", "UseCase0","{B21BD356-F61C-4c46-B952-7677EB4049BB}");

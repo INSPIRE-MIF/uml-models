@@ -1,0 +1,8 @@
+tocTab[tocTab.length] = new Array("0.2.3.6.4:1", "", "EnergyStatistics", "EARoot/EA2/EA3/EA6/EA4/EA8498.htm", "175.png", "32501", "0", "", "Logical diagram0","{BE767190-FDE6-4055-BF18-AA5B0B43B2CB}");
+tocTab[tocTab.length] = new Array("0.2.3.6.4:2", "", "«dataType» AggregatedEnergy", "EARoot/EA2/EA3/EA6/EA4/EA8500.htm", "5.png", "59244", "0", "", "Class0","{6E2DCEE6-EA43-4ec0-A3B6-0355D78C6FBB}");
+tocTab[tocTab.length] = new Array("0.2.3.6.4:3", "", "«dataType» AggregatedResource", "EARoot/EA2/EA3/EA6/EA4/EA8501.htm", "5.png", "59242", "0", "", "Class0","{16D0546A-2E11-4a49-91B5-752FA05DA4E9}");
+tocTab[tocTab.length] = new Array("0.2.3.6.4:4", "", "«codeList» EnergyProductValue", "EARoot/EA2/EA3/EA6/EA4/EA8502.htm", "5.png", "59241", "0", "", "Class0","{1663D00B-9203-44cb-9EF2-267F229C8FD6}");
+tocTab[tocTab.length] = new Array("0.2.3.6.4:5", "", "«dataType» EnergyStatistic", "EARoot/EA2/EA3/EA6/EA4/EA8503.htm", "5.png", "59246", "0", "", "Class0","{BBC71D5B-18A9-420a-96F7-CD8E8FF4D49B}");
+tocTab[tocTab.length] = new Array("0.2.3.6.4:6", "", "«featureType» EnergyStatisticalUnit", "EARoot/EA2/EA3/EA6/EA4/EA8504.htm", "5.png", "59243", "0", "", "Class0","{52E671EE-E4EE-45aa-B8A2-D54E8D4FA902}");
+tocTab[tocTab.length] = new Array("0.2.3.6.4:7", "", "«codeList» EnergyStatisticsAggregateValue", "EARoot/EA2/EA3/EA6/EA4/EA8505.htm", "5.png", "59245", "0", "", "Class0","{75D1DCB9-AC29-4afe-A455-3417D8698226}");
+tocTab[tocTab.length] = new Array("0.2.3.6.4:8", "", "«union» ResourceType", "EARoot/EA2/EA3/EA6/EA4/EA8506.htm", "5.png", "59247", "0", "", "Class0","{EA7CDD55-F17E-4592-9668-4C11A62AD5C9}");

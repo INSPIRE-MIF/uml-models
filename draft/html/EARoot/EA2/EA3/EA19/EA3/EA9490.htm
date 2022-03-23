@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Species Distribution Extension</title>
+<link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA9491.png" usemap="#EA9491" border="0" />
+
+<MAP NAME="EA9491">
+<area shape="rect" coords="512,59,676,155" href="../../../../EA1/EA3/EA37/EA1/EA1/EA1/EA6473.htm" target="_self">
+<area shape="rect" coords="491,274,698,374" href="../../../../EA3/EA1/EA6/EA1/EA9877.htm" target="_self">
+<area shape="rect" coords="74,31,382,229" href="../EA4/EA9524.htm" target="_self">
+<area shape="rect" coords="280,418,513,533" href="EA9499.htm" target="_self">
+<area shape="rect" coords="15,637,329,762" href="EA9498.htm" target="_self">
+<area shape="rect" coords="527,440,724,529" href="EA9497.htm" target="_self">
+<area shape="rect" coords="29,434,263,513" href="EA9496.htm" target="_self">
+<area shape="rect" coords="29,940,363,1065" href="EA9493.htm" target="_self">
+<area shape="rect" coords="57,286,317,362" href="EA9501.htm" target="_self">
+<area shape="rect" coords="10,799,260,924" href="EA9492.htm" target="_self">
+<area shape="rect" coords="46,10,414,244" href="EA9500.htm" target="_self">
+<area shape="rect" coords="485,41,754,175" href="EA9495.htm" target="_self">
+<area shape="rect" coords="472,245,713,387" href="EA9494.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">Species Distribution Extension : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">2/22/2012 4:38:17 PM</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">4/25/2012 11:22:39 AM</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">andfr</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{AFB5345F-7114-49f7-8555-D4E535C6F721}</td>
+		</tr>
+	</table>
+	
+</div>
+ 
+</body>
+</html>

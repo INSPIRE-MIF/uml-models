@@ -1,0 +1,10 @@
+tocTab[tocTab.length] = new Array("0.1.3.13.12:1", "", "Context Diagram: MD_DatatypeCode", "EARoot/EA1/EA3/EA13/EA12/EA2660.htm", "175.png", "30973", "0", "", "Logical diagram0","{E3A88DC1-5E8D-4e11-B2BB-38AB66F3D2AD}");
+tocTab[tocTab.length] = new Array("0.1.3.13.12:2", "", "Context Diagram: MD_ExtendedElementInformation", "EARoot/EA1/EA3/EA13/EA12/EA2662.htm", "175.png", "30970", "0", "", "Logical diagram0","{BFE3416D-E4D0-49fe-B273-B8F7D15DB004}");
+tocTab[tocTab.length] = new Array("0.1.3.13.12:3", "", "Context Diagram: MD_MetadataExtensionInformation", "EARoot/EA1/EA3/EA13/EA12/EA2664.htm", "175.png", "30971", "0", "", "Logical diagram0","{381A2DB4-5279-4ab0-93D8-E5F5685FD29B}");
+tocTab[tocTab.length] = new Array("0.1.3.13.12:4", "", "Context Diagram: MD_ObligationCode", "EARoot/EA1/EA3/EA13/EA12/EA2666.htm", "175.png", "30972", "0", "", "Logical diagram0","{F7DE10CB-DE84-44f7-ACFA-430E620E2D97}");
+tocTab[tocTab.length] = new Array("0.1.3.13.12:5", "", "Fig A.13 : Metadata extension information", "EARoot/EA1/EA3/EA13/EA12/EA2668.htm", "175.png", "30968", "0", "", "Logical diagram0","{46F61FB3-1AA9-4730-A58D-7E7F1B63D29B}");
+tocTab[tocTab.length] = new Array("0.1.3.13.12:6", "", "Main", "EARoot/EA1/EA3/EA13/EA12/EA2670.htm", "175.png", "30969", "0", "", "Logical diagram0","{B95E18A8-A009-48fc-8D3D-D2BD6F22160B}");
+tocTab[tocTab.length] = new Array("0.1.3.13.12:7", "", "«CodeList» MD_DatatypeCode", "EARoot/EA1/EA3/EA13/EA12/EA2673.htm", "5.png", "56470", "0", "", "Class0","{5981AB5F-4DF0-4896-98A3-5C2EBE8E5313}");
+tocTab[tocTab.length] = new Array("0.1.3.13.12:8", "", "MD_ExtendedElementInformation", "EARoot/EA1/EA3/EA13/EA12/EA2674.htm", "5.png", "56473", "0", "", "Class0","{AE468FD5-BB40-4d69-A702-CAED05E06B28}");
+tocTab[tocTab.length] = new Array("0.1.3.13.12:9", "", "MD_MetadataExtensionInformation", "EARoot/EA1/EA3/EA13/EA12/EA2675.htm", "5.png", "56469", "0", "", "Class0","{1BA38F15-3172-4f00-B645-24C9D6C1424A}");
+tocTab[tocTab.length] = new Array("0.1.3.13.12:10", "", "«enumeration» MD_ObligationCode", "EARoot/EA1/EA3/EA13/EA12/EA2676.htm", "5.png", "56471", "0", "", "Class0","{6B27C27F-9964-49a6-AE1D-312EDAB448BB}");

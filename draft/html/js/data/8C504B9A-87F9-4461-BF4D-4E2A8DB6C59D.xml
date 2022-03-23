@@ -1,0 +1,9 @@
+tocTab[tocTab.length] = new Array("0.2.3.8.4:1", "", "Habitats and Biotopes Distribution", "EARoot/EA2/EA3/EA8/EA4/EA8860.htm", "175.png", "32538", "0", "", "Logical diagram0","{A215F8C0-26C9-4c59-AF11-073306811B30}");
+tocTab[tocTab.length] = new Array("0.2.3.8.4:2", "", "«codeList» Article17SourceMethodValue", "EARoot/EA2/EA3/EA8/EA4/EA8862.htm", "5.png", "59533", "0", "", "Class0","{9AF5471A-679F-4112-89AB-9819054A4C4D}");
+tocTab[tocTab.length] = new Array("0.2.3.8.4:3", "", "«featureType» HabitatDistributionDataSet", "EARoot/EA2/EA3/EA8/EA4/EA8864.htm", "5.png", "59529", "0", "", "Class0","{0402B7EF-D3AE-4e59-BB0E-761236DFB33C}");
+tocTab[tocTab.length] = new Array("0.2.3.8.4:4", "", "«featureType» HabitatDistributionUnit", "EARoot/EA2/EA3/EA8/EA4/EA8865.htm", "5.png", "59531", "0", "", "Class0","{4BAE853F-E11B-4412-9E4A-0100311ACA56}");
+tocTab[tocTab.length] = new Array("0.2.3.8.4:5", "", "«dataType» HabitatType", "EARoot/EA2/EA3/EA8/EA4/EA8867.htm", "5.png", "59534", "0", "", "Class0","{AA84698E-86D4-4443-AC7C-3A7404612628}");
+tocTab[tocTab.length] = new Array("0.2.3.8.4:6", "", "«featureType» SourceInformation", "EARoot/EA2/EA3/EA8/EA4/EA8869.htm", "5.png", "59530", "0", "", "Class0","{43E6FAE1-A8F5-43c8-AADB-8B01FB292759}");
+tocTab[tocTab.length] = new Array("0.2.3.8.4:7", "", "«dataType» SourceMethodType", "EARoot/EA2/EA3/EA8/EA4/EA8870.htm", "5.png", "59532", "0", "", "Class0","{7FC9F832-3F2D-4954-8D61-7822026AD904}");
+tocTab[tocTab.length] = new Array("0.2.3.8.4:8", "", "«codeList» SourceMethodValue", "EARoot/EA2/EA3/EA8/EA4/EA8871.htm", "5.png", "59535", "0", "", "Class0","{C757AAF8-6A5B-42af-B2B9-CC7BF867BB89}");
+tocTab[tocTab.length] = new Array("0.2.3.8.4:9", "", "«dataType» SourceType", "EARoot/EA2/EA3/EA8/EA4/EA8872.htm", "5.png", "59536", "0", "", "Class0","{D6B46A94-EA92-4281-A6A2-30B7E08007E8}");

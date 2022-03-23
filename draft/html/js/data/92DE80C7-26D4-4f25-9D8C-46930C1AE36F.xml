@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("0.1.3.6.2.3:1", "", "Context Diagram: TP_Object", "EARoot/EA1/EA3/EA6/EA2/EA3/EA1274.htm", "175.png", "30475", "0", "", "Logical diagram0","{E7F97D7A-773A-4cb5-ACB0-0B6ADF413C96}");
+tocTab[tocTab.length] = new Array("0.1.3.6.2.3:2", "", "Fig 34: TP_Object", "EARoot/EA1/EA3/EA6/EA2/EA3/EA1276.htm", "175.png", "30474", "0", "", "Logical diagram0","{D9931488-EEC1-4f9e-8C44-07D6ADE46447}");
+tocTab[tocTab.length] = new Array("0.1.3.6.2.3:3", "", "«interface» TP_Object", "EARoot/EA1/EA3/EA6/EA2/EA3/EA1279.htm", "8.png", "56071", "0", "", "Interface0","{5D31E701-2A9D-451e-A6C0-042102657EC8}");

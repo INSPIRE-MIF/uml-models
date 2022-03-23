@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("0.3.1.2:1", "", "Gazetteer", "EARoot/EA3/EA1/EA2/EA9826.htm", "175.png", "32658", "0", "", "Logical diagram0","{2C22FAAE-9CB3-4d39-ACF1-69A3B514C65B}");
+tocTab[tocTab.length] = new Array("0.3.1.2:2", "", "«featureType» Gazetteer", "EARoot/EA3/EA1/EA2/EA9829.htm", "5.png", "60257", "0", "", "Class0","{55BF83E2-69BA-40f1-B02F-A1CC3D98FD04}");
+tocTab[tocTab.length] = new Array("0.3.1.2:3", "", "«codeList» IdentificationType", "EARoot/EA3/EA1/EA2/EA9830.htm", "5.png", "60260", "0", "", "Class0","{EED66D57-406F-4bb4-ADC6-77C2A5125582}");
+tocTab[tocTab.length] = new Array("0.3.1.2:4", "", "«featureType» LocationInstance", "EARoot/EA3/EA1/EA2/EA9831.htm", "5.png", "60256", "0", "", "Class0","{171107CB-6AFB-42af-AA17-859D74DE2B76}");
+tocTab[tocTab.length] = new Array("0.3.1.2:5", "", "«featureType» LocationType", "EARoot/EA3/EA1/EA2/EA9832.htm", "5.png", "60255", "0", "", "Class0","{0B21C51F-1D51-458b-B71E-062729E7507B}");

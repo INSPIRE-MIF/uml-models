@@ -1,0 +1,14 @@
+tocTab[tocTab.length] = new Array("0.2.1.6.2:1", "", "dataTypesOnly", "EARoot/EA2/EA1/EA6/EA2/EA7214.htm", "175.png", "32320", "0", "", "Logical diagram0","{97294AAD-20B0-4a55-8EBE-4287B60DF05F}");
+tocTab[tocTab.length] = new Array("0.2.1.6.2:2", "", "enumerationsOnly", "EARoot/EA2/EA1/EA6/EA2/EA7216.htm", "175.png", "32321", "0", "", "Logical diagram0","{F5C883CE-6727-4810-B209-8036DDFEAFB7}");
+tocTab[tocTab.length] = new Array("0.2.1.6.2:3", "", "featureTypesOnly", "EARoot/EA2/EA1/EA6/EA2/EA7218.htm", "175.png", "32319", "0", "", "Logical diagram0","{B0FB8528-7A54-49f0-AE00-230FE3B2C9C9}");
+tocTab[tocTab.length] = new Array("0.2.1.6.2:4", "", "Geographical Names Overview", "EARoot/EA2/EA1/EA6/EA2/EA7220.htm", "175.png", "32318", "0", "", "Logical diagram0","{0AF05C7E-CF1E-4ad6-8C9F-B260E606E0C3}");
+tocTab[tocTab.length] = new Array("0.2.1.6.2:5", "", "simpleView", "EARoot/EA2/EA1/EA6/EA2/EA7222.htm", "175.png", "32322", "0", "", "Logical diagram0","{88A16D53-8BB8-4dfe-8EF8-7BE7429D243A}");
+tocTab[tocTab.length] = new Array("0.2.1.6.2:6", "", "«dataType» GeographicalName", "EARoot/EA2/EA1/EA6/EA2/EA7226.htm", "5.png", "58331", "0", "", "Class0","{E548F6CD-653D-4dc7-AAF3-2E510C1453E0}");
+tocTab[tocTab.length] = new Array("0.2.1.6.2:7", "", "«codeList» GrammaticalGenderValue", "EARoot/EA2/EA1/EA6/EA2/EA7227.htm", "5.png", "58330", "0", "", "Class0","{D2B76038-A334-4b68-8AA9-8F66573C578B}");
+tocTab[tocTab.length] = new Array("0.2.1.6.2:8", "", "«codeList» GrammaticalNumberValue", "EARoot/EA2/EA1/EA6/EA2/EA7228.htm", "5.png", "58323", "0", "", "Class0","{15E8C10D-1557-429b-B101-6719D31EAD92}");
+tocTab[tocTab.length] = new Array("0.2.1.6.2:9", "", "«featureType» NamedPlace", "EARoot/EA2/EA1/EA6/EA2/EA7229.htm", "5.png", "58329", "0", "", "Class0","{8C3D164C-2A8F-4df9-A35F-C5CFBDE23ABC}");
+tocTab[tocTab.length] = new Array("0.2.1.6.2:10", "", "«codeList» NamedPlaceTypeValue", "EARoot/EA2/EA1/EA6/EA2/EA7230.htm", "5.png", "58328", "0", "", "Class0","{841A58C1-8E00-41e2-8282-F670BC42B1FD}");
+tocTab[tocTab.length] = new Array("0.2.1.6.2:11", "", "«codeList» NameStatusValue", "EARoot/EA2/EA1/EA6/EA2/EA7231.htm", "5.png", "58324", "0", "", "Class0","{270CF784-3E4F-4311-A015-A81C4F9A1F55}");
+tocTab[tocTab.length] = new Array("0.2.1.6.2:12", "", "«codeList» NativenessValue", "EARoot/EA2/EA1/EA6/EA2/EA7232.htm", "5.png", "58325", "0", "", "Class0","{3CE683B7-E04F-43af-92EB-C1DE57E6334E}");
+tocTab[tocTab.length] = new Array("0.2.1.6.2:13", "", "«dataType» PronunciationOfName", "EARoot/EA2/EA1/EA6/EA2/EA7233.htm", "5.png", "58326", "0", "", "Class0","{41767333-FDAA-4c02-A88E-D55E9DBF609E}");
+tocTab[tocTab.length] = new Array("0.2.1.6.2:14", "", "«dataType» SpellingOfName", "EARoot/EA2/EA1/EA6/EA2/EA7234.htm", "5.png", "58327", "0", "", "Class0","{67BC30C2-B4B5-4a94-9645-FF31C4F25E89}");

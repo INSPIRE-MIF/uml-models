@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("0.1.3.38.1.1", "1", "Data quality concepts", "EARoot/EA1/EA3/EA38/EA1/EA6655.htm", "4.png", "", "", "{407F6689-99D1-4072-B894-A7595AE5DF52}", "Package");
+tocTab[tocTab.length] = new Array("0.1.3.38.1.2", "1", "Data quality", "EARoot/EA1/EA3/EA38/EA1/EA6656.htm", "4.png", "", "", "{77367315-8FAB-4b77-9AFD-8C8C11F7339B}", "Package");
+tocTab[tocTab.length] = new Array("0.1.3.38.1.3", "1", "Data quality measures", "EARoot/EA1/EA3/EA38/EA1/EA6657.htm", "4.png", "", "", "{7184E515-B495-47a7-9F59-259BAA5B248C}", "Package");

@@ -1,0 +1,9 @@
+tocTab[tocTab.length] = new Array("0.2.2.3.2:1", "", "Land Cover Extension", "EARoot/EA2/EA2/EA3/EA2/EA7864.htm", "175.png", "32425", "0", "", "Logical diagram0","{F0A4113A-FB5B-4190-8486-7DDB11FE64E2}");
+tocTab[tocTab.length] = new Array("0.2.2.3.2:2", "", "LandCoverExtension", "EARoot/EA2/EA2/EA3/EA2/EA7866.htm", "175.png", "32426", "0", "", "Logical diagram0","{AFF65AC0-F87A-492c-9F32-37D576ECACED}");
+tocTab[tocTab.length] = new Array("0.2.2.3.2:3", "", "«dataType» CountableParameter", "EARoot/EA2/EA2/EA3/EA2/EA7869.htm", "5.png", "58765", "0", "", "Class0","{D9D0BC23-A656-4b25-B5B3-CA9952240936}");
+tocTab[tocTab.length] = new Array("0.2.2.3.2:4", "", "«featureType» LandCoverDataSet", "EARoot/EA2/EA2/EA3/EA2/EA7870.htm", "5.png", "58764", "0", "", "Class0","{D241F0B2-B3DA-4ef6-ABDE-B64BF2531856}");
+tocTab[tocTab.length] = new Array("0.2.2.3.2:5", "", "«dataType» LandCoverObservation", "EARoot/EA2/EA2/EA3/EA2/EA7871.htm", "5.png", "58759", "0", "", "Class0","{0F9662FC-98A1-4bb9-8DC9-A6C1EF0D78D7}");
+tocTab[tocTab.length] = new Array("0.2.2.3.2:6", "", "«featureType» LandCoverUnit", "EARoot/EA2/EA2/EA3/EA2/EA7872.htm", "5.png", "58760", "0", "", "Class0","{339BBF84-3E7A-439b-B375-E6165CFFDE69}");
+tocTab[tocTab.length] = new Array("0.2.2.3.2:7", "", "«dataType» ParameterType", "EARoot/EA2/EA2/EA3/EA2/EA7873.htm", "5.png", "58763", "0", "", "Class0","{B81734E1-F253-47c5-8AAE-38BB40D33EE9}");
+tocTab[tocTab.length] = new Array("0.2.2.3.2:8", "", "«dataType» PercentageParameter", "EARoot/EA2/EA2/EA3/EA2/EA7874.htm", "5.png", "58762", "0", "", "Class0","{7E231A94-7073-4ded-921C-3DFE6D3EF7A2}");
+tocTab[tocTab.length] = new Array("0.2.2.3.2:9", "", "«dataType» PresenceParameter", "EARoot/EA2/EA2/EA3/EA2/EA7875.htm", "5.png", "58761", "0", "", "Class0","{6DFB9831-B4F8-4efc-8188-3BF55CA6FE6A}");

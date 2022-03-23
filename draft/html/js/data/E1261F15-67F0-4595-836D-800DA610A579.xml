@@ -1,0 +1,11 @@
+tocTab[tocTab.length] = new Array("0.2.3.6.2:1", "", "EnergyResourcesVector: Overview", "EARoot/EA2/EA3/EA6/EA2/EA8470.htm", "175.png", "32496", "0", "", "Logical diagram0","{5EAFA506-A6D7-4422-AA34-5E0431BD1585}");
+tocTab[tocTab.length] = new Array("0.2.3.6.2:2", "", "EnergyResourcesVector: Core", "EARoot/EA2/EA3/EA6/EA2/EA8472.htm", "175.png", "32497", "0", "", "Logical diagram0","{004CD99F-7538-483d-941F-73B3C4DD1D4D}");
+tocTab[tocTab.length] = new Array("0.2.3.6.2:3", "", "EnergyResourcesVector: Datatypes and Codelists", "EARoot/EA2/EA3/EA6/EA2/EA8474.htm", "175.png", "32498", "0", "", "Logical diagram0","{9B262B30-8022-4888-9972-57CA842DBC9D}");
+tocTab[tocTab.length] = new Array("0.2.3.6.2:4", "", "«dataType» CalorificRangeType", "EARoot/EA2/EA3/EA6/EA2/EA8476.htm", "5.png", "59223", "0", "", "Class0","{34606962-2A40-46f7-92E1-73F5BD440539}");
+tocTab[tocTab.length] = new Array("0.2.3.6.2:5", "", "«union» CalorificValueType", "EARoot/EA2/EA3/EA6/EA2/EA8477.htm", "5.png", "59230", "0", "", "Class0","{F1DCD0E8-63FC-4f7e-81E6-577F903BF7B4}");
+tocTab[tocTab.length] = new Array("0.2.3.6.2:6", "", "«dataType» ExploitationPeriodType", "EARoot/EA2/EA3/EA6/EA2/EA8478.htm", "5.png", "59229", "0", "", "Class0","{F0C7E10A-D80B-4b91-B704-493C53655C4B}");
+tocTab[tocTab.length] = new Array("0.2.3.6.2:7", "", "«dataType» FossilFuelMeasure", "EARoot/EA2/EA3/EA6/EA2/EA8479.htm", "5.png", "59224", "0", "", "Class0","{58898317-26B3-40d5-9EC1-B09972B90963}");
+tocTab[tocTab.length] = new Array("0.2.3.6.2:8", "", "«featureType» FossilFuelResource", "EARoot/EA2/EA3/EA6/EA2/EA8480.htm", "5.png", "59227", "0", "", "Class0","{8EDEA9BB-0BDF-4ef9-A74A-28587D976E4E}");
+tocTab[tocTab.length] = new Array("0.2.3.6.2:9", "", "«dataType» FossilFuelResourceType", "EARoot/EA2/EA3/EA6/EA2/EA8481.htm", "5.png", "59225", "0", "", "Class0","{5A3A7568-A736-48f6-90F4-EA7EF6D4AEEB}");
+tocTab[tocTab.length] = new Array("0.2.3.6.2:10", "", "«featureType» RenewableAndWasteResource", "EARoot/EA2/EA3/EA6/EA2/EA8482.htm", "5.png", "59226", "0", "", "Class0","{8A1B6C44-12EF-4cba-B39F-19DFDD634B94}");
+tocTab[tocTab.length] = new Array("0.2.3.6.2:11", "", "«featureType» VectorEnergyResource", "EARoot/EA2/EA3/EA6/EA2/EA8483.htm", "5.png", "59228", "0", "", "Class0","{908A811B-9B0E-4e50-8460-9E85BC3091CB}");

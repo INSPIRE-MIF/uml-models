@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("0.2.3.16.1", "1", "PF Use Cases", "EARoot/EA2/EA3/EA16/EA9244.htm", "4.png", "", "", "{638CCA03-1D8A-44f3-B3A1-D654FF9A9F1E}", "Package");
+tocTab[tocTab.length] = new Array("0.2.3.16.2", "1", "«applicationSchema» ProductionAndIndustrialFacilities", "EARoot/EA2/EA3/EA16/EA9245.htm", "4.png", "", "", "{629EAF71-2AED-48b9-A61B-F813D6C6F39C}", "Package");
+tocTab[tocTab.length] = new Array("0.2.3.16.3", "1", "«applicationSchema» ProductionAndIndustrialFacilitiesExtension", "EARoot/EA2/EA3/EA16/EA9246.htm", "4.png", "", "", "{9F7CDB3D-904F-4500-A3EC-E45D7BDB2DE0}", "Package");

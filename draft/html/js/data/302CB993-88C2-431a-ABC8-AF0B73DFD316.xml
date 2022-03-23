@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.2.3.21.1.3.3.3:1", "", "Oil-Gas-Chemicals Network", "EARoot/EA2/EA3/EA21/EA1/EA3/EA3/EA3/EA9771.htm", "175.png", "32650", "0", "", "Logical diagram0","{C0B1E9B8-5810-438a-B841-2271C2891B14}");
+tocTab[tocTab.length] = new Array("0.2.3.21.1.3.3.3:2", "", "«codeList» OilGasChemicalsAppurtenanceTypeValue", "EARoot/EA2/EA3/EA21/EA1/EA3/EA3/EA3/EA9773.htm", "5.png", "60218", "0", "", "Class0","{F6B92ED4-40F6-41ec-BE6D-683C5E34E986}");
+tocTab[tocTab.length] = new Array("0.2.3.21.1.3.3.3:3", "", "«featureType» OilGasChemicalsPipe", "EARoot/EA2/EA3/EA21/EA1/EA3/EA3/EA3/EA9774.htm", "5.png", "60216", "0", "", "Class0","{0BD2A29C-62F0-44ec-88D4-39ECE24690FB}");
+tocTab[tocTab.length] = new Array("0.2.3.21.1.3.3.3:4", "", "«codeList» OilGasChemicalsProductTypeValue", "EARoot/EA2/EA3/EA21/EA1/EA3/EA3/EA3/EA9775.htm", "5.png", "60217", "0", "", "Class0","{B67C7B8C-ACD8-4825-B265-EEBC9DD1D603}");

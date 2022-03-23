@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("0.2.3.21.1.3.3.2:1", "", "Electricity Network", "EARoot/EA2/EA3/EA21/EA1/EA3/EA3/EA2/EA9767.htm", "175.png", "32649", "0", "", "Logical diagram0","{4D67F217-C2C9-4dfc-8919-DD7CAD35EBFC}");
+tocTab[tocTab.length] = new Array("0.2.3.21.1.3.3.2:2", "", "«codeList» ElectricityAppurtenanceTypeValue", "EARoot/EA2/EA3/EA21/EA1/EA3/EA3/EA2/EA9769.htm", "5.png", "60214", "0", "", "Class0","{BB5A165D-306D-468b-9B20-396BA4BC41E1}");
+tocTab[tocTab.length] = new Array("0.2.3.21.1.3.3.2:3", "", "«featureType» ElectricityCable", "EARoot/EA2/EA3/EA21/EA1/EA3/EA3/EA2/EA9770.htm", "5.png", "60215", "0", "", "Class0","{D183627C-BDB4-4765-84C2-EE7AECD4FC38}");

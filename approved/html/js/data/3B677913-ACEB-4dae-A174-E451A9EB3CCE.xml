@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.3.1.6.1:1", "", "Observation References", "EARoot/EA3/EA1/EA6/EA1/EA9041.htm", "175.png", "27549", "0", "", "Logical diagram0","{537604D6-84C7-4a3f-A1A9-6A015E4C6688}");
+tocTab[tocTab.length] = new Array("0.3.1.6.1:2", "", "ReferencesFromObservation", "EARoot/EA3/EA1/EA6/EA1/EA9043.htm", "175.png", "27551", "0", "", "Logical diagram0","{61795AD2-6B75-4e56-8CDD-900834BF6D0F}");
+tocTab[tocTab.length] = new Array("0.3.1.6.1:3", "", "ReferencesToObservation", "EARoot/EA3/EA1/EA6/EA1/EA9045.htm", "175.png", "27550", "0", "", "Logical diagram0","{B5478E14-EBA0-4a3b-93D8-D32D364820B3}");
+tocTab[tocTab.length] = new Array("0.3.1.6.1:4", "", "«featureType» ObservationSet", "EARoot/EA3/EA1/EA6/EA1/EA9047.htm", "5.png", "50457", "0", "", "Class0","{214290E0-4567-46b1-9A60-835C04A514B7}");

@@ -1,0 +1,16 @@
+tocTab[tocTab.length] = new Array("0.1.3.36.1:1", "", "ISO 19155", "EARoot/EA1/EA3/EA36/EA1/EA6411.htm", "175.png", "32148", "0", "", "Logical diagram0","{D035A6CD-BC85-4429-83D5-B952F5A523C7}");
+tocTab[tocTab.length] = new Array("0.1.3.36.1:2", "", "fig 04 PI_Data", "EARoot/EA1/EA3/EA36/EA1/EA6413.htm", "175.png", "32154", "0", "", "Logical diagram0","{005E712A-4CB5-4701-B9F9-AA7DFEE85386}");
+tocTab[tocTab.length] = new Array("0.1.3.36.1:3", "", "fig 05 PI_Service", "EARoot/EA1/EA3/EA36/EA1/EA6415.htm", "175.png", "32147", "0", "", "Logical diagram0","{4EBDE645-D8B3-411d-AFB2-FCB982EA4D23}");
+tocTab[tocTab.length] = new Array("0.1.3.36.1:4", "", "fig 06 Overall view of PI Platform", "EARoot/EA1/EA3/EA36/EA1/EA6417.htm", "175.png", "32153", "0", "", "Logical diagram0","{12F71B5B-C8C2-46c0-8DE7-345969CDC400}");
+tocTab[tocTab.length] = new Array("0.1.3.36.1:5", "", "fig 07 PI_PlaceIdentifier", "EARoot/EA1/EA3/EA36/EA1/EA6419.htm", "175.png", "32152", "0", "", "Logical diagram0","{38975F39-DD51-4318-AD7B-0CDF2A6392DD}");
+tocTab[tocTab.length] = new Array("0.1.3.36.1:6", "", "fig 08 PI_ReferenceSystem, PI_MatchingTable and PI_MatchedPISet", "EARoot/EA1/EA3/EA36/EA1/EA6421.htm", "175.png", "32151", "0", "", "Logical diagram0","{4C6ED19E-C2C9-43cb-BACC-D94B4BCD8066}");
+tocTab[tocTab.length] = new Array("0.1.3.36.1:7", "", "fig 09 PI matching service", "EARoot/EA1/EA3/EA36/EA1/EA6423.htm", "175.png", "32150", "0", "", "Logical diagram0","{CAB6CD74-9AAA-4da3-85BD-2A33BAC25D75}");
+tocTab[tocTab.length] = new Array("0.1.3.36.1:8", "", "fig 10 PI reference system service", "EARoot/EA1/EA3/EA36/EA1/EA6425.htm", "175.png", "32149", "0", "", "Logical diagram0","{F4BDDE52-FD4B-4616-B514-BC232CF38AE4}");
+tocTab[tocTab.length] = new Array("0.1.3.36.1:9", "", "«type» PI_Data", "EARoot/EA1/EA3/EA36/EA1/EA6428.htm", "5.png", "57865", "0", "", "Class0","{5808C7D7-FFD2-4090-856D-8D726B9C1C8B}");
+tocTab[tocTab.length] = new Array("0.1.3.36.1:10", "", "«type» PI_MatchedPISet", "EARoot/EA1/EA3/EA36/EA1/EA6429.htm", "5.png", "57863", "0", "", "Class0","{04C37F47-BDD5-4ecd-A2EE-8777032B0583}");
+tocTab[tocTab.length] = new Array("0.1.3.36.1:11", "", "PI_MatchingService", "EARoot/EA1/EA3/EA36/EA1/EA6430.htm", "5.png", "57862", "0", "", "Class0","{01562095-91A5-4031-B83F-FDD03EE4A759}");
+tocTab[tocTab.length] = new Array("0.1.3.36.1:12", "", "«type» PI_MatchingTable", "EARoot/EA1/EA3/EA36/EA1/EA6431.htm", "5.png", "57869", "0", "", "Class0","{ECFB01C2-AD93-4e30-B952-8BF53B5124AB}");
+tocTab[tocTab.length] = new Array("0.1.3.36.1:13", "", "«type» PI_PlaceIdentifier", "EARoot/EA1/EA3/EA36/EA1/EA6432.htm", "5.png", "57870", "0", "", "Class0","{EEC03AD4-667C-466e-AC75-1F9F66CA3109}");
+tocTab[tocTab.length] = new Array("0.1.3.36.1:14", "", "«type» PI_ReferenceSystem", "EARoot/EA1/EA3/EA36/EA1/EA6433.htm", "5.png", "57867", "0", "", "Class0","{D6F53179-0AE6-40dd-B118-F0797230680E}");
+tocTab[tocTab.length] = new Array("0.1.3.36.1:15", "", "PI_RSService", "EARoot/EA1/EA3/EA36/EA1/EA6434.htm", "5.png", "57864", "0", "", "Class0","{058509F7-9935-42a6-8A41-EC99832EBCBE}");
+tocTab[tocTab.length] = new Array("0.1.3.36.1:16", "", "PI_Service", "EARoot/EA1/EA3/EA36/EA1/EA6435.htm", "5.png", "57868", "0", "", "Class0","{EABE8541-2A5D-466b-A7F3-B4B1BA68C3AD}");

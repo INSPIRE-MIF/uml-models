@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("0.2.1.8.2:1", "", "Protected Sites Natura2000", "EARoot/EA2/EA1/EA8/EA2/EA7358.htm", "175.png", "32343", "0", "", "Logical diagram0","{D51DF87B-4A3E-4238-B9F7-2B0B84817C29}");
+tocTab[tocTab.length] = new Array("0.2.1.8.2:2", "", "«dataType» ProtectedEntityType", "EARoot/EA2/EA1/EA8/EA2/EA7364.htm", "5.png", "58417", "0", "", "Class0","{3B54303F-5FD1-4da7-99CA-C4559A42F60F}");
+tocTab[tocTab.length] = new Array("0.2.1.8.2:3", "", "«featureType» ProtectedSite", "EARoot/EA2/EA1/EA8/EA2/EA7365.htm", "5.png", "58422", "0", "", "Class0","{B56DEDED-58E1-448a-8C3C-6D3B028ECF36}");

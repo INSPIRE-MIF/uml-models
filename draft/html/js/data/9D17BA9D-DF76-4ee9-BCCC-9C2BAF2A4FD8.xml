@@ -1,0 +1,13 @@
+tocTab[tocTab.length] = new Array("0.1.3.5.4.1:1", "", "Context Diagram: IG_ClassifiedImage", "EARoot/EA1/EA3/EA5/EA4/EA1/EA752.htm", "175.png", "30300", "0", "", "Logical diagram0","{EA65E229-BF64-4890-A9A3-872E034D9480}");
+tocTab[tocTab.length] = new Array("0.1.3.5.4.1:2", "", "Context Diagram: IG_Coverage", "EARoot/EA1/EA3/EA5/EA4/EA1/EA754.htm", "175.png", "30299", "0", "", "Logical diagram0","{18025DDA-2218-4034-891B-232F768AC009}");
+tocTab[tocTab.length] = new Array("0.1.3.5.4.1:3", "", "Context Diagram: IG_Feature", "EARoot/EA1/EA3/EA5/EA4/EA1/EA756.htm", "175.png", "30297", "0", "", "Logical diagram0","{1EC4ED78-E6AF-4c75-AA87-D1961350B5A3}");
+tocTab[tocTab.length] = new Array("0.1.3.5.4.1:4", "", "Context Diagram: IG_SegmentedImage", "EARoot/EA1/EA3/EA5/EA4/EA1/EA758.htm", "175.png", "30298", "0", "", "Logical diagram0","{6DB8DCB1-E6C0-425e-B62B-C8BEACDAF1BC}");
+tocTab[tocTab.length] = new Array("0.1.3.5.4.1:5", "", "Figure 1 — Geographic imagery scenario", "EARoot/EA1/EA3/EA5/EA4/EA1/EA760.htm", "180.png", "30301", "0", "", "Use Case diagram0","{B67BE08A-D8EF-4798-9454-9D8AF4AF8C25}");
+tocTab[tocTab.length] = new Array("0.1.3.5.4.1:6", "", "Figure 13 — Image classification and understanding class diagram", "EARoot/EA1/EA3/EA5/EA4/EA1/EA762.htm", "175.png", "30302", "0", "", "Logical diagram0","{E8CABD0F-AC9C-4895-B525-3B207AE4C2CE}");
+tocTab[tocTab.length] = new Array("0.1.3.5.4.1:7", "", "IG_ClassifiedImage", "EARoot/EA1/EA3/EA5/EA4/EA1/EA766.htm", "5.png", "55904", "0", "", "Class0","{2A73CE6A-A600-470c-A226-39E8A529AE14}");
+tocTab[tocTab.length] = new Array("0.1.3.5.4.1:8", "", "IG_Feature", "EARoot/EA1/EA3/EA5/EA4/EA1/EA767.htm", "5.png", "55909", "0", "", "Class0","{CF4ED8FE-6D3B-4504-BF7E-8EDABF62E7FA}");
+tocTab[tocTab.length] = new Array("0.1.3.5.4.1:9", "", "IG_FeatureCoverage", "EARoot/EA1/EA3/EA5/EA4/EA1/EA768.htm", "5.png", "55907", "0", "", "Class0","{B1A372DF-62E3-4bc8-A20A-E7A65B71C9CB}");
+tocTab[tocTab.length] = new Array("0.1.3.5.4.1:10", "", "IG_GriddedFeature", "EARoot/EA1/EA3/EA5/EA4/EA1/EA769.htm", "5.png", "55910", "0", "", "Class0","{F47CD5F2-2190-4726-B37E-A146FA9CE9DB}");
+tocTab[tocTab.length] = new Array("0.1.3.5.4.1:11", "", "IG_GridScene", "EARoot/EA1/EA3/EA5/EA4/EA1/EA770.htm", "5.png", "55906", "0", "", "Class0","{A32CE4A1-5532-4821-A9F9-F7CFE86074C1}");
+tocTab[tocTab.length] = new Array("0.1.3.5.4.1:12", "", "IG_SegmentedImage", "EARoot/EA1/EA3/EA5/EA4/EA1/EA771.htm", "5.png", "55903", "0", "", "Class0","{09C86BC3-53F4-4ec6-9EC4-57CCC5466054}");
+tocTab[tocTab.length] = new Array("0.1.3.5.4.1:13", "", "IG_VectorFeature", "EARoot/EA1/EA3/EA5/EA4/EA1/EA772.htm", "5.png", "55908", "0", "", "Class0","{C69BA2C7-5A84-4931-94C4-D796328C3FA7}");
