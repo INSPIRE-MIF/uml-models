@@ -2,6 +2,8 @@
 
 The purpose of this repository is to manage the changes to the INSPIRE UML models.
 
+This repository is accessible also as GitHub Pages site: https://inspire-mif.github.io/uml-models/
+
 The INSPIRE UML models are available in two different versions:
 
 - **[APPROVED](approved) (IR data models)**: this version contains only those data models that are contained in the Implementing Rules for Annex I+II+III themes.
