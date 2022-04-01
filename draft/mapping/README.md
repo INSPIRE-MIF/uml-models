@@ -1,5 +1,7 @@
 # Mapping Tables
 
+The mapping tables are available in xml format, can be downloaded, opened with MS Excel and saved as a spreadsheet.
+
 - [Activity Complex Mapping Table](Activity%20Complex%20Mapping%20Table.xml)
 - [Addresses Mapping Table](Addresses%20Mapping%20Table.xml)
 - [AdministrativeAndSocialGovernmentalServices Mapping Table](AdministrativeAndSocialGovernmentalServices%20Mapping%20Table.xml)
