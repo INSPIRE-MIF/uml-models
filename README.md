@@ -1,3 +1,5 @@
+> **NOTE: The content of this branch corresponds to the last updated version of the contents available on the [INSPIRE KNOWLEDGE BASE](https://inspire.ec.europa.eu/Data-Models/Data-Specifications/2892)**
+
 # INSPIRE UML models
 
 The purpose of this repository is to manage the changes to the INSPIRE UML models.
