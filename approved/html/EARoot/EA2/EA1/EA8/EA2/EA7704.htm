@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Use Case Model</title>
+<link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA7705.png" usemap="#EA7705" border="0" />
+
+<MAP NAME="EA7705">
+<area shape="rect" coords="560,183,665,253" href="./EA2/EA7721.htm" target="_self">
+<area shape="rect" coords="591,401,636,491" href="./EA1/EA7713.htm" target="_self">
+<area shape="rect" coords="48,330,93,420" href="./EA1/EA7715.htm" target="_self">
+<area shape="rect" coords="359,226,477,305" href="./EA2/EA7720.htm" target="_self">
+<area shape="rect" coords="48,222,93,312" href="./EA1/EA7712.htm" target="_self">
+<area shape="rect" coords="45,113,90,203" href="./EA1/EA7711.htm" target="_self">
+<area shape="rect" coords="354,114,483,200" href="./EA2/EA7719.htm" target="_self">
+<area shape="rect" coords="48,430,93,520" href="./EA1/EA7714.htm" target="_self">
+<area shape="rect" coords="357,440,462,510" href="./EA2/EA7718.htm" target="_self">
+<area shape="rect" coords="366,14,471,84" href="./EA2/EA7717.htm" target="_self">
+<area shape="rect" coords="47,5,92,95" href="./EA1/EA7710.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">Use Case Model : Use Case diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">19/11/2005 00:00:00</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">20/05/2008 10:54:18</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">lgzkms</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{9135FD5E-9316-475e-9002-F622C4BC0006}</td>
+		</tr>
+	</table>
+	
+</div>
+ 
+</body>
+</html>

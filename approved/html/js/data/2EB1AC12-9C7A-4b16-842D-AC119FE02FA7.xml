@@ -1,2 +1,2 @@
-tocTab[tocTab.length] = new Array("0.1.3.37.1.1.10:1", "", "Context diagram: OM_PointCoverageObservation", "EARoot/EA1/EA3/EA37/EA1/EA1/EA10/EA6519.htm", "175.png", "27161", "0", "", "Logical diagram0","{A7765111-147F-4a5e-967D-609BB615B10B}");
-tocTab[tocTab.length] = new Array("0.1.3.37.1.1.10:2", "", "«FeatureType» OM_PointCoverageObservation", "EARoot/EA1/EA3/EA37/EA1/EA1/EA10/EA6521.htm", "5.png", "48711", "0", "", "Class0","{41E1C70A-ABA6-43a9-BBDD-B6AF410D145D}");
+tocTab[tocTab.length] = new Array("0.1.3.37.1.1.10:1", "", "Context diagram: OM_PointCoverageObservation", "EARoot/EA1/EA3/EA37/EA1/EA1/EA10/EA6780.htm", "175.png", "27161", "0", "", "Logical diagram0","{A7765111-147F-4a5e-967D-609BB615B10B}");
+tocTab[tocTab.length] = new Array("0.1.3.37.1.1.10:2", "", "«FeatureType» OM_PointCoverageObservation", "EARoot/EA1/EA3/EA37/EA1/EA1/EA10/EA6783.htm", "5.png", "E48711", "0", "", "Class0","{41E1C70A-ABA6-43a9-BBDD-B6AF410D145D}");

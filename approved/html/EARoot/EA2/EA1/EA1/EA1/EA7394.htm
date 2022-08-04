@@ -1,0 +1,421 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Addresses::AddressLocator</title>
+<link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("AddressLocator", " : "))</script>  : Public  &lt;&lt;dataType&gt;&gt; Class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">26/06/2008 14:22:00</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">01/09/2009 17:23:34</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">friisan</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{B1BC7F48-3B9C-4717-8D38-B79926A5220D}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA7378.htm">Addresses</a>, <a href="EA7384.htm">Data types</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">-- Definition --&lt;br/&gt;Human readable designator or name that allows a user or application to reference and distinguish the address from neighbour addresses, within the scope of a thoroughfare name, address area name, administrative unit name or postal designator, in which the address is situated.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE 1 The most common locators are designators like an address number, building number or flat identifier as well as the name of the property, complex or building.&lt;br/&gt;&lt;br/&gt;NOTE 2 The locator identifier(s) are most often only unambiguous and meaningful within the scope of the adjacent thoroughfare name, address area name or post code. &lt;br/&gt;&lt;br/&gt;NOTE 3 The locator could be composed of one or more designators e.g., address number, address number suffix, building number or name, floor number, flat or room identifier. In addition to these common locator types, also narrative or descriptive locators are possible.&lt;br/&gt;&lt;br/&gt;NOTE 4 The locators of an address could be composed as a hierarchy, where one level of locators identifies the real property or building while another level of locators identifies the flats or dwellings inside the property. &lt;br/&gt;&lt;br/&gt;EXAMPLE 1 In a Spanish city a &quot;site-level&quot; locator could identify a building on the thoroughfare name &quot;Calle Gran Vía using the address number &quot;8&quot;. If the building has four entrance doors, the door number &quot;3&quot; could be the &quot;access-level&quot; locator. The 3rd door could, via two staircases &quot;A&quot; and &quot;B&quot;, give access to a number of floors, identified by a number &quot;1&quot; to &quot;5&quot; on which a number of dwellings are situated, also identified by numbers &quot;1&quot; to &quot;3&quot;; The &quot;unit level&quot; locator will thus composed of staircase-, floor- and dwelling identification e.g. &quot;staircase A, floor 5, dwelling 1&quot;. In total, the three parent-child levels of locators uniquely identify the dwelling. &lt;br/&gt;&lt;br/&gt;EXAMPLE 2 In Copenhagen an &quot;access level&quot; locator could identify a specific entrance door in a building on the thoroughfare name &quot;Wildersgade&quot; using the address number &quot;60A&quot; (In Denmark the optional suffix is a part of the address number). The entrance door gives access to a number of floors, e.g, &quot;st&quot;, &quot;1&quot;, &quot;2&quot;, &quot;3&quot;, on which two dwellings are situated &quot;tv&quot; and &quot;th&quot;. The &quot;unit level&quot; locator will thus be composed by a floor- and a door identifier: &quot;2. th.&quot; (2nd floor, door to the right). In total, the two parent-child levels of locators uniquely identify the dwelling. &lt;br/&gt;&lt;br/&gt;EXAMPLE 3 In The Netherlands only one level of locators exists. The individual apartment within a large complex, a dwelling, a part of other kinds of buildings (for example an office), a mooring place or a place for the permanent placing of trailers are addressable objects which must have an address. This address is the only level of the locator. This locator could be composed by three attributes the house number, plus optionally an additional house letter, plus optionally an additional housenumber suffix.&lt;br/&gt;&lt;br/&gt;EXAMPLE 4 Sometimes the building name is an alternative identifier to the address number e.g. the house located in &quot;Calle Santiago, 15, Elizondo-Baztán, Navarra, Spain&quot; is also identified by the building name &quot;Urtekoetxea&quot;&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Attribute</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="EA7401.htm">LocatorDesignator</a></i><br /><strong>&nbsp;&nbsp;designator</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes9625')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes9625" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes9625_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes9625_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes9625_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes9625_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td>Ordered <br /></td>
+						</tr>
+						<tr id="DetailsImageAttributes9625_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to *</td>
+						</tr>
+						<tr id="DetailsImageAttributes9625_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes9625_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes9625_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			-- Definition --&lt;br/&gt;A number or a sequence of characters that uniquely identifies the locator within the relevant scope(s). &lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="EA7403.htm">LocatorLevelValue</a></i><br /><strong>&nbsp;&nbsp;level</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes9626')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes9626" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes9626_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes9626_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes9626_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes9626_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes9626_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes9626_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes9626_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes9626_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			-- Definition --&lt;br/&gt;The level to which the locator refers.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="EA7404.htm">LocatorName</a></i><br /><strong>&nbsp;&nbsp;name</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes9627')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes9627" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes9627_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes9627_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes9627_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes9627_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td>Ordered <br /></td>
+						</tr>
+						<tr id="DetailsImageAttributes9627_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to *</td>
+						</tr>
+						<tr id="DetailsImageAttributes9627_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes9627_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes9627_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			-- Definition --&lt;br/&gt;A geographic name or descriptive text associated to a property identified by the locator.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE 1 The locator name could be the name of the property or complex (e.g. an estate, hospital or a shopping mall), of the building or part of the building (e.g. a wing), or it could be the name of a room inside the building.&lt;br/&gt;&lt;br/&gt;NOTE 2 As locator name it is also possible to use a description that allows a user to identify the property in question. &lt;br/&gt;&lt;br/&gt;NOTE 3 The locator name could be an alternative addition to the locator designator (e.g. the address number) or it could be an independent identifier. &lt;br/&gt;&lt;br/&gt;EXAMPLE In the address &quot;Calle Santiago, 15, Elizondo-Baztán, Navarra, Spain&quot; the building name &quot;Urtekoetxea&quot; is an alternative to the building identifier &quot;3&quot;.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>
+	</table>
+</div>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA7393.htm">«featureType» AddressComponent</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> withinScopeOf<br />
+						-- Definition --
+The address component that defines the scope within which the address locator is assigned according to rules ensuring unambiguousness. 
+
+-- Description --
+NOTE 1 For the assignment of unambiguous locators (e.g. address numbers) different rules exists in different countries and regions. According to the most common rule, an address number should be unique within the scope of the thoroughfare name. In other areas the address number is unique inside an address area name (e.g. the name of the village) or postal designator (e.g. the post code). In some areas even a combination of rules are applied: e.g. addresses with two locators, each of them referencing to a separate address component. 
+
+NOTE 2 Locators that has the level of unit (like e.g. floor identifier and door or unit identifiers) are most often assigned so that they are unambiguous within the more narrow scope of the property or building; for these locators the association should therefore not be populated. 
+
+EXAMPLE 1 In a typical European address dataset, parts of the addresses have locators which are unambiguous within the scope of the road name (thoroughfare name) while others are unambiguous within the name ogf the village or district (address area name). 
+
+EXAMPLE 2 In Lithuania and Estonia a concept of "corner addresses" exists. Corner addresses have two address numbers (designators) each of them referring to a thoroughfare name (primary and secondary street name). E.g. in Vilnius the address designated "A. Stulginskio gatve 4 / A. Smetonos gatve 7" is situated on the corner of the two streets. 
+
+EXAMPLE 3 In the Czech Republic in some cities an address has two locator designators: A building number which referres to the address area (district, cz: "cast obce") and a address number that referres to the thoroughfare name. As an example in Praha for address designated "Na Pankráci 1690/125, Nusle" the designator "1690" is a building number unique within the address area (cz cast obce) "Nusle", while the "125" is an address number that has the thoroughfare name as its scope.	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink9628" onclick="parent.toggleDiv('detailsDIVLink9628','DetailsImageLink9628')" />Details:
+							<div id="detailsDIVLink9628" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">isCollection</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario9629" onclick="parent.toggleDiv('detailsDIVScenario9629','DetailsImageScenario9629')" />Details:
+						<div id="detailsDIVScenario9629" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">noPropertyType</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario9630" onclick="parent.toggleDiv('detailsDIVScenario9630','DetailsImageScenario9630')" />Details:
+						<div id="detailsDIVScenario9630" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">xsdEncodingRule</td>
+				<td width="50%" class="TableRow" valign="top">iso19136_2007_INSPIRE_Extensions</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario9631" onclick="parent.toggleDiv('detailsDIVScenario9631','DetailsImageScenario9631')" />Details:
+						<div id="detailsDIVScenario9631" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="ConstraintsTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+			  	<tr>
+					<td width="80%" class="TableHeading">Constraint</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Status</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">DesignatorEmpty</td>
+					<td width="10%" class="TableRow">OCL</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints9632" onclick="parent.toggleDiv('detailsDIVConstraints9632','DetailsImageConstraints9632')" />Details:
+							<div id="detailsDIVConstraints9632" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">/* If no designator exists, a name is required. */&lt;br/&gt;inv: self.designator-#gt;isEmpty() implies self.name-#gt;notEmpty() &lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">NameEmpty</td>
+					<td width="10%" class="TableRow">OCL</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints9633" onclick="parent.toggleDiv('detailsDIVConstraints9633','DetailsImageConstraints9633')" />Details:
+							<div id="detailsDIVConstraints9633" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">/* If no name exists, a designator is required. */&lt;br/&gt;inv: self.name-#gt;isEmpty() implies self.designator-#gt;notEmpty() &lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

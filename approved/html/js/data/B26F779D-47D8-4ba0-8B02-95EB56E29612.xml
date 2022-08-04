@@ -1,3 +1,3 @@
-tocTab[tocTab.length] = new Array("0.2.3.2.1", "1", "«applicationSchema» BuildingsBase", "EARoot/EA2/EA3/EA2/EA7880.htm", "4.png", "", "", "{481720E4-713E-443c-803F-39DDDD3ED9D4}", "Package");
-tocTab[tocTab.length] = new Array("0.2.3.2.2", "1", "«applicationSchema» Buildings2D", "EARoot/EA2/EA3/EA2/EA7881.htm", "4.png", "", "", "{E6A55AE3-2705-485e-812F-525AF25D09BB}", "Package");
-tocTab[tocTab.length] = new Array("0.2.3.2.3", "1", "«applicationSchema» Buildings3D", "EARoot/EA2/EA3/EA2/EA7882.htm", "4.png", "", "", "{06BECF6A-AA4D-4eee-AB73-D855F65CBB21}", "Package");
+tocTab[tocTab.length] = new Array("0.2.3.2.1", "1", "«applicationSchema» BuildingsBase", "EARoot/EA2/EA3/EA2/EA1/EA8235.htm", "4.png", "", "", "{481720E4-713E-443c-803F-39DDDD3ED9D4}", "Package");
+tocTab[tocTab.length] = new Array("0.2.3.2.2", "1", "«applicationSchema» Buildings2D", "EARoot/EA2/EA3/EA2/EA2/EA8260.htm", "4.png", "", "", "{E6A55AE3-2705-485e-812F-525AF25D09BB}", "Package");
+tocTab[tocTab.length] = new Array("0.2.3.2.3", "1", "«applicationSchema» Buildings3D", "EARoot/EA2/EA3/EA2/EA3/EA8266.htm", "4.png", "", "", "{06BECF6A-AA4D-4eee-AB73-D855F65CBB21}", "Package");

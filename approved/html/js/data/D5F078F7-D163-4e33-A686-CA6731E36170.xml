@@ -1,2 +1,2 @@
-tocTab[tocTab.length] = new Array("0.2.1.2.3.2.6:1", "", "Retrieve disaster data", "EARoot/EA2/EA1/EA2/EA3/EA2/EA6/EA7194.htm", "7.png", "49115", "0", "", "UseCase0","{57DB39A9-2FC8-447c-9796-6E4876C930D2}");
-tocTab[tocTab.length] = new Array("0.2.1.2.3.2.6:2", "", "Select thematic features on both sides of boundary", "EARoot/EA2/EA1/EA2/EA3/EA2/EA6/EA7195.htm", "7.png", "49114", "0", "", "UseCase0","{38D55D2E-6D72-4c3b-9B51-B60B170E29AB}");
+tocTab[tocTab.length] = new Array("0.2.1.2.3.2.6:1", "", "Retrieve disaster data", "EARoot/EA2/EA1/EA2/EA3/EA2/EA6/EA7523.htm", "7.png", "E49115", "0", "", "UseCase0","{57DB39A9-2FC8-447c-9796-6E4876C930D2}");
+tocTab[tocTab.length] = new Array("0.2.1.2.3.2.6:2", "", "Select thematic features on both sides of boundary", "EARoot/EA2/EA1/EA2/EA3/EA2/EA6/EA7524.htm", "7.png", "E49114", "0", "", "UseCase0","{38D55D2E-6D72-4c3b-9B51-B60B170E29AB}");

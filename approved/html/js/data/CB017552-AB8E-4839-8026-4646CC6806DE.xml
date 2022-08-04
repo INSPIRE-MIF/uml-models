@@ -1,2 +1,2 @@
-tocTab[tocTab.length] = new Array("0.1.4.1", "1", "«Application Schema» SWE Common Data Model 2.0", "EARoot/EA1/EA4/EA6792.htm", "4.png", "", "", "{D6C142BE-90B4-49d5-AC56-A6397189D5CA}", "Package");
-tocTab[tocTab.length] = new Array("0.1.4.2", "1", "«Application Schema» WaterML2.0", "EARoot/EA1/EA4/EA6793.htm", "4.png", "", "", "{918AFA5D-FFE5-4304-A7C0-22615DD79886}", "Package");
+tocTab[tocTab.length] = new Array("0.1.4.1", "1", "«Application Schema» SWE Common Data Model 2.0", "EARoot/EA1/EA4/EA1/EA7083.htm", "4.png", "", "", "{D6C142BE-90B4-49d5-AC56-A6397189D5CA}", "Package");
+tocTab[tocTab.length] = new Array("0.1.4.2", "1", "«Application Schema» WaterML2.0", "EARoot/EA1/EA4/EA2/EA7192.htm", "4.png", "", "", "{918AFA5D-FFE5-4304-A7C0-22615DD79886}", "Package");

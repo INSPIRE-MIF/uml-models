@@ -1,7 +1,7 @@
-tocTab[tocTab.length] = new Array("0.2.1.7:1", "", "Hydrography overview", "EARoot/EA2/EA1/EA7/EA7255.htm", "175.png", "27313", "0", "", "Logical diagram0","{F5680969-F9A4-463f-AF3E-4156C30BE6CD}");
-tocTab[tocTab.length] = new Array("0.2.1.7:2", "", "Hydrography package imports", "EARoot/EA2/EA1/EA7/EA7257.htm", "176.png", "27315", "0", "", "Package diagram0","{F80E18E2-1F5A-400a-BF5A-A9C9DDA3CC68}");
-tocTab[tocTab.length] = new Array("0.2.1.7:3", "", "Hydrography package structure", "EARoot/EA2/EA1/EA7/EA7259.htm", "176.png", "27314", "0", "", "Package diagram0","{8DCC0EE3-EE09-4bf7-B4D8-E560F26F2CDF}");
-tocTab[tocTab.length] = new Array("0.2.1.7.1", "1", "«applicationSchema» Hydro - base", "EARoot/EA2/EA1/EA7/EA7261.htm", "4.png", "", "", "{3E6C2688-B306-407f-8F6A-6166802B1976}", "Package");
-tocTab[tocTab.length] = new Array("0.2.1.7.2", "1", "«applicationSchema» Hydro - Network", "EARoot/EA2/EA1/EA7/EA7262.htm", "4.png", "", "", "{CAB1DAF6-2F62-4151-8C10-2B34A62A0431}", "Package");
-tocTab[tocTab.length] = new Array("0.2.1.7.3", "1", "«applicationSchema» Hydro - Physical Waters", "EARoot/EA2/EA1/EA7/EA7263.htm", "4.png", "", "", "{11AFDAFD-C9C4-4b12-B00F-98E672EB8219}", "Package");
-tocTab[tocTab.length] = new Array("0.2.1.7.4", "1", "Use Cases", "EARoot/EA2/EA1/EA7/EA7264.htm", "4.png", "", "", "{E224066A-23AA-4541-A694-7E885DC5A452}", "Package");
+tocTab[tocTab.length] = new Array("0.2.1.7:1", "", "Hydrography overview", "EARoot/EA2/EA1/EA7/EA7596.htm", "175.png", "27313", "0", "", "Logical diagram0","{F5680969-F9A4-463f-AF3E-4156C30BE6CD}");
+tocTab[tocTab.length] = new Array("0.2.1.7:2", "", "Hydrography package imports", "EARoot/EA2/EA1/EA7/EA7598.htm", "176.png", "27315", "0", "", "Package diagram0","{F80E18E2-1F5A-400a-BF5A-A9C9DDA3CC68}");
+tocTab[tocTab.length] = new Array("0.2.1.7:3", "", "Hydrography package structure", "EARoot/EA2/EA1/EA7/EA7600.htm", "176.png", "27314", "0", "", "Package diagram0","{8DCC0EE3-EE09-4bf7-B4D8-E560F26F2CDF}");
+tocTab[tocTab.length] = new Array("0.2.1.7.1", "1", "«applicationSchema» Hydro - base", "EARoot/EA2/EA1/EA7/EA1/EA7613.htm", "4.png", "", "", "{3E6C2688-B306-407f-8F6A-6166802B1976}", "Package");
+tocTab[tocTab.length] = new Array("0.2.1.7.2", "1", "«applicationSchema» Hydro - Network", "EARoot/EA2/EA1/EA7/EA2/EA7624.htm", "4.png", "", "", "{CAB1DAF6-2F62-4151-8C10-2B34A62A0431}", "Package");
+tocTab[tocTab.length] = new Array("0.2.1.7.3", "1", "«applicationSchema» Hydro - Physical Waters", "EARoot/EA2/EA1/EA7/EA3/EA7644.htm", "4.png", "", "", "{11AFDAFD-C9C4-4b12-B00F-98E672EB8219}", "Package");
+tocTab[tocTab.length] = new Array("0.2.1.7.4", "1", "Use Cases", "EARoot/EA2/EA1/EA7/EA4/EA7676.htm", "4.png", "", "", "{E224066A-23AA-4541-A694-7E885DC5A452}", "Package");

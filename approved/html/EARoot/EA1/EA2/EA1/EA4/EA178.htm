@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>GeologicStructure::GeologicStructure</title>
+<title>Note</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("GeologicStructure", " : "))</script>  : Public abstract &lt;&lt;FeatureType&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Note", " : "))</script>  : Public   Note</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">12/16/2003 4:27:58 PM</td>
+			<td width="85%" class="ObjectDetailsValue">31/08/2005 16:27:40</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">11/24/2010 4:39:19 PM</td>
+			<td class="ObjectDetailsValue">12/05/2007 15:32:34</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -51,11 +51,11 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td class="ObjectDetailsValue">CGI Interoperability Working Group</td>
+			<td class="ObjectDetailsValue">Simon Cox</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
-			<td class="ObjectDetailsValue">3.0.0</td>
+			<td class="ObjectDetailsValue">1.0</td>
 		</tr>
 		<tr id="proj02" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
@@ -87,169 +87,15 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{15E519FE-D718-4778-8B0C-AE8F241884C3}</td>
+			<td class="ObjectDetailsValue">{23C99C81-2167-404a-AA5C-06C5D7666525}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA1/EA67.htm">Context diagram: GeologicFeature</a>, <a href="../EA1/EA73.htm">Summary diagram: Geologic Feature</a>, <a href="../EA2/EA102.htm">Summary diagram : Geologic Unit</a>, <a href="../EA2/EA100.htm">Context diagram : GeologicUnit</a>, <a href="EA156.htm">Context Diagram : NonDirectionalStructure</a>, <a href="EA160.htm">Context Diagram : ShearDisplacementStructure</a>, <a href="EA138.htm">Context Diagram : Fold</a>, <a href="EA152.htm">Context Diagram : Lineation</a>, <a href="EA132.htm">Context Diagram : Contact</a>, <a href="EA164.htm">Summary Diagram : Geologic Structure</a>, <a href="EA140.htm">Context Diagram : FoldSystem</a>, <a href="EA142.htm">Context Diagram : Foliation</a>, <a href="EA146.htm">Context Diagram : GeologicStructure</a>, <a href="EA144.htm">Context Diagram : Fracture</a></td>
+			<td class="ObjectDetailsValue"></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">A configuration of matter in the Earth based on describable inhomogeneity, pattern, or fracture in an EarthMaterial. &lt;br /&gt;&lt;/p&gt;&lt;p&gt;The identity of a GeologicStructure is independent of the material that is the substrate for the structure. &lt;br /&gt;&lt;/p&gt;&lt;p&gt;Properties like &quot;clast-supported&quot;,&#160; &quot;matrix-supported&quot;, and &quot;graded bed&quot; that do not involve orientation are considered kinds of GeologicStructure &lt;br /&gt;&lt;/p&gt;&lt;p&gt;because they depend on the configuration of parts of a rock body. Includes sedimentary structures.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;The general GeologicRelation is used to associate penetrative GeologicStructures with GeologicUnits.&lt;br /&gt;&lt;/p&gt;</div>
+	<div class="ObjectDetailsNotes">Includes both brittle and ductile faults&lt;br/&gt;</div>
 
-	<div class="TableGroup" id="TableGroup">
-		<ul class="ItemTitle">
-			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
-			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
-			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
-		</ul>
-		<div class="ItemBody" id="AssociationsFromTable">
-			<table border="0" cellspacing="0" cellpadding="0" class="Table">
-				<tr>
-					<td width="40%" class="TableHeading">Element</td>
-					<td width="30%" class="TableHeading">Source Role</td>
-					<td width="30%" class="TableHeading">Target Role</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA2/EA109.htm">«FeatureType» GeologicUnit</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> definedUnit<br />
-						Specifies the DeformationUnit that is associated with the GeologicStructure. Any single GeologicStructure may only be the definingStructure for one DeformationUnit
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> definingStructure<br />
-						Specifies the GeologicStructure associated with the DeformationUnit
-cardinality is 1 because defining structure could be compound.	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink343" onclick="parent.toggleDiv('detailsDIVLink343','DetailsImageLink343')" />Details:
-							<div id="detailsDIVLink343" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">Specifies the GeologicStructure associated with the DeformationUnit.</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-
-			</table>
-		</div>
-<div class="ItemBody" id="TaggedValTable">
-	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
-		<tr>
-			<td width="50%" class="TableHeading">Tag</td>
-			<td width="50%" class="TableHeading">Value</td>
-		</tr>
-					<tr>
-				<td width="50%" class="TableRow" valign="top">byValuePropertyType</td>
-				<td width="50%" class="TableRow" valign="top">false</td>
-			</tr>	
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario344" onclick="parent.toggleDiv('detailsDIVScenario344','DetailsImageScenario344')" />Details:
-						<div id="detailsDIVScenario344" class="DetailsDiv" >
-						<div class="ObjectDetailsNotes">Values: true,false<br />Default: false<br />Description: enforce the &#39;by value&#39; property pattern without xl<br /></div>
-
-						</div>
-					</div>
-				</td>
-			</tr>			<tr>
-				<td width="50%" class="TableRow" valign="top">isCollection</td>
-				<td width="50%" class="TableRow" valign="top">false</td>
-			</tr>	
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario345" onclick="parent.toggleDiv('detailsDIVScenario345','DetailsImageScenario345')" />Details:
-						<div id="detailsDIVScenario345" class="DetailsDiv" >
-						<div class="ObjectDetailsNotes">Values: true,false<br />Default: false<br />Description: attribute group gml:AggregationAttributeGroup is a<br /></div>
-
-						</div>
-					</div>
-				</td>
-			</tr>			<tr>
-				<td width="50%" class="TableRow" valign="top">noPropertyType</td>
-				<td width="50%" class="TableRow" valign="top">false</td>
-			</tr>	
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario346" onclick="parent.toggleDiv('detailsDIVScenario346','DetailsImageScenario346')" />Details:
-						<div id="detailsDIVScenario346" class="DetailsDiv" >
-						<div class="ObjectDetailsNotes">Values: true,false<br />Default: false<br />Description: suppress automatic creation of *PropertyType compl<br /></div>
-
-						</div>
-					</div>
-				</td>
-			</tr>
-	</table>
-</div>		<div class="ItemBody" id="LinksTable">
-			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
-				<tr>
-					<td width="30%" class="TableHeading">Object</td>
-					<td width="15%" class="TableHeading">Type</td>
-					<td width="15%" class="TableHeading">Connection</td>
-					<td width="40%" class="TableHeading">Notes</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA172.htm">«FeatureType» Contact</a></td>
-					<td width="15%" class="TableRow" valign="top">Class</td>
-					<td width="15%" class="TableRow" valign="top">Tree</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA181.htm">«FeatureType» Lineation</a></td>
-					<td width="15%" class="TableRow" valign="top">Class</td>
-					<td width="15%" class="TableRow" valign="top">Generalization</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA175.htm">«FeatureType» FoldSystem</a></td>
-					<td width="15%" class="TableRow" valign="top">Class</td>
-					<td width="15%" class="TableRow" valign="top">Generalization</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA182.htm">«FeatureType» NonDirectionalStructure</a></td>
-					<td width="15%" class="TableRow" valign="top">Class</td>
-					<td width="15%" class="TableRow" valign="top">Generalization</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA183.htm">«FeatureType» ShearDisplacementStructure</a></td>
-					<td width="15%" class="TableRow" valign="top">Class</td>
-					<td width="15%" class="TableRow" valign="top">Tree</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA177.htm">«FeatureType» Fracture</a></td>
-					<td width="15%" class="TableRow" valign="top">Class</td>
-					<td width="15%" class="TableRow" valign="top">Tree</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA174.htm">«FeatureType» Fold</a></td>
-					<td width="15%" class="TableRow" valign="top">Class</td>
-					<td width="15%" class="TableRow" valign="top">Generalization</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA176.htm">«FeatureType» Foliation</a></td>
-					<td width="15%" class="TableRow" valign="top">Class</td>
-					<td width="15%" class="TableRow" valign="top">Generalization</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA1/EA91.htm">«FeatureType» GeologicFeature</a></td>
-					<td width="15%" class="TableRow" valign="top">Class</td>
-					<td width="15%" class="TableRow" valign="top">Generalization</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-
-			</table>
-		</div>
-	</div>
 <div class="pageFooter"></div>
  
 </body>

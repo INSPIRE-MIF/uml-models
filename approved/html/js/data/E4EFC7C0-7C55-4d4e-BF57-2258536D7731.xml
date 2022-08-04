@@ -1,5 +1,5 @@
-tocTab[tocTab.length] = new Array("0.1.3.28.5:1", "", "Context Diagram: Definition", "EARoot/EA1/EA3/EA28/EA5/EA5148.htm", "175.png", "26840", "0", "", "Logical diagram0","{C49C9DB3-77CE-4d10-B55A-06BDA719A084}");
-tocTab[tocTab.length] = new Array("0.1.3.28.5:2", "", "Context Diagram: Dictionary", "EARoot/EA1/EA3/EA28/EA5/EA5150.htm", "175.png", "26838", "0", "", "Logical diagram0","{E6C4F57E-54F8-4607-909E-E900378D8721}");
-tocTab[tocTab.length] = new Array("0.1.3.28.5:3", "", "Figure D.57 ? Dictionaries", "EARoot/EA1/EA3/EA28/EA5/EA5152.htm", "175.png", "26839", "0", "", "Logical diagram0","{0C87B9C6-917F-414a-9502-9E63D0652A46}");
-tocTab[tocTab.length] = new Array("0.1.3.28.5:4", "", "«Type» Definition", "EARoot/EA1/EA3/EA28/EA5/EA5155.htm", "5.png", "47988", "0", "", "Class0","{74296B73-5394-4d21-A02E-124C2CF160F9}");
-tocTab[tocTab.length] = new Array("0.1.3.28.5:5", "", "«type» Dictionary", "EARoot/EA1/EA3/EA28/EA5/EA5156.htm", "5.png", "47987", "0", "", "Class0","{6FBA7C1E-F518-4951-B815-53FE2EABB62F}");
+tocTab[tocTab.length] = new Array("0.1.3.28.5:1", "", "Context Diagram: Definition", "EARoot/EA1/EA3/EA28/EA5/EA5344.htm", "175.png", "26840", "0", "", "Logical diagram0","{C49C9DB3-77CE-4d10-B55A-06BDA719A084}");
+tocTab[tocTab.length] = new Array("0.1.3.28.5:2", "", "Context Diagram: Dictionary", "EARoot/EA1/EA3/EA28/EA5/EA5346.htm", "175.png", "26838", "0", "", "Logical diagram0","{E6C4F57E-54F8-4607-909E-E900378D8721}");
+tocTab[tocTab.length] = new Array("0.1.3.28.5:3", "", "Figure D.57 ? Dictionaries", "EARoot/EA1/EA3/EA28/EA5/EA5348.htm", "175.png", "26839", "0", "", "Logical diagram0","{0C87B9C6-917F-414a-9502-9E63D0652A46}");
+tocTab[tocTab.length] = new Array("0.1.3.28.5:4", "", "«Type» Definition", "EARoot/EA1/EA3/EA28/EA5/EA5352.htm", "5.png", "E47988", "0", "", "Class0","{74296B73-5394-4d21-A02E-124C2CF160F9}");
+tocTab[tocTab.length] = new Array("0.1.3.28.5:5", "", "«type» Dictionary", "EARoot/EA1/EA3/EA28/EA5/EA5353.htm", "5.png", "E47987", "0", "", "Class0","{6FBA7C1E-F518-4951-B815-53FE2EABB62F}");

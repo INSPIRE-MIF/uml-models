@@ -1,3 +1,3 @@
-tocTab[tocTab.length] = new Array("0.1.3.22:1", "", "Context Diagram: Package Clients of IGCD Framework", "EARoot/EA1/EA3/EA22/EA3674.htm", "175.png", "26310", "0", "", "Logical diagram0","{019D7C22-7475-4359-B7B3-1660F3EE29C8}");
-tocTab[tocTab.length] = new Array("0.1.3.22:2", "", "Context Diagram: Package Suppliers of IGCD Framework", "EARoot/EA1/EA3/EA22/EA3676.htm", "175.png", "26309", "0", "", "Logical diagram0","{4221CFDF-15CD-48d5-B5A2-887874DF6670}");
-tocTab[tocTab.length] = new Array("0.1.3.22.1", "1", "IGCD Framework", "EARoot/EA1/EA3/EA22/EA3678.htm", "4.png", "", "", "{128D7B71-C63D-4f29-9F43-F7369ADB2461}", "Package");
+tocTab[tocTab.length] = new Array("0.1.3.22:1", "", "Context Diagram: Package Clients of IGCD Framework", "EARoot/EA1/EA3/EA22/EA3808.htm", "175.png", "26310", "0", "", "Logical diagram0","{019D7C22-7475-4359-B7B3-1660F3EE29C8}");
+tocTab[tocTab.length] = new Array("0.1.3.22:2", "", "Context Diagram: Package Suppliers of IGCD Framework", "EARoot/EA1/EA3/EA22/EA3810.htm", "175.png", "26309", "0", "", "Logical diagram0","{4221CFDF-15CD-48d5-B5A2-887874DF6670}");
+tocTab[tocTab.length] = new Array("0.1.3.22.1", "1", "IGCD Framework", "EARoot/EA1/EA3/EA22/EA1/EA3828.htm", "4.png", "", "", "{128D7B71-C63D-4f29-9F43-F7369ADB2461}", "Package");

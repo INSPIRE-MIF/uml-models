@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Coordinate geometry::GM_CubicSpline</title>
+<title>Coordinate geometry</title>
 <link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("GM_CubicSpline", " : "))</script>  : Public  &lt;&lt;type&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Coordinate geometry", " : "))</script>  : Public  &lt;&lt;Leaf&gt;&gt; Package</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">4/10/2008 12:16:13 PM</td>
+			<td width="85%" class="ObjectDetailsValue">10/04/2008 12:16:13</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">4/10/2008 12:16:13 PM</td>
+			<td class="ObjectDetailsValue">10/04/2008 12:16:15</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,52 +87,228 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{1035F6E7-54C1-43ae-9470-A8DBAE47A42D}</td>
+			<td class="ObjectDetailsValue">{F6124016-2DF1-454b-8DD8-33975170E6A3}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA940.htm">Fig 15: Curve Segments </a>, <a href="EA948.htm">Fig 19: Splines and Speciality Curves</a>, <a href="EA880.htm">Context Diagram: GM_CubicSpline</a></td>
+			<td class="ObjectDetailsValue"><a href="../../../EA4/EA707.htm">Main</a>, <a href="../../../EA4/EA705.htm">Context Diagram: Package Suppliers of GPL</a>, <a href="../../EA854.htm">Fig 03: Geometry and Topology Packages</a>, <a href="../EA881.htm">Fig 04: Geometry Packages</a>, <a href="../EA877.htm">Context Diagram: Package Suppliers of Geometric primitive</a>, <a href="../EA867.htm">Context Diagram: Package Clients of Geometric primitive</a>, <a href="../EA871.htm">Context Diagram: Package Suppliers of Coordinate geometry</a>, <a href="../EA861.htm">Context Diagram: Package Clients of Coordinate geometry</a>, <a href="../EA879.htm">Context Diagram: Package Suppliers of Geometry root</a>, <a href="../EA873.htm">Context Diagram: Package Suppliers of Geometric aggregates</a>, <a href="../../../EA7/EA1/EA1/EA1378.htm">Context Diagram: Package Clients of Units of Measure</a>, <a href="../../../EA7/EA1/EA2/EA1468.htm">Context Diagram: Package Clients of Collections</a>, <a href="../../../EA7/EA1/EA3/EA1607.htm">Context Diagram: Package Clients of Numerics</a>, <a href="../../../EA7/EA1/EA3/EA1611.htm">Context Diagram: Package Clients of Truth</a>, <a href="../../../EA14/EA2886.htm">Main</a>, <a href="../../../EA14/EA2882.htm">Context Diagram: Package Suppliers of Positioning Service Model</a>, <a href="../../../EA18/EA1/EA3379.htm">Context Diagram: Package Suppliers of Thiessen Polygon</a>, <a href="../../../EA18/EA1/EA3375.htm">Context Diagram: Package Suppliers of Quadrilateral Grid</a>, <a href="../../../EA18/EA1/EA3377.htm">Context Diagram: Package Suppliers of Segmented Curve</a>, <a href="../../../EA18/EA1/EA3371.htm">Context Diagram: Package Suppliers of Discrete Coverages</a>, <a href="../../../EA18/EA1/EA3369.htm">Context Diagram: Package Suppliers of Coverage Core</a>, <a href="../../../EA18/EA1/EA3381.htm">Context Diagram: Package Suppliers of TIN</a>, <a href="../../../EA18/EA1/EA3373.htm">Context Diagram: Package Suppliers of Hexagonal Grid</a>, <a href="../../../EA22/EA3810.htm">Context Diagram: Package Suppliers of IGCD Framework</a>, <a href="../../../EA24/EA4022.htm">Context Diagram: Package Suppliers of Message Data Types</a>, <a href="../../../EA25/EA5/EA4705.htm">Main</a>, <a href="../../../EA25/EA5/EA4703.htm">Context Diagram: Package Suppliers of Tracking Service</a>, <a href="../../../EA25/EA5/EA4699.htm">Context Diagram: Package Suppliers of Measured Coordinates</a>, <a href="../../../EA29/EA5573.htm">Context Diagram: Package Suppliers of Geometry</a>, <a href="../../../EA29/EA1/EA5585.htm">Dependencies</a>, <a href="../../../EA30/EA5607.htm">Main</a>, <a href="../../../EA30/EA5603.htm">Context Diagram: Package Suppliers of Geometry Types</a>, <a href="../../../EA30/EA5605.htm">Context Diagram: Package Suppliers of Prism Geometry</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">Cubic splines are similar to line strings in that they are a sequence of segments each with its own defining function. A cubic spline uses the control points and a set of derivative parameters to define a piecewise 3rd degree polynomial interpolation. Unlike line-strings, the parameterization by arc length is not necessarily still a polynomial. Splines have two parameterizations that are used in this standard, the defining one (constructive parameter) and the one that has been reparameterized by arc length to satisfy the requirements in GM_GenericCurve. &lt;br /&gt;&lt;/p&gt;&lt;p&gt;The function describing the curve must be C2, that is, have a continuous 1st and 2nd derivative at all points, and pass through the controlPoints in the order given. Between the control points, the curve segment is defined by a cubic polynomial. At each control point, the polynomial changes in such a manner that the 1st and 2nd derivative vectors are the same from either side. The control parameters record must contain vectorAtStart, and vectorAtEnd which are the unit tangent vectors at controlPoint[1] and controlPoint[n] where n = controlPoint.count. &lt;br /&gt;&lt;/p&gt;&lt;p&gt;The restriction on &quot;vectorAtStart&quot; and &quot;vectorAtEnd&quot; reduce these sequences to a single tangent vector each. &lt;br /&gt;&lt;/p&gt;&lt;p&gt;GM_CubicSpline::vectorAtStart : Vector \\ &quot;degree - 2&quot; is 1&lt;br /&gt;&lt;/p&gt;&lt;p&gt;GM_CubicSpline::vectorAtEnd : Vector \\ &quot;degree - 2&quot; is 1&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;NOTE The actual implementation of the cubic polynomials varies, but the curve so generated is guaranteed to be unique. See [2], [10], [12], [18], and [19] in the bibliography for examples of implementations. &lt;br /&gt;&lt;/p&gt;&lt;p&gt;The interpolation mechanism for a GM_CubicSpline is &quot;cubicSpline&quot;.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;GM_CubicSpline::interpolation : GM_InterpolationMethod = &quot;cubicSpline&quot; &lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;The degree for a GM_CubicSpline is &quot;3&quot;.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;GM_CubicSpline::degree : Integer = &quot;3&quot;&lt;br /&gt;&lt;/p&gt;</div>
-
+	
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
-			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
-<div class="ItemBody" id="TaggedValTable">
-	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
-		<tr>
-			<td width="50%" class="TableHeading">Tag</td>
-			<td width="50%" class="TableHeading">Value</td>
-		</tr>
-					<tr>
-				<td width="50%" class="TableRow" valign="top">persistence</td>
-				<td width="50%" class="TableRow" valign="top">persistent</td>
-			</tr>	
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario1317" onclick="parent.toggleDiv('detailsDIVScenario1317','DetailsImageScenario1317')" />Details:
-						<div id="detailsDIVScenario1317" class="DetailsDiv" >
-						&nbsp;
-						</div>
-					</div>
-				</td>
-			</tr>
-	</table>
-</div>		<div class="ItemBody" id="LinksTable">
+		<div class="ItemBody" id="LinksTable">
 			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="30%" class="TableHeading">Object</td>
-					<td width="15%" class="TableHeading">Type</td>
-					<td width="15%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA1021.htm">«type» GM_PolynomialSpline</a></td>
-					<td width="15%" class="TableRow" valign="top">Class</td>
-					<td width="15%" class="TableRow" valign="top">Generalization</td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA18/EA1/EA4/EA3527.htm">«Leaf» Quadrilateral Grid</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA18/EA1/EA3/EA3482.htm">«Leaf» Thiessen Polygon</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA29/EA1/EA5591.htm">Geometry</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA25/EA5/EA4/EA4776.htm">«Leaf» Measured Coordinates</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA30/EA1/EA5632.htm">Geometry Types</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA2/EA1088.htm">«Leaf» Geometric aggregates</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1189.htm">«Leaf» Geometric primitive</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA30/EA2/EA5658.htm">Prism Geometry</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA28/EA8/EA5381.htm">feature</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1189.htm">«Leaf» Geometric primitive</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA18/EA1/EA7/EA3580.htm">«Leaf» Segmented Curve</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA7/EA1/EA3/EA6/EA1726.htm">«Leaf» Truth</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA14/EA1/EA2922.htm">«Leaf» Positioning Service Model</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA24/EA3/EA4230.htm">«Leaf» Message Data Types</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA4/EA1/EA713.htm">«Leaf» GPL</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA18/EA1/EA5/EA3553.htm">«Leaf» Hexagonal Grid</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA25/EA5/EA6/EA4843.htm">«Leaf» Tracking Service</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA7/EA1/EA3/EA4/EA1688.htm">«Leaf» Numerics</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA18/EA1/EA6/EA3566.htm">«Leaf» TIN</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA11/EA1/EA2127.htm">Coordinate Operations</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA28/EA12/EA5417.htm">geometryPrimitives</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA22/EA1/EA3828.htm">IGCD Framework</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA7/EA1/EA2/EA1/EA1526.htm">«Leaf» Collections</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../../EA2/EA2/EA1/EA4/EA8036.htm">«applicationSchema» ElevationTIN</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA11/EA2/EA2172.htm">Coordinate Reference Systems</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA7/EA1/EA1/EA1/EA1440.htm">«Leaf» Units of Measure</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA18/EA1/EA1/EA3419.htm">«Leaf» Coverage Core</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA5/EA1217.htm">«Leaf» Geometry root</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA18/EA1/EA2/EA3463.htm">«Leaf» Discrete Coverages</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 

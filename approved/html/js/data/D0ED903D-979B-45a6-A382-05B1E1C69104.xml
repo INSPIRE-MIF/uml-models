@@ -1,3 +1,3 @@
-tocTab[tocTab.length] = new Array("0.1.3.28.9:1", "", "Context Diagram: LineString", "EARoot/EA1/EA3/EA28/EA9/EA5185.htm", "175.png", "26852", "0", "", "Logical diagram0","{C887A28A-3F57-477d-A961-86099B5475CE}");
-tocTab[tocTab.length] = new Array("0.1.3.28.9:2", "", "Figure D.46 ? GM_Curve with a single GM_LineString segment", "EARoot/EA1/EA3/EA28/EA9/EA5187.htm", "175.png", "26851", "0", "", "Logical diagram0","{FF5BBA70-E642-4bc6-A926-4FAE3AC00CFA}");
-tocTab[tocTab.length] = new Array("0.1.3.28.9:3", "", "«Type» LineString", "EARoot/EA1/EA3/EA28/EA9/EA5190.htm", "5.png", "47997", "0", "", "Class0","{24393F03-9332-479e-83D0-7943A60A8635}");
+tocTab[tocTab.length] = new Array("0.1.3.28.9:1", "", "Context Diagram: LineString", "EARoot/EA1/EA3/EA28/EA9/EA5385.htm", "175.png", "26852", "0", "", "Logical diagram0","{C887A28A-3F57-477d-A961-86099B5475CE}");
+tocTab[tocTab.length] = new Array("0.1.3.28.9:2", "", "Figure D.46 ? GM_Curve with a single GM_LineString segment", "EARoot/EA1/EA3/EA28/EA9/EA5387.htm", "175.png", "26851", "0", "", "Logical diagram0","{FF5BBA70-E642-4bc6-A926-4FAE3AC00CFA}");
+tocTab[tocTab.length] = new Array("0.1.3.28.9:3", "", "«Type» LineString", "EARoot/EA1/EA3/EA28/EA9/EA5391.htm", "5.png", "E47997", "0", "", "Class0","{24393F03-9332-479e-83D0-7943A60A8635}");

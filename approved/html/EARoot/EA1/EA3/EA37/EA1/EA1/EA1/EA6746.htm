@@ -1,0 +1,1053 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>observation::OM_Observation</title>
+<link href="../../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("OM_Observation", " : "))</script>  : Public  &lt;&lt;FeatureType&gt;&gt; Class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">04/10/2004 11:28:43</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">11/04/2013 10:50:20</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{1778FD08-66AC-437d-A152-795D9AEBDD90}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../../../../../EA2/EA4/EA347.htm">Summary diagram: Boreholes</a>, <a href="../../../../../EA2/EA5/EA2/EA401.htm">Context Diagram : StratigraphicDateEstimate</a>, <a href="../../../../../EA2/EA5/EA2/EA377.htm">Summary diagram : age values</a>, <a href="../../../../../EA2/EA7/EA1/EA472.htm">Summary diagram: LaboratoryAnalysis (O&M v2 and SWE v1)</a>, <a href="../../../../../EA2/EA7/EA2/EA494.htm">Summary diagram: Geochronology</a>, <a href="../EA6717.htm">Figure 2: Observation Core</a>, <a href="../EA6719.htm">Figure 6: Specialized Observations</a>, <a href="../EA6721.htm">Figure 7: Coverage Observation</a>, <a href="EA6741.htm">Overview: Observation</a>, <a href="EA6737.htm">Context diagram: OM_Observation</a>, <a href="EA6739.htm">Context diagram: OM_Process</a>, <a href="../EA2/EA6748.htm">OM_Measurement</a>, <a href="../EA3/EA6752.htm">OM_CategoryObservation</a>, <a href="../EA4/EA6756.htm">OM_CountObservation</a>, <a href="../EA5/EA6760.htm">OM_TruthObservation</a>, <a href="../EA6/EA6764.htm">Context diagram: OM_TemporalObservation</a>, <a href="../EA7/EA6768.htm">Context diagram: OM_GeometryObservation</a>, <a href="../EA8/EA6772.htm">Context diagram: OM_ComplexObservation</a>, <a href="../EA9/EA6776.htm">Context diagram: OM_DiscreteCoverageObservation</a>, <a href="../EA11/EA6786.htm">Summary: Time series observations</a>, <a href="../../EA2/EA6794.htm">Figure 10: sampling vs. domain features</a>, <a href="../../EA2/EA6792.htm">Figure 9: SF_SamplingFeature</a>, <a href="../../EA2/EA1/EA6815.htm">Overview: sampling</a>, <a href="../../EA2/EA1/EA6811.htm">Context diagram: SF_SamplingFeature</a>, <a href="../../EA5/EA6910.htm">Figure 16: SamplingCoverageObservation</a>, <a href="../../EA6/EA6914.htm">Context diagram: GFI_Feature</a>, <a href="../../../../../EA4/EA2/EA1/EA7211.htm">MonitoringPointFeatureOfInterest</a>, <a href="../../../../../EA4/EA2/EA3/EA7221.htm">Context diagram: TimeseriesObservation</a>, <a href="../../../../../EA4/EA2/EA3/EA7223.htm">Observation metadata</a>, <a href="../../../../../EA4/EA2/EA3/EA7225.htm">TimeseriesObservation specialisations</a>, <a href="../../../../../../EA2/EA3/EA1/EA1/EA8218.htm">AC-MF : Overview</a>, <a href="../../../../../../EA2/EA3/EA1/EA1/EA8212.htm">Observation(Informative)</a>, <a href="../../../../../../EA2/EA3/EA1/EA1/EA8214.htm">CoverageObservation(Informative)</a>, <a href="../../../../../../EA2/EA3/EA6/EA1/EA1/EA8339.htm">EnvironmentalMonitoringFacilities</a>, <a href="../../../../../../EA2/EA3/EA6/EA1/EA1/EA8349.htm">ObservingCapability and link to OM_Observation</a>, <a href="../../../../../../EA2/EA3/EA6/EA1/EA1/EA8347.htm">References to Environmental Monitoring Features</a>, <a href="../../../../../../EA2/EA3/EA17/EA1/EA9084.htm">Soil: O&M</a>, <a href="../../../../../../EA3/EA1/EA6/EA9440.htm">Observations Pattern - Overview</a>, <a href="../../../../../../EA3/EA1/EA6/EA1/EA9447.htm">Observation References</a>, <a href="../../../../../../EA3/EA1/EA6/EA1/EA9451.htm">ReferencesToObservation</a>, <a href="../../../../../../EA3/EA1/EA6/EA2/EA9455.htm">Process</a>, <a href="../../../../../../EA3/EA1/EA6/EA3/EA1/EA9471.htm">Gridded Observation Types</a>, <a href="../../../../../../EA3/EA1/EA6/EA3/EA1/EA9475.htm">GridSeriesObservation</a>, <a href="../../../../../../EA3/EA1/EA6/EA3/EA1/EA9473.htm">GridObservation</a>, <a href="../../../../../../EA3/EA1/EA6/EA3/EA2/EA9494.htm">PointObservation</a>, <a href="../../../../../../EA3/EA1/EA6/EA3/EA2/EA9498.htm">PointTimeSeriesObservation</a>, <a href="../../../../../../EA3/EA1/EA6/EA3/EA2/EA9500.htm">MultiPointObservation</a>, <a href="../../../../../../EA3/EA1/EA6/EA3/EA2/EA9496.htm">PointObservationCollection</a>, <a href="../../../../../../EA3/EA1/EA6/EA3/EA3/EA9531.htm">Trajectory Observation</a>, <a href="../../../../../../EA3/EA1/EA6/EA3/EA3/EA9527.htm">Profile Observation</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">An observation is an act that results in the estimation of the value of a feature property, and involves application of a specified procedure, such as a sensor, instrument, algorithm or process chain. The procedure may be applied in-situ, remotely, or ex-situ with respect to the sampling location. Use of a common model allows observation data using different procedures to be combined unambiguously. Observation details are also important for data discovery and for data quality estimation. Observation feature types are defined by the properties that support these applications. &lt;br/&gt;&lt;br/&gt;An observation is an act associated with a discrete time instant or period through which a number, term or other symbol is assigned to a phenomenon [2]. The result of an observation is an estimate of the value of a property of some feature, so the details of the observation are metadata concerning the value of the feature property. The observation itself is also a feature, since it has properties and identity. &lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Attribute</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="EA6744.htm">NamedValue</a></i><br /><strong>&nbsp;&nbsp;parameter</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes8234')" style="text-decoration: none; color: #000000;"><img src="../../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes8234" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes8234_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes8234_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes8234_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes8234_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes8234_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to *</td>
+						</tr>
+						<tr id="DetailsImageAttributes8234_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes8234_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes8234_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					sequenceNumber=7<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			If present, the attributes &lt;i&gt;parameter:NamedValue&lt;/i&gt; shall describe an arbitrary event-specific parameter. This might be an environmental parameter, an instrument setting or input, or an event-specific sampling parameter that is not tightly bound to either the feature-of-interest (6.2.2.7) or to the observation procedure (6.2.2.10). To avoid ambiguity, there shall be no more than one parameter with the same name. &lt;br/&gt;&lt;br/&gt;NOTE	Parameters that are tightly bound to the procedure may be recorded as part of the procedure description. &lt;br/&gt;&lt;br/&gt;In some contexts the &lt;i&gt;Observation::procedure&lt;/i&gt; (6.2.2.10) is a generic or standard procedure, rather than an event-specific process. In this context, parameters bound to the observation act, such as instrument settings, calibrations or inputs, local position, detection limits, asset identifer, operator, may augment the description of a standard procedure. &lt;br/&gt;&lt;br/&gt;EXAMPLE	A time sequence of observations of water quality in a well may be made at variable depths within the well. While these may be associated with specimens taken from the well at this depth as the features-of-interest, a more common approach is to identify the well itself as the feature-of-interest, and add a &ldquo;samplingDepth&rdquo; parameter to the observation (Figure 3). The sampling depth is of secondary interest compared to the temporal variation of water quality at the site. &lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public TM_Object</i><br /><strong>&nbsp;&nbsp;phenomenonTime</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes8235')" style="text-decoration: none; color: #000000;"><img src="../../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes8235" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes8235_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes8235_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes8235_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes8235_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes8235_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes8235_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes8235_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes8235_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					sequenceNumber=3<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The attribute &lt;i&gt;phenomenonTime:TM_Object&lt;/i&gt; shall describe the time that the result (6.2.2.9) applies to the property of the feature-of-interest (6.2.2.7). This is often the time of interaction by a sampling procedure (8.2) or observation procedure (6.2.2.10) with a real-world feature. &lt;br/&gt;&lt;br/&gt;NOTE 1	The phenomenon time is the temporal parameter normally used in geospatial analysis of the result. &lt;br/&gt;&lt;br/&gt;NOTE 2	If the observedProperty of an observation is &lsquo;occurrence time&rsquo; then the result should be the same as the phenomenonTime&lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public DQ_Element</i><br /><strong>&nbsp;&nbsp;resultQuality</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes8236')" style="text-decoration: none; color: #000000;"><img src="../../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes8236" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes8236_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes8236_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes8236_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes8236_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes8236_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to *</td>
+						</tr>
+						<tr id="DetailsImageAttributes8236_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes8236_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes8236_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					sequenceNumber=10<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			If present, the attributes &lt;i&gt;resultQuality:DQ_Element&lt;/i&gt; shall describe the quality of the result (6.2.2.9). This instance-specific description complements the description of the observation procedure (6.2.2.10), which provides information concerning the quality of all observations using this procedure. Quality of a result may be assessed following the procedures in ISO 19114:2003.Multiple measures may be provided (ISO/TS 19138:2006). &lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../../../../EA9/EA1/EA1886.htm">TM_Instant</a></i><br /><strong>&nbsp;&nbsp;resultTime</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes8237')" style="text-decoration: none; color: #000000;"><img src="../../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes8237" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes8237_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes8237_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes8237_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes8237_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes8237_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes8237_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes8237_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes8237_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					sequenceNumber=4<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The attribute &lt;i&gt;resultTime:TM_Instant&lt;/i&gt; shall describe the time when the result became available, typically when the procedure (6.2.2.10) associated with the observation was completed For some observations this is identical to the phenomenonTime. However, there are important cases where they differ. &lt;br/&gt;&lt;br/&gt;EXAMPLE 1	Where a measurement is made on a specimen in a laboratory, the phenomenonTime is the time the specimen was retrieved from its host, while the resultTime is the time the laboratory procedure was applied. &lt;br/&gt;&lt;br/&gt;EXAMPLE 2	The resultTime also supports disambiguation of repeat measurements made of the same property of a feature using the same procedure. &lt;br/&gt;&lt;br/&gt;EXAMPLE 3	Where sensor observation results are post-processed, the resultTime is the post-processing time, while the phenomenonTime is the time of initial interaction with the world. &lt;br/&gt;&lt;br/&gt;EXAMPLE 4	Simulations may be used to estimate the values for phenomena in the future or past. The phenomenonTime is the time that the result applies to, while the resultTime is the time that the simulation was executed. &lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../../../../EA9/EA1/EA1891.htm">TM_Period</a></i><br /><strong>&nbsp;&nbsp;validTime</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes8238')" style="text-decoration: none; color: #000000;"><img src="../../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes8238" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes8238_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes8238_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes8238_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes8238_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes8238_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes8238_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes8238_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes8238_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					sequenceNumber=5<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			If present, the attribute &lt;i&gt;validTime:TM_Period&lt;/i&gt; shall describe the time period during which the result is intended to be used. &lt;br/&gt;&lt;br/&gt;NOTE	This attribute is commonly required in forecasting applications. &lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>
+	</table>
+</div>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../../../EA13/EA2/EA2457.htm">MD_Metadata</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> metadata<br />
+						If present, the association Metadata shall link the OM_Observation to descriptive metadata. 	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink8239" onclick="parent.toggleDiv('detailsDIVLink8239','DetailsImageLink8239')" />Details:
+							<div id="detailsDIVLink8239" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">If present, the association &lt;i&gt;Metadata&lt;/i&gt; shall link the OM_Observation to descriptive metadata. &lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA6746.htm">«FeatureType» OM_Observation</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> relatedObservation<br />
+						Some observations depend on other observations to provide context which is important, sometimes essential, in understanding the result. These dependencies are stronger than mere spatio-temporal coincidences, requiring explicit representation. If present, the association class class ObservationContext (Figure 2) shall link a OM_Observation to another OM_Observation, with the role name relatedObservation for the target. It shall support one attribute.
+EXAMPLES	Some examples include the conditions associated with experimental replicates (e.g., experimental plots and treatments used), biotic factors (e.g., ecological community), interactions among features (e.g., predator-prey), or other temporary relationships occurring at the time of observation that are are not inherent to the observed features themselves (i.e., they change over time), or the related observation may provide input to a process that generates a new result.
+This association complements the Intention association which describes relationships between a sampling feature and domain features.   
+	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink8240" onclick="parent.toggleDiv('detailsDIVLink8240','DetailsImageLink8240')" />Details:
+							<div id="detailsDIVLink8240" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../../../EA8/EA1/EA1810.htm">«metaclass» GF_PropertyType</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> observedProperty<br />
+						The association Phenomenon shall link the OM_Observation to the GFI_PropertyType (B.2.2) for which the OM_Observation:result (6.2.2.9) provides an estimate of its value. The property type has the role observedProperty with respect to the observation. 
+The observed property shall be a phenomenon associated with the type of the featureOfInterest. 
+NOTE	An observed property may, but need not be modelled as a property (in the sense of the General Feature Model) in a formal application schema that defines the type of the feature of interest
+The observed property supports semantic or thematic classification of observations, which is useful for discovery and data fusion.
+	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink8241" onclick="parent.toggleDiv('detailsDIVLink8241','DetailsImageLink8241')" />Details:
+							<div id="detailsDIVLink8241" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">The association &lt;i&gt;Phenomenon&lt;/i&gt; shall link the OM_Observation to the GFI_PropertyType (B.2.2) for which the OM_Observation:result (6.2.2.9) provides an estimate of its value. The property type has the role &lt;i&gt;observedProperty&lt;/i&gt; with respect to the observation. &lt;br/&gt;The observed property shall be a phenomenon associated with the type of the featureOfInterest. &lt;br/&gt;NOTE	An observed property may, but need not be modelled as a property (in the sense of the General Feature Model) in a formal application schema that defines the type of the feature of interest&lt;br/&gt;The observed property supports semantic or thematic classification of observations, which is useful for discovery and data fusion.&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA6747.htm">«FeatureType» OM_Process</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> generatedObservation<br />
+						Many Observations may be generated by a procedure, except if the Process is instance-specific, where the time of application is bound into the description of the Process. 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> procedure<br />
+						The association ProcessUsed shall link the OM_Observation to the OM_Process (6.2.3) used to generate the result. The process has the role procedure with respect to the observation. A process might be responsible for more than one generatedObservation. 
+The OM_Process shall be suitable for the observed property. As a corollary, details of the observed property are constrained by the procedure used.  
+EXAMPLE 	Observed radiance wavelength is determined by the response characteristics of the sensor. 
+A description of the observation procedure provides or implies an indication of the reliability or quality of the observation result. 
+	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink8242" onclick="parent.toggleDiv('detailsDIVLink8242','DetailsImageLink8242')" />Details:
+							<div id="detailsDIVLink8242" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">The association &lt;i&gt;ProcessUsed&lt;/i&gt; shall link the OM_Observation to the OM_Process (6.2.3) used to generate the result. The process has the role &lt;i&gt;procedure&lt;/i&gt; with respect to the observation. A process might be responsible for more than one &lt;i&gt;generatedObservation&lt;/i&gt;. &lt;br/&gt;The OM_Process shall be suitable for the observed property. As a corollary, details of the observed property are constrained by the procedure used.&#160;&#160;&lt;br/&gt;EXAMPLE 	Observed radiance wavelength is determined by the response characteristics of the sensor. &lt;br/&gt;A description of the observation procedure provides or implies an indication of the reliability or quality of the observation result. observation result. &lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA6/EA6920.htm">«FeatureType» GFI_Feature</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> propertyValueProvider<br />
+						Pointer to an observation that provides an estimate of a property value
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> featureOfInterest<br />
+						The association Domain shall link the OM_Observation to the GFI_Feature (B.2.1) that is the subject of the observation and carries the observed property. This feature has the role featureOfInterest with respect to the observation. This feature is the real-world object whose properties are under observation, or is a feature intended to sample the real-world object, as described in Clause 8 of this standard. An observation instance serves as a propertyValueProvider for its feature of interest.	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink8243" onclick="parent.toggleDiv('detailsDIVLink8243','DetailsImageLink8243')" />Details:
+							<div id="detailsDIVLink8243" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">The association &lt;i&gt;Domain&lt;/i&gt;&lt;b&gt; &lt;/b&gt;shall link the OM_Observation to the GFI_Feature (B.2.1) that is the subject of the observation and carries the observed property. This feature has the role &lt;i&gt;featureOfInterest&lt;/i&gt; with respect to the observation. This feature is the real-world object whose properties are under observation, or is a feature intended to sample the real-world object, as described in Clause 8 of this standard. An observation instance serves as a &lt;i&gt;propertyValueProvider&lt;/i&gt; for its feature of interest.&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA6746.htm">«FeatureType» OM_Observation</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> relatedObservation<br />
+						Some observations depend on other observations to provide context which is important, sometimes essential, in understanding the result. These dependencies are stronger than mere spatio-temporal coincidences, requiring explicit representation. If present, the association class class ObservationContext (Figure 2) shall link a OM_Observation to another OM_Observation, with the role name relatedObservation for the target. It shall support one attribute.
+EXAMPLES	Some examples include the conditions associated with experimental replicates (e.g., experimental plots and treatments used), biotic factors (e.g., ecological community), interactions among features (e.g., predator-prey), or other temporary relationships occurring at the time of observation that are are not inherent to the observed features themselves (i.e., they change over time), or the related observation may provide input to a process that generates a new result.
+This association complements the Intention association which describes relationships between a sampling feature and domain features.   
+	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink8244" onclick="parent.toggleDiv('detailsDIVLink8244','DetailsImageLink8244')" />Details:
+							<div id="detailsDIVLink8244" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../../../../../EA2/EA3/EA17/EA1/EA9137.htm">«featureType» SoilDerivedObject</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> soilDerivedObjectObservation<br />
+						-- Name --
+soil derived object observation
+
+-- Definition --
+Observation of a soil property for characterizing the soil derived object.	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink8245" onclick="parent.toggleDiv('detailsDIVLink8245','DetailsImageLink8245')" />Details:
+							<div id="detailsDIVLink8245" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA2/EA1/EA6821.htm">«FeatureType» SF_SamplingFeature</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> relatedObservation<br />
+						Sampling features are distinctive compared with other features from application domains by having navigable associations to observations. If present, the association Design shall link the SF_SamplingFeature to an OM_Observation that was made utilizing the sampling feature, and the description of the sampling feature provides an intrinsic element of the observation protocol, along with the observation procedure (6.2.2.10) and the decomposition of the domain geometry in the case of a coverage-valued result (7.3.1). The OM_Observation has the role relatedObservation with respect to the sampling feature. Multiple observations may be made on a single sampling feature. 
+This association complements the Domain association owned by OM_Observation. The featureOfInterest of a relatedObservation shall be the SF_SamplingFeature (modelled as a UML constraint). 
+	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink8246" onclick="parent.toggleDiv('detailsDIVLink8246','DetailsImageLink8246')" />Details:
+							<div id="detailsDIVLink8246" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">Sampling features are distinctive compared with other features from application domains by having navigable associations&lt;b&gt; &lt;/b&gt;to observations. If present, the association &lt;i&gt;Design &lt;/i&gt;shall link the SF_SamplingFeature to an OM_Observation that was made utilizing the sampling feature, and the description of the sampling feature provides an intrinsic element of the observation protocol, along with the observation procedure (6.2.2.10) and the decomposition of the domain geometry in the case of a coverage-valued result (7.3.1). The OM_Observation has the role &lt;i&gt;relatedObservation &lt;/i&gt;with respect to the sampling feature. Multiple observations may be made on a single sampling feature. &lt;br/&gt;This association complements the Domain association owned by OM_Observation. The featureOfInterest of a relatedObservation shall be the SF_SamplingFeature (modelled as a UML constraint). relatedObservation shall be the SF_SamplingFeature. &lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../../../../EA2/EA5/EA2/EA426.htm">«DataType» StratigraphicDateEstimate</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> observationalBasis<br />
+						Descriptions of the age determination acts which support this date estimate	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink8247" onclick="parent.toggleDiv('detailsDIVLink8247','DetailsImageLink8247')" />Details:
+							<div id="detailsDIVLink8247" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../../../../../EA2/EA3/EA17/EA1/EA9133.htm">«featureType» ProfileElement</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> profileElementObservation<br />
+						-- Name --
+profile element observation
+
+-- Definition --
+Observation of a soil property for characterizing the profile element (layer or horizon).	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink8248" onclick="parent.toggleDiv('detailsDIVLink8248','DetailsImageLink8248')" />Details:
+							<div id="detailsDIVLink8248" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../../../../../EA2/EA3/EA17/EA1/EA9146.htm">«featureType» SoilSite</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> soilSiteObservation<br />
+						-- Name --
+soil site observation
+
+-- Definition --
+Observation of a soil property for characterizing the soil site.	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink8249" onclick="parent.toggleDiv('detailsDIVLink8249','DetailsImageLink8249')" />Details:
+							<div id="detailsDIVLink8249" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../../../EA7/EA1/EA2/EA3/EA1593.htm">«type» Any</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> result<br />
+						The association Range shall link the OM_Observation to the value generated by the procedure.The value has the role result with respect to the observation. The type of the result is shown as Any, since it may represent the value of any feature property. 
+NOTE	OGC SWE Common provides a model suitable for describing many kinds of observation results. 
+The type of the observation result shall be consistent with the observed property, and the scale or scope for the value shall be consistent with the quantity or category type. If the observed property (6.2.2.8) is a spatial operation or function, the type of the result may be a coverage, 
+NOTE	In some contexts, particularly in earth and environmental sciences, the term “observation” is used to refer to the result itself. 
+
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink8250" onclick="parent.toggleDiv('detailsDIVLink8250','DetailsImageLink8250')" />Details:
+							<div id="detailsDIVLink8250" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">The association &lt;i&gt;Range&lt;/i&gt; shall link the OM_Observation to the value generated by the procedure.The value has the role &lt;i&gt;result &lt;/i&gt;with respect to the observation. The type of the result is shown as Any, since it may represent the value of any feature property. &lt;br/&gt;NOTE	OGC SWE Common provides a model suitable for describing many kinds of observation results. &lt;br/&gt;The type of the observation result shall be consistent with the observed property, and the scale or scope for the value shall be consistent with the quantity or category type. If the observed property (6.2.2.8) is a spatial operation or function, the type of the result may be a coverage, &lt;br/&gt;NOTE	In some contexts, particularly in earth and environmental sciences, the term &ldquo;observation&rdquo; is used to refer to the &lt;i&gt;result &lt;/i&gt;itself. &lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../../../../../EA2/EA3/EA6/EA1/EA1/EA8373.htm">«featureType» AbstractMonitoringFeature</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> hasObservation<br />
+						-- Definition --
+Observation of emissions, of the state of environmental media and of other ecosystem parameters (biodiversity, ecological conditions of vegetation, etc.) by or on behalf of public authorities at this AbstractMonitoringFeature.	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink8251" onclick="parent.toggleDiv('detailsDIVLink8251','DetailsImageLink8251')" />Details:
+							<div id="detailsDIVLink8251" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../../../../../EA2/EA3/EA17/EA1/EA9144.htm">«featureType» SoilProfile</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> soilProfileObservation<br />
+						-- Name --
+soil profile observation
+
+-- Definition --
+Observation of a soil property for characterizing the soil profile.	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink8252" onclick="parent.toggleDiv('detailsDIVLink8252','DetailsImageLink8252')" />Details:
+							<div id="detailsDIVLink8252" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">byValuePropertyType</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario8253" onclick="parent.toggleDiv('detailsDIVScenario8253','DetailsImageScenario8253')" />Details:
+						<div id="detailsDIVScenario8253" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: true,false<br />Default: false<br />Description: enforce the &#39;by value&#39; property pattern without xl<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">byValuePropertyType</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario8254" onclick="parent.toggleDiv('detailsDIVScenario8254','DetailsImageScenario8254')" />Details:
+						<div id="detailsDIVScenario8254" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: true | false<br />Default: false<br />Description: enforce the &#39;by value&#39; property pattern without xlinks<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">hasXmlLang</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario8255" onclick="parent.toggleDiv('detailsDIVScenario8255','DetailsImageScenario8255')" />Details:
+						<div id="detailsDIVScenario8255" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: true | false<br />Default: false<br />Description: axml attribute xml:lang shall be generated for the type representing the class<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">isCollection</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario8256" onclick="parent.toggleDiv('detailsDIVScenario8256','DetailsImageScenario8256')" />Details:
+						<div id="detailsDIVScenario8256" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: true,false<br />Default: false<br />Description: attribute group gml:AggregationAttributeGroup is a<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">isCollection</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario8257" onclick="parent.toggleDiv('detailsDIVScenario8257','DetailsImageScenario8257')" />Details:
+						<div id="detailsDIVScenario8257" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: true | false<br />Default: false<br />Description: attribute group gml:AggregationAttributeGroup is added to the complex type of the feature type<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">noPropertyType</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario8258" onclick="parent.toggleDiv('detailsDIVScenario8258','DetailsImageScenario8258')" />Details:
+						<div id="detailsDIVScenario8258" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: true,false<br />Default: false<br />Description: suppress automatic creation of *PropertyType compl<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">noPropertyType</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario8259" onclick="parent.toggleDiv('detailsDIVScenario8259','DetailsImageScenario8259')" />Details:
+						<div id="detailsDIVScenario8259" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: true | false<br />Default: false<br />Description: suppress automatic creation of *PropertyType complexType<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="ConstraintsTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+			  	<tr>
+					<td width="80%" class="TableHeading">Constraint</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Status</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">observedProperty shall be a phenomenon associated with the feature of interest</td>
+					<td width="10%" class="TableRow">Invariant</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints8260" onclick="parent.toggleDiv('detailsDIVConstraints8260','DetailsImageConstraints8260')" />Details:
+							<div id="detailsDIVConstraints8260" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">procedure shall be suitable for observedProperty</td>
+					<td width="10%" class="TableRow">Invariant</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints8261" onclick="parent.toggleDiv('detailsDIVConstraints8261','DetailsImageConstraints8261')" />Details:
+							<div id="detailsDIVConstraints8261" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">result type shall be suitable for observedProperty</td>
+					<td width="10%" class="TableRow">Invariant</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints8262" onclick="parent.toggleDiv('detailsDIVConstraints8262','DetailsImageConstraints8262')" />Details:
+							<div id="detailsDIVConstraints8262" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">a parameter.name shall not appear more than once</td>
+					<td width="10%" class="TableRow">Invariant</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints8263" onclick="parent.toggleDiv('detailsDIVConstraints8263','DetailsImageConstraints8263')" />Details:
+							<div id="detailsDIVConstraints8263" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA9/EA6779.htm">«FeatureType» OM_DiscreteCoverageObservation</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA6746.htm">«FeatureType» OM_Observation</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA8/EA6775.htm">«FeatureType» OM_ComplexObservation</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA2/EA6751.htm">«FeatureType» OM_Measurement</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA3/EA6755.htm">«FeatureType» OM_CategoryObservation</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA6/EA6767.htm">«FeatureType» OM_TemporalObservation</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../EA8/EA1/EA1805.htm">«metaclass» GF_FeatureType</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA7/EA6771.htm">«FeatureType» OM_GeometryObservation</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA6759.htm">«FeatureType» OM_CountObservation</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA5/EA6763.htm">«FeatureType» OM_TruthObservation</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../EA7/EA1/EA2/EA3/EA1593.htm">«type» Any</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Strong</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">The association <i>Range</i> shall link the OM_Observation to the value generated by the procedure.The value has the role <i>result </i>with respect to the observation. The type of the result is shown as Any, since it may represent the value of any feature property. 
+NOTE	OGC SWE Common provides a model suitable for describing many kinds of observation results. 
+The type of the observation result shall be consistent with the observed property, and the scale or scope for the value shall be consistent with the quantity or category type. If the observed property (6.2.2.8) is a spatial operation or function, the type of the result may be a coverage, 
+NOTE	In some contexts, particularly in earth and environmental sciences, the term &ldquo;observation&rdquo; is used to refer to the <i>result </i>itself. 
+</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

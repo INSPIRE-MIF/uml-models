@@ -1,0 +1,980 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Geometry root::GM_Object</title>
+<link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("GM_Object", " : "))</script>  : Public abstract &lt;&lt;type&gt;&gt; Class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">10/04/2008 12:16:15</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">14/12/2012 11:09:55</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{8B67A680-304C-4758-9AA1-9172795D367C}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../../../../EA2/EA1/EA1/EA77.htm">Summary diagram: Geologic Feature</a>, <a href="../EA883.htm">Fig 05: Geometry basic classes </a>, <a href="../EA1/EA999.htm">Transfinite Set of Direct Positions</a>, <a href="../EA2/EA1086.htm">Fig 24: GM_Aggregate</a>, <a href="../EA2/EA1074.htm">Context Diagram: GM_Aggregate</a>, <a href="../EA3/EA1114.htm">Fig 25: Geometry Complexes</a>, <a href="../EA3/EA1100.htm">Context Diagram: GM_Complex</a>, <a href="../EA4/EA1177.htm">Fig 08: GM_Primitive</a>, <a href="../EA4/EA1155.htm">Context Diagram: GM_Primitive</a>, <a href="EA1213.htm">Fig 06: GM_Object</a>, <a href="EA1215.htm">Geometry Root</a>, <a href="EA1211.htm">Context Diagram: GM_Object</a>, <a href="../../EA2/EA1236.htm">Fig 33: Relation between geometry and topology</a>, <a href="../../../EA8/EA1/EA1789.htm">Fig 6: Attributes of feature types</a>, <a href="../../../EA8/EA1/EA1777.htm">Context Diagram: GF_SpatialAttributeType</a>, <a href="../../../EA13/EA14/EA2803.htm">Context Diagram: EX_BoundingPolygon</a>, <a href="../../../EA15/EA5/EA3091.htm">Context Diagram: MI_PlatformPass</a>, <a href="../../../EA18/EA1/EA1/EA3415.htm">Main</a>, <a href="../../../EA18/EA1/EA1/EA3409.htm">Fig 02 -  CV_Coverage</a>, <a href="../../../EA18/EA1/EA1/EA3399.htm">Context Diagram: CV_DomainObject</a>, <a href="../../../EA18/EA1/EA4/EA3487.htm">Context Diagram: CV_FootPrint</a>, <a href="../../../EA24/EA3/EA4226.htm">Fig 59: Context Diagram: LBS_GeometryChoice</a>, <a href="../../../EA28/EA18/EA5535.htm">Context Diagram: Value</a>, <a href="../../../EA29/EA1/EA5589.htm">Main</a>, <a href="../../../EA29/EA1/EA5583.htm">Context Diagram: SP_Object</a>, <a href="../../../EA29/EA1/EA5587.htm">geometry root</a>, <a href="../../../EA30/EA5597.htm">Class Hierarchy</a>, <a href="../../../EA30/EA1/EA5630.htm">Main</a>, <a href="../../../EA30/EA1/EA5616.htm">Context Diagram: MF_OneParamGeometry</a>, <a href="../../../EA30/EA2/EA5654.htm">MF_RigidTemporalGeometry</a>, <a href="../../../EA30/EA2/EA5646.htm">Context Diagram: MF_RigidTemporalGeometry</a>, <a href="../../../EA30/EA2/EA5642.htm">Context Diagram: MF_LocalGeometry</a>, <a href="../../../EA31/EA1/EA5680.htm">Fig 04 Elements of a Coverage</a>, <a href="../../../EA37/EA1/EA1/EA6719.htm">Figure 6: Specialized Observations</a>, <a href="../../../EA37/EA1/EA1/EA7/EA6768.htm">Context diagram: OM_GeometryObservation</a>, <a href="../../../EA37/EA1/EA2/EA6796.htm">Figure 11: Sampling Manifold</a>, <a href="../../../EA37/EA1/EA2/EA2/EA6823.htm">Context diagram: SF_SpatialSamplingFeature</a>, <a href="../../../EA37/EA1/EA5/EA6910.htm">Figure 16: SamplingCoverageObservation</a>, <a href="../../../../EA4/EA2/EA10/EA7262.htm">TimeseriesCore</a>, <a href="../../../../../EA2/EA3/EA1/EA1/EA8214.htm">CoverageObservation(Informative)</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">GM_Object (Figure 6) is the root class of the geometric object taxonomy and supports interfaces common to all geographically referenced geometric objects. GM_Object instances are sets of direct positions in a particular coordinate reference system. A GM_Object can be regarded as an infinite set of points that satisfies the set operation interfaces for a set of direct positions, TransfiniteSet#lt;DirectPosition#gt;. Since an infinite collection class cannot be implemented directly, a Boolean test for inclusion shall be provided by the GM_Object interface. This international standard concentrates on vector geometry classes, but future work may use GM_Object as a root class without modification.&lt;br/&gt;NOTE As a type, GM_Object does not have a well-defined default state or value representation as a data type. Instantiated subclasses of GM_Object will.&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Operations');" id="OperationsTitle">Operations</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+<div class="ItemBody" id="OperationsTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Operation</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>boundary</strong>():<a href="EA1218.htm">GM_Boundary</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations1745" onclick="parent.toggleDiv('detailsDIVOperations1745','DetailsImageOperations1745')" />Details:
+						<div id="detailsDIVOperations1745" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The operation &quot;boundary&quot; shall return a finite set of GM_Objects containing all of the points on the boundary of this GM_Object. The finite set of GM_Objects returned shall be in the same coordinate reference system as this GM_Object. If the GM_Object is in a GM_Complex, then the boundary GM_Objects returned will be in the same GM_Complex. If the GM_Object is not in any GM_Complex, then the boundary GM_Objects returned may have been constructed in response to the operation. &lt;br/&gt;GM_Object::boundary() : Set#lt;Reference#lt;GM_Object#gt;#gt;&lt;br/&gt;The organization of the set returned is dependent on the type of GM_Object. Each of the subclasses of GM_Object described below will specify more completely the organization of their boundary set. &lt;br/&gt;The elements of a boundary shall be smaller in dimension than the original element.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>buffer</strong>(					<a href="#" onclick="parent.toggleData('param{CBE58995-07E4-42e5-AB68-8888562B6573}')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="param{CBE58995-07E4-42e5-AB68-8888562B6573}" border="0" />radius: <a href="../../../EA7/EA1/EA1/EA1/EA1445.htm">Distance</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{CBE58995-07E4-42e5-AB68-8888562B6573}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{CBE58995-07E4-42e5-AB68-8888562B6573}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>inout</td>
+						</tr>
+						<tr id="param{CBE58995-07E4-42e5-AB68-8888562B6573}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{CBE58995-07E4-42e5-AB68-8888562B6573}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="EA1219.htm">GM_Object</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations1746" onclick="parent.toggleDiv('detailsDIVOperations1746','DetailsImageOperations1746')" />Details:
+						<div id="detailsDIVOperations1746" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The operation &quot;buffer&quot; shall return a GM_Object containing all points whose distance from this GM_Object is less than or equal to the &quot;distance&quot; passed as a parameter. The GM_Object returned is in the same reference system as this original GM_Object. The dimension of the returned GM_Object is normally the same as the coordinate dimension - a collection of GM_Surfaces in 2D space and a collection of GM_Solids in 3D space, but this may be application defined.&lt;br/&gt;GM_Object::buffer(radius : Distance) : GM_Object&lt;br/&gt;NOTE There are cases for which this GM_Object would be partially outside the domain of validity of the object&#39;s coordinate reference system. If this case should arise the implementation shall decide on appropriate action.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>centroid</strong>():<a href="../EA1/EA1029.htm">DirectPosition</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations1747" onclick="parent.toggleDiv('detailsDIVOperations1747','DetailsImageOperations1747')" />Details:
+						<div id="detailsDIVOperations1747" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The operation &quot;centroid&quot; shall return the mathematical centroid for this GM_Object. The result is not guaranteed to be on the object. For heterogeneous collections of primitives, the centroid only takes into account those of the largest dimension. For example, when calculating the centroid of surfaces, an average is taken weighted by area. Since curves have no area they do not contribute to the average.&lt;br/&gt;GM_Object::centroid() : DirectPosition&lt;br/&gt;NOTE : There may be cases for which this position would be outside the domain of validity of the object&#39;s coordinate reference system, but this is unlikely, since the domain of validity of most coordinate reference systems is convex. If this unlikely case should arise the implementation shall decide on appropriate action.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>closure</strong>():<a href="../EA3/EA1130.htm">GM_Complex</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations1748" onclick="parent.toggleDiv('detailsDIVOperations1748','DetailsImageOperations1748')" />Details:
+						<div id="detailsDIVOperations1748" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>convexHull</strong>():<a href="EA1219.htm">GM_Object</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations1749" onclick="parent.toggleDiv('detailsDIVOperations1749','DetailsImageOperations1749')" />Details:
+						<div id="detailsDIVOperations1749" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			convex hull of a geometric object &lt;br/&gt;smallest convex set containing the original geometric &lt;br/&gt;&lt;br/&gt;convex set &lt;br/&gt;geometric set in which any third point on the straight-line segment joining any two points in the set is also contained in the set &lt;br/&gt;The operation &quot;convexHull&quot; shall return a GM_Object that represents the convex hull of this GM_Object.&lt;br/&gt;GM_Object::convexHull() : GM_Object&lt;br/&gt;NOTE There may be cases for which this GM_Object would be partially outside the domain of validity of the object&#39;s coordinate reference system, but this is unlikely, since the domain of validity of most coordinate reference systems is convex. If this unlikely case should arise the implementation shall decide on appropriate action.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>coordinateDimension</strong>():<a href="../../../EA7/EA1/EA3/EA4/EA1691.htm">Integer</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations1750" onclick="parent.toggleDiv('detailsDIVOperations1750','DetailsImageOperations1750')" />Details:
+						<div id="detailsDIVOperations1750" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			coordinate dimension&lt;br/&gt;number of measurements or ordinates needed to describe a position in a coordinate system&lt;br/&gt;&lt;br/&gt;The operation &quot;coordinateDimension&quot; shall return the dimension of the coordinates that define this GM_Object, which must be the same as the coordinate dimension of the coordinate reference system for this GM_Object.&lt;br/&gt;GM_Object::coordinateDimension(): Integer&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>dimension</strong>(					<a href="#" onclick="parent.toggleData('param{7CA0180F-204B-47ff-92AB-051F49770FAD}')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="param{7CA0180F-204B-47ff-92AB-051F49770FAD}" border="0" />point: <a href="../EA1/EA1029.htm">DirectPosition</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{7CA0180F-204B-47ff-92AB-051F49770FAD}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td>NULL</td>
+						</tr>
+						<tr id="param{7CA0180F-204B-47ff-92AB-051F49770FAD}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>inout</td>
+						</tr>
+						<tr id="param{7CA0180F-204B-47ff-92AB-051F49770FAD}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{7CA0180F-204B-47ff-92AB-051F49770FAD}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="../../../EA7/EA1/EA3/EA4/EA1691.htm">Integer</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations1751" onclick="parent.toggleDiv('detailsDIVOperations1751','DetailsImageOperations1751')" />Details:
+						<div id="detailsDIVOperations1751" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			geometric dimension at a point&lt;br/&gt;largest number n such that this point in the geometric set has a subset with the point in its interior that is similar (isomorphic) to a small copy of Rn, Euclidean n-space. &lt;br/&gt;&lt;br/&gt;The operation &quot;dimension&quot; shall return the inherent dimension of this GM_Object, which shall be less than or equal to the coordinate dimension. The dimension of a collection of geometric objects shall be the largest dimension of any of its pieces. Points are 0-dimensional, curves are 1-dimensional, surfaces are 2-dimensional, and solids are 3-dimensional. Locally, the dimension of a geometric object at a point is the dimension of a local neighborhood of the point 3/4 that is the dimension of the best local coordinate neighborhood of the point. Dimension is unambiguously defined only for DirectPositions interior to this GM_Object. If the passed DirectPosition is NULL, then the operation shall return the largest possible dimension for any DirectPosition in this GM_Object.&lt;br/&gt;GM_Object::dimension(point : DirectPosition = NULL) : Integer&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>distance</strong>(					<a href="#" onclick="parent.toggleData('param{F52A425E-F266-4208-B512-A67B38348051}')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="param{F52A425E-F266-4208-B512-A67B38348051}" border="0" />geometry: <a href="EA1219.htm">GM_Object</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{F52A425E-F266-4208-B512-A67B38348051}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{F52A425E-F266-4208-B512-A67B38348051}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>inout</td>
+						</tr>
+						<tr id="param{F52A425E-F266-4208-B512-A67B38348051}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{F52A425E-F266-4208-B512-A67B38348051}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="../../../EA7/EA1/EA1/EA1/EA1445.htm">Distance</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations1752" onclick="parent.toggleDiv('detailsDIVOperations1752','DetailsImageOperations1752')" />Details:
+						<div id="detailsDIVOperations1752" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The operation &quot;distance&quot; shall return the distance between this GM_Object and another GM_Object. This distance is defined to be the greatest lower bound of the set of distances between all pairs of points that include one each from each of the two GM_Objects. A &quot;distance&quot; value shall be a positive number associated to distance units such as meters or standard foot. If necessary, the second geometric object shall be transformed into the same coordinate reference system as the first before the distance is calculated.&lt;br/&gt;GM_Object::distance(geometry : GM_Object) : Distance&lt;br/&gt;If the geometric objects overlap, or touch, then their distance apart shall be zero. Some current implementations use a &quot;negative&quot; distance for such cases, but the approach is neither consistent between implementations, nor theoretically viable.&lt;br/&gt;The type &quot;Distance&quot; is one of the units of measure types included in annexes to ISO 15046-3.&lt;br/&gt;NOTE The role of the reference system in distance calculations is important. Generally, there are at least three types of distances that may be defined between points (and therefore between geometric objects): map distance, geodetic distance, and terrain distance.&#160;&#160;&lt;br/&gt;Map distance is the distance between the points as defined by their positions in a coordinate projection (such as on a map when scale is taken into account). Map distance is usually accurate for small areas where scale functions have well-behaved derivatives.&#160;&#160;&lt;br/&gt;Geodesic distance is the length of the shortest curve between those two points along the surface of the earth model being used by the coordinate reference system. Geodesic distance behaves well for wide areas of coverage, and takes the earth&#39;s curvature into account. It is especially handy for air and sea navigation, although care should be taken to distinguish between rhumb line (curves of constant bearing) and geodesic curve distance. &lt;br/&gt;Terrain distance will take into account the local vertical displacements (hypsography). Terrain distance can be based either on a geodesic distance or a map distance.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>envelope</strong>():<a href="../EA1/EA1047.htm">GM_Envelope</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations1753" onclick="parent.toggleDiv('detailsDIVOperations1753','DetailsImageOperations1753')" />Details:
+						<div id="detailsDIVOperations1753" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The operation &quot;envelope&quot; shall return the minimum bounding box for this GM_Object. This shall be the coordinate region spanning the minimum and maximum value for each ordinate taken on by DirectPositions in this GM_Object. The simplest representation for an envelope consists of two DirectPositions, the first one containing all the minimums for each ordinate, and second one containing all the maximums. However, there are cases for which these two positions would be outside the domain of validity of the object&#39;s coordinate reference system. This operation is included here only as an interface, as applications may chose to implement in different manners.&lt;br/&gt;GM_Object::envelope() : GM_Envelope&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>isCycle</strong>():<a href="../../../EA7/EA1/EA3/EA6/EA1727.htm">Boolean</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations1754" onclick="parent.toggleDiv('detailsDIVOperations1754','DetailsImageOperations1754')" />Details:
+						<div id="detailsDIVOperations1754" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The operation &quot;isCycle&quot; shall return TRUE if this GM_Object has an empty boundary after topological simplification (removal of overlaps between components in non-structured aggregates, such as subclasses of GM_Aggregate). This condition is alternatively referred to as being &quot;closed.&quot; This creates some confusion since there are two distinct and incompatible definitions for the word &quot;closed.&quot; The use of the word cycle is rarer (generally restricted to the field of algebraic topology), but leads to less confusion. Essentially, an object (which must be representable by a geometric complex, for reasons that will be explained later) is a cycle if it is isomorphic to a geometric object that is the boundary of a region in some Euclidean Space. Thus a curve is a cycle, if it is isomorphic to a circle (has the same start and end point). A surface is a cycle if it isomorphic to the surface of a sphere, or some torus. A solid, with finite size, in a space of dimension 3 or less is never a cycle. &lt;br/&gt;GM_Object::isCycle(): Boolean&lt;br/&gt;The following OCL takes boundary producing a GM_Object and then applies TransfiniteSet#lt;DirectPosition#gt;::isEmpty() to test for the empty set. &lt;br/&gt;GM_Object:&lt;br/&gt;isCycle() = boundary().isEmpty()&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>isSimple</strong>():<a href="../../../EA7/EA1/EA3/EA6/EA1727.htm">Boolean</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations1755" onclick="parent.toggleDiv('detailsDIVOperations1755','DetailsImageOperations1755')" />Details:
+						<div id="detailsDIVOperations1755" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The operation &quot;isSimple&quot; shall return TRUE if this GM_Object has no interior point of self-intersection or self-tangency. In mathematical formalisms, this means that every point in the interior of the object must have a metric neighborhood whose intersection with the object is isomorphic to an n-sphere, where n is the dimension of this GM_Object.&lt;br/&gt;GM_Object::isSimple() : Boolean&lt;br/&gt;Since most coordinate geometries are represented, either directly or indirectly by functions from regions in Euclidean space of their topological dimension, the easiest test for simplicity is requiring that a function exist that is one-to-one and bicontinuous (continuous in both directions). Such a function is a topological isomorphism. This test does not work for &quot;closed&quot; objects (that is, objects for which the isCycle operation returns TRUE).&lt;br/&gt;While GM_Complexes shall contain only simple GM_Objects, non-simple GM_Objects are often used in &quot;spaghetti&quot; data sets.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>maximalComplex</strong>():Set&lt;GM_Complex&gt;
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations1756" onclick="parent.toggleDiv('detailsDIVOperations1756','DetailsImageOperations1756')" />Details:
+						<div id="detailsDIVOperations1756" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			As a set of primitives, a GM_Complex may be contained as a set in another larger GM_Complex, referred to as a &quot;super complex&quot; of the original. A GM_Complex is maximal if there is no such larger super complex. The operation &quot;maximalComplex&quot; shall return the set of maximal GM_Complexes within which this GM_Object is contained.&lt;br/&gt;GM_Object::maximalComplex() : Set#lt;Reference#lt;GM_Complex#gt;&lt;br/&gt;If the application schema used does not include GM_Complex, then this operation shall return a NULL value.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>mbRegion</strong>():<a href="EA1219.htm">GM_Object</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations1757" onclick="parent.toggleDiv('detailsDIVOperations1757','DetailsImageOperations1757')" />Details:
+						<div id="detailsDIVOperations1757" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The operation &quot;mbRegion&quot; is included here only as an interface, as different applications may choose to implement it in different manners. It shall return a region in the coordinate reference system that contains this GM_Object. The default shall be to return the same object as &quot;GM_Object::envelope,&quot; from the operator &quot;envelope.&quot; The most common use of mbRegion will be to support indexing methods that use extents other than minimum bounding rectangles (MBR or envelopes).&lt;br/&gt;GM_Object::mbRegion() : GM_Object&lt;br/&gt;This does not restrict the returned GM_Object from being a non-vector geometric representation, although those types are not defined within this part.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>representativePoint</strong>():<a href="../EA1/EA1029.htm">DirectPosition</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations1758" onclick="parent.toggleDiv('detailsDIVOperations1758','DetailsImageOperations1758')" />Details:
+						<div id="detailsDIVOperations1758" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The operation &quot;representativePoint&quot; is included here only as an interface that may be implemented in different ways. It shall return a point value (DirectPosition) that is guaranteed to be on this GM_Object. The default logic may be to use the DirectPosition of the point returned by the operation &quot;GM_Object::centroid&quot; if that point is on the object. &lt;br/&gt;GM_Object::representativePoint() : DirectPosition&lt;br/&gt;Another use of representativePoint may be for the placement of labels in systems based on graphic presentation. Definitions for symbology and type placement are out of the scope of this part of ISO 15046.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>transform</strong>(					<a href="#" onclick="parent.toggleData('param{CC2E16CB-F551-411b-A271-F03BADD09594}')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="param{CC2E16CB-F551-411b-A271-F03BADD09594}" border="0" />newCRS: <a href="../../../EA11/EA2/EA2179.htm">SC_CRS</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{CC2E16CB-F551-411b-A271-F03BADD09594}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{CC2E16CB-F551-411b-A271-F03BADD09594}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>inout</td>
+						</tr>
+						<tr id="param{CC2E16CB-F551-411b-A271-F03BADD09594}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{CC2E16CB-F551-411b-A271-F03BADD09594}03" style="display: none;">
+							<td width="50"></td>
+							<td><div class="ObjectDetailsNotes">The Spatial Reference System of the Output Spatial Object</div>
+</td>
+						</tr>
+					</table>
+):<a href="EA1219.htm">GM_Object</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations1759" onclick="parent.toggleDiv('detailsDIVOperations1759','DetailsImageOperations1759')" />Details:
+						<div id="detailsDIVOperations1759" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The operation &quot;transform&quot; shall return a new GM_Object that is the coordinate transformation of this GM_Object into the passed coordinate reference system within the accuracy of the transformation as defined in ISO 15046 Part 11.&lt;br/&gt;GM_Object::transform(newCRS : CRS) : GM_Object&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+
+		</table>
+</div>		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../../EA37/EA1/EA1/EA7/EA6771.htm">«FeatureType» OM_GeometryObservation</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> result<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1760" onclick="parent.toggleDiv('detailsDIVLink1760','DetailsImageLink1760')" />Details:
+							<div id="detailsDIVLink1760" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../../EA11/EA2/EA2179.htm">«type» SC_CRS</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> object<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> CRS<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1761" onclick="parent.toggleDiv('detailsDIVLink1761','DetailsImageLink1761')" />Details:
+							<div id="detailsDIVLink1761" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">The association &quot;CRS&quot; links this GM_Object to the coordinate reference system, as defined in ISO150456-9, used in its DirectPosition coordinates&lt;br/&gt;GM_Object::CRS : CRS&lt;br/&gt;NOTE This association shall only be navigable from GM_Object to CRS. This means that the coordinate reference system objects in a data set do not keep a list of GM_Objects that use them. A detailed description of reference systems may be found in ISO 15046 Part 11.&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../../EA18/EA1/EA1/EA3425.htm">«type» CV_DomainObject</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> spatialElement<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1762" onclick="parent.toggleDiv('detailsDIVLink1762','DetailsImageLink1762')" />Details:
+							<div id="detailsDIVLink1762" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA2/EA1094.htm">«type» GM_Aggregate</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> element<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1763" onclick="parent.toggleDiv('detailsDIVLink1763','DetailsImageLink1763')" />Details:
+							<div id="detailsDIVLink1763" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../../EA37/EA1/EA2/EA2/EA6828.htm">«FeatureType» SF_SpatialSamplingFeature</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> shape<br />
+						The association Geometry shall link a SF_SpatialSamplingFeature to a GM_Object that describes its shape. 	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1764" onclick="parent.toggleDiv('detailsDIVLink1764','DetailsImageLink1764')" />Details:
+							<div id="detailsDIVLink1764" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">The association &lt;i&gt;Geometry &lt;/i&gt;shall link a SF_SpatialSamplingFeature&lt;b&gt; &lt;/b&gt;to a GM_Object that describes its shape. &lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">persistence</td>
+				<td width="50%" class="TableRow" valign="top">persistent</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario1765" onclick="parent.toggleDiv('detailsDIVScenario1765','DetailsImageScenario1765')" />Details:
+						<div id="detailsDIVScenario1765" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="ConstraintsTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+			  	<tr>
+					<td width="80%" class="TableHeading">Constraint</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Status</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">dimension() >  boundary().dimension</td>
+					<td width="10%" class="TableRow">Invariant</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints1766" onclick="parent.toggleDiv('detailsDIVConstraints1766','DetailsImageConstraints1766')" />Details:
+							<div id="detailsDIVConstraints1766" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">boundary().notEmpty() implies boundary().dimension() = dimension() -1</td>
+					<td width="10%" class="TableRow">Invariant</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints1767" onclick="parent.toggleDiv('detailsDIVConstraints1767','DetailsImageConstraints1767')" />Details:
+							<div id="detailsDIVConstraints1767" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">boundary().isEmpty() = isCycle()</td>
+					<td width="10%" class="TableRow">Invariant</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints1768" onclick="parent.toggleDiv('detailsDIVConstraints1768','DetailsImageConstraints1768')" />Details:
+							<div id="detailsDIVConstraints1768" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA29/EA1/EA5596.htm">SP_Object</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA2/EA1094.htm">«type» GM_Aggregate</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA37/EA1/EA1/EA7/EA6771.htm">«FeatureType» OM_GeometryObservation</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Strong</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA1/EA1073.htm">TransfiniteSet<DirectPosition></a></td>
+					<td width="10%" class="TableRow" valign="top">Interface</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA3/EA1130.htm">«type» GM_Complex</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA8/EA1/EA1813.htm">«metaclass» GF_SpatialAttributeType</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA30/EA1/EA5634.htm">«type» MF_OneParamGeometry</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1199.htm">«type» GM_Primitive</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA30/EA2/EA5664.htm">«type» MF_LocalGeometry</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

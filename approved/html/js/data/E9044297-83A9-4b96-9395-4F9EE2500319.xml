@@ -1,3 +1,3 @@
-tocTab[tocTab.length] = new Array("0.3:1", "", "INSPIRE Generic Conceptual Model - Overview", "EARoot/EA3/EA8938.htm", "175.png", "27537", "0", "", "Logical diagram0","{E408BF8B-0D04-41d3-A4A4-6598D36BBC6F}");
-tocTab[tocTab.length] = new Array("0.3.1", "1", "Base Models", "EARoot/EA3/EA8940.htm", "4.png", "", "", "{67F61D28-AE88-48e2-B096-FDE5623DDEEB}", "Package");
-tocTab[tocTab.length] = new Array("0.3.2", "1", "Base Types", "EARoot/EA3/EA8941.htm", "4.png", "", "", "{CE2478CD-C7D7-4794-8682-B8E4E03F9033}", "Package");
+tocTab[tocTab.length] = new Array("0.3:1", "", "INSPIRE Generic Conceptual Model - Overview", "EARoot/EA3/EA9332.htm", "175.png", "27537", "0", "", "Logical diagram0","{E408BF8B-0D04-41d3-A4A4-6598D36BBC6F}");
+tocTab[tocTab.length] = new Array("0.3.1", "1", "Base Models", "EARoot/EA3/EA1/EA9338.htm", "4.png", "", "", "{67F61D28-AE88-48e2-B096-FDE5623DDEEB}", "Package");
+tocTab[tocTab.length] = new Array("0.3.2", "1", "Base Types", "EARoot/EA3/EA2/EA9564.htm", "4.png", "", "", "{CE2478CD-C7D7-4794-8682-B8E4E03F9033}", "Package");

@@ -1,0 +1,331 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>samplingFeature</title>
+<link href="../../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("samplingFeature", " : "))</script> samplingAndSites : Public  &lt;&lt;requirementsClass&gt;&gt; Package</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">12/01/2005 11:24:08</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">31/05/2011 17:46:19</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{9662A3AB-3E73-4444-8FFB-45B61FCF9BCF}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA6790.htm">Figure 8: Sampling package dependencies</a>, <a href="EA6813.htm">Package dependencies</a>, <a href="../EA2/EA6825.htm">Package dependencies</a>, <a href="../../../../../EA4/EA2/EA7188.htm">Package dependencies</a>, <a href="../../../../../EA4/EA2/EA7186.htm">WaterML2.0 - timeseries observation external dependencies</a>, <a href="../../../../../EA4/EA2/EA7182.htm">WaterML2.0 - monitoring point external dependencies</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">Core sampling features schema. &lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;The context for sampling&lt;/b&gt;&lt;br/&gt;&lt;b&gt;Proximate vs. ultimate feature of interest&lt;/b&gt;&lt;br/&gt;The observation model maps the result of the application of a procedure to a subject, which plays the role of feature-of-interest of the observation (Clause 6).&#160;&#160;However, the proximate feature of interest of an observation may not be the ultimate domain-specific feature, whose properties are of interest in the investigation of which the observation is a part. There are two circumstances that can lead to this: (i) the observation procedure obtains values for properties that are not characteristic of the type of the ultimate feature; (ii) the observation does not obtain values for the whole of a domain feature. Furthermore, in some practical situations, both differences apply. &lt;br/&gt;&lt;b&gt;Observed property is a proxy&lt;/b&gt;&lt;br/&gt;The procedure for obtaining values of the property of interest may be indirect, relying on direct observation of a more convenient parameter, which is a proxy for the property of interest. Application of an algorithm or processing chain obtains an estimate of the ultimate property of interest. &lt;br/&gt;The observation model requires that the feature of interest of the initial observation be of a type that carries the observed property within its properties. Thus, if the proxy property is not a member of the ultimate feature of interest, a proxy feature with a suitable model must be involved. &lt;br/&gt;EXAMPLE	A remote sensing observation may obtain the reflectance colour, when the investigation is actually interested in vegetation type and quality. The feature which contains reflectance colour is a scene or swath, while the feature carrying vegetation properties is a parcel or tract.&lt;br/&gt;&lt;b&gt;Proximate feature of interest embodies a sample design&lt;/b&gt;&lt;br/&gt;For various reasons the domain feature may not be fully accessible. In such circumstances, the procedure for estimating the value of a property of the domain feature involves sampling in representative locations. Then the procedure for transforming a property value observed on the sample to an estimate of the property on the ultimate feature of interest depends on the sample design.&#160;&#160;&lt;br/&gt;EXAMPLE	The chemistry of water in underground aquifer is sampled at one or more positions in a well or bore. &lt;br/&gt;EXAMPLE	The magnetic field of the earth is sampled at positions along a flight-line. &lt;br/&gt;EXAMPLE	The structure of a rock mass is observed on a cross-section exposed in a river bank. &lt;br/&gt;&lt;b&gt;Combination &lt;/b&gt;&lt;br/&gt;These variations may be combined if (i) exhaustive observation of the domain feature is impractical, and (ii) direct measurement is of a proxy property. &lt;br/&gt;EXAMPLE	For certain styles of mineralization, the gold concentration of rocks in a region may be estimated through measurement of a related element (e.g. copper), in a specimen of gravel collected from a stream that drains part of the region. The gravel samples the rocks in the catchment of the stream, i.e. in the stream bed and upslope. &lt;br/&gt;&lt;b&gt;Classification of sampling features&lt;/b&gt;&lt;br/&gt;A small number of sampling patterns are common across disciplines in observational science. These provide a basis for processing and portrayal tools which are similar across domains, and depend primarily on the geometry of the sample design. Common names for sampling features include specimen, station, profile, transect, path, swath, and scene. These are primarily classified by their spatio-temporal dimensionality, corresponding to a small number of patterns. Point-located samples are defined in this clause, extensive samples of various dimensions in Clause 9 and specimens in Clause 10. &lt;br/&gt;&lt;b&gt;Role of sampling features&lt;/b&gt;&lt;br/&gt;Sampling features are artefacts of an observational strategy, and have no significant function outside of their role in the observation process. The physical characteristics of the features themselves are of little interest, except perhaps to managers of a sampling campaign.&lt;br/&gt;EXAMPLE	A &quot;station&quot; is essentially an identifiable locality where a sensor system or procedure may be deployed and an observation made. In the context of the observation model, it connotes the &quot;world in the vicinity of the station&quot;, so the observed properties relate to the physical medium at the station, and not to any physical artefact such as a mooring, buoy, benchmark, monument, well, etc. &lt;br/&gt;NOTE	A transient sampling feature, such as a ships-track or flight-line, may be identified and described, but is unlikely to be revisited exactly. &lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">isApplicationSchema</td>
+				<td width="50%" class="TableRow" valign="top">true</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario8373" onclick="parent.toggleDiv('detailsDIVScenario8373','DetailsImageScenario8373')" />Details:
+						<div id="detailsDIVScenario8373" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">owner</td>
+				<td width="50%" class="TableRow" valign="top">OGC</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario8374" onclick="parent.toggleDiv('detailsDIVScenario8374','DetailsImageScenario8374')" />Details:
+						<div id="detailsDIVScenario8374" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Description: Party responsible for maintenance of this package<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">targetNamespace</td>
+				<td width="50%" class="TableRow" valign="top">&lt;a href=&quot;http://www.opengis.net/sampling/2.0&quot; target=&quot;_blank&quot; &gt;http://www.opengis.net/sampling/2.0&lt;/a&gt;</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario8375" onclick="parent.toggleDiv('detailsDIVScenario8375','DetailsImageScenario8375')" />Details:
+						<div id="detailsDIVScenario8375" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Description: URI to unique target namespace<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">version</td>
+				<td width="50%" class="TableRow" valign="top">2.0</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario8376" onclick="parent.toggleDiv('detailsDIVScenario8376','DetailsImageScenario8376')" />Details:
+						<div id="detailsDIVScenario8376" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Description: Schema version<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">xmlns</td>
+				<td width="50%" class="TableRow" valign="top">sam</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario8377" onclick="parent.toggleDiv('detailsDIVScenario8377','DetailsImageScenario8377')" />Details:
+						<div id="detailsDIVScenario8377" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Description: Prefix associated with namespace<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">xsdDocument</td>
+				<td width="50%" class="TableRow" valign="top">&lt;a href=&quot;http://schemas.opengis.net/sampling/2.0/samplingFeature.xsd&quot; target=&quot;_blank&quot; &gt;http://schemas.opengis.net/sampling/2.0/samplingFeature.xsd&lt;/a&gt;</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario8378" onclick="parent.toggleDiv('detailsDIVScenario8378','DetailsImageScenario8378')" />Details:
+						<div id="detailsDIVScenario8378" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Description: Relative path to XML Schema document corresponding to this package.<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../../EA2/EA7/EA2/EA498.htm">«Leaf» Geochronology</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../../EA2/EA1/EA1/EA79.htm">«Leaf» GeologicFeature</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../EA9/EA1830.htm">ISO 19108:2006 Temporal Schema</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA1/EA6743.htm">«ApplicationSchema» observation</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../EA11/EA2085.htm">ISO 19111 Referencing by Coordinates</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../EA7/EA1358.htm">ISO 19103:2005 Schema Language</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../EA6/EA858.htm">ISO 19107:2003 Spatial Schema</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../../EA2/EA3/EA294.htm">«applicationSchema» GeologicTimescale</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">Created by HollowWorld Plugin</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../../EA4/EA2/EA3/EA7227.htm">«RequirementsClass» Timeseries Observation</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../../EA2/EA3/EA1/EA309.htm">«Leaf» GSSP</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../../EA2/EA7/EA450.htm">«applicationSchema» LaboratoryAnalysis-Specimen</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA2/EA6827.htm">«ApplicationSchema» spatialSamplingFeature</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">Created by HollowWorld Plugin</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA6/EA6918.htm">«requirementsClass» General Feature Instance</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../../EA4/EA2/EA2/EA7216.htm">«RequirementsClass» Collection</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../../EA4/EA2/EA7192.htm">«applicationSchema» WaterML2.0</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">Created by HollowWorld Plugin</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../../EA2/EA1/EA63.htm">«applicationSchema» GeoSciML-Core</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">Created by HollowWorld Plugin</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA7/EA6861.htm">«requirementsClass» specimen</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../EA13/EA2401.htm">ISO 19115:2006 Metadata (Corrigendum)</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

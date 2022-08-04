@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Fig B2 LCML_Levels of Abstraction</title>
+<link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA6013.png" usemap="#EA6013" border="0" />
+
+<MAP NAME="EA6013">
+<area shape="rect" coords="10,323,240,382" href="EA6017.htm" target="_self">
+<area shape="rect" coords="261,303,561,349" href="EA6019.htm" target="_self">
+<area shape="rect" coords="261,218,561,287" href="EA6015.htm" target="_self">
+<area shape="rect" coords="261,95,561,202" href="EA6018.htm" target="_self">
+<area shape="rect" coords="261,10,561,79" href="EA6016.htm" target="_self">
+<area shape="rect" coords="41,275,227,303" href="EA6020.htm" target="_self">
+<area shape="rect" coords="44,210,230,238" href="EA6021.htm" target="_self">
+<area shape="rect" coords="41,131,227,159" href="EA6022.htm" target="_self">
+<area shape="rect" coords="41,59,227,87" href="EA6023.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">Fig B2 LCML_Levels of Abstraction : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">14/02/2010 16:19:40</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">07/07/2010 21:20:06</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">CDOBrien</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{EE8BACA3-365A-45a2-BA6A-EC6C8B850D8B}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">The LCML metalanguage is at the highest level of abstraction. The instantiation of the metaclasses in the LCML is used to describe different classification systems. &lt;br/&gt;The second level consists of all the different land cover classification systems expressing different points of views from different disciplines or from different organizations within a discipline. A classification system describes a dictionary of classifiers. ISO 19144-1 describes how these classifiers may be organized and how they relate to a discrete coverage. Examples are legends derived from the UN FAO LCCS, the USGS Anderson system, or the European Corine system. &lt;br/&gt;At the third level are application schema used for a particular type or a series of data sets. Such an application schema must be compliant with the rules for Application Schema as described in ISO 19109. At the application schema level the classes of the classification scheme correspond to features in the general feature model of 19109, and the legend of classes corresponds to a feature catalogue. This is entirely consistent with the use of features in all other types of application schemas for geographic information including the use of features to describe the components of a discrete coverage. &lt;br/&gt;At the fourth level a specific set of data is an instance of the application schema.&lt;br/&gt;</div>
+
+</div>
+ 
+</body>
+</html>

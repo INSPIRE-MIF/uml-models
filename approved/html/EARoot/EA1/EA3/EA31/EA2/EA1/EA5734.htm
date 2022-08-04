@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Fig 03 LCML_LandCoverClassStructure</title>
+<link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA5735.png" usemap="#EA5735" border="0" />
+
+<MAP NAME="EA5735">
+<area shape="rect" coords="271,447,480,518" href="EA5744.htm" target="_self">
+<area shape="rect" coords="-10,628,568,686" href="EA5739.htm" target="_self">
+<area shape="rect" coords="521,442,616,605" href="EA5756.htm" target="_self">
+<area shape="rect" coords="451,11,785,82" href="EA5740.htm" target="_self">
+<area shape="rect" coords="452,104,786,159" href="EA5743.htm" target="_self">
+<area shape="rect" coords="271,368,616,426" href="EA5742.htm" target="_self">
+<area shape="rect" coords="451,174,785,216" href="EA5760.htm" target="_self">
+<area shape="rect" coords="388,-50,800,51" href="EA5751.htm" target="_self">
+<area shape="rect" coords="390,231,734,346" href="EA5748.htm" target="_self">
+<area shape="rect" coords="-10,426,196,524" href="EA5747.htm" target="_self">
+<area shape="rect" coords="-10,341,196,412" href="EA5759.htm" target="_self">
+<area shape="rect" coords="-10,537,196,612" href="EA5757.htm" target="_self">
+<area shape="rect" coords="-10,238,314,278" href="EA5746.htm" target="_self">
+<area shape="rect" coords="-10,16,314,75" href="EA5758.htm" target="_self">
+<area shape="rect" coords="0,0,324,81" href="EA5750.htm" target="_self">
+<area shape="rect" coords="10,10,334,50" href="EA5755.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">Fig 03 LCML_LandCoverClassStructure : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">18/02/2010 14:00:45</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">09/05/2011 16:08:58</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">AdiGregorio,CDOBrien</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{C7FEC8B4-F9AC-45c5-8B2B-6BE86A642C42}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">The metaobject structure establishes the rules for the aggregation of occurrences of LC_Element, into the metaobject LC_LandCover, that when instantiated produces a class in a Land Cover Classification System. Occurences of LC_Element may be combined in layers the &lt;i&gt;stratumComposition&lt;/i&gt; relationship between LC_Element and LC_Stratum. The relationship of the LC_Elements within a layer are given by the &lt;i&gt;inSameStrataRelationship&lt;/i&gt;. Several types of relationships including a &lt;i&gt;sequentialTemporalRelationship&lt;/i&gt;, a &lt;i&gt;conditional&lt;/i&gt; relationship and an &lt;i&gt;exclusive&lt;/i&gt; (XOR) relationship may be described by the LC_ElementRelationInSameStratum association class. There may be any number of strata. The relationship between the strata are given by the &lt;i&gt;interStrataRelationship&lt;/i&gt;. Several types of relationships including a &lt;i&gt;conditional&lt;/i&gt; relationship and an &lt;i&gt;onTop&lt;/i&gt; relationship may be described. Elements in a stratum may be built upon the same baseline or they may be indicated to be on top of another stratum. &lt;br/&gt;</div>
+
+</div>
+ 
+</body>
+</html>

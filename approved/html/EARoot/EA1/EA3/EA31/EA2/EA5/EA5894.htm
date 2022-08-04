@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Fig 20 LCML_GrowthFormCharacteristics</title>
+<link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA5895.png" usemap="#EA5895" border="0" />
+
+<MAP NAME="EA5895">
+<area shape="rect" coords="575,613,785,662" href="EA5928.htm" target="_self">
+<area shape="rect" coords="575,475,785,532" href="EA5967.htm" target="_self">
+<area shape="rect" coords="266,623,555,695" href="EA5966.htm" target="_self">
+<area shape="rect" coords="266,857,554,909" href="EA5941.htm" target="_self">
+<area shape="rect" coords="266,777,554,852" href="EA5927.htm" target="_self">
+<area shape="rect" coords="10,10,200,46" href="EA5938.htm" target="_self">
+<area shape="rect" coords="266,71,555,123" href="../EA2/EA5798.htm" target="_self">
+<area shape="rect" coords="620,223,856,277" href="EA5923.htm" target="_self">
+<area shape="rect" coords="620,289,856,353" href="EA5962.htm" target="_self">
+<area shape="rect" coords="626,904,862,958" href="EA5921.htm" target="_self">
+<area shape="rect" coords="623,837,859,893" href="EA5943.htm" target="_self">
+<area shape="rect" coords="265,914,554,963" href="EA5965.htm" target="_self">
+<area shape="rect" coords="575,544,785,601" href="EA5934.htm" target="_self">
+<area shape="rect" coords="265,700,554,772" href="EA5933.htm" target="_self">
+<area shape="rect" coords="265,559,554,618" href="EA5972.htm" target="_self">
+<area shape="rect" coords="265,495,554,554" href="EA5922.htm" target="_self">
+<area shape="rect" coords="265,431,554,490" href="EA5914.htm" target="_self">
+<area shape="rect" coords="575,365,785,463" href="EA5961.htm" target="_self">
+<area shape="rect" coords="265,367,554,426" href="EA5960.htm" target="_self">
+<area shape="rect" coords="265,303,554,362" href="EA5931.htm" target="_self">
+<area shape="rect" coords="265,226,554,298" href="EA5906.htm" target="_self">
+<area shape="rect" coords="575,157,785,211" href="EA5959.htm" target="_self">
+<area shape="rect" coords="265,157,554,221" href="EA5925.htm" target="_self">
+<area shape="rect" coords="10,152,196,193" href="EA5932.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">Fig 20 LCML_GrowthFormCharacteristics : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">22/07/2009 10:13:24</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">25/05/2011 08:42:12</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">AdiGregorio,CDOBrien</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{66844710-56D6-47d7-9F0F-CFFBC9D15395}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">The LC_GrowthFormCharacteristic component is a subtype of LC_LandCoverElementCharacteristic. The component LC_GrowthFormCharacteristic is related to the LC_VegetationElement metaobject by the relation &lt;i&gt;growthFormCharacteristics&lt;/i&gt;. This same relationship, of course, also applies to the metaobject LC_GrowthForm which is a subtype of LC_VegatationElement. The component LC_GrowthFormCharacteristic may be used to refine the metaobject LC_VegetationElement or any of its subtypes to permit the generation of a more specific land cover feature class in an LCCS. &lt;br/&gt;LC_GrowthFormCharacteristic has nine subtypes LC_FloristicAspect, LC_AllometricMeasurement, LC_GrowthFormAge, LC_TreeAreaManagementPractise, LC_BurntStatus, LC_DeadStatus, LC_WaterStress, LC_GrowthFormIllness, and LC_VegetationArtificiality.&lt;br/&gt;&lt;br/&gt;</div>
+
+</div>
+ 
+</body>
+</html>

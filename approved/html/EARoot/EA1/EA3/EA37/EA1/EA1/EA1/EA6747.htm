@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>observation::OM_Process</title>
+<link href="../../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("OM_Process", " : "))</script>  : Public abstract &lt;&lt;FeatureType&gt;&gt; Class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">07/07/2008 16:57:45</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">30/11/2011 11:27:24</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Simon Cox</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{7D138B1E-8299-49fc-82CB-B6E09809DACB}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../../../../../EA2/EA7/EA1/EA472.htm">Summary diagram: LaboratoryAnalysis (O&M v2 and SWE v1)</a>, <a href="../../../../../EA2/EA7/EA1/EA468.htm">Context Diagram : AnalyticalProcess</a>, <a href="../../../../../EA2/EA7/EA2/EA494.htm">Summary diagram: Geochronology</a>, <a href="../EA6717.htm">Figure 2: Observation Core</a>, <a href="EA6741.htm">Overview: Observation</a>, <a href="EA6737.htm">Context diagram: OM_Observation</a>, <a href="EA6739.htm">Context diagram: OM_Process</a>, <a href="../../EA2/EA6794.htm">Figure 10: sampling vs. domain features</a>, <a href="../../EA2/EA6796.htm">Figure 11: Sampling Manifold</a>, <a href="../../EA2/EA2/EA6823.htm">Context diagram: SF_SpatialSamplingFeature</a>, <a href="../../EA2/EA7/EA6859.htm">Context diagram: SF_Specimen</a>, <a href="../../../../../EA4/EA2/EA17/EA7326.htm">Context diagram: ObservationProcess</a>, <a href="../../../../../../EA2/EA3/EA1/EA1/EA8212.htm">Observation(Informative)</a>, <a href="../../../../../../EA2/EA3/EA6/EA1/EA1/EA8339.htm">EnvironmentalMonitoringFacilities</a>, <a href="../../../../../../EA2/EA3/EA6/EA1/EA1/EA8349.htm">ObservingCapability and link to OM_Observation</a>, <a href="../../../../../../EA2/EA3/EA17/EA1/EA9084.htm">Soil: O&M</a>, <a href="../../../../../../EA3/EA1/EA6/EA9440.htm">Observations Pattern - Overview</a>, <a href="../../../../../../EA3/EA1/EA6/EA2/EA9455.htm">Process</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">The class OM_Process (Figure 2) is an instance of the «metaclass» GF_FeatureType (ISO 19109:2005), which therefore represents a feature type. OM_Process is abstract, and has no attributes, operations or associations. It serves as the base class for observation processes. The purpose of an observation process is to generate an observation result. An instance of OM_Process is often an instrument or sensor, but may be a human observer, a simulator, or a process or algorithm applied to more primitive results used as inputs. &lt;br/&gt;&lt;br/&gt;NOTE	ISO 19115-2:2008 provides MI_Instrument, LE_Processing and LE_Algorithm, which could all be modelled as specializations of OM_Process. OGC SensorML [10] provides a model which is suitable for many observation procedures. &lt;br/&gt;&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA6746.htm">«FeatureType» OM_Observation</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> generatedObservation<br />
+						Many Observations may be generated by a procedure, except if the Process is instance-specific, where the time of application is bound into the description of the Process. 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> procedure<br />
+						The association ProcessUsed shall link the OM_Observation to the OM_Process (6.2.3) used to generate the result. The process has the role procedure with respect to the observation. A process might be responsible for more than one generatedObservation. 
+The OM_Process shall be suitable for the observed property. As a corollary, details of the observed property are constrained by the procedure used.  
+EXAMPLE 	Observed radiance wavelength is determined by the response characteristics of the sensor. 
+A description of the observation procedure provides or implies an indication of the reliability or quality of the observation result. 
+	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink8264" onclick="parent.toggleDiv('detailsDIVLink8264','DetailsImageLink8264')" />Details:
+							<div id="detailsDIVLink8264" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">The association &lt;i&gt;ProcessUsed&lt;/i&gt; shall link the OM_Observation to the OM_Process (6.2.3) used to generate the result. The process has the role &lt;i&gt;procedure&lt;/i&gt; with respect to the observation. A process might be responsible for more than one &lt;i&gt;generatedObservation&lt;/i&gt;. &lt;br/&gt;The OM_Process shall be suitable for the observed property. As a corollary, details of the observed property are constrained by the procedure used.&#160;&#160;&lt;br/&gt;EXAMPLE 	Observed radiance wavelength is determined by the response characteristics of the sensor. &lt;br/&gt;A description of the observation procedure provides or implies an indication of the reliability or quality of the observation result. observation result. &lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../../../../EA4/EA2/EA17/EA7329.htm">«FeatureType» ObservationProcess</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> originatingProcess<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink8265" onclick="parent.toggleDiv('detailsDIVLink8265','DetailsImageLink8265')" />Details:
+							<div id="detailsDIVLink8265" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA2/EA2/EA6828.htm">«FeatureType» SF_SpatialSamplingFeature</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> hostedProcedure<br />
+						A common role for a spatial sampling feature is to host instruments or procedures deployed repetitively or permanently. If present, the association Platform shall link the SF_SpatialSamplingFeature to an OM_Process deployed at it. The OM_Process has the role hostedProcedure with respect to the sampling feature. 	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink8266" onclick="parent.toggleDiv('detailsDIVLink8266','DetailsImageLink8266')" />Details:
+							<div id="detailsDIVLink8266" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">A common role for a spatial sampling feature is to host instruments or procedures deployed repetitively or permanently. If present, the association &lt;i&gt;Platform &lt;/i&gt;shall link the SF_SpatialSamplingFeature to an OM_Process deployed at it. The OM_Process has the role &lt;i&gt;hostedProcedure&lt;/i&gt; with respect to the sampling feature. &lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../../../../../EA2/EA3/EA6/EA1/EA1/EA8384.htm">«featureType» ObservingCapability</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> procedure<br />
+						-- Definition --
+Link to the Process used to generate the result. The OM_Process shall be suitable for the observed property. As a corollary, details of the observed property are constrained by the procedure used.	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink8267" onclick="parent.toggleDiv('detailsDIVLink8267','DetailsImageLink8267')" />Details:
+							<div id="detailsDIVLink8267" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">byValuePropertyType</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario8268" onclick="parent.toggleDiv('detailsDIVScenario8268','DetailsImageScenario8268')" />Details:
+						<div id="detailsDIVScenario8268" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: true | false<br />Default: false<br />Description: enforce the &#39;by value&#39; property pattern without xlinks<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">isCollection</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario8269" onclick="parent.toggleDiv('detailsDIVScenario8269','DetailsImageScenario8269')" />Details:
+						<div id="detailsDIVScenario8269" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: true | false<br />Default: false<br />Description: attribute group gml:AggregationAttributeGroup is added to the complex type of the feature type<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">noPropertyType</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario8270" onclick="parent.toggleDiv('detailsDIVScenario8270','DetailsImageScenario8270')" />Details:
+						<div id="detailsDIVScenario8270" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: true | false<br />Default: false<br />Description: suppress automatic creation of *PropertyType complexType<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">xsdDerivation</td>
+				<td width="50%" class="TableRow" valign="top">true</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario8271" onclick="parent.toggleDiv('detailsDIVScenario8271','DetailsImageScenario8271')" />Details:
+						<div id="detailsDIVScenario8271" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: true | false<br />Default: true<br />Description: class implemented as new type + element, or by applying constraints only<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../EA8/EA1/EA1805.htm">«metaclass» GF_FeatureType</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../../EA2/EA7/EA1/EA488.htm">«FeatureType» AnalyticalProcess</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../../EA4/EA2/EA17/EA7329.htm">«FeatureType» ObservationProcess</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

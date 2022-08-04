@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Fig 25 LCML_ValueObjects</title>
+<link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA5975.png" usemap="#EA5975" border="0" />
+
+<MAP NAME="EA5975">
+<area shape="rect" coords="660,696,775,858" href="EA5980.htm" target="_self">
+<area shape="rect" coords="658,446,773,608" href="EA5978.htm" target="_self">
+<area shape="rect" coords="653,209,768,371" href="EA5979.htm" target="_self">
+<area shape="rect" coords="649,84,767,168" href="EA5977.htm" target="_self">
+<area shape="rect" coords="445,714,625,836" href="EA5985.htm" target="_self">
+<area shape="rect" coords="446,614,626,708" href="EA5986.htm" target="_self">
+<area shape="rect" coords="192,622,376,658" href="EA5981.htm" target="_self">
+<area shape="rect" coords="445,483,625,608" href="EA5982.htm" target="_self">
+<area shape="rect" coords="445,368,625,477" href="EA5983.htm" target="_self">
+<area shape="rect" coords="191,382,376,419" href="EA5984.htm" target="_self">
+<area shape="rect" coords="445,239,625,362" href="EA5987.htm" target="_self">
+<area shape="rect" coords="445,137,625,233" href="EA5988.htm" target="_self">
+<area shape="rect" coords="445,72,625,131" href="EA5989.htm" target="_self">
+<area shape="rect" coords="187,68,372,103" href="EA5990.htm" target="_self">
+<area shape="rect" coords="649,10,766,61" href="../../../EA7/EA1/EA3/EA4/EA1692.htm" target="_self">
+<area shape="rect" coords="10,30,124,66" href="EA5991.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">Fig 25 LCML_ValueObjects : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">16/07/2009 16:54:13</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">01/06/2011 12:54:59</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">AdiGregorio,CDOBrien</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{43CEF6A6-AE8B-436d-A263-9E3258F9060C}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">The LC_ValueClass is a metaclass that describes how permitted numeric values at the meta level maybe instantiated to the basic number types form ISO 19103 at the type level. The LC_ValueClass metaclass is a supertype of the three value metaclasses LC_PermittedRealValueType, LC_PermittedPercentageValueType and LC_PermittedIntegerValueType. Each of these value classes has subtypes that describe a number and a range. Each of the value classes is described by a constraint that characterises the type of numerical entity that may be represented by the value class. This is represented in Figure 25.&lt;br/&gt;These value classes are generators for the actual value objects that will appear in instances of a classification system generated using the LCML expressed as a UML metamodel. The result of instantiating these classes are also value classes taken from the basic types provided in ISO 19103. The results of instantiating a classification system are objects that carry actual values. In the various examples given in this international standard value classes have been instantiated two levels from the meta level to the type level and then to the instance level, to produce real objects as needed in an example.&lt;br/&gt;</div>
+
+</div>
+ 
+</body>
+</html>

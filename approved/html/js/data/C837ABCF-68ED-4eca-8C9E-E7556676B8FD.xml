@@ -1,3 +1,3 @@
-tocTab[tocTab.length] = new Array("0.1.3.23.8:1", "", "Context Diagram: DPS_IdentificationInformation", "EARoot/EA1/EA3/EA23/EA8/EA3833.htm", "175.png", "26362", "0", "", "Logical diagram0","{68609F86-8B77-4507-A962-19EBEAA1705D}");
-tocTab[tocTab.length] = new Array("0.1.3.23.8:2", "", "Fig E.1 - Specification Identification", "EARoot/EA1/EA3/EA23/EA8/EA3835.htm", "175.png", "26361", "0", "", "Logical diagram0","{07BDA669-3419-4827-AB9F-5DEFFF012003}");
-tocTab[tocTab.length] = new Array("0.1.3.23.8:3", "", "DPS_IdentificationInformation", "EARoot/EA1/EA3/EA23/EA8/EA3837.htm", "5.png", "47625", "0", "", "Class0","{F058D0E3-6338-4e15-9EB4-5C221EF90F45}");
+tocTab[tocTab.length] = new Array("0.1.3.23.8:1", "", "Context Diagram: DPS_IdentificationInformation", "EARoot/EA1/EA3/EA23/EA8/EA3979.htm", "175.png", "26362", "0", "", "Logical diagram0","{68609F86-8B77-4507-A962-19EBEAA1705D}");
+tocTab[tocTab.length] = new Array("0.1.3.23.8:2", "", "Fig E.1 - Specification Identification", "EARoot/EA1/EA3/EA23/EA8/EA3981.htm", "175.png", "26361", "0", "", "Logical diagram0","{07BDA669-3419-4827-AB9F-5DEFFF012003}");
+tocTab[tocTab.length] = new Array("0.1.3.23.8:3", "", "DPS_IdentificationInformation", "EARoot/EA1/EA3/EA23/EA8/EA3984.htm", "5.png", "E47625", "0", "", "Class0","{F058D0E3-6338-4e15-9EB4-5C221EF90F45}");

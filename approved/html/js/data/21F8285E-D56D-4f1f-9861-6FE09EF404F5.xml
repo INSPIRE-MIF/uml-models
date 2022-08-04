@@ -1,2 +1,2 @@
-tocTab[tocTab.length] = new Array("0.1.4.1.4:1", "", "Choice Component", "EARoot/EA1/EA4/EA1/EA4/EA6837.htm", "175.png", "27223", "0", "", "Logical diagram0","{BC298783-017D-4fb2-A550-5D8E9FCCAD73}");
-tocTab[tocTab.length] = new Array("0.1.4.1.4:2", "", "«Type» DataChoice", "EARoot/EA1/EA4/EA1/EA4/EA6839.htm", "5.png", "48905", "0", "", "Class0","{1DE0DD06-9114-4c44-9E16-1F73D8A5C3FD}");
+tocTab[tocTab.length] = new Array("0.1.4.1.4:1", "", "Choice Component", "EARoot/EA1/EA4/EA1/EA4/EA7126.htm", "175.png", "27223", "0", "", "Logical diagram0","{BC298783-017D-4fb2-A550-5D8E9FCCAD73}");
+tocTab[tocTab.length] = new Array("0.1.4.1.4:2", "", "«Type» DataChoice", "EARoot/EA1/EA4/EA1/EA4/EA7129.htm", "5.png", "E48905", "0", "", "Class0","{1DE0DD06-9114-4c44-9E16-1F73D8A5C3FD}");

@@ -1,6 +1,6 @@
-tocTab[tocTab.length] = new Array("0.1.2.7:1", "", "LaboratoryAnalysis-Specimen package dependencies", "EARoot/EA1/EA2/EA7/EA424.htm", "176.png", "25214", "0", "", "Package diagram0","{F1524AFC-C3DB-4c23-A88E-EBFC3FE9E1A6}");
-tocTab[tocTab.length] = new Array("0.1.2.7:2", "", "Color code", "EARoot/EA1/EA2/EA7/EA426.htm", "175.png", "25216", "0", "", "Logical diagram0","{AA634EEB-375C-4a2a-B695-E3F01F699841}");
-tocTab[tocTab.length] = new Array("0.1.2.7:3", "", "SWE Common v1 classes (for information only)", "EARoot/EA1/EA2/EA7/EA428.htm", "175.png", "25215", "0", "", "Logical diagram0","{86D12E1F-0F89-4e5e-98FA-3EE82C6FA562}");
-tocTab[tocTab.length] = new Array("0.1.2.7.1", "1", "«Leaf» LaboratoryAnalysis", "EARoot/EA1/EA2/EA7/EA438.htm", "4.png", "", "", "{224B9E23-415D-452a-9971-D7BE7F0CE7D2}", "Package");
-tocTab[tocTab.length] = new Array("0.1.2.7.2", "1", "«Leaf» Geochronology", "EARoot/EA1/EA2/EA7/EA439.htm", "4.png", "", "", "{94607C32-2900-41bb-96E6-0F49ED622F4C}", "Package");
-tocTab[tocTab.length] = new Array("0.1.2.7.3", "1", "«Leaf» GeologicSpecimen", "EARoot/EA1/EA2/EA7/EA440.htm", "4.png", "", "", "{23107128-C0E4-4f44-BA19-7C0926853370}", "Package");
+tocTab[tocTab.length] = new Array("0.1.2.7:1", "", "LaboratoryAnalysis-Specimen package dependencies", "EARoot/EA1/EA2/EA7/EA444.htm", "176.png", "25214", "0", "", "Package diagram0","{F1524AFC-C3DB-4c23-A88E-EBFC3FE9E1A6}");
+tocTab[tocTab.length] = new Array("0.1.2.7:2", "", "Color code", "EARoot/EA1/EA2/EA7/EA446.htm", "175.png", "25216", "0", "", "Logical diagram0","{AA634EEB-375C-4a2a-B695-E3F01F699841}");
+tocTab[tocTab.length] = new Array("0.1.2.7:3", "", "SWE Common v1 classes (for information only)", "EARoot/EA1/EA2/EA7/EA448.htm", "175.png", "25215", "0", "", "Logical diagram0","{86D12E1F-0F89-4e5e-98FA-3EE82C6FA562}");
+tocTab[tocTab.length] = new Array("0.1.2.7.1", "1", "«Leaf» LaboratoryAnalysis", "EARoot/EA1/EA2/EA7/EA1/EA474.htm", "4.png", "", "", "{224B9E23-415D-452a-9971-D7BE7F0CE7D2}", "Package");
+tocTab[tocTab.length] = new Array("0.1.2.7.2", "1", "«Leaf» Geochronology", "EARoot/EA1/EA2/EA7/EA2/EA498.htm", "4.png", "", "", "{94607C32-2900-41bb-96E6-0F49ED622F4C}", "Package");
+tocTab[tocTab.length] = new Array("0.1.2.7.3", "1", "«Leaf» GeologicSpecimen", "EARoot/EA1/EA2/EA7/EA3/EA520.htm", "4.png", "", "", "{23107128-C0E4-4f44-BA19-7C0926853370}", "Package");
