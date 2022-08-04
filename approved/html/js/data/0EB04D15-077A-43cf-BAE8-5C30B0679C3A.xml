@@ -1,4 +1,4 @@
-tocTab[tocTab.length] = new Array("0.1.3.4.1:1", "", "GPL", "EARoot/EA1/EA3/EA4/EA1/EA679.htm", "175.png", "25261", "0", "", "Logical diagram0","{A7EEB558-B5D4-4336-93BA-466AD99D01DC}");
-tocTab[tocTab.length] = new Array("0.1.3.4.1:2", "", "«Union» GPL_CoordinateRepresentation", "EARoot/EA1/EA3/EA4/EA1/EA681.htm", "5.png", "46671", "0", "", "Class0","{375618E4-18C3-46fb-898E-E141DA840492}");
-tocTab[tocTab.length] = new Array("0.1.3.4.1:3", "", "«type» GPL_CoordinateSet", "EARoot/EA1/EA3/EA4/EA1/EA682.htm", "5.png", "46673", "0", "", "Class0","{D532960E-61DE-4223-87BC-857100E85973}");
-tocTab[tocTab.length] = new Array("0.1.3.4.1:4", "", "«type» GPL_CoordinateTuple", "EARoot/EA1/EA3/EA4/EA1/EA683.htm", "5.png", "46672", "0", "", "Class0","{A57913B0-B61D-4de4-968A-89771001D198}");
+tocTab[tocTab.length] = new Array("0.1.3.4.1:1", "", "GPL", "EARoot/EA1/EA3/EA4/EA1/EA711.htm", "175.png", "25261", "0", "", "Logical diagram0","{A7EEB558-B5D4-4336-93BA-466AD99D01DC}");
+tocTab[tocTab.length] = new Array("0.1.3.4.1:2", "", "«Union» GPL_CoordinateRepresentation", "EARoot/EA1/EA3/EA4/EA1/EA714.htm", "5.png", "E46671", "0", "", "Class0","{375618E4-18C3-46fb-898E-E141DA840492}");
+tocTab[tocTab.length] = new Array("0.1.3.4.1:3", "", "«type» GPL_CoordinateSet", "EARoot/EA1/EA3/EA4/EA1/EA715.htm", "5.png", "E46673", "0", "", "Class0","{D532960E-61DE-4223-87BC-857100E85973}");
+tocTab[tocTab.length] = new Array("0.1.3.4.1:4", "", "«type» GPL_CoordinateTuple", "EARoot/EA1/EA3/EA4/EA1/EA716.htm", "5.png", "E46672", "0", "", "Class0","{A57913B0-B61D-4de4-968A-89771001D198}");

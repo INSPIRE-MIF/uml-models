@@ -42,7 +42,7 @@ function changeCSS(theClass, element, value, target)
 	if (browser == 'ie6' || browser == 'ie7')
 	{
 		cssRules = 'rules';
-	} else if (browser == 'ff' || browser == 'op')
+	} else
 	{
 		cssRules = 'cssRules';
 	}
@@ -236,18 +236,12 @@ function RequestPage(Page, ResponseFunc)
 	}
 	catch (e)
 	{
-		if (browser == "ie6" || browser == "ie7" || browser == "ie8")
+		data = new ActiveXObject("Microsoft.XMLHTTP");
+		if (data)
 		{
-			data = new ActiveXObject("Microsoft.XMLHTTP");
-			if (data)
-			{
-				data.onreadystatechange = ResponseFunc;
-				data.open("GET", Page, true);
-				data.send();
-			}
-		} else
-		{
-			alert(e);
+			data.onreadystatechange = ResponseFunc;
+			data.open("GET", Page, true);
+			data.send();
 		}
 	}
 }
@@ -257,13 +251,17 @@ function initPage(src)
 	if (browser == "ie_old")
 		return;
 
-	if (toc.document == null)
+	if (toc.document != top.frames[0].document)
+	{
 		toc = top.frames[0];
-
-	if (cont.document == null)
+	}
+  
+	if (cont.document != top.frames[1].document)
+	{
 		cont = top.frames[1];
+	}
 
-	if (cont.document == null)
+	if (!cont.document)
 	{
 		setTimeout("initPage('" + src + "')", "1000");
 		return;
@@ -284,6 +282,10 @@ function initPage(src)
 			//tmpStr=tmpStr.replace(/&nbsp;<WBR>/g," "); //GAS 810 - removed as it adversely affect PreserveWS
 			tmpStr = tmpStr.replace(/&gt;/g, ">");
 			tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+			tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+			tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
 			cont.document.getElementsByTagName('div')[j].innerHTML = tmpStr;
 		}
 	}
@@ -315,8 +317,39 @@ function initPage(src)
 	}
 	else
 	{
+    var parTree = curPage.substr(0, curPage.lastIndexOf('/')).substr(curPage.indexOf('/') + 1).replace(/EA/g, "").replace(/\//g, ".");
+    if (parTree)
+    {
+      if (parTree.indexOf('0') != 0) parTree = "0." + parTree;
+      parTree = parTree.split('.');
+      var tocTmp;
+
+      for (var j = 0; parTree.length > j; j++) 
+      {
+        if (j >= 1)
+          tocTmp += "." + parTree[j];
+        else 
+          tocTmp = parTree[j];
+
+        if (toc.document.getElementById('toc' + tocTmp) == null) 
+        {
+          setTimeout("initPage('" + src + "')", "1");
+          return;
+        }
+
+        var tmpCurToc = toc.document.getElementById('toc' + tocTmp).parentNode.childNodes;
+        toc.tocMemToc = parTree.length - j;
+
+        if (tmpCurToc.length > 3 && tmpCurToc[tmpCurToc.length - 4].src.substring(tmpCurToc[tmpCurToc.length - 4].src.lastIndexOf('images')).indexOf('plus') != -1) 
+        {
+          toc.tocClick(tmpCurToc[tmpCurToc.length - 4]);
+        }
+      }
+    }
+
 		if (toc.document.getElementById(curPage) == null)
 		{
+      setTimeout("initPage('"+src+"')","1");
 			return;
 		}
 

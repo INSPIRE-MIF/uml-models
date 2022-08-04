@@ -1,4 +1,4 @@
-tocTab[tocTab.length] = new Array("0.1.4.2.12:1", "", "Categorical (Domain Range) Timeseries", "EARoot/EA1/EA4/EA2/EA12/EA6988.htm", "175.png", "27258", "0", "", "Logical diagram0","{CCEF2088-09B2-47de-974B-884CC84F95C5}");
-tocTab[tocTab.length] = new Array("0.1.4.2.12:2", "", "«Type» AnnotationCoverage", "EARoot/EA1/EA4/EA2/EA12/EA6990.htm", "5.png", "48988", "0", "", "Class0","{ED44682D-8DAE-4d3a-9269-25153BC18920}");
-tocTab[tocTab.length] = new Array("0.1.4.2.12:3", "", "«FeatureType» CategoricalTimeseriesDomainRange", "EARoot/EA1/EA4/EA2/EA12/EA6991.htm", "5.png", "48987", "0", "", "Class0","{5B9A34CF-827C-48ac-9151-5398CBFDA18C}");
-tocTab[tocTab.length] = new Array("0.1.4.2.12:4", "", "«DataType» WML_AttributeValuesMeasure", "EARoot/EA1/EA4/EA2/EA12/EA6992.htm", "5.png", "48986", "0", "", "Class0","{2AAEE393-F1B9-4ec2-8CD6-F4718BD83555}");
+tocTab[tocTab.length] = new Array("0.1.4.2.12:1", "", "Categorical (Domain Range) Timeseries", "EARoot/EA1/EA4/EA2/EA12/EA7294.htm", "175.png", "27258", "0", "", "Logical diagram0","{CCEF2088-09B2-47de-974B-884CC84F95C5}");
+tocTab[tocTab.length] = new Array("0.1.4.2.12:2", "", "«Type» AnnotationCoverage", "EARoot/EA1/EA4/EA2/EA12/EA7297.htm", "5.png", "E48988", "0", "", "Class0","{ED44682D-8DAE-4d3a-9269-25153BC18920}");
+tocTab[tocTab.length] = new Array("0.1.4.2.12:3", "", "«FeatureType» CategoricalTimeseriesDomainRange", "EARoot/EA1/EA4/EA2/EA12/EA7298.htm", "5.png", "E48987", "0", "", "Class0","{5B9A34CF-827C-48ac-9151-5398CBFDA18C}");
+tocTab[tocTab.length] = new Array("0.1.4.2.12:4", "", "«DataType» WML_AttributeValuesMeasure", "EARoot/EA1/EA4/EA2/EA12/EA7299.htm", "5.png", "E48986", "0", "", "Class0","{2AAEE393-F1B9-4ec2-8CD6-F4718BD83555}");

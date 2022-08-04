@@ -1,4 +1,4 @@
-tocTab[tocTab.length] = new Array("0.2.3.20.3.3:1", "", "Oil-Gas-Chemicals Network", "EARoot/EA2/EA3/EA20/EA3/EA3/EA8914.htm", "175.png", "27532", "0", "", "Logical diagram0","{C0B1E9B8-5810-438a-B841-2271C2891B14}");
-tocTab[tocTab.length] = new Array("0.2.3.20.3.3:2", "", "«codeList» OilGasChemicalsAppurtenanceTypeValue", "EARoot/EA2/EA3/EA20/EA3/EA3/EA8916.htm", "5.png", "50366", "0", "", "Class0","{F6B92ED4-40F6-41ec-BE6D-683C5E34E986}");
-tocTab[tocTab.length] = new Array("0.2.3.20.3.3:3", "", "«featureType» OilGasChemicalsPipe", "EARoot/EA2/EA3/EA20/EA3/EA3/EA8917.htm", "5.png", "50364", "0", "", "Class0","{0BD2A29C-62F0-44ec-88D4-39ECE24690FB}");
-tocTab[tocTab.length] = new Array("0.2.3.20.3.3:4", "", "«codeList» OilGasChemicalsProductTypeValue", "EARoot/EA2/EA3/EA20/EA3/EA3/EA8918.htm", "5.png", "50365", "0", "", "Class0","{B67C7B8C-ACD8-4825-B265-EEBC9DD1D603}");
+tocTab[tocTab.length] = new Array("0.2.3.20.3.3:1", "", "Oil-Gas-Chemicals Network", "EARoot/EA2/EA3/EA20/EA3/EA3/EA9303.htm", "175.png", "27532", "0", "", "Logical diagram0","{C0B1E9B8-5810-438a-B841-2271C2891B14}");
+tocTab[tocTab.length] = new Array("0.2.3.20.3.3:2", "", "«codeList» OilGasChemicalsAppurtenanceTypeValue", "EARoot/EA2/EA3/EA20/EA3/EA3/EA9306.htm", "5.png", "E50366", "0", "", "Class0","{F6B92ED4-40F6-41ec-BE6D-683C5E34E986}");
+tocTab[tocTab.length] = new Array("0.2.3.20.3.3:3", "", "«featureType» OilGasChemicalsPipe", "EARoot/EA2/EA3/EA20/EA3/EA3/EA9307.htm", "5.png", "E50364", "0", "", "Class0","{0BD2A29C-62F0-44ec-88D4-39ECE24690FB}");
+tocTab[tocTab.length] = new Array("0.2.3.20.3.3:4", "", "«codeList» OilGasChemicalsProductTypeValue", "EARoot/EA2/EA3/EA20/EA3/EA3/EA9308.htm", "5.png", "E50365", "0", "", "Class0","{B67C7B8C-ACD8-4825-B265-EEBC9DD1D603}");

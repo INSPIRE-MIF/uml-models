@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Fig 26 LCML_RegisterStructure</title>
+<link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA5993.png" usemap="#EA5993" border="0" />
+
+<MAP NAME="EA5993">
+<area shape="rect" coords="557,513,772,541" href="EA6009.htm" target="_self">
+<area shape="rect" coords="557,464,772,492" href="EA6007.htm" target="_self">
+<area shape="rect" coords="557,416,772,444" href="EA6005.htm" target="_self">
+<area shape="rect" coords="184,512,392,540" href="EA6010.htm" target="_self">
+<area shape="rect" coords="184,464,392,492" href="EA6008.htm" target="_self">
+<area shape="rect" coords="184,416,392,444" href="EA6006.htm" target="_self">
+<area shape="rect" coords="541,593,770,634" href="../../../EA27/EA5128.htm" target="_self">
+<area shape="rect" coords="10,594,238,633" href="../../../EA27/EA5127.htm" target="_self">
+<area shape="rect" coords="535,309,764,350" href="../../../EA27/EA5123.htm" target="_self">
+<area shape="rect" coords="20,309,247,350" href="../../../EA27/EA5130.htm" target="_self">
+<area shape="rect" coords="279,250,508,278" href="EA6011.htm" target="_self">
+<area shape="rect" coords="281,139,508,182" href="../../../EA27/EA5129.htm" target="_self">
+<area shape="rect" coords="537,10,766,51" href="../../../EA27/EA5131.htm" target="_self">
+<area shape="rect" coords="279,10,506,48" href="../../../EA27/EA5132.htm" target="_self">
+<area shape="rect" coords="20,10,249,51" href="../../../EA27/EA5134.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">Fig 26 LCML_RegisterStructure : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">15/02/2010 18:05:31</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">07/07/2010 20:51:46</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">CDOBrien</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{CCC23B6B-432D-474d-B7B9-4EB8A1919322}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">The schema describes the structure of a register for the extension and maintenance of the properties of the LCML as expressed in the metaclasses LC_ElementCharacteristic and LC_ClassCharacteristic and the extension only of LC_Element. The register for the LCML is a multipart register as defined in ISO 19135:2005 clause 7.1.3 in which several item classes are registered. The item classes are: &lt;br/&gt;#lt;ol type=&quot;a&quot;#gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;LC_ClassCharacteristicDescriptorItem - a description of an additional or revised subtype of the metaclass LC_ClassCharacteristic that provides general attributes to a land cover metaclass.&lt;/li&gt;&lt;li&gt;LC_ElementCharacteristicDescriptorItem - a description of an additional or revised subtype of the metaclass LC_ElementCharacteristic&#160;&#160;that provides particular attributes to a land cover meta-element class (a subtype of LC_Element).&lt;/li&gt;&lt;li&gt;LC_ElementDescriptorItem - a description of an additional subtype of LC_Element or any of its already defined subtypes that allows for an additional refinement of anLC_Element subtype. The standardized subtypes of LC_Element shall not be changed through registration, only added to.&lt;/li&gt;&lt;/ul&gt;<br />The LCML register schema is derived from the register schema in ISO 19135. The register schema is extended to include a subtype of RE_Register for a LCML register (LC_LCMLRegister), a subtype of RE_RegisteredItem corresponding to LC_ClassCharacteristicDescriptorItem, LC_ElementCharacteristicDescriptorItem and LC_ElementDescriptorItem and a subtype of RE_ItemClass corresponding LC_ClassCharacteristicDescriptorClass, LC_ElementCharacteristicDescriptorClass and LC_ElementDescriptorClass.&lt;br/&gt;&lt;br/&gt;</div>
+
+</div>
+ 
+</body>
+</html>

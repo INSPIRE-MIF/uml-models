@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>GeologicFeature::GeologicFeatureRelation</title>
+<title>Note</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("GeologicFeatureRelation", " : "))</script>  : Public  &lt;&lt;FeatureType&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Note", " : "))</script>  : Public   Note</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">8/30/2005 11:51:03 AM</td>
+			<td width="85%" class="ObjectDetailsValue">30/08/2005 09:58:32</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">5/21/2010 1:07:45 PM</td>
+			<td class="ObjectDetailsValue">12/05/2007 15:32:34</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -51,11 +51,11 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td class="ObjectDetailsValue">CGI Interoperability Working Group</td>
+			<td class="ObjectDetailsValue">Simon Cox</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
-			<td class="ObjectDetailsValue">3.0.0</td>
+			<td class="ObjectDetailsValue">1.0</td>
 		</tr>
 		<tr id="proj02" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
@@ -87,150 +87,15 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{322512FA-6D1C-4409-8F0A-25C9BF571BCE}</td>
+			<td class="ObjectDetailsValue">{6E5E34B9-A389-4775-B3DB-4B3F305452FD}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA67.htm">Context diagram: GeologicFeature</a>, <a href="EA73.htm">Summary diagram: Geologic Feature</a>, <a href="EA69.htm">Context diagram: GeologicFeatureRelation</a>, <a href="../EA4/EA130.htm">Context Diagram : BoundaryRelationship</a>, <a href="../EA6/EA251.htm">Summary diagram: Geologic Relation</a>, <a href="../EA6/EA249.htm">Context diagram: GeologicRelation</a>, <a href="../../EA3/EA2/EA311.htm">Summary diagram: Timescale</a></td>
+			<td class="ObjectDetailsValue"></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">The GeologicFeatureRelation class is a concrete subtype of the abstract GeologicRelation class that is used to define relationships between geologic features, ie. structure-structure, unit-unit, and structure-unit relationships.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Relationships are always binary and directional.&#160; There is always a single source and a single target. The relationship is always defined from the perspective of the Source and is generally an active verb.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Example:&#160; a Source may point to an intrusive igneous rock body.&#160; In this case, the Target would point to the appropriate host rock body and the relationship attribute would be &#39;intrudes&#39;.&#160; Other appropriate relationship attributes might include: overlies, offsets, crosscuts, folds, etc.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Two or more GeologicFeatures are associated in a GeologicFeatureRelation; each has a role in the relationship. Examples of geological roles include &quot;overlies&quot;, &quot;is overlain by&quot;, &quot;is younger&quot;, &quot;is older&quot;, &quot;intrudes&quot;, &quot;is intruded by&quot;, and so forth. In a relationship where an igneous unit intrudes a sedimentary unit, the geological relationship is &quot;intrudes&quot;, the intruded sedimentary unit has the role &quot;host&quot;, and the igneous unit has the role &quot;intrusion&quot;. &lt;br /&gt;&lt;/p&gt;</div>
+	<div class="ObjectDetailsNotes">Notional unit, whose complete and precise extent is inferred to exist. Practically, spatial properties are only available through association with a MappedFeature. Includes both formal units (i.e. formally adopted and named in the official lexicon) and informal units (i.e. named but not promoted to the lexicon) and unnamed units (i.e. recognisable and described and delineable in the field but not otherwise formalised). &lt;br/&gt;</div>
 
-	<div class="TableGroup" id="TableGroup">
-		<ul class="ItemTitle">
-			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
-			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
-			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
-		</ul>
-		<div class="ItemBody" id="AssociationsToTable">
-			<table border="0" cellspacing="0" cellpadding="0" class="Table">
-				<tr>
-					<td width="40%" class="TableHeading">Element</td>
-					<td width="30%" class="TableHeading">Source Role</td>
-					<td width="30%" class="TableHeading">Target Role</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA91.htm">«FeatureType» GeologicFeature</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> targetLink<br />
-						Specifies the GeologicFeatureRelation that links the 'source' GeologicFeature  to the 'target' GeologicFeature.
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> source<br />
-						Specifies the GeologicFeature that is playing the role "source" in the GeologicFeatureRelation.	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink189" onclick="parent.toggleDiv('detailsDIVLink189','DetailsImageLink189')" />Details:
-							<div id="detailsDIVLink189" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">Defines the association between the &#39;source&#39; and the GeologicFeatureRelation</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA91.htm">«FeatureType» GeologicFeature</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> sourceLink<br />
-						Specifies the GeologicFeatureRelation that links the 'target' GeologicFeature  to the 'source' GeologicFeature.
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> target<br />
-						Specifies the GeologicFeature that is playing the role "target" in the GeologicFeatureRelation.	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink190" onclick="parent.toggleDiv('detailsDIVLink190','DetailsImageLink190')" />Details:
-							<div id="detailsDIVLink190" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">Defines the association between the &#39;target&#39; GeologicFeature and the GeologicFeatureRelation.</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-
-			</table>
-		</div>
-<div class="ItemBody" id="TaggedValTable">
-	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
-		<tr>
-			<td width="50%" class="TableHeading">Tag</td>
-			<td width="50%" class="TableHeading">Value</td>
-		</tr>
-					<tr>
-				<td width="50%" class="TableRow" valign="top">byValuePropertyType</td>
-				<td width="50%" class="TableRow" valign="top">false</td>
-			</tr>	
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario191" onclick="parent.toggleDiv('detailsDIVScenario191','DetailsImageScenario191')" />Details:
-						<div id="detailsDIVScenario191" class="DetailsDiv" >
-						<div class="ObjectDetailsNotes">Values: true,false<br />Default: false<br />Description: enforce the &#39;by value&#39; property pattern without xl<br /></div>
-
-						</div>
-					</div>
-				</td>
-			</tr>			<tr>
-				<td width="50%" class="TableRow" valign="top">isCollection</td>
-				<td width="50%" class="TableRow" valign="top">false</td>
-			</tr>	
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario192" onclick="parent.toggleDiv('detailsDIVScenario192','DetailsImageScenario192')" />Details:
-						<div id="detailsDIVScenario192" class="DetailsDiv" >
-						<div class="ObjectDetailsNotes">Values: true,false<br />Default: false<br />Description: attribute group gml:AggregationAttributeGroup is a<br /></div>
-
-						</div>
-					</div>
-				</td>
-			</tr>			<tr>
-				<td width="50%" class="TableRow" valign="top">noPropertyType</td>
-				<td width="50%" class="TableRow" valign="top">false</td>
-			</tr>	
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario193" onclick="parent.toggleDiv('detailsDIVScenario193','DetailsImageScenario193')" />Details:
-						<div id="detailsDIVScenario193" class="DetailsDiv" >
-						<div class="ObjectDetailsNotes">Values: true,false<br />Default: false<br />Description: suppress automatic creation of *PropertyType compl<br /></div>
-
-						</div>
-					</div>
-				</td>
-			</tr>
-	</table>
-</div>		<div class="ItemBody" id="LinksTable">
-			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
-				<tr>
-					<td width="30%" class="TableHeading">Object</td>
-					<td width="15%" class="TableHeading">Type</td>
-					<td width="15%" class="TableHeading">Connection</td>
-					<td width="40%" class="TableHeading">Notes</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA171.htm">«FeatureType» BoundaryRelationship</a></td>
-					<td width="15%" class="TableRow" valign="top">Class</td>
-					<td width="15%" class="TableRow" valign="top">Generalization</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA6/EA253.htm">«FeatureType» GeologicRelation</a></td>
-					<td width="15%" class="TableRow" valign="top">Class</td>
-					<td width="15%" class="TableRow" valign="top">Generalization</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-
-			</table>
-		</div>
-	</div>
 <div class="pageFooter"></div>
  
 </body>

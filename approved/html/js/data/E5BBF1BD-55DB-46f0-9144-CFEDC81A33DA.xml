@@ -1,2 +1,2 @@
-tocTab[tocTab.length] = new Array("0.1.4.2.5:1", "", "Categorical Timeseries Observation - Domain Range", "EARoot/EA1/EA4/EA2/EA5/EA6939.htm", "175.png", "27247", "0", "", "Logical diagram0","{3AF636B8-0CB9-49ea-9037-C0EC5C97ADAC}");
-tocTab[tocTab.length] = new Array("0.1.4.2.5:2", "", "«FeatureType» CategoricalTimeseriesDomainRangeObservation", "EARoot/EA1/EA4/EA2/EA5/EA6941.htm", "5.png", "48959", "0", "", "Class0","{4837FBA1-471D-48f0-AAFA-A00C7F94DA60}");
+tocTab[tocTab.length] = new Array("0.1.4.2.5:1", "", "Categorical Timeseries Observation - Domain Range", "EARoot/EA1/EA4/EA2/EA5/EA7237.htm", "175.png", "27247", "0", "", "Logical diagram0","{3AF636B8-0CB9-49ea-9037-C0EC5C97ADAC}");
+tocTab[tocTab.length] = new Array("0.1.4.2.5:2", "", "«FeatureType» CategoricalTimeseriesDomainRangeObservation", "EARoot/EA1/EA4/EA2/EA5/EA7240.htm", "5.png", "E48959", "0", "", "Class0","{4837FBA1-471D-48f0-AAFA-A00C7F94DA60}");
