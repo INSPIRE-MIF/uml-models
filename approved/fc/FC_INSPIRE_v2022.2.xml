@@ -4,11 +4,11 @@
   <scope>For the normative requirements, please refer to the &lt;a href='http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2010:323:0011:0102:EN:PDF'&gt;COMMISSION REGULATION (EU) No 1089/2010 of 23 November 2010 on the interoperability of spatial data sets and services&lt;/a&gt;. For a more detailed description of the application schemas, see the data specification guidance documents at &lt;a href='http://inspire.jrc.ec.europa.eu/index.cfm/pageid/2'&gt;http://inspire.jrc.ec.europa.eu/index.cfm/pageid/2&lt;/a&gt;.</scope>
   <scope>All application schemas for spatial data themes of Annex II or III are draft schemas.</scope>
   <versionNumber>n/a (each application schema is versioned separately)</versionNumber>
-  <versionDate>June 2012</versionDate>
+  <versionDate>01/08/2022</versionDate>
   <producer>European Commission, INSPIRE Drafting Team 'Data Specifications' and Thematic Working Groups</producer>
   <ApplicationSchema id="_P3671">
     <name>Activity Complex</name>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C33314">
     <name>Permission</name>
@@ -17,7 +17,7 @@
     <definition/>
     <definition>The term may be extended to other kind of certificates or documents of special relevance depending of the scope (e.g. ISO, EMAS, National Quality Standards, etc).</definition>
     <description>NOTE This terms is referred in several legislative acts as &amp;ldquo;permit&amp;rdquo; , &amp;ldquo;authorization&amp;rdquo;, &amp;ldquo;development consent&amp;rdquo; or &amp;ldquo;exploration permit&amp;rdquo; among others.</description>
-    <description/>
+    <description/>ElevationVectorObject
     <description>EXAMPLE 1 &amp;ldquo;&amp;hellip;a [written] decision by which the competent authority grants permission to operate all or part of an installation&amp;rdquo; ;</description>
     <description>EXAMPLE 2 &amp;ldquo;.. the decision of the competent authority or authorities which entitles the developer to proceed with the project..&amp;rdquo;.</description>
     <characterizedBy idref="_A33314_48900"/>
@@ -402,7 +402,7 @@
   </FeatureAttribute>
   <ApplicationSchema id="_P3642">
     <name>AdministrativeAndSocialGovernmentalServices</name>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C33162">
     <name>AreaOfResponsibilityType</name>
@@ -609,7 +609,7 @@
     <name>Agricultural and Aquaculture Facilities Extended Model</name>
     <description>extended model, harmonised with  general facility model.</description>
     <description>including activity center, and external associations to buildings, cadastral parcels and adress.</description>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C31886">
     <name>Site</name>
@@ -1184,7 +1184,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   <ApplicationSchema id="_P3533">
     <name>Agricultural and Aquaculture Facilities Model</name>
     <description>core model, harmonised toward the the core general faciclity model.</description>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C31864">
     <name>Holding</name>
@@ -1316,7 +1316,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   <ApplicationSchema id="_P3555">
     <name>Area Management Restriction and Regulation Zones</name>
     <definition>The Area Management Restriction and Regulation Zones application schema contains the spatial object that represents zones or areas established to protect the environment via management, restriction or regulation.</definition>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C32023">
     <name>ManagementRestrictionOrRegulationZone</name>
@@ -1575,7 +1575,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   </RelationshipRole>
   <ApplicationSchema id="_P3558">
     <name>Atmospheric Conditions and Meteorological Geographical Features</name>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <ApplicationSchema id="_P3682">
     <name>Base Types</name>
@@ -2018,7 +2018,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   <ApplicationSchema id="_P3560">
     <name>Bio-geographicalRegions</name>
     <definition>Application schema for Bio-geographical Regions</definition>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C32052">
     <name>Bio-geographicalRegion</name>
@@ -2111,7 +2111,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   <ApplicationSchema id="_P3566">
     <name>Buildings3D</name>
     <definition>The 3D application schema for INSPIRE theme buildings.</definition>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C32102">
     <name>Building</name>
@@ -2366,7 +2366,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   <ApplicationSchema id="_P3655">
     <name>Common Utility Network Elements</name>
     <definition>Common Utility Network Elements</definition>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C33229">
     <name>Pipe</name>
@@ -2947,7 +2947,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   </RelationshipRole>
   <ApplicationSchema id="_P3546">
     <name>Controlled Activities</name>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C31949">
     <name>Schedule</name>
@@ -3271,7 +3271,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   <ApplicationSchema id="_P3656">
     <name>Electricity Network</name>
     <definition>Electricity network sub-domain.</definition>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C33247">
     <name>ElectricityCable</name>
@@ -3304,12 +3304,12 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   <ApplicationSchema id="_P3511">
     <name>ElevationBaseTypes</name>
     <definition>Elevation - Base Types application schema.</definition>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <ApplicationSchema id="_P3512">
     <name>ElevationGridCoverage</name>
     <definition>Elevation - Grid Coverage application schema.</definition>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C31683">
     <name>ElevationGridCoverageAggregation</name>
@@ -3370,7 +3370,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   <FeatureAttribute id="_A31684_46628">
     <name>endLifespanVersion</name>
     <title>end lifespan version</title>
-    <cardinality>1</cardinality>
+    <cardinality>0..1</cardinality>
     <definition>Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</definition>
     <voidable>true</voidable>
     <ValueDataType idref="_C29202">DateTime</ValueDataType>
@@ -3440,7 +3440,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   <ApplicationSchema id="_P3514">
     <name>ElevationTIN</name>
     <definition>Elevation - TIN application schema.</definition>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C31700">
     <name>ElevationTIN</name>
@@ -3470,7 +3470,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   <FeatureAttribute id="_A31700_46658">
     <name>endLifespanVersion</name>
     <title>end lifespan version</title>
-    <cardinality>1</cardinality>
+    <cardinality>0..1</cardinality>
     <definition>Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</definition>
     <voidable>true</voidable>
     <ValueDataType idref="_C29202">DateTime</ValueDataType>
@@ -3520,7 +3520,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   <ApplicationSchema id="_P3513">
     <name>ElevationVectorElements</name>
     <definition>Elevation - Vector Elements application schema.</definition>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C31696">
     <name>SpotElevation</name>
@@ -3741,7 +3741,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   <FeatureAttribute id="_A31688_46637">
     <name>endLifespanVersion</name>
     <title>end lifespan version</title>
-    <cardinality>1</cardinality>
+    <cardinality>0..1</cardinality>
     <definition>Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</definition>
     <voidable>true</voidable>
     <ValueDataType idref="_C29202">DateTime</ValueDataType>
@@ -3901,7 +3901,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
     <name>Energy Resources Base</name>
     <definition>-- Name --</definition>
     <definition>Energy Resources Base application schema</definition>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C32269">
     <name>VerticalExtentRangeType</name>
@@ -3997,7 +3997,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
     <name>Energy Resources Coverage</name>
     <definition>-- Name --</definition>
     <definition>Energy Resources Coverage application schema</definition>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C32290">
     <name>RenewableAndWastePotentialCoverage</name>
@@ -4129,7 +4129,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
     <name>Energy Resources Vector</name>
     <definition>-- Name --</definition>
     <definition>Energy Resources Vector application schema</definition>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C32283">
     <name>CalorificValueType</name>
@@ -4501,7 +4501,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   </FeatureAttribute>
   <ApplicationSchema id="_P3643">
     <name>Environmental Management Facilities</name>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C33163">
     <name>EnvironmentalManagementFacility</name>
@@ -4612,7 +4612,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   </RelationshipRole>
   <ApplicationSchema id="_P3583">
     <name>EnvironmentalMonitoringFacilities</name>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C32331">
     <name>NetworkFacility</name>
@@ -5821,7 +5821,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   </FeatureAttribute>
   <ApplicationSchema id="_P3516">
     <name>Geology</name>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <Package id="_P3517">
     <name>Geology</name>
@@ -5829,7 +5829,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   </Package>
   <ApplicationSchema id="_P3517">
     <name>Geology</name>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C31727">
     <name>GeologicFeature</name>
@@ -6488,7 +6488,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   </FeatureType>
   <ApplicationSchema id="_P3521">
     <name>Geophysics</name>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C31764">
     <name>GeophObject</name>
@@ -6784,7 +6784,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
     <name>Gridded Land Use</name>
     <definition>-- Name --</definition>
     <definition>gridded land use</definition>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C32635">
     <name>ExistingLandUseGrid</name>
@@ -6865,7 +6865,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   <ApplicationSchema id="_P3592">
     <name>HabitatsAndBiotopes</name>
     <definition>Application schema for Habitats and Biotopes</definition>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C32551">
     <name>LocalNameType</name>
@@ -7163,7 +7163,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
     <name>HumanHealth</name>
     <definition>-- Name --</definition>
     <definition>Human Health</definition>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C32602">
     <name>Biomarker</name>
@@ -8986,7 +8986,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   </RelationshipRole>
   <ApplicationSchema id="_P3519">
     <name>Hydrogeology</name>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C31743">
     <name>QuantityValue</name>
@@ -10022,7 +10022,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
     <name>Land Use Nomenclature</name>
     <definition>-- Name --</definition>
     <definition>land use nomenclature</definition>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C32644">
     <name>SpecificPresence</name>
@@ -10135,7 +10135,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   <ApplicationSchema id="_P3526">
     <name>LandCoverNomenclature</name>
     <definition>application schema for Land Cover Nomenclature</definition>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C31821">
     <name>LandCoverNomenclature</name>
@@ -10197,7 +10197,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   <ApplicationSchema id="_P3527">
     <name>LandCoverRaster</name>
     <definition>application schema for Land Cover Raster</definition>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C31823">
     <name>LandCoverGridCoverage</name>
@@ -10285,7 +10285,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   <ApplicationSchema id="_P3528">
     <name>LandCoverVector</name>
     <definition>application schema for Land Cover Vector</definition>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C31830">
     <name>LandCoverUnit</name>
@@ -10973,7 +10973,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   </FeatureAttribute>
   <ApplicationSchema id="_P3606">
     <name>MineralResources</name>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C32716">
     <name>Mine</name>
@@ -11970,7 +11970,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   </FeatureType>
   <ApplicationSchema id="_P3609">
     <name>NaturalRiskZones</name>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C32771">
     <name>ObservedEventCoverage</name>
@@ -13189,12 +13189,12 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   </RelationshipRole>
   <ApplicationSchema id="_P3612">
     <name>Oceanographic Geographical Features</name>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <ApplicationSchema id="_P3657">
     <name>Oil-Gas-Chemicals Network</name>
     <definition>Oil, gas &amp; chemicals network sub-domain.</definition>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C33248">
     <name>OilGasChemicalsPipe</name>
@@ -13262,7 +13262,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
     <name>Orthoimagery</name>
     <definition>-- Name --</definition>
     <definition>orthoimagery</definition>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C31832">
     <name>AggregatedMosaicElement</name>
@@ -13539,7 +13539,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
     <name>Planned Land Use</name>
     <definition>-- Name --</definition>
     <definition>planned land use</definition>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C32646">
     <name>DimensioningIndicationIntegerValue</name>
@@ -14293,7 +14293,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
     <name>Population distribution - demography</name>
     <definition>-- Name --</definition>
     <definition>Population distribution - demography</definition>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C32814">
     <name>Classification</name>
@@ -14858,7 +14858,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
     <name>ProductionAndIndustrialFacilities</name>
     <definition>-- Name --</definition>
     <definition>Production And Industrial Facilities - Core</definition>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C32874">
     <name>TypeOfProductionBuildingValue</name>
@@ -15896,7 +15896,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
     <name>Sampled Land Use</name>
     <definition>-- Name --</definition>
     <definition>sampled land use</definition>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C32664">
     <name>SampledExistingLandUseDataSet</name>
@@ -16786,7 +16786,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   <ApplicationSchema id="_P3658">
     <name>Sewer Network</name>
     <definition>Sewer network sub-domain.</definition>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C33252">
     <name>SewerPipe</name>
@@ -16813,7 +16813,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   <ApplicationSchema id="_P3624">
     <name>Soil</name>
     <definition>Soil model</definition>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C33014">
     <name>DerivedSoilProfile</name>
@@ -18286,7 +18286,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   <ApplicationSchema id="_P3630">
     <name>SpeciesDistribution</name>
     <definition>Application schema for Species Distribution</definition>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C33089">
     <name>SpeciesNameType</name>
@@ -18773,7 +18773,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   <ApplicationSchema id="_P3635">
     <name>Statistical Units Base</name>
     <definition>The base  package. It provides most abstract classes required to link the grid and vector view of statistical units.</definition>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C33121">
     <name>StatisticalUnit</name>
@@ -18791,7 +18791,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   <ApplicationSchema id="_P3636">
     <name>Statistical Units Grid</name>
     <definition>Package containing classes to represent statistical grids.</definition>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C33126">
     <name>StatisticalGridCell</name>
@@ -19063,7 +19063,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   <ApplicationSchema id="_P3637">
     <name>Statistical Units Vector</name>
     <definition>Package containing classes to represent statistical units with vector geometries.</definition>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C33135">
     <name>Evolution</name>
@@ -19625,7 +19625,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   <ApplicationSchema id="_P3659">
     <name>Telecommunications Network</name>
     <definition>Telecommunications network sub-domain.</definition>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C33256">
     <name>TelecommunicationsCable</name>
@@ -19652,7 +19652,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   <ApplicationSchema id="_P3660">
     <name>Thermal Network</name>
     <definition>Thermal network sub-domain.</definition>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C33257">
     <name>ThermalPipe</name>
@@ -20143,7 +20143,7 @@ Permissions, licensed or Certifications holds by the Site to carry out &amp;ldqu
   <ApplicationSchema id="_P3661">
     <name>Water Network</name>
     <definition>Water network sub-domain.</definition>
-    <versionNumber>3.0</versionNumber>
+    <versionNumber>4.0</versionNumber>
   </ApplicationSchema>
   <FeatureType id="_C33259">
     <name>WaterPipe</name>
