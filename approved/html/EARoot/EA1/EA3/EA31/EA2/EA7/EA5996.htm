@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Fig 28 LCML_RegisterItem</title>
+<link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA5997.png" usemap="#EA5997" border="0" />
+
+<MAP NAME="EA5997">
+<area shape="rect" coords="187,367,500,452" href="EA6010.htm" target="_self">
+<area shape="rect" coords="187,272,500,355" href="EA6008.htm" target="_self">
+<area shape="rect" coords="187,179,500,262" href="EA6006.htm" target="_self">
+<area shape="rect" coords="10,10,323,166" href="../../../EA27/EA5130.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">Fig 28 LCML_RegisterItem : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">15/02/2010 19:09:12</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">07/07/2010 21:20:10</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">CDOBrien</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{CC001890-698F-43c0-8BE0-B16DF40BAB7A}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">The class RE_RegisterItem specifies elements of information to be recorded for each item held in a register. It has nine attributes and three associations. The attributes are taken directly from ISO 19135. The associations are to three subtypes.&lt;br/&gt;The three subtypes to RE_RegisteredItem are LC_ClassCharacteristicDescriptorItem, LC_ElementCharacteristicDescriptorItem and LC_ElementDescriptorItem. These subtypes take the same form and include the following attributes:&lt;br/&gt;#lt;ol type=&quot;a&quot;#gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;A definition of the registered LCML metaclass;&lt;/li&gt;&lt;li&gt;A description of any metaclass attributes to the LCML metaclass;&lt;/li&gt;&lt;li&gt;A reference to the parent class in the LCML metamodel (either from the standard or another registered class) together with an indication of the type of relationship such as: subtype, component, enumeration;&lt;/li&gt;&lt;/ul&gt;<br />A reference to any LCML metaclass which this metaclass supersedes (i.e. causes to be deprecated). Note that LC_Element classes may only be extended; that is, an instance of the registered item may be superseded only by another instance that contains all of the information from the superseded registered item.&lt;br/&gt;&lt;br/&gt;</div>
+
+</div>
+ 
+</body>
+</html>

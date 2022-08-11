@@ -1,2 +1,2 @@
-tocTab[tocTab.length] = new Array("0.2.3.13.1:1", "", "Package Structure", "EARoot/EA2/EA3/EA13/EA1/EA8590.htm", "176.png", "27496", "0", "", "Package diagram0","{BBA314CE-7118-4ae3-A293-939595F20C11}");
-tocTab[tocTab.length] = new Array("0.2.3.13.1.1", "1", "«applicationSchema» Oceanographic Geographical Features", "EARoot/EA2/EA3/EA13/EA1/EA8592.htm", "4.png", "", "", "{D0B56A1C-63FE-4693-BCDA-801EDBB7F6AD}", "Package");
+tocTab[tocTab.length] = new Array("0.2.3.13.1:1", "", "Package Structure", "EARoot/EA2/EA3/EA13/EA1/EA8957.htm", "176.png", "27496", "0", "", "Package diagram0","{BBA314CE-7118-4ae3-A293-939595F20C11}");
+tocTab[tocTab.length] = new Array("0.2.3.13.1.1", "1", "«applicationSchema» Oceanographic Geographical Features", "EARoot/EA2/EA3/EA13/EA1/EA1/EA8965.htm", "4.png", "", "", "{D0B56A1C-63FE-4693-BCDA-801EDBB7F6AD}", "Package");

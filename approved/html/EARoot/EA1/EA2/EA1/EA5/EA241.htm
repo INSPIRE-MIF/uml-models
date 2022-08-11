@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>EarthMaterial::RockMaterial</title>
+<title>EarthMaterial::MaterialRelation</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("RockMaterial", " : "))</script>  : Public  &lt;&lt;Type&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("MaterialRelation", " : "))</script>  : Public  &lt;&lt;DataType&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">8/12/2008 9:07:32 PM</td>
+			<td width="85%" class="ObjectDetailsValue">09/09/2006 14:49:26</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">12/10/2010 4:46:36 PM</td>
+			<td class="ObjectDetailsValue">10/12/2010 16:46:36</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{4C7CB856-923E-4a6f-9E36-A24744389A44}</td>
+			<td class="ObjectDetailsValue">{9FFA2AE1-F213-4ac2-856F-06ABDDF5F88E}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA4/EA164.htm">Summary Diagram : Geologic Structure</a>, <a href="../EA4/EA150.htm">Context Diagram : Layering</a>, <a href="EA197.htm">Context Diagram : AlterationDescription</a>, <a href="EA213.htm">Context Diagram : MetamorphicDescription</a>, <a href="EA201.htm">Context diagram: CompoundMaterial</a>, <a href="EA221.htm">Context diagram : RockMaterial</a>, <a href="EA223.htm">Summary diagram : Earth Material</a>, <a href="EA207.htm">Context Diagram : FabricDescription</a></td>
+			<td class="ObjectDetailsValue"><a href="EA231.htm">Summary diagram : Earth Material</a>, <a href="EA211.htm">Context Diagram : ConstituentPart</a>, <a href="EA219.htm">Context Diagram : MaterialRelation</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">A specialized CompoundMaterial that includes consolidated and unconsolidated materials as well as mixtures of consolidated and unconsolidated materials.</div>
+	<div class="ObjectDetailsNotes">The MaterialRelation class describes the relationships between constituent parts in an Earth Material (eg: A mineral overgrowth on a phenocryst within a granite). &lt;br/&gt;&lt;br/&gt;Relationships are always binary and directional.&#160;&#160;There is always a single source and a single target. The relationship is always defined from the perspective of the Source and is generally an active verb.&lt;br/&gt;&lt;br/&gt;Example:&#160;&#160;Consider an overgrowth of albite on plagioclase in a granite.&#160;&#160;The&#160;&#160;Source would originate with the albite constituentPart description.&#160;&#160;In this case, the Target would point to the plagioclase constituentPart description and the relationship attribute would be &#39;overgrowth&#39; and the sourceRole is &#39;overgrows&#39;.&#160;&#160;Other appropriate role attributes might include: crosscuts, replaces, etc. for crosscutting and replacement relationships.&lt;br/&gt;&lt;br/&gt;Inverse relationships must be explicitly recorded as well or else they are invisible.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -102,7 +102,6 @@ function nameClassifier(name, separator)
 			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
-			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
 	<table border="0" cellspacing="0" cellpadding="0" class="Table">
@@ -111,44 +110,56 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../EA5/EA2/EA403.htm">CGI_Term</a></i><br /><strong>&nbsp;&nbsp;consolidationDegree</strong>
+					<i>Public <a href="EA255.htm">MaterialRelationshipTypeTerm</a></i><br /><strong>&nbsp;&nbsp;materialRelationshipType</strong>
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes497')" style="text-decoration: none; color: #000000;"></BR><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes497" border="0" />Details:
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes465')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes465" border="0" />Details:</a>
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
 					
-						<tr id="DetailsImageAttributes497_00" style="display: none;">
+						<tr id="DetailsImageAttributes465_00" style="display: none;">
 							<td width="75"><i>Alias:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes497_01" style="display: none;">
+						<tr id="DetailsImageAttributes465_01" style="display: none;">
 							<td width="75"><i>Initial:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes497_02" style="display: none;">
+						<tr id="DetailsImageAttributes465_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes497_03" style="display: none;">
+						<tr id="DetailsImageAttributes465_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes497_03" style="display: none;">
+						<tr id="DetailsImageAttributes465_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
 							<td></td>
 						</tr>
+						<tr id="DetailsImageAttributes465_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes465_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes465_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
 					</table>
 					
-					nillable=True<br>sequenceNumber=1<br>
+					inlineOrByReference=byReference<br>sequenceNumber=1<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			A property that specifies the degree to which an aggregation of EarthMaterial particles is a distinct solid material. Consolidation and induration are related concepts specified by this property. They define a continuum from unconsolidated material to very hard rock. Induration is the degree to which a consolidated material is made hard, operationally determined by how difficult it is to break a piece of the material. Consolidated materials may have varying degrees of induration (NADMSC, 2004)
+			Describes the type of relationship between constituent parts in a compund material&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -157,33 +168,45 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA244.htm">LithologyTerm</a></i><br /><strong>&nbsp;&nbsp;lithology</strong>
+					<i>Public <a href="EA254.htm">MaterialRelationSourceRoleTerm</a></i><br /><strong>&nbsp;&nbsp;sourceRole</strong>
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes498')" style="text-decoration: none; color: #000000;"></BR><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes498" border="0" />Details:
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes466')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes466" border="0" />Details:</a>
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
 					
-						<tr id="DetailsImageAttributes498_00" style="display: none;">
+						<tr id="DetailsImageAttributes466_00" style="display: none;">
 							<td width="75"><i>Alias:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes498_01" style="display: none;">
+						<tr id="DetailsImageAttributes466_01" style="display: none;">
 							<td width="75"><i>Initial:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes498_02" style="display: none;">
+						<tr id="DetailsImageAttributes466_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes498_03" style="display: none;">
+						<tr id="DetailsImageAttributes466_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes498_03" style="display: none;">
+						<tr id="DetailsImageAttributes466_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
 							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes466_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes466_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes466_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
 						</tr>
 					</table>
 					
@@ -194,7 +217,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			A controlled concept indicating the name of the RockMaterial type (eg, quartz sandstone, basalt, muscovite schist, sand, mud, soil, saprolite).&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Igneous rock definitions are governed by IUGS agreed vocabulary&lt;br /&gt;&lt;/p&gt;
+			Describes the role that the source material plays in a relationship between two constituent parts of a compound material (eg, quartz(source) overgrows plagioclase phenocrysts)&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -213,7 +236,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA233.htm">«DataType» MetamorphicDescription</a><br />
+						<a href="EA245.htm">«Type» ConstituentPart</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -221,61 +244,15 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> metamorphicProperties<br />
-						&nbsp;	
+						<strong>Name:</strong> target<br />
+						Specifies the ConstituentPart that is playing the role 'target' in the MaterialRelation	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink499" onclick="parent.toggleDiv('detailsDIVLink499','DetailsImageLink499')" />Details:
-							<div id="detailsDIVLink499" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA229.htm">«DataType» AlterationDescription</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> alterationProperties<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink500" onclick="parent.toggleDiv('detailsDIVLink500','DetailsImageLink500')" />Details:
-							<div id="detailsDIVLink500" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA231.htm">«DataType» FabricDescription</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> fabric<br />
-						Contains the description of the fabric associated with a CompoundMaterial	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink501" onclick="parent.toggleDiv('detailsDIVLink501','DetailsImageLink501')" />Details:
-							<div id="detailsDIVLink501" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">Allows describing a fabric associated with a CompoundMaterial</div>
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink467" onclick="parent.toggleDiv('detailsDIVLink467','DetailsImageLink467')" />Details:
+							<div id="detailsDIVLink467" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">The association between the ConstituentPart that has the role &#39;target&#39; and the MaterialRelation.&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -293,7 +270,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA4/EA180.htm">«FeatureType» Layering</a><br />
+						<a href="EA245.htm">«Type» ConstituentPart</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -301,15 +278,16 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> layerComposition<br />
-						&nbsp;	
+						<strong>Name:</strong> targetLink<br />
+						Specifies the ConstituentPart that is playing the role 'source' in the MaterialRelation	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink502" onclick="parent.toggleDiv('detailsDIVLink502','DetailsImageLink502')" />Details:
-							<div id="detailsDIVLink502" class="DetailsDiv" >
-							&nbsp;
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink468" onclick="parent.toggleDiv('detailsDIVLink468','DetailsImageLink468')" />Details:
+							<div id="detailsDIVLink468" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">The association between the ConstituentPart that has the role &#39;source&#39; and the MaterialRelation.&lt;br/&gt;</div>
+
 							</div>
 						</div>
 					</td>
@@ -324,26 +302,13 @@ function nameClassifier(name, separator)
 			<td width="50%" class="TableHeading">Value</td>
 		</tr>
 					<tr>
-				<td width="50%" class="TableRow" valign="top">byValuePropertyType</td>
-				<td width="50%" class="TableRow" valign="top">false</td>
-			</tr>	
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario503" onclick="parent.toggleDiv('detailsDIVScenario503','DetailsImageScenario503')" />Details:
-						<div id="detailsDIVScenario503" class="DetailsDiv" >
-						<div class="ObjectDetailsNotes">Values: true,false<br />Default: false<br />Description: enforce the &#39;by value&#39; property pattern without xl<br /></div>
-
-						</div>
-					</div>
-				</td>
-			</tr>			<tr>
 				<td width="50%" class="TableRow" valign="top">isCollection</td>
 				<td width="50%" class="TableRow" valign="top">false</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario504" onclick="parent.toggleDiv('detailsDIVScenario504','DetailsImageScenario504')" />Details:
-						<div id="detailsDIVScenario504" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario469" onclick="parent.toggleDiv('detailsDIVScenario469','DetailsImageScenario469')" />Details:
+						<div id="detailsDIVScenario469" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: true,false<br />Default: false<br />Description: attribute group gml:AggregationAttributeGroup is a<br /></div>
 
 						</div>
@@ -355,8 +320,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario505" onclick="parent.toggleDiv('detailsDIVScenario505','DetailsImageScenario505')" />Details:
-						<div id="detailsDIVScenario505" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario470" onclick="parent.toggleDiv('detailsDIVScenario470','DetailsImageScenario470')" />Details:
+						<div id="detailsDIVScenario470" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: true,false<br />Default: false<br />Description: suppress automatic creation of *PropertyType compl<br /></div>
 
 						</div>
@@ -364,24 +329,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>
 	</table>
-</div>		<div class="ItemBody" id="LinksTable">
-			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
-				<tr>
-					<td width="30%" class="TableHeading">Object</td>
-					<td width="15%" class="TableHeading">Type</td>
-					<td width="15%" class="TableHeading">Connection</td>
-					<td width="40%" class="TableHeading">Notes</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA235.htm">«Type» CompoundMaterial</a></td>
-					<td width="15%" class="TableRow" valign="top">Class</td>
-					<td width="15%" class="TableRow" valign="top">Generalization</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-
-			</table>
-		</div>
-	</div>
+</div>	</div>
 <div class="pageFooter"></div>
  
 </body>

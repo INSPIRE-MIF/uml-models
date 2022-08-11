@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Cross-theme Relationships</title>
+<link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA7383.png" usemap="#EA7383" border="0" />
+
+<MAP NAME="EA7383">
+<area shape="rect" coords="185,54,477,277" href="../../../EA3/EA2/EA1/EA8242.htm" target="_self">
+<area shape="rect" coords="10,824,295,1034" href="../../EA6/EA2/EA7590.htm" target="_self">
+<area shape="rect" coords="701,834,862,964" href="../../EA9/EA6/EA7925.htm" target="_self">
+<area shape="rect" coords="62,675,242,743" href="EA7392.htm" target="_self">
+<area shape="rect" coords="651,65,874,265" href="EA7391.htm" target="_self">
+<area shape="rect" coords="349,831,621,1041" href="../../EA2/EA1/EA7447.htm" target="_self">
+<area shape="rect" coords="637,367,890,575" href="../../EA3/EA1/EA7540.htm" target="_self">
+<area shape="rect" coords="692,689,872,751" href="EA7415.htm" target="_self">
+<area shape="rect" coords="391,679,587,751" href="EA7396.htm" target="_self">
+<area shape="rect" coords="253,393,485,569" href="EA7393.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">Cross-theme Relationships : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">21/08/2008 08:50:40</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">22/02/2013 11:04:20</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">friisan</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{CC7F63B1-022A-428a-9054-F52BDE66A80D}</td>
+		</tr>
+	</table>
+	
+</div>
+ 
+</body>
+</html>

@@ -1,6 +1,6 @@
-tocTab[tocTab.length] = new Array("0.1.2.5.1:1", "", "Summary diagram: Names", "EARoot/EA1/EA2/EA5/EA1/EA350.htm", "175.png", "25197", "0", "", "Logical diagram0","{3A23B012-02A1-48ff-9F76-579D6B1E899C}");
-tocTab[tocTab.length] = new Array("0.1.2.5.1:2", "", "«Enumeration» IETF-RFC3066-Code", "EARoot/EA1/EA2/EA5/EA1/EA352.htm", "5.png", "46474", "0", "", "Class0","{C62CD911-F9E3-4837-9BA3-ADE26DF0F761}");
-tocTab[tocTab.length] = new Array("0.1.2.5.1:3", "", "«PrimitiveType» LocalizableGenericName", "EARoot/EA1/EA2/EA5/EA1/EA353.htm", "5.png", "46471", "0", "", "Class0","{4A0D5A1E-BA02-4f6a-8983-2F24A6C399F4}");
-tocTab[tocTab.length] = new Array("0.1.2.5.1:4", "", "«PrimitiveType» LocalizableScopedName", "EARoot/EA1/EA2/EA5/EA1/EA354.htm", "5.png", "46472", "0", "", "Class0","{9F4E40AA-6A2E-4c92-AF9D-6D3EDA70BDE4}");
-tocTab[tocTab.length] = new Array("0.1.2.5.1:5", "", "«PrimitiveType» LocalizedGenericName", "EARoot/EA1/EA2/EA5/EA1/EA355.htm", "5.png", "46473", "0", "", "Class0","{B5ABDEA4-E3AC-419b-9E95-7EE67063776D}");
-tocTab[tocTab.length] = new Array("0.1.2.5.1:6", "", "«PrimitiveType» LocalizedScopedName", "EARoot/EA1/EA2/EA5/EA1/EA356.htm", "5.png", "46470", "0", "", "Class0","{2CAFA3C2-73FD-4db8-BDE4-E579381E11BE}");
+tocTab[tocTab.length] = new Array("0.1.2.5.1:1", "", "Summary diagram: Names", "EARoot/EA1/EA2/EA5/EA1/EA367.htm", "175.png", "25197", "0", "", "Logical diagram0","{3A23B012-02A1-48ff-9F76-579D6B1E899C}");
+tocTab[tocTab.length] = new Array("0.1.2.5.1:2", "", "«Enumeration» IETF-RFC3066-Code", "EARoot/EA1/EA2/EA5/EA1/EA370.htm", "5.png", "E46474", "0", "", "Class0","{C62CD911-F9E3-4837-9BA3-ADE26DF0F761}");
+tocTab[tocTab.length] = new Array("0.1.2.5.1:3", "", "«PrimitiveType» LocalizableGenericName", "EARoot/EA1/EA2/EA5/EA1/EA371.htm", "5.png", "E46471", "0", "", "Class0","{4A0D5A1E-BA02-4f6a-8983-2F24A6C399F4}");
+tocTab[tocTab.length] = new Array("0.1.2.5.1:4", "", "«PrimitiveType» LocalizableScopedName", "EARoot/EA1/EA2/EA5/EA1/EA372.htm", "5.png", "E46472", "0", "", "Class0","{9F4E40AA-6A2E-4c92-AF9D-6D3EDA70BDE4}");
+tocTab[tocTab.length] = new Array("0.1.2.5.1:5", "", "«PrimitiveType» LocalizedGenericName", "EARoot/EA1/EA2/EA5/EA1/EA373.htm", "5.png", "E46473", "0", "", "Class0","{B5ABDEA4-E3AC-419b-9E95-7EE67063776D}");
+tocTab[tocTab.length] = new Array("0.1.2.5.1:6", "", "«PrimitiveType» LocalizedScopedName", "EARoot/EA1/EA2/EA5/EA1/EA374.htm", "5.png", "E46470", "0", "", "Class0","{2CAFA3C2-73FD-4db8-BDE4-E579381E11BE}");

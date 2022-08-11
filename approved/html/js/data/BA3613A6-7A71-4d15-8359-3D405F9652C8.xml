@@ -1,5 +1,5 @@
-tocTab[tocTab.length] = new Array("0.2.1.2.3.2.2:1", "", "Discovery of unit related data", "EARoot/EA2/EA1/EA2/EA3/EA2/EA2/EA7173.htm", "180.png", "27293", "0", "", "Use Case diagram0","{2F722E9D-7A55-4ccf-898B-555455F6B167}");
-tocTab[tocTab.length] = new Array("0.2.1.2.3.2.2:2", "", "Discovery of unit related data", "EARoot/EA2/EA1/EA2/EA3/EA2/EA2/EA7175.htm", "7.png", "49102", "0", "", "UseCase0","{6EA97B5D-B02B-4952-81C5-6973A420FD17}");
-tocTab[tocTab.length] = new Array("0.2.1.2.3.2.2:3", "", "Display list of resources", "EARoot/EA2/EA1/EA2/EA3/EA2/EA2/EA7176.htm", "7.png", "49101", "0", "", "UseCase0","{1528FA31-D5E6-4865-B96E-D4F4BBA255B0}");
-tocTab[tocTab.length] = new Array("0.2.1.2.3.2.2:4", "", "Prepare query ", "EARoot/EA2/EA1/EA2/EA3/EA2/EA2/EA7177.htm", "7.png", "49103", "0", "", "UseCase0","{969ED091-0251-42cc-A8D1-C3D319885821}");
-tocTab[tocTab.length] = new Array("0.2.1.2.3.2.2:5", "", "Search catalogue", "EARoot/EA2/EA1/EA2/EA3/EA2/EA2/EA7178.htm", "7.png", "49104", "0", "", "UseCase0","{AA4D6017-A41C-452f-B843-4043BABDF66F}");
+tocTab[tocTab.length] = new Array("0.2.1.2.3.2.2:1", "", "Discovery of unit related data", "EARoot/EA2/EA1/EA2/EA3/EA2/EA2/EA7497.htm", "180.png", "27293", "0", "", "Use Case diagram0","{2F722E9D-7A55-4ccf-898B-555455F6B167}");
+tocTab[tocTab.length] = new Array("0.2.1.2.3.2.2:2", "", "Discovery of unit related data", "EARoot/EA2/EA1/EA2/EA3/EA2/EA2/EA7500.htm", "7.png", "E49102", "0", "", "UseCase0","{6EA97B5D-B02B-4952-81C5-6973A420FD17}");
+tocTab[tocTab.length] = new Array("0.2.1.2.3.2.2:3", "", "Display list of resources", "EARoot/EA2/EA1/EA2/EA3/EA2/EA2/EA7501.htm", "7.png", "E49101", "0", "", "UseCase0","{1528FA31-D5E6-4865-B96E-D4F4BBA255B0}");
+tocTab[tocTab.length] = new Array("0.2.1.2.3.2.2:4", "", "Prepare query ", "EARoot/EA2/EA1/EA2/EA3/EA2/EA2/EA7502.htm", "7.png", "E49103", "0", "", "UseCase0","{969ED091-0251-42cc-A8D1-C3D319885821}");
+tocTab[tocTab.length] = new Array("0.2.1.2.3.2.2:5", "", "Search catalogue", "EARoot/EA2/EA1/EA2/EA3/EA2/EA2/EA7503.htm", "7.png", "E49104", "0", "", "UseCase0","{AA4D6017-A41C-452f-B843-4043BABDF66F}");

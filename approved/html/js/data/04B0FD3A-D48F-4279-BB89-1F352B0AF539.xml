@@ -1,7 +1,7 @@
-tocTab[tocTab.length] = new Array("0.2.1.3:1", "", "Cadastral Parcels", "EARoot/EA2/EA1/EA3/EA7196.htm", "175.png", "27297", "0", "", "Logical diagram0","{06965625-36E4-41b3-BBCA-9752F6781B41}");
-tocTab[tocTab.length] = new Array("0.2.1.3.1", "1", "«applicationSchema» CadastralParcels", "EARoot/EA2/EA1/EA3/EA7198.htm", "4.png", "", "", "{996E5E20-CC81-41f3-9F6A-52BF193F1693}", "Package");
-tocTab[tocTab.length] = new Array("0.2.1.3.2", "1", "Core profile", "EARoot/EA2/EA1/EA3/EA7199.htm", "4.png", "", "", "{4C80D290-D6C0-43ea-BAC7-DA5A441D1B41}", "Package");
-tocTab[tocTab.length] = new Array("0.2.1.3.3", "1", "Enumerations & codelists", "EARoot/EA2/EA1/EA3/EA7200.htm", "4.png", "", "", "{CBED0E38-D77D-44a7-BD43-2504CF994733}", "Package");
-tocTab[tocTab.length] = new Array("0.2.1.3.4", "1", "External relations", "EARoot/EA2/EA1/EA3/EA7201.htm", "4.png", "", "", "{1C4C4F86-DFBB-456d-A29F-3B6D5BBA1AE3}", "Package");
-tocTab[tocTab.length] = new Array("0.2.1.3.5", "1", "Feature types", "EARoot/EA2/EA1/EA3/EA7202.htm", "4.png", "", "", "{6224AC1A-F7EE-4321-A550-03748D8F5AC8}", "Package");
-tocTab[tocTab.length] = new Array("0.2.1.3.6", "", "Use Cases Cadastral Parcels", "EARoot/EA2/EA1/EA3/EA7203.htm", "4.png", "", "", "{01AAB8A1-D713-4cfe-806A-F393A0EE25A9}", "Package");
+tocTab[tocTab.length] = new Array("0.2.1.3:1", "", "Cadastral Parcels", "EARoot/EA2/EA1/EA3/EA7525.htm", "175.png", "27297", "0", "", "Logical diagram0","{06965625-36E4-41b3-BBCA-9752F6781B41}");
+tocTab[tocTab.length] = new Array("0.2.1.3.1", "1", "«applicationSchema» CadastralParcels", "EARoot/EA2/EA1/EA3/EA1/EA7536.htm", "4.png", "", "", "{996E5E20-CC81-41f3-9F6A-52BF193F1693}", "Package");
+tocTab[tocTab.length] = new Array("0.2.1.3.2", "1", "Core profile", "EARoot/EA2/EA1/EA3/EA2/EA7544.htm", "4.png", "", "", "{4C80D290-D6C0-43ea-BAC7-DA5A441D1B41}", "Package");
+tocTab[tocTab.length] = new Array("0.2.1.3.3", "1", "Enumerations & codelists", "EARoot/EA2/EA1/EA3/EA3/EA7547.htm", "4.png", "", "", "{CBED0E38-D77D-44a7-BD43-2504CF994733}", "Package");
+tocTab[tocTab.length] = new Array("0.2.1.3.4", "1", "External relations", "EARoot/EA2/EA1/EA3/EA4/EA7552.htm", "4.png", "", "", "{1C4C4F86-DFBB-456d-A29F-3B6D5BBA1AE3}", "Package");
+tocTab[tocTab.length] = new Array("0.2.1.3.5", "1", "Feature types", "EARoot/EA2/EA1/EA3/EA5/EA7555.htm", "4.png", "", "", "{6224AC1A-F7EE-4321-A550-03748D8F5AC8}", "Package");
+tocTab[tocTab.length] = new Array("0.2.1.3.6", "", "Use Cases Cadastral Parcels", "EARoot/EA2/EA1/EA3/EA6/EA7556.htm", "4.png", "", "", "{01AAB8A1-D713-4cfe-806A-F393A0EE25A9}", "Package");

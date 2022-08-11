@@ -1,3 +1,3 @@
-tocTab[tocTab.length] = new Array("0.2.3.19.1", "1", "«applicationSchema» Statistical Units Base", "EARoot/EA2/EA3/EA19/EA8815.htm", "4.png", "", "", "{486EBFE0-3913-46b6-A551-8A6D164D72C1}", "Package");
-tocTab[tocTab.length] = new Array("0.2.3.19.2", "1", "«applicationSchema» Statistical Units Grid", "EARoot/EA2/EA3/EA19/EA8816.htm", "4.png", "", "", "{7636168D-7492-4533-A881-5C03C51DF038}", "Package");
-tocTab[tocTab.length] = new Array("0.2.3.19.3", "1", "«applicationSchema» Statistical Units Vector", "EARoot/EA2/EA3/EA19/EA8817.htm", "4.png", "", "", "{A06EEBB2-EC7A-4212-84E9-1184B12F5D0E}", "Package");
+tocTab[tocTab.length] = new Array("0.2.3.19.1", "1", "«applicationSchema» Statistical Units Base", "EARoot/EA2/EA3/EA19/EA1/EA9200.htm", "4.png", "", "", "{486EBFE0-3913-46b6-A551-8A6D164D72C1}", "Package");
+tocTab[tocTab.length] = new Array("0.2.3.19.2", "1", "«applicationSchema» Statistical Units Grid", "EARoot/EA2/EA3/EA19/EA2/EA9206.htm", "4.png", "", "", "{7636168D-7492-4533-A881-5C03C51DF038}", "Package");
+tocTab[tocTab.length] = new Array("0.2.3.19.3", "1", "«applicationSchema» Statistical Units Vector", "EARoot/EA2/EA3/EA19/EA3/EA9217.htm", "4.png", "", "", "{A06EEBB2-EC7A-4212-84E9-1184B12F5D0E}", "Package");

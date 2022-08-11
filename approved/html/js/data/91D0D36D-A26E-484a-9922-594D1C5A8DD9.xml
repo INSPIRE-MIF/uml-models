@@ -1,4 +1,4 @@
-tocTab[tocTab.length] = new Array("0.1.4.2.16:1", "", "Context diagram: MonitoringPointContext", "EARoot/EA1/EA4/EA2/EA16/EA7009.htm", "175.png", "27263", "0", "", "Logical diagram0","{2B926CF3-5DDF-43a4-ADFF-4FEF73CCB239}");
-tocTab[tocTab.length] = new Array("0.1.4.2.16:2", "", "Context Diagram : MonitoringPoint", "EARoot/EA1/EA4/EA2/EA16/EA7011.htm", "175.png", "27264", "0", "", "Class diagram0","{F35E96F6-E9B7-4e2e-9222-4B8B28AF550D}");
-tocTab[tocTab.length] = new Array("0.1.4.2.16:3", "", "«FeatureType» MonitoringPoint", "EARoot/EA1/EA4/EA2/EA16/EA7013.htm", "5.png", "48997", "0", "", "Class0","{0A29ABCA-263D-46b7-ADC9-8356D652972F}");
-tocTab[tocTab.length] = new Array("0.1.4.2.16:4", "", "«DataType» TimeZone", "EARoot/EA1/EA4/EA2/EA16/EA7014.htm", "5.png", "48998", "0", "", "Class0","{4657298A-29B0-44df-844C-93826EEDFA6B}");
+tocTab[tocTab.length] = new Array("0.1.4.2.16:1", "", "Context diagram: MonitoringPointContext", "EARoot/EA1/EA4/EA2/EA16/EA7319.htm", "175.png", "27263", "0", "", "Logical diagram0","{2B926CF3-5DDF-43a4-ADFF-4FEF73CCB239}");
+tocTab[tocTab.length] = new Array("0.1.4.2.16:2", "", "Context Diagram : MonitoringPoint", "EARoot/EA1/EA4/EA2/EA16/EA7321.htm", "175.png", "27264", "0", "", "Class diagram0","{F35E96F6-E9B7-4e2e-9222-4B8B28AF550D}");
+tocTab[tocTab.length] = new Array("0.1.4.2.16:3", "", "«FeatureType» MonitoringPoint", "EARoot/EA1/EA4/EA2/EA16/EA7324.htm", "5.png", "E48997", "0", "", "Class0","{0A29ABCA-263D-46b7-ADC9-8356D652972F}");
+tocTab[tocTab.length] = new Array("0.1.4.2.16:4", "", "«DataType» TimeZone", "EARoot/EA1/EA4/EA2/EA16/EA7325.htm", "5.png", "E48998", "0", "", "Class0","{4657298A-29B0-44df-844C-93826EEDFA6B}");

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>EarthMaterial::OrganicMaterial</title>
+<title>EarthMaterial::FabricDescription</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("OrganicMaterial", " : "))</script>  : Public  &lt;&lt;Type&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("FabricDescription", " : "))</script>  : Public  &lt;&lt;DataType&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">5/9/2007 3:05:19 PM</td>
+			<td width="85%" class="ObjectDetailsValue">11/05/2007 09:51:08</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">12/10/2010 4:46:36 PM</td>
+			<td class="ObjectDetailsValue">10/12/2010 16:46:36</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,20 +87,121 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{C19E4B83-6CF0-4d3b-A077-5B0EA59B5A9B}</td>
+			<td class="ObjectDetailsValue">{1135D6F8-EAEA-4131-A4AD-63E38061F599}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA205.htm">Context diagram : EarthMaterial</a>, <a href="EA217.htm">Context diagram : OrganicMaterial</a>, <a href="EA223.htm">Summary diagram : Earth Material</a></td>
+			<td class="ObjectDetailsValue"><a href="EA229.htm">Context diagram : RockMaterial</a>, <a href="EA231.htm">Summary diagram : Earth Material</a>, <a href="EA215.htm">Context Diagram : FabricDescription</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">An EarthMaterial that belongs to the class of chemical compounds having a reduced carbon basis (as distinct from carbonates), and derived from living organisms.&#160; Includes high-carbon EarthMaterials such as bitumen, peat, and coal.&#160; </div>
+	<div class="ObjectDetailsNotes">The FabricDescription class describes all types of fabrics associated with a CompoundMaterial (ie, tectonic, metamorphic, sedimentary, igneous fabrics or textures).&#160;&#160;It denotes a pattern, defined by one or more CompoundMaterial constituents, that is present throughout a rock body when considered at some scale.&#160;&#160;FabricDescription is defined based on the average configuration of many constituents.&#160;&#160;Penetrative fabric denotes that these constituents are distributed throughout the rock volume at the scale of observation [Passchier and Trouw, 1998], and are repeated at distances that are small relative to the scale of the whole, such that they can be considered to pervade the whole uniformly (Turner and Weiss [1963] p. 21-24; Hobbs and others [1976], p. 73; Jackson [1997]; Passchier and Trouw [1998]). &lt;br/&gt;&lt;br/&gt;FabricDescription is distinguished from Particle Geometry based on the criteria that Particle Geometry is preserved if a CompoundMaterial is disaggregated, while FabricDescription is not defined if the material is disaggregated.&lt;br/&gt;&lt;br/&gt;Use gml:description to capture any free text to indicate any specific or peculiar features of the described fabric in the CompoundMaterial.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
-			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Attribute</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="EA252.htm">FabricTypeTerm</a></i><br /><strong>&nbsp;&nbsp;fabricType</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes461')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes461" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes461_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes461_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes461_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td>&lt;&lt;estimatedProperty&gt;&gt;</td>
+						</tr>
+						<tr id="DetailsImageAttributes461_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes461_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes461_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes461_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes461_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					inlineOrByReference=byReference<br>sequenceNumber=1<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Attribute to denote the type of fabric in the CompoundMaterial (eg, rapikivi texture, autobrecciation, spaced cleavage, porphyroblastic, cross-bedding).&#160;&#160;The fabricType describes a pattern, defined by one or more CompoundMaterial constituents, that is present throughout a rock body when considered at some scale. FabricDescription is defined based on the average configuration of many constituents. Penetrative fabric denotes that these constituents are distributed throughout the rock volume at the scale of observation [Passchier and Trouw, 1998], and are repeated at distances that are small relative to the scale of the whole, such that they can be considered to pervade the whole uniformly. &lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>
+	</table>
+</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA250.htm">«Type» RockMaterial</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> fabric<br />
+						Contains the description of the fabric associated with a CompoundMaterial	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink462" onclick="parent.toggleDiv('detailsDIVLink462','DetailsImageLink462')" />Details:
+							<div id="detailsDIVLink462" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">Allows describing a fabric associated with a CompoundMaterial&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
 <div class="ItemBody" id="TaggedValTable">
 	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 		<tr>
@@ -108,26 +209,13 @@ function nameClassifier(name, separator)
 			<td width="50%" class="TableHeading">Value</td>
 		</tr>
 					<tr>
-				<td width="50%" class="TableRow" valign="top">byValuePropertyType</td>
-				<td width="50%" class="TableRow" valign="top">false</td>
-			</tr>	
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario494" onclick="parent.toggleDiv('detailsDIVScenario494','DetailsImageScenario494')" />Details:
-						<div id="detailsDIVScenario494" class="DetailsDiv" >
-						<div class="ObjectDetailsNotes">Values: true,false<br />Default: false<br />Description: enforce the &#39;by value&#39; property pattern without xl<br /></div>
-
-						</div>
-					</div>
-				</td>
-			</tr>			<tr>
 				<td width="50%" class="TableRow" valign="top">isCollection</td>
 				<td width="50%" class="TableRow" valign="top">false</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario495" onclick="parent.toggleDiv('detailsDIVScenario495','DetailsImageScenario495')" />Details:
-						<div id="detailsDIVScenario495" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario463" onclick="parent.toggleDiv('detailsDIVScenario463','DetailsImageScenario463')" />Details:
+						<div id="detailsDIVScenario463" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: true,false<br />Default: false<br />Description: attribute group gml:AggregationAttributeGroup is a<br /></div>
 
 						</div>
@@ -139,8 +227,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario496" onclick="parent.toggleDiv('detailsDIVScenario496','DetailsImageScenario496')" />Details:
-						<div id="detailsDIVScenario496" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario464" onclick="parent.toggleDiv('detailsDIVScenario464','DetailsImageScenario464')" />Details:
+						<div id="detailsDIVScenario464" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: true,false<br />Default: false<br />Description: suppress automatic creation of *PropertyType compl<br /></div>
 
 						</div>
@@ -148,24 +236,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>
 	</table>
-</div>		<div class="ItemBody" id="LinksTable">
-			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
-				<tr>
-					<td width="30%" class="TableHeading">Object</td>
-					<td width="15%" class="TableHeading">Type</td>
-					<td width="15%" class="TableHeading">Connection</td>
-					<td width="40%" class="TableHeading">Notes</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA237.htm">«Type» EarthMaterial</a></td>
-					<td width="15%" class="TableRow" valign="top">Class</td>
-					<td width="15%" class="TableRow" valign="top">Generalization</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-
-			</table>
-		</div>
-	</div>
+</div>	</div>
 <div class="pageFooter"></div>
  
 </body>

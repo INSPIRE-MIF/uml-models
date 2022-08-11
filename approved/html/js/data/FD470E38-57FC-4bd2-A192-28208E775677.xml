@@ -1,3 +1,3 @@
-tocTab[tocTab.length] = new Array("0.2.2.1.1:1", "", "ElevationBaseTypes: Enumerations", "EARoot/EA2/EA2/EA1/EA1/EA7675.htm", "175.png", "27377", "0", "", "Logical diagram0","{ABB3612C-5B71-4b5b-8F38-34F7929A2744}");
-tocTab[tocTab.length] = new Array("0.2.2.1.1:2", "", "«enumeration» ElevationPropertyTypeValue", "EARoot/EA2/EA2/EA1/EA1/EA7677.htm", "5.png", "49436", "0", "", "Class0","{F279ACAB-A0DF-4773-B2E3-FC56C1992DC4}");
-tocTab[tocTab.length] = new Array("0.2.2.1.1:3", "", "«enumeration» SurfaceTypeValue", "EARoot/EA2/EA2/EA1/EA1/EA7678.htm", "5.png", "49435", "0", "", "Class0","{EC968350-B905-4fd8-9F0C-6B21AA1A3667}");
+tocTab[tocTab.length] = new Array("0.2.2.1.1:1", "", "ElevationBaseTypes: Enumerations", "EARoot/EA2/EA2/EA1/EA1/EA7990.htm", "175.png", "27377", "0", "", "Logical diagram0","{ABB3612C-5B71-4b5b-8F38-34F7929A2744}");
+tocTab[tocTab.length] = new Array("0.2.2.1.1:2", "", "«enumeration» ElevationPropertyTypeValue", "EARoot/EA2/EA2/EA1/EA1/EA7993.htm", "5.png", "E49436", "0", "", "Class0","{F279ACAB-A0DF-4773-B2E3-FC56C1992DC4}");
+tocTab[tocTab.length] = new Array("0.2.2.1.1:3", "", "«enumeration» SurfaceTypeValue", "EARoot/EA2/EA2/EA1/EA1/EA7994.htm", "5.png", "E49435", "0", "", "Class0","{EC968350-B905-4fd8-9F0C-6B21AA1A3667}");

@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Fig 04 LCML_LandCoverElementsSubtypes</title>
+<link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA5737.png" usemap="#EA5737" border="0" />
+
+<MAP NAME="EA5737">
+<area shape="rect" coords="136,10,330,48" href="EA5746.htm" target="_self">
+<area shape="rect" coords="250,145,444,185" href="../EA3/EA5822.htm" target="_self">
+<area shape="rect" coords="10,145,204,185" href="../EA2/EA5798.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">Fig 04 LCML_LandCoverElementsSubtypes : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">22/07/2009 09:44:23</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">07/07/2010 18:42:42</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">AdiGregorio,CDOBrien</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{C31DDA25-30C5-4654-8A29-8BE8A1EF054D}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">The LC_Element metaobject has two subtypes representing the two basic types of land cover. &lt;br/&gt;&lt;br/&gt;The metalanguage operates by representing land cover classes in an LCCS in terms of the subtypes of LC_Element or set of LC_Element(s), with associated attributes and characteristics. That is, a particular land cover class in an LCCS may be modelled by the metaobjects in the LCML and compared with another land cover class in a different LCCS by examining the relationship between the models of the two classes in the metamodel. For example, a particular concept may have a detailed explicit class in one LCCS but it may only be able to represent it by a more general class in another LCCS. In this case it would be easy to determine from the representations of the two LCCS in the LCML that one class was a specialization of the other.&lt;br/&gt;&lt;br/&gt;</div>
+
+</div>
+ 
+</body>
+</html>

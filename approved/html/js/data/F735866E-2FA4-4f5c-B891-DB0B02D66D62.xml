@@ -1,3 +1,3 @@
-tocTab[tocTab.length] = new Array("0.1.3.23.4.1:1", "", "Context Diagram: DPS_CoverageInformation", "EARoot/EA1/EA3/EA23/EA4/EA1/EA3801.htm", "175.png", "26351", "0", "", "Logical diagram0","{08561A7F-7497-4af5-8557-8F9269328EB7}");
-tocTab[tocTab.length] = new Array("0.1.3.23.4.1:2", "", "Fig E.2 - Specification Coverage (old)", "EARoot/EA1/EA3/EA23/EA4/EA1/EA3803.htm", "175.png", "26350", "0", "", "Logical diagram0","{DE81E599-755C-412c-81CA-5BF7CC2D2D9A}");
-tocTab[tocTab.length] = new Array("0.1.3.23.4.1:3", "", "DPS_CoverageInformation", "EARoot/EA1/EA3/EA23/EA4/EA1/EA3805.htm", "5.png", "47615", "0", "", "Class0","{28E2B7CC-6417-4562-9E45-DF9D34204631}");
+tocTab[tocTab.length] = new Array("0.1.3.23.4.1:1", "", "Context Diagram: DPS_CoverageInformation", "EARoot/EA1/EA3/EA23/EA4/EA1/EA3942.htm", "175.png", "26351", "0", "", "Logical diagram0","{08561A7F-7497-4af5-8557-8F9269328EB7}");
+tocTab[tocTab.length] = new Array("0.1.3.23.4.1:2", "", "Fig E.2 - Specification Coverage (old)", "EARoot/EA1/EA3/EA23/EA4/EA1/EA3944.htm", "175.png", "26350", "0", "", "Logical diagram0","{DE81E599-755C-412c-81CA-5BF7CC2D2D9A}");
+tocTab[tocTab.length] = new Array("0.1.3.23.4.1:3", "", "DPS_CoverageInformation", "EARoot/EA1/EA3/EA23/EA4/EA1/EA3947.htm", "5.png", "E47615", "0", "", "Class0","{28E2B7CC-6417-4562-9E45-DF9D34204631}");

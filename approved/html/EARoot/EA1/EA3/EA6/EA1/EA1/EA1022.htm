@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Coordinate geometry::GM_Position</title>
+<title></title>
 <link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("GM_Position", " : "))</script>  : Public  &lt;&lt;Union&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("", " : "))</script>  : Public   Note</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">4/10/2008 12:16:13 PM</td>
+			<td width="85%" class="ObjectDetailsValue">10/04/2008 12:16:14</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">4/10/2008 12:16:13 PM</td>
+			<td class="ObjectDetailsValue">10/04/2008 12:16:14</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,155 +87,15 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{ECC8BD1C-7D88-457a-AF27-7A56AAA88506}</td>
+			<td class="ObjectDetailsValue">{134C3B37-A9B6-4808-9A09-FA517C940E97}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA938.htm">Fig 14: Direct Position </a>, <a href="EA922.htm">Context Diagram: GM_Position</a>, <a href="EA932.htm">Context Diagram: GM_Triangle</a>, <a href="EA930.htm">Context Diagram: GM_Tin</a>, <a href="EA850.htm">Context Diagram: GM_AffinePlacement</a>, <a href="EA910.htm">Context Diagram: GM_PointArray</a>, <a href="../../../EA30/EA2/EA5438.htm">Fig 18: Main</a></td>
+			<td class="ObjectDetailsValue"><a href="EA987.htm">Fig 17: Arcs</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">The data type GM_Position is a union type consisting of either a DirectPosition or of a reference to a GM_Point from which a DirectPosition shall be obtained. The use of this data type allows the identification of a position either directly as a coordinate (variant direct) or indirectly as a reference to a GM_Point (variant indirect).&lt;br /&gt;&lt;/p&gt;&lt;p&gt;GM_Position::direct [0,1] : DirectPosition; &lt;br /&gt;&lt;/p&gt;&lt;p&gt;GM_Position::indirect [0,1] : GM_PointRef;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;GM_Position:&lt;br /&gt;&lt;/p&gt;&lt;p&gt; {direct.isNull = indirect.isNotNull}&lt;br /&gt;&lt;/p&gt;</div>
+	<div class="ObjectDetailsNotes">{interpolation = &quot;circularArc3Points&quot;}&lt;br/&gt;{controlPoints.count = 2*numArc +1&lt;br/&gt;</div>
 
-	<div class="TableGroup" id="TableGroup">
-		<ul class="ItemTitle">
-			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
-			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
-			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
-		</ul>
-<div class="ItemBody" id="AttributesTable">
-	<table border="0" cellspacing="0" cellpadding="0" class="Table">
-		<tr>
-			<td width="100%" class="TableHeading">Attribute</td>
-		</tr>
-						<tr>
-				<td width="100%" class="TableRow">
-					<i>Public <a href="EA985.htm">DirectPosition</a></i><br /><strong>&nbsp;&nbsp;direct</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1424')" style="text-decoration: none; color: #000000;"></BR><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1424" border="0" />Details:
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes1424_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes1424_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes1424_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes1424_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes1424_03" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-					</table>
-					
-					
-						&nbsp;
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public <a href="EA1018.htm">GM_PointRef</a></i><br /><strong>&nbsp;&nbsp;indirect</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1425')" style="text-decoration: none; color: #000000;"></BR><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1425" border="0" />Details:
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes1425_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes1425_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes1425_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes1425_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes1425_03" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-					</table>
-					
-					
-						&nbsp;
-						
-				</td>
-			</tr>
-	</table>
-</div>
-		<div class="ItemBody" id="AssociationsFromTable">
-			<table border="0" cellspacing="0" cellpadding="0" class="Table">
-				<tr>
-					<td width="40%" class="TableHeading">Element</td>
-					<td width="30%" class="TableHeading">Source Role</td>
-					<td width="30%" class="TableHeading">Target Role</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA1016.htm">GM_PointArray</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> column<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1426" onclick="parent.toggleDiv('detailsDIVLink1426','DetailsImageLink1426')" />Details:
-							<div id="detailsDIVLink1426" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-
-			</table>
-		</div>
-<div class="ItemBody" id="TaggedValTable">
-	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
-		<tr>
-			<td width="50%" class="TableHeading">Tag</td>
-			<td width="50%" class="TableHeading">Value</td>
-		</tr>
-					<tr>
-				<td width="50%" class="TableRow" valign="top">persistence</td>
-				<td width="50%" class="TableRow" valign="top">persistent</td>
-			</tr>	
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario1427" onclick="parent.toggleDiv('detailsDIVScenario1427','DetailsImageScenario1427')" />Details:
-						<div id="detailsDIVScenario1427" class="DetailsDiv" >
-						&nbsp;
-						</div>
-					</div>
-				</td>
-			</tr>
-	</table>
-</div>	</div>
 <div class="pageFooter"></div>
  
 </body>
