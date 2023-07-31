@@ -110,7 +110,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../EA7/EA1/EA3/EA5/EA1709.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;description</strong>
+					<i>Public <a href="EA5859.htm">LC_PeriodVariationType</a></i><br /><strong>&nbsp;&nbsp;periodType</strong>
 				</td>
 			</tr>
 			<tr>
@@ -136,7 +136,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes7292_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes7292_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -153,32 +153,12 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			description of the type of periodic variation such as - seasonal monsoon, seasonal spring, etc.&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						<i>Constraints:</i><br><span style= "margin-left: .5cm;">Pre-condition descriptionConstraint </span>
-<table>
-	<tr>
-		<td>
-			<span style= "margin-left: 1.5cm;"> <span>
-		</td>
-		<td>
-			::LC_PeriodicVariationType defined
-		</td>
-	</td>
-</table> 
+						&nbsp;
+						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA5859.htm">LC_PeriodVariationType</a></i><br /><strong>&nbsp;&nbsp;periodType</strong>
+					<i>Public <a href="../EA6/EA5987.htm">LC_PermittedPosRealRange</a></i><br /><strong>&nbsp;&nbsp;persistencePeriod</strong>
 				</td>
 			</tr>
 			<tr>
@@ -226,7 +206,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../EA6/EA5987.htm">LC_PermittedPosRealRange</a></i><br /><strong>&nbsp;&nbsp;persistencePeriod</strong>
+					<i>Public <a href="../../../EA7/EA1/EA1/EA1/EA1452.htm">Time</a></i><br /><strong>&nbsp;&nbsp;persistenceUnits</strong>
 				</td>
 			</tr>
 			<tr>
@@ -269,12 +249,32 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						&nbsp;
-						
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			allowable values&lt;br/&gt;second, minute, hour, day, month, year &lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						<i>Constraints:</i><br><span style= "margin-left: .5cm;">&nbsp; persistenceConstraint </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::{count periodType + persistence &gt; 0}<br />{if count persistence = 1, then persistenceUnit = 1}
+		</td>
+	</td>
+</table> 
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../EA7/EA1/EA1/EA1/EA1452.htm">Time</a></i><br /><strong>&nbsp;&nbsp;persistenceUnits</strong>
+					<i>Public <a href="../../../EA7/EA1/EA3/EA5/EA1709.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;description</strong>
 				</td>
 			</tr>
 			<tr>
@@ -300,7 +300,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes7295_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes7295_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -323,19 +323,19 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			allowable values&lt;br/&gt;second, minute, hour, day, month, year &lt;br/&gt;
+			description of the type of periodic variation such as - seasonal monsoon, seasonal spring, etc.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
 
-						<i>Constraints:</i><br><span style= "margin-left: .5cm;">&nbsp; persistenceConstraint </span>
+						<i>Constraints:</i><br><span style= "margin-left: .5cm;">Pre-condition descriptionConstraint </span>
 <table>
 	<tr>
 		<td>
 			<span style= "margin-left: 1.5cm;"> <span>
 		</td>
 		<td>
-			::{count periodType + persistence &gt; 0}<br />{if count persistence = 1, then persistenceUnit = 1}
+			::LC_PeriodicVariationType defined
 		</td>
 	</td>
 </table> 

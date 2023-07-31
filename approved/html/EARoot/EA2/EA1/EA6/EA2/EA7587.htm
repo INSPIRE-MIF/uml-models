@@ -108,7 +108,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA7588.htm">GrammaticalGenderValue</a></i><br /><strong>&nbsp;&nbsp;grammaticalGender</strong>
+					<i>Public CharacterString</i><br /><strong>&nbsp;&nbsp;language</strong>
 				</td>
 			</tr>
 			<tr>
@@ -134,7 +134,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes10018_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes10018_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -157,7 +157,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Definition --&lt;br/&gt;Class of nouns reflected in the behaviour of associated words.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE the attribute has cardinality [0..1] and is voidable, which means that:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;in case the concept of grammatical gender has no sense for a given name (i.e. the attribute is not applicable), the attribute should not be provided.&lt;/li&gt;&lt;li&gt;in case the concept of grammatical gender has some sense for the name but is unknown, the attribute should be provided but &lt;i&gt;void&lt;/i&gt;.&#160;&#160;&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;br/&gt;
+			-- Definition --&lt;br/&gt;Language of the name, given as a three letters code, in accordance with either ISO 639-3 or ISO 639-5.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE 1More precisely, this definition refers to the language used by the community that uses the name.&lt;br/&gt;&lt;br/&gt;NOTE 2 The code &quot;mul&quot; for &quot;multilingual&quot; should not be used in general. However it can be used in rare cases like official names composed of two names in different languages. For example, &quot;Vitoria-Gasteiz&quot; is such a multilingual official name in Spain.&lt;br/&gt;&lt;br/&gt;NOTE 3 Even if this attribute is &quot;voidable&quot; for pragmatic reasons, it is of first importance in several use cases in the multi-language context of Europe.&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -166,7 +166,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA7589.htm">GrammaticalNumberValue</a></i><br /><strong>&nbsp;&nbsp;grammaticalNumber</strong>
+					<i>Public <a href="EA7593.htm">NativenessValue</a></i><br /><strong>&nbsp;&nbsp;nativeness</strong>
 				</td>
 			</tr>
 			<tr>
@@ -192,7 +192,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes10019_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes10019_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -215,7 +215,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Definition --&lt;br/&gt;Grammatical category of nouns that expresses count distinctions.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE the attribute has cardinality [0..1] and is voidable, which means that:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;in case the concept of grammatical number has no sense for a given name (i.e. the attribute is not applicable), the attribute should not be provided.&lt;/li&gt;&lt;li&gt;in case the concept of grammatical number has some sense for the name but is unknown, the attribute should be provided but &lt;i&gt;void&lt;/i&gt;.&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;br/&gt;
+			-- Definition --&lt;br/&gt;Information enabling to acknowledge if the name is the one that is/was used in the area where the spatial object is situated at the instant when the name is/was in use.&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -224,7 +224,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public CharacterString</i><br /><strong>&nbsp;&nbsp;language</strong>
+					<i>Public <a href="EA7592.htm">NameStatusValue</a></i><br /><strong>&nbsp;&nbsp;nameStatus</strong>
 				</td>
 			</tr>
 			<tr>
@@ -273,7 +273,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Definition --&lt;br/&gt;Language of the name, given as a three letters code, in accordance with either ISO 639-3 or ISO 639-5.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE 1More precisely, this definition refers to the language used by the community that uses the name.&lt;br/&gt;&lt;br/&gt;NOTE 2 The code &quot;mul&quot; for &quot;multilingual&quot; should not be used in general. However it can be used in rare cases like official names composed of two names in different languages. For example, &quot;Vitoria-Gasteiz&quot; is such a multilingual official name in Spain.&lt;br/&gt;&lt;br/&gt;NOTE 3 Even if this attribute is &quot;voidable&quot; for pragmatic reasons, it is of first importance in several use cases in the multi-language context of Europe.&lt;br/&gt;&lt;br/&gt;
+			-- Definition --&lt;br/&gt;Qualitative information enabling to discern which credit should be given to the name with respect to its standardisation and/or its topicality.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE The Geographical Names application schema does not explicitly make a preference between different names (e.g. official endonyms) of a specific real world entity. The necessary information for making the preference (e.g. the linguistic status of the administrative or geographic area in question), for a certain use case, must be obtained from other data or information sources. For example, the status of the language of the name may be known through queries on the geometries of named places against the geometry of administrative units recorded in a certain source with the language statuses information. &lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -282,7 +282,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA7592.htm">NameStatusValue</a></i><br /><strong>&nbsp;&nbsp;nameStatus</strong>
+					<i>Public <a href="../../../../EA1/EA3/EA7/EA1/EA3/EA5/EA1709.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;sourceOfName</strong>
 				</td>
 			</tr>
 			<tr>
@@ -331,7 +331,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Definition --&lt;br/&gt;Qualitative information enabling to discern which credit should be given to the name with respect to its standardisation and/or its topicality.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE The Geographical Names application schema does not explicitly make a preference between different names (e.g. official endonyms) of a specific real world entity. The necessary information for making the preference (e.g. the linguistic status of the administrative or geographic area in question), for a certain use case, must be obtained from other data or information sources. For example, the status of the language of the name may be known through queries on the geometries of named places against the geometry of administrative units recorded in a certain source with the language statuses information. &lt;br/&gt;
+			-- Definition --&lt;br/&gt;Original data source from which the geographical name is taken from and integrated in the data set providing/publishing it. For some named spatial objects it might refer again to the publishing data set if no other information is available.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;EXAMPLES Gazetteer, geographical names data set.&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -340,7 +340,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA7593.htm">NativenessValue</a></i><br /><strong>&nbsp;&nbsp;nativeness</strong>
+					<i>Public <a href="EA7594.htm">PronunciationOfName</a></i><br /><strong>&nbsp;&nbsp;pronunciation</strong>
 				</td>
 			</tr>
 			<tr>
@@ -389,7 +389,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Definition --&lt;br/&gt;Information enabling to acknowledge if the name is the one that is/was used in the area where the spatial object is situated at the instant when the name is/was in use.&lt;br/&gt;&lt;br/&gt;
+			-- Definition --&lt;br/&gt;Proper, correct or standard (standard within the linguistic community concerned) pronunciation of the geographical name.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;SOURCE Adapted from [UNGEGN Manual 2006].&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -398,7 +398,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA7594.htm">PronunciationOfName</a></i><br /><strong>&nbsp;&nbsp;pronunciation</strong>
+					<i>Public <a href="EA7595.htm">SpellingOfName</a></i><br /><strong>&nbsp;&nbsp;spelling</strong>
 				</td>
 			</tr>
 			<tr>
@@ -416,7 +416,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes10023_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td>&lt;&lt;voidable&gt;&gt;</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes10023_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
@@ -447,7 +447,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Definition --&lt;br/&gt;Proper, correct or standard (standard within the linguistic community concerned) pronunciation of the geographical name.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;SOURCE Adapted from [UNGEGN Manual 2006].&lt;br/&gt;&lt;br/&gt;
+			-- Definition --&lt;br/&gt;A proper way of writing the geographical name.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE 1 Different spellings should only be used for names rendered in different scripts. .&lt;br/&gt;&lt;br/&gt;NOTE 2 While a particular GeographicalName should only have one spelling in a given script, providing different spellings in the same script should be done through the provision of different geographical names associated with the same named place.&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -456,7 +456,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../../EA1/EA3/EA7/EA1/EA3/EA5/EA1709.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;sourceOfName</strong>
+					<i>Public <a href="EA7588.htm">GrammaticalGenderValue</a></i><br /><strong>&nbsp;&nbsp;grammaticalGender</strong>
 				</td>
 			</tr>
 			<tr>
@@ -482,7 +482,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes10024_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes10024_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -505,7 +505,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Definition --&lt;br/&gt;Original data source from which the geographical name is taken from and integrated in the data set providing/publishing it. For some named spatial objects it might refer again to the publishing data set if no other information is available.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;EXAMPLES Gazetteer, geographical names data set.&lt;br/&gt;&lt;br/&gt;
+			-- Definition --&lt;br/&gt;Class of nouns reflected in the behaviour of associated words.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE the attribute has cardinality [0..1] and is voidable, which means that:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;in case the concept of grammatical gender has no sense for a given name (i.e. the attribute is not applicable), the attribute should not be provided.&lt;/li&gt;&lt;li&gt;in case the concept of grammatical gender has some sense for the name but is unknown, the attribute should be provided but &lt;i&gt;void&lt;/i&gt;.&#160;&#160;&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -514,7 +514,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA7595.htm">SpellingOfName</a></i><br /><strong>&nbsp;&nbsp;spelling</strong>
+					<i>Public <a href="EA7589.htm">GrammaticalNumberValue</a></i><br /><strong>&nbsp;&nbsp;grammaticalNumber</strong>
 				</td>
 			</tr>
 			<tr>
@@ -532,7 +532,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes10025_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
+							<td>&lt;&lt;voidable&gt;&gt;</td>
 						</tr>
 						<tr id="DetailsImageAttributes10025_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
@@ -540,7 +540,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes10025_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes10025_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -563,7 +563,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Definition --&lt;br/&gt;A proper way of writing the geographical name.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE 1 Different spellings should only be used for names rendered in different scripts. .&lt;br/&gt;&lt;br/&gt;NOTE 2 While a particular GeographicalName should only have one spelling in a given script, providing different spellings in the same script should be done through the provision of different geographical names associated with the same named place.&lt;br/&gt;&lt;br/&gt;
+			-- Definition --&lt;br/&gt;Grammatical category of nouns that expresses count distinctions.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE the attribute has cardinality [0..1] and is voidable, which means that:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;in case the concept of grammatical number has no sense for a given name (i.e. the attribute is not applicable), the attribute should not be provided.&lt;/li&gt;&lt;li&gt;in case the concept of grammatical number has some sense for the name but is unknown, the attribute should be provided but &lt;i&gt;void&lt;/i&gt;.&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>

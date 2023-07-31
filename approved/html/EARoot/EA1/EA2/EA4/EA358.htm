@@ -109,7 +109,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../EA3/EA13/EA15/EA2875.htm">CI_ResponsibleParty</a></i><br /><strong>&nbsp;&nbsp;coreCustodian</strong>
+					<i>Public <a href="../../EA3/EA13/EA15/EA2875.htm">CI_ResponsibleParty</a></i><br /><strong>&nbsp;&nbsp;operator</strong>
 				</td>
 			</tr>
 			<tr>
@@ -151,14 +151,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					nillable=True<br>sequenceNumber=9<br>
+					nillable=True<br>sequenceNumber=1<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Organisation that is custodian of the core recovered from the borehole&lt;br/&gt;
+			Organisation responsible for commissioning the borehole (as opposed to drilling the borehole)&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -167,7 +167,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../EA3/EA6/EA1/EA1/EA1047.htm">GM_Envelope</a></i><br /><strong>&nbsp;&nbsp;coredInterval</strong>
+					<i>Public <a href="../../EA3/EA13/EA15/EA2875.htm">CI_ResponsibleParty</a></i><br /><strong>&nbsp;&nbsp;driller</strong>
 				</td>
 			</tr>
 			<tr>
@@ -209,14 +209,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					nillable=True<br>sequenceNumber=8<br>
+					nillable=True<br>sequenceNumber=2<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Interval(s) within the borehole from which core was recovered&lt;br/&gt;Use GM_Envelope with 1-D CRS corresponding to borehole curve shape&lt;br/&gt;
+			The organisation responsible for drilling the borehole (as opposed to commissioning the borehole)&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -283,7 +283,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../EA3/EA13/EA15/EA2875.htm">CI_ResponsibleParty</a></i><br /><strong>&nbsp;&nbsp;driller</strong>
+					<i>Public <a href="EA359.htm">BoreholeDrillingMethodCode</a></i><br /><strong>&nbsp;&nbsp;drillingMethod</strong>
 				</td>
 			</tr>
 			<tr>
@@ -325,14 +325,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					nillable=True<br>sequenceNumber=2<br>
+					inlineOrByReference=byReference<br>nillable=True<br>sequenceNumber=4<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The organisation responsible for drilling the borehole (as opposed to commissioning the borehole)&lt;br/&gt;
+			Indicates the drilling method used. Appropriate terms would include Rotary; Shell & Auger; Downhole Air Hammer; Hand Auger etc&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -341,7 +341,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA359.htm">BoreholeDrillingMethodCode</a></i><br /><strong>&nbsp;&nbsp;drillingMethod</strong>
+					<i>Public <a href="EA361.htm">BoreholeStartPointCode</a></i><br /><strong>&nbsp;&nbsp;startPoint</strong>
 				</td>
 			</tr>
 			<tr>
@@ -383,14 +383,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					inlineOrByReference=byReference<br>nillable=True<br>sequenceNumber=4<br>
+					inlineOrByReference=byReference<br>nillable=True<br>sequenceNumber=5<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Indicates the drilling method used. Appropriate terms would include Rotary; Shell & Auger; Downhole Air Hammer; Hand Auger etc&lt;br/&gt;
+			Indicates the position relative to ground surface where the borehole commenced. Appropriate terms would include Drilled from Ground Surface; Drilled Underground;&#160;&#160;Drilled from Quarry Floor etc &lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -399,7 +399,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA360.htm">BoreholeInclinationCode</a></i><br /><strong>&nbsp;&nbsp;inclinationType</strong>
+					<i>Public Quantity</i><br /><strong>&nbsp;&nbsp;nominalDiameter</strong>
 				</td>
 			</tr>
 			<tr>
@@ -441,14 +441,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					inlineOrByReference=byReference<br>nillable=True<br>sequenceNumber=7<br>
+					nillable=True<br>sequenceNumber=6<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Indicates the inclination of the borehole. Appropriate terms would include vertical; inclined up; inclined down, horizontal&lt;br/&gt;
+			The starting diameter&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -457,7 +457,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public Quantity</i><br /><strong>&nbsp;&nbsp;nominalDiameter</strong>
+					<i>Public <a href="EA360.htm">BoreholeInclinationCode</a></i><br /><strong>&nbsp;&nbsp;inclinationType</strong>
 				</td>
 			</tr>
 			<tr>
@@ -499,14 +499,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					nillable=True<br>sequenceNumber=6<br>
+					inlineOrByReference=byReference<br>nillable=True<br>sequenceNumber=7<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The starting diameter&lt;br/&gt;
+			Indicates the inclination of the borehole. Appropriate terms would include vertical; inclined up; inclined down, horizontal&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -515,7 +515,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../EA3/EA13/EA15/EA2875.htm">CI_ResponsibleParty</a></i><br /><strong>&nbsp;&nbsp;operator</strong>
+					<i>Public <a href="../../EA3/EA6/EA1/EA1/EA1047.htm">GM_Envelope</a></i><br /><strong>&nbsp;&nbsp;coredInterval</strong>
 				</td>
 			</tr>
 			<tr>
@@ -557,14 +557,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					nillable=True<br>sequenceNumber=1<br>
+					nillable=True<br>sequenceNumber=8<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Organisation responsible for commissioning the borehole (as opposed to drilling the borehole)&lt;br/&gt;
+			Interval(s) within the borehole from which core was recovered&lt;br/&gt;Use GM_Envelope with 1-D CRS corresponding to borehole curve shape&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -573,7 +573,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA361.htm">BoreholeStartPointCode</a></i><br /><strong>&nbsp;&nbsp;startPoint</strong>
+					<i>Public <a href="../../EA3/EA13/EA15/EA2875.htm">CI_ResponsibleParty</a></i><br /><strong>&nbsp;&nbsp;coreCustodian</strong>
 				</td>
 			</tr>
 			<tr>
@@ -615,14 +615,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					inlineOrByReference=byReference<br>nillable=True<br>sequenceNumber=5<br>
+					nillable=True<br>sequenceNumber=9<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Indicates the position relative to ground surface where the borehole commenced. Appropriate terms would include Drilled from Ground Surface; Drilled Underground;&#160;&#160;Drilled from Quarry Floor etc &lt;br/&gt;
+			Organisation that is custodian of the core recovered from the borehole&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>

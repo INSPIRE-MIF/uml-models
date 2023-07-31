@@ -112,7 +112,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA6744.htm">NamedValue</a></i><br /><strong>&nbsp;&nbsp;parameter</strong>
+					<i>Public TM_Object</i><br /><strong>&nbsp;&nbsp;phenomenonTime</strong>
 				</td>
 			</tr>
 			<tr>
@@ -138,7 +138,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes8234_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to *</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes8234_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -154,14 +154,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					sequenceNumber=7<br>
+					sequenceNumber=3<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			If present, the attributes &lt;i&gt;parameter:NamedValue&lt;/i&gt; shall describe an arbitrary event-specific parameter. This might be an environmental parameter, an instrument setting or input, or an event-specific sampling parameter that is not tightly bound to either the feature-of-interest (6.2.2.7) or to the observation procedure (6.2.2.10). To avoid ambiguity, there shall be no more than one parameter with the same name. &lt;br/&gt;&lt;br/&gt;NOTE	Parameters that are tightly bound to the procedure may be recorded as part of the procedure description. &lt;br/&gt;&lt;br/&gt;In some contexts the &lt;i&gt;Observation::procedure&lt;/i&gt; (6.2.2.10) is a generic or standard procedure, rather than an event-specific process. In this context, parameters bound to the observation act, such as instrument settings, calibrations or inputs, local position, detection limits, asset identifer, operator, may augment the description of a standard procedure. &lt;br/&gt;&lt;br/&gt;EXAMPLE	A time sequence of observations of water quality in a well may be made at variable depths within the well. While these may be associated with specimens taken from the well at this depth as the features-of-interest, a more common approach is to identify the well itself as the feature-of-interest, and add a &ldquo;samplingDepth&rdquo; parameter to the observation (Figure 3). The sampling depth is of secondary interest compared to the temporal variation of water quality at the site. &lt;br/&gt;&lt;br/&gt;
+			The attribute &lt;i&gt;phenomenonTime:TM_Object&lt;/i&gt; shall describe the time that the result (6.2.2.9) applies to the property of the feature-of-interest (6.2.2.7). This is often the time of interaction by a sampling procedure (8.2) or observation procedure (6.2.2.10) with a real-world feature. &lt;br/&gt;&lt;br/&gt;NOTE 1	The phenomenon time is the temporal parameter normally used in geospatial analysis of the result. &lt;br/&gt;&lt;br/&gt;NOTE 2	If the observedProperty of an observation is &lsquo;occurrence time&rsquo; then the result should be the same as the phenomenonTime&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -170,7 +170,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public TM_Object</i><br /><strong>&nbsp;&nbsp;phenomenonTime</strong>
+					<i>Public <a href="../../../../EA9/EA1/EA1886.htm">TM_Instant</a></i><br /><strong>&nbsp;&nbsp;resultTime</strong>
 				</td>
 			</tr>
 			<tr>
@@ -212,14 +212,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					sequenceNumber=3<br>
+					sequenceNumber=4<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The attribute &lt;i&gt;phenomenonTime:TM_Object&lt;/i&gt; shall describe the time that the result (6.2.2.9) applies to the property of the feature-of-interest (6.2.2.7). This is often the time of interaction by a sampling procedure (8.2) or observation procedure (6.2.2.10) with a real-world feature. &lt;br/&gt;&lt;br/&gt;NOTE 1	The phenomenon time is the temporal parameter normally used in geospatial analysis of the result. &lt;br/&gt;&lt;br/&gt;NOTE 2	If the observedProperty of an observation is &lsquo;occurrence time&rsquo; then the result should be the same as the phenomenonTime&lt;br/&gt;&lt;br/&gt;
+			The attribute &lt;i&gt;resultTime:TM_Instant&lt;/i&gt; shall describe the time when the result became available, typically when the procedure (6.2.2.10) associated with the observation was completed For some observations this is identical to the phenomenonTime. However, there are important cases where they differ. &lt;br/&gt;&lt;br/&gt;EXAMPLE 1	Where a measurement is made on a specimen in a laboratory, the phenomenonTime is the time the specimen was retrieved from its host, while the resultTime is the time the laboratory procedure was applied. &lt;br/&gt;&lt;br/&gt;EXAMPLE 2	The resultTime also supports disambiguation of repeat measurements made of the same property of a feature using the same procedure. &lt;br/&gt;&lt;br/&gt;EXAMPLE 3	Where sensor observation results are post-processed, the resultTime is the post-processing time, while the phenomenonTime is the time of initial interaction with the world. &lt;br/&gt;&lt;br/&gt;EXAMPLE 4	Simulations may be used to estimate the values for phenomena in the future or past. The phenomenonTime is the time that the result applies to, while the resultTime is the time that the simulation was executed. &lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -228,7 +228,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public DQ_Element</i><br /><strong>&nbsp;&nbsp;resultQuality</strong>
+					<i>Public <a href="../../../../EA9/EA1/EA1891.htm">TM_Period</a></i><br /><strong>&nbsp;&nbsp;validTime</strong>
 				</td>
 			</tr>
 			<tr>
@@ -254,7 +254,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes8236_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to *</td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes8236_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -270,14 +270,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					sequenceNumber=10<br>
+					sequenceNumber=5<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			If present, the attributes &lt;i&gt;resultQuality:DQ_Element&lt;/i&gt; shall describe the quality of the result (6.2.2.9). This instance-specific description complements the description of the observation procedure (6.2.2.10), which provides information concerning the quality of all observations using this procedure. Quality of a result may be assessed following the procedures in ISO 19114:2003.Multiple measures may be provided (ISO/TS 19138:2006). &lt;br/&gt;&lt;br/&gt;
+			If present, the attribute &lt;i&gt;validTime:TM_Period&lt;/i&gt; shall describe the time period during which the result is intended to be used. &lt;br/&gt;&lt;br/&gt;NOTE	This attribute is commonly required in forecasting applications. &lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -286,7 +286,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../../EA9/EA1/EA1886.htm">TM_Instant</a></i><br /><strong>&nbsp;&nbsp;resultTime</strong>
+					<i>Public DQ_Element</i><br /><strong>&nbsp;&nbsp;resultQuality</strong>
 				</td>
 			</tr>
 			<tr>
@@ -312,7 +312,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes8237_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to *</td>
 						</tr>
 						<tr id="DetailsImageAttributes8237_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -328,14 +328,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					sequenceNumber=4<br>
+					sequenceNumber=10<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The attribute &lt;i&gt;resultTime:TM_Instant&lt;/i&gt; shall describe the time when the result became available, typically when the procedure (6.2.2.10) associated with the observation was completed For some observations this is identical to the phenomenonTime. However, there are important cases where they differ. &lt;br/&gt;&lt;br/&gt;EXAMPLE 1	Where a measurement is made on a specimen in a laboratory, the phenomenonTime is the time the specimen was retrieved from its host, while the resultTime is the time the laboratory procedure was applied. &lt;br/&gt;&lt;br/&gt;EXAMPLE 2	The resultTime also supports disambiguation of repeat measurements made of the same property of a feature using the same procedure. &lt;br/&gt;&lt;br/&gt;EXAMPLE 3	Where sensor observation results are post-processed, the resultTime is the post-processing time, while the phenomenonTime is the time of initial interaction with the world. &lt;br/&gt;&lt;br/&gt;EXAMPLE 4	Simulations may be used to estimate the values for phenomena in the future or past. The phenomenonTime is the time that the result applies to, while the resultTime is the time that the simulation was executed. &lt;br/&gt;&lt;br/&gt;
+			If present, the attributes &lt;i&gt;resultQuality:DQ_Element&lt;/i&gt; shall describe the quality of the result (6.2.2.9). This instance-specific description complements the description of the observation procedure (6.2.2.10), which provides information concerning the quality of all observations using this procedure. Quality of a result may be assessed following the procedures in ISO 19114:2003.Multiple measures may be provided (ISO/TS 19138:2006). &lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -344,7 +344,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../../EA9/EA1/EA1891.htm">TM_Period</a></i><br /><strong>&nbsp;&nbsp;validTime</strong>
+					<i>Public <a href="EA6744.htm">NamedValue</a></i><br /><strong>&nbsp;&nbsp;parameter</strong>
 				</td>
 			</tr>
 			<tr>
@@ -370,7 +370,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes8238_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
+							<td>Range:0 to *</td>
 						</tr>
 						<tr id="DetailsImageAttributes8238_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -386,14 +386,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					sequenceNumber=5<br>
+					sequenceNumber=7<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			If present, the attribute &lt;i&gt;validTime:TM_Period&lt;/i&gt; shall describe the time period during which the result is intended to be used. &lt;br/&gt;&lt;br/&gt;NOTE	This attribute is commonly required in forecasting applications. &lt;br/&gt;&lt;br/&gt;
+			If present, the attributes &lt;i&gt;parameter:NamedValue&lt;/i&gt; shall describe an arbitrary event-specific parameter. This might be an environmental parameter, an instrument setting or input, or an event-specific sampling parameter that is not tightly bound to either the feature-of-interest (6.2.2.7) or to the observation procedure (6.2.2.10). To avoid ambiguity, there shall be no more than one parameter with the same name. &lt;br/&gt;&lt;br/&gt;NOTE	Parameters that are tightly bound to the procedure may be recorded as part of the procedure description. &lt;br/&gt;&lt;br/&gt;In some contexts the &lt;i&gt;Observation::procedure&lt;/i&gt; (6.2.2.10) is a generic or standard procedure, rather than an event-specific process. In this context, parameters bound to the observation act, such as instrument settings, calibrations or inputs, local position, detection limits, asset identifer, operator, may augment the description of a standard procedure. &lt;br/&gt;&lt;br/&gt;EXAMPLE	A time sequence of observations of water quality in a well may be made at variable depths within the well. While these may be associated with specimens taken from the well at this depth as the features-of-interest, a more common approach is to identify the well itself as the feature-of-interest, and add a &ldquo;samplingDepth&rdquo; parameter to the observation (Figure 3). The sampling depth is of secondary interest compared to the temporal variation of water quality at the site. &lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>

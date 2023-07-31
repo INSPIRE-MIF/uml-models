@@ -112,7 +112,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../../../EA1/EA3/EA9/EA2/EA1964.htm">TM_Position</a></i><br /><strong>&nbsp;&nbsp;beginLifespanVersion</strong>
+					<i>Public <a href="../../../../../EA3/EA2/EA1/EA9571.htm">Identifier</a></i><br /><strong>&nbsp;&nbsp;inspireId</strong>
 				</td>
 			</tr>
 			<tr>
@@ -130,7 +130,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes12446_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td>&lt;&lt;voidable&gt;&gt;</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes12446_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
@@ -161,7 +161,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Name --&lt;br/&gt;begin lifespan version&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Temporal position at which this version of the spatial object was inserted or changed in the spatial data set.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE Since this information is not always automatically recorded by a system, but can be captured manually, the provision of the time is not required here. That is the reason why TM_Position was chosen as value type instead of DateTime, which is, however, commonly used in other INSPIRE data specifications.&lt;br/&gt;&lt;br/&gt;
+			-- Name --&lt;br/&gt;inspire identifier&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;External object identifier of the spatial object.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE An external object identifier is a unique object identifier published by the responsible body, which may be used by external applications to reference the spatial object. The identifier is an identifier of the spatial object, not an identifier of the real-world phenomenon.&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -228,7 +228,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../../../EA1/EA3/EA9/EA2/EA1964.htm">TM_Position</a></i><br /><strong>&nbsp;&nbsp;endLifespanVersion</strong>
+					<i>Public <a href="../../../../../EA1/EA3/EA6/EA1/EA2/EA1099.htm">GM_MultiSurface</a></i><br /><strong>&nbsp;&nbsp;footprint</strong>
 				</td>
 			</tr>
 			<tr>
@@ -254,7 +254,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes12448_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes12448_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -277,7 +277,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Name --&lt;br/&gt;end lifespan version&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Temporal position at which this version of the spatial object was superseded or retired from the spatial data set.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE Since this information is not always automatically recorded by a system, but can be captured manually, the provision of the time is not required here. That is the reason why TM_Position was chosen as value type instead of DateTime, which is, however, commonly used in other INSPIRE data specifications.&lt;br/&gt;&lt;br/&gt;
+			-- Name --&lt;br/&gt;footprint&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Geographic area enclosing valid data of the orthoimage coverage.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE 1 The footprint shall be enclosed in the geographic domain extent that it refines.&lt;br/&gt;&lt;br/&gt;NOTE 2 This property is mandatory if the OrthoimageCoverage instance is an aggregation of other OrthoimageCoverage instances or if mosaic elements are provided.&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -286,7 +286,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../../../EA1/EA3/EA6/EA1/EA2/EA1099.htm">GM_MultiSurface</a></i><br /><strong>&nbsp;&nbsp;footprint</strong>
+					<i>Public <a href="EA8182.htm">InterpolationMethodValue</a></i><br /><strong>&nbsp;&nbsp;interpolationType</strong>
 				</td>
 			</tr>
 			<tr>
@@ -300,11 +300,11 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes12449_01" style="display: none;">
 							<td width="75"><i>Initial:</i></td>
-							<td></td>
+							<td>nearestneighbor</td>
 						</tr>
 						<tr id="DetailsImageAttributes12449_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td>&lt;&lt;voidable&gt;&gt;</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes12449_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
@@ -323,122 +323,6 @@ function nameClassifier(name, separator)
 							<td>False</td>
 						</tr>
 							<tr id="DetailsImageAttributes12449_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			-- Name --&lt;br/&gt;footprint&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Geographic area enclosing valid data of the orthoimage coverage.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE 1 The footprint shall be enclosed in the geographic domain extent that it refines.&lt;br/&gt;&lt;br/&gt;NOTE 2 This property is mandatory if the OrthoimageCoverage instance is an aggregation of other OrthoimageCoverage instances or if mosaic elements are provided.&lt;br/&gt;&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../../../EA3/EA2/EA1/EA9571.htm">Identifier</a></i><br /><strong>&nbsp;&nbsp;inspireId</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes12450')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes12450" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes12450_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes12450_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes12450_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes12450_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes12450_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes12450_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes12450_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes12450_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			-- Name --&lt;br/&gt;inspire identifier&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;External object identifier of the spatial object.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE An external object identifier is a unique object identifier published by the responsible body, which may be used by external applications to reference the spatial object. The identifier is an identifier of the spatial object, not an identifier of the real-world phenomenon.&lt;br/&gt;&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public <a href="EA8182.htm">InterpolationMethodValue</a></i><br /><strong>&nbsp;&nbsp;interpolationType</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes12451')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes12451" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes12451_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes12451_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td>nearestneighbor</td>
-						</tr>
-						<tr id="DetailsImageAttributes12451_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes12451_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes12451_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes12451_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes12451_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes12451_07" style="display: none;">
 							<td width="75"><i>IsID: </i></td>
 						<td>False</td>
 						</tr>
@@ -465,38 +349,38 @@ function nameClassifier(name, separator)
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes12452')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes12452" border="0" />Details:</a>
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes12450')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes12450" border="0" />Details:</a>
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
 					
-						<tr id="DetailsImageAttributes12452_00" style="display: none;">
+						<tr id="DetailsImageAttributes12450_00" style="display: none;">
 							<td width="75"><i>Alias:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes12452_01" style="display: none;">
+						<tr id="DetailsImageAttributes12450_01" style="display: none;">
 							<td width="75"><i>Initial:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes12452_02" style="display: none;">
+						<tr id="DetailsImageAttributes12450_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
 							<td>&lt;&lt;voidable&gt;&gt;</td>
 						</tr>
-						<tr id="DetailsImageAttributes12452_03" style="display: none;">
+						<tr id="DetailsImageAttributes12450_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes12452_04" style="display: none;">
+						<tr id="DetailsImageAttributes12450_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
 							<td>Range:0 to 1</td>
 						</tr>
-						<tr id="DetailsImageAttributes12452_05" style="display: none;">
+						<tr id="DetailsImageAttributes12450_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
 							<td>False</td>
 						</tr>
-						<tr id="DetailsImageAttributes12452_06" style="display: none;">
+						<tr id="DetailsImageAttributes12450_06" style="display: none;">
 							<td width="75"><i>Derived: </i></td>
 							<td>False</td>
 						</tr>
-							<tr id="DetailsImageAttributes12452_07" style="display: none;">
+							<tr id="DetailsImageAttributes12450_07" style="display: none;">
 							<td width="75"><i>IsID: </i></td>
 						<td>False</td>
 						</tr>
@@ -519,6 +403,122 @@ function nameClassifier(name, separator)
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
 					<i>Public <a href="../../../../../EA1/EA3/EA9/EA1/EA1891.htm">TM_Period</a></i><br /><strong>&nbsp;&nbsp;phenomenonTime</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes12451')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes12451" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes12451_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes12451_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes12451_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td>&lt;&lt;voidable&gt;&gt;</td>
+						</tr>
+						<tr id="DetailsImageAttributes12451_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes12451_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes12451_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes12451_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes12451_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			-- Name --&lt;br/&gt;phenomenon time&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Description of the observation/acquisition extent in time.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE 1 This temporal extent refers to the range in time in which the image(s) contributing to the orthoImage coverage has/have been acquired.&lt;br/&gt;&lt;br/&gt;NOTE 2 When the acquisition is considered as instantaneous, despite the exposure time, the end date and time can be identical to the begin date and time.&lt;br/&gt;&lt;br/&gt;EXAMPLE 1 begin: 2011-10-30 end: 2011-10-30&lt;br/&gt;&lt;br/&gt;EXAMPLE 2 begin: 2011-06-07T14:31:02Z end: 2011-06-07T16:10:54Z.&lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../../../../../EA1/EA3/EA9/EA2/EA1964.htm">TM_Position</a></i><br /><strong>&nbsp;&nbsp;beginLifespanVersion</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes12452')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes12452" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes12452_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes12452_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes12452_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td>&lt;&lt;voidable&gt;&gt;</td>
+						</tr>
+						<tr id="DetailsImageAttributes12452_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes12452_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes12452_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes12452_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes12452_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			-- Name --&lt;br/&gt;begin lifespan version&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Temporal position at which this version of the spatial object was inserted or changed in the spatial data set.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE Since this information is not always automatically recorded by a system, but can be captured manually, the provision of the time is not required here. That is the reason why TM_Position was chosen as value type instead of DateTime, which is, however, commonly used in other INSPIRE data specifications.&lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../../../../../EA1/EA3/EA9/EA2/EA1964.htm">TM_Position</a></i><br /><strong>&nbsp;&nbsp;endLifespanVersion</strong>
 				</td>
 			</tr>
 			<tr>
@@ -567,7 +567,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Name --&lt;br/&gt;phenomenon time&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Description of the observation/acquisition extent in time.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE 1 This temporal extent refers to the range in time in which the image(s) contributing to the orthoImage coverage has/have been acquired.&lt;br/&gt;&lt;br/&gt;NOTE 2 When the acquisition is considered as instantaneous, despite the exposure time, the end date and time can be identical to the begin date and time.&lt;br/&gt;&lt;br/&gt;EXAMPLE 1 begin: 2011-10-30 end: 2011-10-30&lt;br/&gt;&lt;br/&gt;EXAMPLE 2 begin: 2011-06-07T14:31:02Z end: 2011-06-07T16:10:54Z.&lt;br/&gt;&lt;br/&gt;
+			-- Name --&lt;br/&gt;end lifespan version&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Temporal position at which this version of the spatial object was superseded or retired from the spatial data set.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE Since this information is not always automatically recorded by a system, but can be captured manually, the provision of the time is not required here. That is the reason why TM_Position was chosen as value type instead of DateTime, which is, however, commonly used in other INSPIRE data specifications.&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>

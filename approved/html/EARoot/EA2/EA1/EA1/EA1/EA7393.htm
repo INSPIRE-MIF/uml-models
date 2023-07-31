@@ -112,7 +112,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../../EA1/EA3/EA7/EA1/EA3/EA5/EA1709.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;alternativeIdentifier</strong>
+					<i>Public <a href="../../../../EA3/EA2/EA1/EA9571.htm">Identifier</a></i><br /><strong>&nbsp;&nbsp;inspireId</strong>
 				</td>
 			</tr>
 			<tr>
@@ -130,7 +130,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes9609_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td>&lt;&lt;voidable&gt;&gt;</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes9609_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
@@ -161,7 +161,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Definition --&lt;br/&gt;External, thematic identifier of the address component spatial object, which enables interoperability with existing legacy systems or applications. &lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE Compared with a proper identifier of the address component, the alternative identifier is not necessarily persistent in the lifetime of the component spatial object. Likewise it is usually not globally unique and in general does include information on the version of the spatial object. &lt;br/&gt;&lt;br/&gt;EXAMPLE 1 National or regional sector-specific identifiers (like e.g. a number- or letter code) for administrative units, address areas (localities, villages, sub-divisions) or thoroughfare names, which are used by a number of existing legacy systems. &lt;br/&gt;&lt;br/&gt;EXAMPLE 2 In Denmark the four character municipal &quot;road name code&quot; (0001-9899) is only unique within the present municipality, thus if two municipalities merge, it is necessary to assign new road name codes.&lt;br/&gt;
+			-- Definition --&lt;br/&gt;External object identifier of the address component.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE 1 An external object identifier is a unique object identifier published by the responsible body, which may be used by external applications to reference the spatial object. The identifier is an identifier of the spatial object, not an identifier of the real-world phenomenon. &lt;br/&gt;&lt;br/&gt;NOTE 2 The primary purpose of this identifier is to enable links between various sources and the address components.&lt;br/&gt;&lt;br/&gt;EXAMPLE An address component spatial object from Denmark could carry this identifier: &lt;br/&gt;Namespace: DK_ADR&lt;br/&gt;Local identifier: 0A3F507B2AB032B8E0440003BA298018&lt;br/&gt;Version identifier: 12-02-2008T10:05:01+01:00&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -170,7 +170,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../../EA1/EA3/EA7/EA1/EA3/EA1/EA1650.htm">DateTime</a></i><br /><strong>&nbsp;&nbsp;beginLifespanVersion</strong>
+					<i>Public <a href="../../../../EA1/EA3/EA7/EA1/EA3/EA5/EA1709.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;alternativeIdentifier</strong>
 				</td>
 			</tr>
 			<tr>
@@ -196,7 +196,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes9610_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes9610_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -207,6 +207,64 @@ function nameClassifier(name, separator)
 							<td>False</td>
 						</tr>
 							<tr id="DetailsImageAttributes9610_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			-- Definition --&lt;br/&gt;External, thematic identifier of the address component spatial object, which enables interoperability with existing legacy systems or applications. &lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE Compared with a proper identifier of the address component, the alternative identifier is not necessarily persistent in the lifetime of the component spatial object. Likewise it is usually not globally unique and in general does include information on the version of the spatial object. &lt;br/&gt;&lt;br/&gt;EXAMPLE 1 National or regional sector-specific identifiers (like e.g. a number- or letter code) for administrative units, address areas (localities, villages, sub-divisions) or thoroughfare names, which are used by a number of existing legacy systems. &lt;br/&gt;&lt;br/&gt;EXAMPLE 2 In Denmark the four character municipal &quot;road name code&quot; (0001-9899) is only unique within the present municipality, thus if two municipalities merge, it is necessary to assign new road name codes.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../../../../EA1/EA3/EA7/EA1/EA3/EA1/EA1650.htm">DateTime</a></i><br /><strong>&nbsp;&nbsp;beginLifespanVersion</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes9611')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes9611" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes9611_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes9611_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes9611_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td>&lt;&lt;voidable&gt;&gt;</td>
+						</tr>
+						<tr id="DetailsImageAttributes9611_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes9611_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes9611_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes9611_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes9611_07" style="display: none;">
 							<td width="75"><i>IsID: </i></td>
 						<td>False</td>
 						</tr>
@@ -233,64 +291,6 @@ function nameClassifier(name, separator)
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes9611')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes9611" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes9611_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes9611_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes9611_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td>&lt;&lt;voidable&gt;&gt;</td>
-						</tr>
-						<tr id="DetailsImageAttributes9611_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes9611_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
-						</tr>
-						<tr id="DetailsImageAttributes9611_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes9611_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes9611_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			-- Definition --&lt;br/&gt;Date and time at which this version of the spatial object was superseded or retired in the spatial data set.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE This date is recorded primarily for those systems which &quot;close&quot; an entry in the spatial data set in the event of an attribute change.&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../../EA3/EA2/EA1/EA9571.htm">Identifier</a></i><br /><strong>&nbsp;&nbsp;inspireId</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
 					<a href="#" onclick="parent.toggleData('DetailsImageAttributes9612')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes9612" border="0" />Details:</a>
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
 					
@@ -304,7 +304,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes9612_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
+							<td>&lt;&lt;voidable&gt;&gt;</td>
 						</tr>
 						<tr id="DetailsImageAttributes9612_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
@@ -335,7 +335,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Definition --&lt;br/&gt;External object identifier of the address component.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE 1 An external object identifier is a unique object identifier published by the responsible body, which may be used by external applications to reference the spatial object. The identifier is an identifier of the spatial object, not an identifier of the real-world phenomenon. &lt;br/&gt;&lt;br/&gt;NOTE 2 The primary purpose of this identifier is to enable links between various sources and the address components.&lt;br/&gt;&lt;br/&gt;EXAMPLE An address component spatial object from Denmark could carry this identifier: &lt;br/&gt;Namespace: DK_ADR&lt;br/&gt;Local identifier: 0A3F507B2AB032B8E0440003BA298018&lt;br/&gt;Version identifier: 12-02-2008T10:05:01+01:00&lt;br/&gt;
+			-- Definition --&lt;br/&gt;Date and time at which this version of the spatial object was superseded or retired in the spatial data set.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE This date is recorded primarily for those systems which &quot;close&quot; an entry in the spatial data set in the event of an attribute change.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>

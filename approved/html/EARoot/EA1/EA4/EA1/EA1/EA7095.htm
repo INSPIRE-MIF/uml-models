@@ -109,7 +109,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public Integer</i><br /><strong>&nbsp;&nbsp;byteLength</strong>
+					<i>Public CharacterString</i><br /><strong>&nbsp;&nbsp;ref</strong>
 				</td>
 			</tr>
 			<tr>
@@ -135,7 +135,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes8887_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes8887_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -151,14 +151,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					asXMLAttribute=true<br>isMetadata=false<br>sequenceNumber=2<br>
+					asXMLAttribute=true<br>isMetadata=false<br>sequenceNumber=1<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Length in byte of this binary block (if known in advance)&lt;br/&gt;&lt;br/&gt;
+			Reference to the aggregate data component that this binary block encoding settings apply to&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -167,7 +167,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public ScopedName</i><br /><strong>&nbsp;&nbsp;compression</strong>
+					<i>Public Integer</i><br /><strong>&nbsp;&nbsp;byteLength</strong>
 				</td>
 			</tr>
 			<tr>
@@ -209,14 +209,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					asXMLAttribute=true<br>isMetadata=false<br>sequenceNumber=6<br>
+					asXMLAttribute=true<br>isMetadata=false<br>sequenceNumber=2<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Name of the compression method used to encrypt the block of values described by the referenced data component&lt;br/&gt;&lt;br/&gt;
+			Length in byte of this binary block (if known in advance)&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -225,7 +225,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public ScopedName</i><br /><strong>&nbsp;&nbsp;encryption</strong>
+					<i>Public Integer</i><br /><strong>&nbsp;&nbsp;paddingBytes-before</strong>
 				</td>
 			</tr>
 			<tr>
@@ -267,14 +267,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					asXMLAttribute=true<br>isMetadata=false<br>sequenceNumber=5<br>
+					asXMLAttribute=true<br>isMetadata=false<br>sequenceNumber=3<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Name of the encryption method used to encrypt the block of values described by the referenced data component&lt;br/&gt;&lt;br/&gt;
+			Number of padding bytes present in the stream before this binary block&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -341,7 +341,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public Integer</i><br /><strong>&nbsp;&nbsp;paddingBytes-before</strong>
+					<i>Public ScopedName</i><br /><strong>&nbsp;&nbsp;encryption</strong>
 				</td>
 			</tr>
 			<tr>
@@ -383,14 +383,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					asXMLAttribute=true<br>isMetadata=false<br>sequenceNumber=3<br>
+					asXMLAttribute=true<br>isMetadata=false<br>sequenceNumber=5<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Number of padding bytes present in the stream before this binary block&lt;br/&gt;&lt;br/&gt;
+			Name of the encryption method used to encrypt the block of values described by the referenced data component&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -399,7 +399,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public CharacterString</i><br /><strong>&nbsp;&nbsp;ref</strong>
+					<i>Public ScopedName</i><br /><strong>&nbsp;&nbsp;compression</strong>
 				</td>
 			</tr>
 			<tr>
@@ -425,7 +425,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes8892_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes8892_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -441,14 +441,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					asXMLAttribute=true<br>isMetadata=false<br>sequenceNumber=1<br>
+					asXMLAttribute=true<br>isMetadata=false<br>sequenceNumber=6<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Reference to the aggregate data component that this binary block encoding settings apply to&lt;br/&gt;&lt;br/&gt;
+			Name of the compression method used to encrypt the block of values described by the referenced data component&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>

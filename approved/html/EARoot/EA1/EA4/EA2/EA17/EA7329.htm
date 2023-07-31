@@ -169,7 +169,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../EA3/EA7/EA1/EA3/EA5/EA1709.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;comment</strong>
+					<i>Public <a href="../../../EA3/EA11/EA4/EA2274.htm">CD_VerticalDatum</a></i><br /><strong>&nbsp;&nbsp;verticalDatum</strong>
 				</td>
 			</tr>
 			<tr>
@@ -195,7 +195,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes9524_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to *</td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes9524_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -211,14 +211,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					sequenceNumber=15<br>
+					sequenceNumber=10<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Comments specific to the process from the operator. &lt;br/&gt;
+			Specifies the datum that is used as the zero point for level measurements. This can be process-specific as opposed the gauge at the actual monitoring point. &lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -285,7 +285,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../EA3/EA37/EA1/EA1/EA1/EA6744.htm">NamedValue</a></i><br /><strong>&nbsp;&nbsp;parameter</strong>
+					<i>Public <a href="../../../EA3/EA7/EA1/EA3/EA5/EA1709.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;comment</strong>
 				</td>
 			</tr>
 			<tr>
@@ -327,14 +327,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					sequenceNumber=60<br>
+					sequenceNumber=15<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			A defintion of the type of process used in the observation. This may be a Sensor, ManualMethod, Algorithm or Simulation (including models). &lt;br/&gt;&lt;br/&gt;
+			Comments specific to the process from the operator. &lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -343,7 +343,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../EA3/EA7/EA1/EA2/EA2/EA1556.htm">GenericName</a></i><br /><strong>&nbsp;&nbsp;processReference</strong>
+					<i>Public <a href="../../../EA3/EA37/EA1/EA1/EA1/EA6744.htm">NamedValue</a></i><br /><strong>&nbsp;&nbsp;parameter</strong>
 				</td>
 			</tr>
 			<tr>
@@ -369,7 +369,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes9527_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
+							<td>Range:0 to *</td>
 						</tr>
 						<tr id="DetailsImageAttributes9527_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -380,6 +380,64 @@ function nameClassifier(name, separator)
 							<td>False</td>
 						</tr>
 							<tr id="DetailsImageAttributes9527_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					sequenceNumber=60<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			A defintion of the type of process used in the observation. This may be a Sensor, ManualMethod, Algorithm or Simulation (including models). &lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../../../EA3/EA7/EA1/EA2/EA2/EA1556.htm">GenericName</a></i><br /><strong>&nbsp;&nbsp;processReference</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes9528')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes9528" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes9528_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes9528_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes9528_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes9528_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes9528_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes9528_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes9528_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes9528_07" style="display: none;">
 							<td width="75"><i>IsID: </i></td>
 						<td>False</td>
 						</tr>
@@ -406,64 +464,6 @@ function nameClassifier(name, separator)
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes9528')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes9528" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes9528_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes9528_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes9528_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes9528_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes9528_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes9528_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes9528_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes9528_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					sequenceNumber=1<br>
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			A defintion of the type of process used in the observation. This may be a Sensor, ManualMethod, Algorithm or Simulation (including models). &lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../EA3/EA11/EA4/EA2274.htm">CD_VerticalDatum</a></i><br /><strong>&nbsp;&nbsp;verticalDatum</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
 					<a href="#" onclick="parent.toggleData('DetailsImageAttributes9529')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes9529" border="0" />Details:</a>
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
 					
@@ -485,7 +485,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes9529_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes9529_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -501,14 +501,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					sequenceNumber=10<br>
+					sequenceNumber=1<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Specifies the datum that is used as the zero point for level measurements. This can be process-specific as opposed the gauge at the actual monitoring point. &lt;br/&gt;
+			A defintion of the type of process used in the observation. This may be a Sensor, ManualMethod, Algorithm or Simulation (including models). &lt;br/&gt;
 		</td>
 	</tr>
 </table></div>

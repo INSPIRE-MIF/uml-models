@@ -112,7 +112,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../EA5/EA2/EA422.htm">CGI_Term</a></i><br /><strong>&nbsp;&nbsp;eventEnvironment</strong>
+					<i>Public <a href="EA136.htm">EventProcessTerm</a></i><br /><strong>&nbsp;&nbsp;eventProcess</strong>
 				</td>
 			</tr>
 			<tr>
@@ -154,14 +154,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					nillable=True<br>sequenceNumber=5<br>
+					inlineOrByReference=byReference<br>sequenceNumber=1<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The physical setting within which a GeologicEvent takes place.&#160;&#160;GeologicEnvironment is construed broadly to include physical settings on the Earth surface specified by climate, tectonics, physiography or geography, and settings in the Earth&rsquo;s interior specified by pressure, temperature, chemical environment, or tectonics. &lt;br/&gt;&lt;br/&gt;
+			The eventProcess specifies the process or processes that occurred during the event. Examples include deposition, extrusion, intrusion, cooling.&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -170,7 +170,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA136.htm">EventProcessTerm</a></i><br /><strong>&nbsp;&nbsp;eventProcess</strong>
+					<i>Public <a href="../../EA5/EA2/EA419.htm">CGI_NumericAgeRange</a></i><br /><strong>&nbsp;&nbsp;numericAgeDate</strong>
 				</td>
 			</tr>
 			<tr>
@@ -212,14 +212,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					inlineOrByReference=byReference<br>sequenceNumber=1<br>
+					nillable=True<br>sequenceNumber=2<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The eventProcess specifies the process or processes that occurred during the event. Examples include deposition, extrusion, intrusion, cooling.&lt;br/&gt;&lt;br/&gt;
+			The numericAgeDate attribute is the age of a particular geological event or feature expressed in terms of years before present (1950), using CGI_NumericAgeRange. This datatype allows a younger and older age boundary to express an interval, and a reporting age, which is a single numeric age to report for applications that can not use a numeric range. Age in years before present is an estimated time durations based on interpretation of isotopic analyses of EarthMaterial (some other methods are used for geologically young materials).&lt;br/&gt;Numeric age range uses StratigraphicDateEstimate to allow incorporation of various uncertainty measures using ISO19115 DataQuality elements, and binding with observation features to report details of date determination measurement.&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -228,7 +228,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../EA5/EA2/EA419.htm">CGI_NumericAgeRange</a></i><br /><strong>&nbsp;&nbsp;numericAgeDate</strong>
+					<i>Public <a href="../../EA3/EA2/EA332.htm">GeochronologicEra</a></i><br /><strong>&nbsp;&nbsp;olderNamedAge</strong>
 				</td>
 			</tr>
 			<tr>
@@ -270,14 +270,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					nillable=True<br>sequenceNumber=2<br>
+					inlineOrByReference=byReference<br>nillable=True<br>sequenceNumber=3<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The numericAgeDate attribute is the age of a particular geological event or feature expressed in terms of years before present (1950), using CGI_NumericAgeRange. This datatype allows a younger and older age boundary to express an interval, and a reporting age, which is a single numeric age to report for applications that can not use a numeric range. Age in years before present is an estimated time durations based on interpretation of isotopic analyses of EarthMaterial (some other methods are used for geologically young materials).&lt;br/&gt;Numeric age range uses StratigraphicDateEstimate to allow incorporation of various uncertainty measures using ISO19115 DataQuality elements, and binding with observation features to report details of date determination measurement.&lt;br/&gt;&lt;br/&gt;
+			Older boundary of age of event expressed using a geochronologic era defined according to a geologic time scale per GeologicTime schema&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -286,7 +286,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../EA3/EA2/EA332.htm">GeochronologicEra</a></i><br /><strong>&nbsp;&nbsp;olderNamedAge</strong>
+					<i>Public <a href="../../EA3/EA2/EA332.htm">GeochronologicEra</a></i><br /><strong>&nbsp;&nbsp;youngerNamedAge</strong>
 				</td>
 			</tr>
 			<tr>
@@ -328,14 +328,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					inlineOrByReference=byReference<br>nillable=True<br>sequenceNumber=3<br>
+					inlineOrByReference=byReference<br>nillable=True<br>sequenceNumber=4<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Older boundary of age of event expressed using a geochronologic era defined according to a geologic time scale per GeologicTime schema&lt;br/&gt;&lt;br/&gt;
+			Younger boundary of age of event expressed using a geochronologic era defined according to a geologic time scale per GeologicTime schema&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -344,7 +344,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../EA3/EA2/EA332.htm">GeochronologicEra</a></i><br /><strong>&nbsp;&nbsp;youngerNamedAge</strong>
+					<i>Public <a href="../../EA5/EA2/EA422.htm">CGI_Term</a></i><br /><strong>&nbsp;&nbsp;eventEnvironment</strong>
 				</td>
 			</tr>
 			<tr>
@@ -386,14 +386,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					inlineOrByReference=byReference<br>nillable=True<br>sequenceNumber=4<br>
+					nillable=True<br>sequenceNumber=5<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Younger boundary of age of event expressed using a geochronologic era defined according to a geologic time scale per GeologicTime schema&lt;br/&gt;&lt;br/&gt;
+			The physical setting within which a GeologicEvent takes place.&#160;&#160;GeologicEnvironment is construed broadly to include physical settings on the Earth surface specified by climate, tectonics, physiography or geography, and settings in the Earth&rsquo;s interior specified by pressure, temperature, chemical environment, or tectonics. &lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>

@@ -113,7 +113,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../EA3/EA5/EA1709.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;formula</strong>
+					<i>Public <a href="../../EA3/EA5/EA1709.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;uomName</strong>
 				</td>
 			</tr>
 			<tr>
@@ -139,7 +139,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes1931_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes1931_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -162,7 +162,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			An algebraic formula (probably in some programming language) converting this unit of measure (represented in the formula by its uomSymbol) to the ISO standard (represented by its symbol. This member attribute is not required, but it is a valuable piece of documentation. &lt;br/&gt;
+			The name(s) of a particular unit of measure.&#160;&#160;Examples would include the following: 1) for uomArea - square feet, 2) for uomTime - seconds, 3)for uomArea - miles and 4) uomAngle - degrees.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -171,7 +171,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA1448.htm">MeasureType</a></i><br /><strong>&nbsp;&nbsp;measureType</strong>
+					<i>Public <a href="../../EA3/EA5/EA1709.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;uomSymbol</strong>
 				</td>
 			</tr>
 			<tr>
@@ -214,12 +214,22 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						&nbsp;
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The symbol used for this unit of measure, such at &quot;ft&quot; for feet, or &quot;m&quot; for meter. &lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../EA3/EA5/EA1709.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;nameStandardUnit</strong>
+					<i>Public <a href="EA1448.htm">MeasureType</a></i><br /><strong>&nbsp;&nbsp;measureType</strong>
 				</td>
 			</tr>
 			<tr>
@@ -245,7 +255,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes1933_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes1933_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -262,22 +272,12 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Name of the standard units to which this unit of measure can be directly converted. If this variable is NULL, then the standard unit for this measure type given by the local copy of the StandardsUnits code list. &lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
+						&nbsp;
 						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../EA3/EA4/EA1693.htm">Real</a></i><br /><strong>&nbsp;&nbsp;offsetToStandardUnit</strong>
+					<i>Public <a href="../../EA3/EA5/EA1709.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;nameStandardUnit</strong>
 				</td>
 			</tr>
 			<tr>
@@ -326,7 +326,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			See scaleToStandardUnit for a description. Again, this variable is NULL is no linear conversion is possible. If the two units are only a scale in difference, then this number is zero (0). If the implementation system used for this object does not support NULL, the then scale set to 0 is equivalent to NULL for both scale and offset. &lt;br/&gt;
+			Name of the standard units to which this unit of measure can be directly converted. If this variable is NULL, then the standard unit for this measure type given by the local copy of the StandardsUnits code list. &lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -393,7 +393,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../EA3/EA5/EA1709.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;uomName</strong>
+					<i>Public <a href="../../EA3/EA4/EA1693.htm">Real</a></i><br /><strong>&nbsp;&nbsp;offsetToStandardUnit</strong>
 				</td>
 			</tr>
 			<tr>
@@ -419,7 +419,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes1936_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes1936_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -442,7 +442,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The name(s) of a particular unit of measure.&#160;&#160;Examples would include the following: 1) for uomArea - square feet, 2) for uomTime - seconds, 3)for uomArea - miles and 4) uomAngle - degrees.&lt;br/&gt;
+			See scaleToStandardUnit for a description. Again, this variable is NULL is no linear conversion is possible. If the two units are only a scale in difference, then this number is zero (0). If the implementation system used for this object does not support NULL, the then scale set to 0 is equivalent to NULL for both scale and offset. &lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -451,7 +451,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../EA3/EA5/EA1709.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;uomSymbol</strong>
+					<i>Public <a href="../../EA3/EA5/EA1709.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;formula</strong>
 				</td>
 			</tr>
 			<tr>
@@ -477,7 +477,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes1937_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes1937_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -500,7 +500,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The symbol used for this unit of measure, such at &quot;ft&quot; for feet, or &quot;m&quot; for meter. &lt;br/&gt;
+			An algebraic formula (probably in some programming language) converting this unit of measure (represented in the formula by its uomSymbol) to the ISO standard (represented by its symbol. This member attribute is not required, but it is a valuable piece of documentation. &lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
