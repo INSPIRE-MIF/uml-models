@@ -111,7 +111,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA5668.htm">MF_TemporalOrientation</a></i><br /><strong>&nbsp;&nbsp;controlOrientation</strong>
+					<i>Public <a href="EA5663.htm">MF_GlobalAxisName</a></i><br /><strong>&nbsp;&nbsp;globalAxis</strong>
 				</td>
 			</tr>
 			<tr>
@@ -125,7 +125,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes7140_01" style="display: none;">
 							<td width="75"><i>Initial:</i></td>
-							<td></td>
+							<td>[tangent, up, right]</td>
 						</tr>
 						<tr id="DetailsImageAttributes7140_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
@@ -137,7 +137,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes7140_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to *</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes7140_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -160,7 +160,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The attribute &quot;controlPosition&quot; array contains some number of rotational positions distributed along the curve by time. The method of interpolation used use between these orientations in describe in the Annex.&lt;br/&gt;
+			The attribute &quot;globalAxis&quot; is the global, possibly moving, geometric coordinate frame (represented as three axes with respect to points along the trajectory curve) in which the rotation of the base geometry is defined. It is a right-handed local Euclidean vector space, equal to the tangent space of the CRS at the points along the curve. If the third vector is not given, it is assumed to be the cross product of the first two. If only the first is given, it is assume to be a horizontal vector, with the second being up and the third being the cross product of the first two. &lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -169,7 +169,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA5663.htm">MF_GlobalAxisName</a></i><br /><strong>&nbsp;&nbsp;globalAxis</strong>
+					<i>Public <a href="EA5668.htm">MF_TemporalOrientation</a></i><br /><strong>&nbsp;&nbsp;controlOrientation</strong>
 				</td>
 			</tr>
 			<tr>
@@ -183,7 +183,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes7141_01" style="display: none;">
 							<td width="75"><i>Initial:</i></td>
-							<td>[tangent, up, right]</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes7141_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
@@ -195,7 +195,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes7141_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to *</td>
 						</tr>
 						<tr id="DetailsImageAttributes7141_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -218,7 +218,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The attribute &quot;globalAxis&quot; is the global, possibly moving, geometric coordinate frame (represented as three axes with respect to points along the trajectory curve) in which the rotation of the base geometry is defined. It is a right-handed local Euclidean vector space, equal to the tangent space of the CRS at the points along the curve. If the third vector is not given, it is assumed to be the cross product of the first two. If only the first is given, it is assume to be a horizontal vector, with the second being up and the third being the cross product of the first two. &lt;br/&gt;
+			The attribute &quot;controlPosition&quot; array contains some number of rotational positions distributed along the curve by time. The method of interpolation used use between these orientations in describe in the Annex.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>

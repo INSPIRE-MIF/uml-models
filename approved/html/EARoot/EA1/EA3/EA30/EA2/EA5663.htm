@@ -107,7 +107,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;axis1</strong>
+					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;tangent</strong>
 				</td>
 			</tr>
 			<tr>
@@ -156,7 +156,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The &quot;axis1&quot; vector is the ujit tanget of a local curve whose first coordinate of the CRS alone varies. It is thus the coordiate axis of the CRS&#39;s first ordinate. &lt;br/&gt;
+			The &quot;tangent&quot; vector represents the geometric unit tangent to the curve. It always points in the forward direction of the curve&#39;s underlying &quot;parameterization by length&quot; as defined in ISO 19107. This is not the tangent to the motion of the object. If the object backtracks the curve, the forward unit tangent of the object will be the negative of the curve&#39;s tangent.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -165,7 +165,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;axis2</strong>
+					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;backtangent</strong>
 				</td>
 			</tr>
 			<tr>
@@ -214,7 +214,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The &quot;axis2&quot; vector is the unit tanget of a local curve whose second coordinate of the CRS alone varies. It is thus the coordiate axis of the CRS&#39;s second ordinate. &lt;br/&gt;
+			The &quot;backTangent&quot; vector is the negative of the tangent to the curve.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -223,7 +223,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;axis3</strong>
+					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;normal</strong>
 				</td>
 			</tr>
 			<tr>
@@ -272,7 +272,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The &quot;axis3&quot; vector is the unit tanget of a local curve whose third coordinate of the CRS alone varies. It is thus the coordiate axis of the CRS&#39;s third ordinate. If the CRS is 2D, then this is the upward unit vector to a vertical axis perpendicular to defining surface of the 2D CRS. It should be used when placing 3D moving feature icons on a 2D map. &lt;br/&gt;
+			Where this vector is well defined, the normal is the unit vector in the direction of the curvature of the underlying curve. It is the derivative of the unit tangent with respect to arc distance. When the curve is a staight line, or encounters an inflection point (a swap in the direction of curvature) the normal will be undefined. If the curve is ill-behaved in this aspect, the alternative use of right or left (one of which is the normal when defined) would be more appropriate. &lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -281,7 +281,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;backtangent</strong>
+					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;bearing</strong>
 				</td>
 			</tr>
 			<tr>
@@ -330,7 +330,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The &quot;backTangent&quot; vector is the negative of the tangent to the curve.&lt;br/&gt;
+			The bearing is the projection of the tangent to the curve onto the horizontal plane of the CRS. If the curve is perfectly vertical, the bearing is undefined. Curves that might go perfectly vertical should not use bearing. If the CRS is 2D, the bearing is the same as the tangent. &lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -339,7 +339,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;bearing</strong>
+					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;up</strong>
 				</td>
 			</tr>
 			<tr>
@@ -353,7 +353,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes7126_01" style="display: none;">
 							<td width="75"><i>Initial:</i></td>
-							<td></td>
+							<td>binormal</td>
 						</tr>
 						<tr id="DetailsImageAttributes7126_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
@@ -388,7 +388,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The bearing is the projection of the tangent to the curve onto the horizontal plane of the CRS. If the curve is perfectly vertical, the bearing is undefined. Curves that might go perfectly vertical should not use bearing. If the CRS is 2D, the bearing is the same as the tangent. &lt;br/&gt;
+			The vector up is the cross product of the tangent and left. It represents the up for the moving feture, which may be the up for the geographic coordinate system if the curve is locally on a surface of constant elevation. &lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -455,7 +455,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;left</strong>
+					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;right</strong>
 				</td>
 			</tr>
 			<tr>
@@ -504,7 +504,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The &quot; left&quot; vector is the unit vector point to the left of the curve. As such the left is the cross product of up and the tangent. Left is the negative of right. &lt;br/&gt;
+			The &quot; right&quot; vector is the unit vector point to the right of the curve. As such the right is the cross product of the tangent and up. Right is the negative of left. &lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -513,7 +513,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;negativeAxis1</strong>
+					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;left</strong>
 				</td>
 			</tr>
 			<tr>
@@ -562,7 +562,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			This is negative unit tangent of the first coordinate axis of the CRS&lt;br/&gt;
+			The &quot; left&quot; vector is the unit vector point to the left of the curve. As such the left is the cross product of up and the tangent. Left is the negative of right. &lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -571,7 +571,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;negativeAxis2</strong>
+					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;axis1</strong>
 				</td>
 			</tr>
 			<tr>
@@ -620,7 +620,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			This is negative unit tangent of the second coordinate axis of the CRS&lt;br/&gt;
+			The &quot;axis1&quot; vector is the ujit tanget of a local curve whose first coordinate of the CRS alone varies. It is thus the coordiate axis of the CRS&#39;s first ordinate. &lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -629,7 +629,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;negativeAxis3</strong>
+					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;negativeAxis1</strong>
 				</td>
 			</tr>
 			<tr>
@@ -678,7 +678,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			This is negative unit tangent of the third coordinate axis of the CRS&lt;br/&gt;
+			This is negative unit tangent of the first coordinate axis of the CRS&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -687,7 +687,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;normal</strong>
+					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;axis2</strong>
 				</td>
 			</tr>
 			<tr>
@@ -736,7 +736,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Where this vector is well defined, the normal is the unit vector in the direction of the curvature of the underlying curve. It is the derivative of the unit tangent with respect to arc distance. When the curve is a staight line, or encounters an inflection point (a swap in the direction of curvature) the normal will be undefined. If the curve is ill-behaved in this aspect, the alternative use of right or left (one of which is the normal when defined) would be more appropriate. &lt;br/&gt;
+			The &quot;axis2&quot; vector is the unit tanget of a local curve whose second coordinate of the CRS alone varies. It is thus the coordiate axis of the CRS&#39;s second ordinate. &lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -745,7 +745,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;right</strong>
+					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;negativeAxis2</strong>
 				</td>
 			</tr>
 			<tr>
@@ -794,7 +794,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The &quot; right&quot; vector is the unit vector point to the right of the curve. As such the right is the cross product of the tangent and up. Right is the negative of left. &lt;br/&gt;
+			This is negative unit tangent of the second coordinate axis of the CRS&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -803,7 +803,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;tangent</strong>
+					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;axis3</strong>
 				</td>
 			</tr>
 			<tr>
@@ -852,7 +852,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The &quot;tangent&quot; vector represents the geometric unit tangent to the curve. It always points in the forward direction of the curve&#39;s underlying &quot;parameterization by length&quot; as defined in ISO 19107. This is not the tangent to the motion of the object. If the object backtracks the curve, the forward unit tangent of the object will be the negative of the curve&#39;s tangent.&lt;br/&gt;
+			The &quot;axis3&quot; vector is the unit tanget of a local curve whose third coordinate of the CRS alone varies. It is thus the coordiate axis of the CRS&#39;s third ordinate. If the CRS is 2D, then this is the upward unit vector to a vertical axis perpendicular to defining surface of the 2D CRS. It should be used when placing 3D moving feature icons on a 2D map. &lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -861,7 +861,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;up</strong>
+					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;negativeAxis3</strong>
 				</td>
 			</tr>
 			<tr>
@@ -875,7 +875,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes7135_01" style="display: none;">
 							<td width="75"><i>Initial:</i></td>
-							<td>binormal</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes7135_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
@@ -910,7 +910,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The vector up is the cross product of the tangent and left. It represents the up for the moving feture, which may be the up for the geographic coordinate system if the curve is locally on a surface of constant elevation. &lt;br/&gt;
+			This is negative unit tangent of the third coordinate axis of the CRS&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>

@@ -111,7 +111,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../EA5/EA2/EA422.htm">CGI_Term</a></i><br /><strong>&nbsp;&nbsp;bodyMorphology</strong>
+					<i>Public <a href="EA122.htm">GeologicUnitTypeTerm</a></i><br /><strong>&nbsp;&nbsp;geologicUnitType</strong>
 				</td>
 			</tr>
 			<tr>
@@ -129,7 +129,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes231_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td>&lt;&lt;estimatedProperty&gt;&gt;</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes231_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
@@ -153,14 +153,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					nillable=True<br>sequenceNumber=2<br>
+					inlineOrByReference=byReference<br>sequenceNumber=1<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The geometry or form of a GeologicUnit.&#160;&#160;Examples include: dike (dyke), cone, fan, sheet, etc. Morphology is independent of the substance (EarthMaterial) that composes the GeologicUnit or process that formed it.&lt;br/&gt;&lt;br/&gt;
+			A scopped name pointing to a vocabulary defining the type of unit. Logical constraints of definition of unit and valid property cardinalities should be contained in the definition. Use of the CGI Geologic Unit Type vocabulary (eg: something like http://geosciml.org/classifierScheme/CGI/GeologicUnitType/200811) is preferred. &lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -169,7 +169,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../EA5/EA2/EA422.htm">CGI_Term</a></i><br /><strong>&nbsp;&nbsp;exposureColor</strong>
+					<i>Public <a href="../../EA5/EA2/EA422.htm">CGI_Term</a></i><br /><strong>&nbsp;&nbsp;bodyMorphology</strong>
 				</td>
 			</tr>
 			<tr>
@@ -211,14 +211,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					nillable=True<br>sequenceNumber=4<br>
+					nillable=True<br>sequenceNumber=2<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Typical color at the outcrop of a geologic unit. &lt;br/&gt;&lt;br/&gt;
+			The geometry or form of a GeologicUnit.&#160;&#160;Examples include: dike (dyke), cone, fan, sheet, etc. Morphology is independent of the substance (EarthMaterial) that composes the GeologicUnit or process that formed it.&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -227,7 +227,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA122.htm">GeologicUnitTypeTerm</a></i><br /><strong>&nbsp;&nbsp;geologicUnitType</strong>
+					<i>Public <a href="../../EA5/EA2/EA422.htm">CGI_Term</a></i><br /><strong>&nbsp;&nbsp;unitComposition</strong>
 				</td>
 			</tr>
 			<tr>
@@ -245,7 +245,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes233_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
+							<td>&lt;&lt;estimatedProperty&gt;&gt;</td>
 						</tr>
 						<tr id="DetailsImageAttributes233_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
@@ -269,14 +269,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					inlineOrByReference=byReference<br>sequenceNumber=1<br>
+					nillable=True<br>sequenceNumber=3<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			A scopped name pointing to a vocabulary defining the type of unit. Logical constraints of definition of unit and valid property cardinalities should be contained in the definition. Use of the CGI Geologic Unit Type vocabulary (eg: something like http://geosciml.org/classifierScheme/CGI/GeologicUnitType/200811) is preferred. &lt;br/&gt;
+			Composition-based classification that requires integrating the character of the unit over large area, not applicable at the rock-material/specimen level. Examples: alkalic, subaluminous, peraluminous, I-Type, carbonate, phosphate.&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -285,7 +285,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../EA5/EA2/EA422.htm">CGI_Term</a></i><br /><strong>&nbsp;&nbsp;outcropCharacter</strong>
+					<i>Public <a href="../../EA5/EA2/EA422.htm">CGI_Term</a></i><br /><strong>&nbsp;&nbsp;exposureColor</strong>
 				</td>
 			</tr>
 			<tr>
@@ -327,14 +327,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					nillable=True<br>sequenceNumber=5<br>
+					nillable=True<br>sequenceNumber=4<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Describes the nature of outcrops formed by a geologic unit. Examples: bouldery, cliff-forming, ledge-forming, slope-forming, poorly exposed&lt;br/&gt;&lt;br/&gt;
+			Typical color at the outcrop of a geologic unit. &lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -343,7 +343,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA123.htm">RankTerm</a></i><br /><strong>&nbsp;&nbsp;rank</strong>
+					<i>Public <a href="../../EA5/EA2/EA422.htm">CGI_Term</a></i><br /><strong>&nbsp;&nbsp;outcropCharacter</strong>
 				</td>
 			</tr>
 			<tr>
@@ -361,7 +361,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes235_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
+							<td>&lt;&lt;estimatedProperty&gt;&gt;</td>
 						</tr>
 						<tr id="DetailsImageAttributes235_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
@@ -385,14 +385,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					inlineOrByReference=byReference<br>nillable=True<br>sequenceNumber=6<br>
+					nillable=True<br>sequenceNumber=5<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Term that classifies the geologic unit in a generalization hierarchy from most local/smallest volume to most regional. Scoped name because classification is asserted, not based on observational data.&lt;br/&gt;Examples: group, subgroup, formation, member, bed, intrusion, complex, batholith&lt;br/&gt;&lt;br/&gt;
+			Describes the nature of outcrops formed by a geologic unit. Examples: bouldery, cliff-forming, ledge-forming, slope-forming, poorly exposed&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -401,7 +401,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../EA5/EA2/EA422.htm">CGI_Term</a></i><br /><strong>&nbsp;&nbsp;unitComposition</strong>
+					<i>Public <a href="EA123.htm">RankTerm</a></i><br /><strong>&nbsp;&nbsp;rank</strong>
 				</td>
 			</tr>
 			<tr>
@@ -419,7 +419,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes236_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td>&lt;&lt;estimatedProperty&gt;&gt;</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes236_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
@@ -443,14 +443,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					nillable=True<br>sequenceNumber=3<br>
+					inlineOrByReference=byReference<br>nillable=True<br>sequenceNumber=6<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Composition-based classification that requires integrating the character of the unit over large area, not applicable at the rock-material/specimen level. Examples: alkalic, subaluminous, peraluminous, I-Type, carbonate, phosphate.&lt;br/&gt;&lt;br/&gt;
+			Term that classifies the geologic unit in a generalization hierarchy from most local/smallest volume to most regional. Scoped name because classification is asserted, not based on observational data.&lt;br/&gt;Examples: group, subgroup, formation, member, bed, intrusion, complex, batholith&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>

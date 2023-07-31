@@ -108,7 +108,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public CharacterString</i><br /><strong>&nbsp;&nbsp;axisID</strong>
+					<i>Public SC_CRS</i><br /><strong>&nbsp;&nbsp;referenceFrame</strong>
 				</td>
 			</tr>
 			<tr>
@@ -157,7 +157,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Specifies the reference axis (refer to gml:axisID). The reference frame URI should also be specified unless it is inherited from parent Vector&lt;br/&gt;&lt;br/&gt;
+			Frame of reference (usually temporal or spatial) with respect to which the value of the component is expressed. A reference frame anchors a value to a real world datum.&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -166,7 +166,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA7165.htm">NilValues</a></i><br /><strong>&nbsp;&nbsp;nilValues</strong>
+					<i>Public CharacterString</i><br /><strong>&nbsp;&nbsp;axisID</strong>
 				</td>
 			</tr>
 			<tr>
@@ -208,8 +208,18 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					isMetadata=false<br>sequenceNumber=2<br>
-						&nbsp;
+					asXMLAttribute=true<br>inlineOrByReference=inlineOrByReference<br>isMetadata=false<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Specifies the reference axis (refer to gml:axisID). The reference frame URI should also be specified unless it is inherited from parent Vector&lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>			<tr>
@@ -262,7 +272,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public SC_CRS</i><br /><strong>&nbsp;&nbsp;referenceFrame</strong>
+					<i>Public <a href="EA7165.htm">NilValues</a></i><br /><strong>&nbsp;&nbsp;nilValues</strong>
 				</td>
 			</tr>
 			<tr>
@@ -304,18 +314,8 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					asXMLAttribute=true<br>inlineOrByReference=inlineOrByReference<br>isMetadata=false<br>
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Frame of reference (usually temporal or spatial) with respect to which the value of the component is expressed. A reference frame anchors a value to a real world datum.&lt;br/&gt;&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
+					isMetadata=false<br>sequenceNumber=2<br>
+						&nbsp;
 						
 				</td>
 			</tr>

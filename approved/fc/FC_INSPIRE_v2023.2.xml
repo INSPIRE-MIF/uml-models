@@ -4,9 +4,9 @@
 <FeatureCatalogue xsi:noNamespaceSchemaLocation="FC.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <name>'INSPIRE application schemas'</name>
   <scope>This feature catalogue gives an informative overview of the spatial object types and data types defined in the INSPIRE data specifications. These types are used by data providers for the exchange and classification of spatial objects from data sets that relate to one or several INSPIRE spatial data themes.</scope>
-  <scope>For the normative requirements, please refer to the &lt;a href='https://eur-lex.europa.eu/eli/reg/2013/1253/oj'&gt;COMMISSION REGULATION (EU) No 1089/2010 of 23 November 2010 on the interoperability of spatial data sets and services&lt;/a&gt;. For a more detailed description of the application schemas, see the data specification guidance documents at &lt;a href='https://inspire.ec.europa.eu/data-specifications/2892'&gt;https://inspire.ec.europa.eu/data-specifications.</scope>
+  <scope>For the normative requirements, please refer to the &lt;a href='http://data.europa.eu/eli/reg/2010/1089/2014-12-31'&gt;COMMISSION REGULATION (EU) No 1089/2010 of 23 November 2010 on the interoperability of spatial data sets and services&lt;/a&gt;. For a more detailed description of the application schemas, see the data specification guidance documents at &lt;a href='https://inspire.ec.europa.eu/data-specifications/2892A'&gt;https://inspire.ec.europa.eu/data-specifications.</scope>
   <versionNumber>n/a (each application schema is versioned separately)</versionNumber>
-  <versionDate>31/01/2023</versionDate>
+  <versionDate>31/07/2023</versionDate>
   <producer>INSPIRE Maintenance and Implementation Group (MIG)</producer>
   <ApplicationSchema id="_P5431">
     <name>Addresses</name>
@@ -47,6 +47,18 @@
     <characterizedBy idref="_ATas51423"></characterizedBy>
     <package idref="_P5431"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>AddressCountry</name>
+      <expression>/* An address shall have an admin unit address component spatial object whose level is 1 (Country) */&#xD;&#xA;inv: self.component -&gt; forAll (a1 | exists(a1.parent.oclIsTypeOf(AdminUnitName) and a1.parent.level=1))</expression>
+    </constraint>
+    <constraint>
+      <name>AddressPosition</name>
+      <expression>/* An address shall have exactly one default geographic position (default attribute of GeographicPosition must be true) */&#xD;&#xA;inv: self.position -&gt; one(a1 | a1.default = true)</expression>
+    </constraint>
+    <constraint>
+      <name>EndLifeSpanVersion</name>
+      <expression>/* If date set endLifespanVersion must be later than beginLifespanVersion (if set) */&#xD;&#xA;inv: self.endLifespanVersion.isAfter(self.beginLifespanVersion)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49055_70772">
@@ -354,6 +366,10 @@
     <characterizedBy idref="_ATas51425"></characterizedBy>
     <package idref="_P5431"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>EndLifeSpanVersion</name>
+      <expression>/* If date set endLifespanVersion must be later than beginLifespanVersion (if set) */&#xD;&#xA;inv: self.endLifespanVersion .isAfter(self.beginLifespanVersion)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49054_70771">
@@ -434,6 +450,10 @@
     <characterizedBy idref="_ATas51434"></characterizedBy>
     <package idref="_P5431"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>EndLifeSpanVersion</name>
+      <expression>/* If date set endLifespanVersion must be later than beginLifespanVersion (if set) */&#xD;&#xA;inv: self.endLifespanVersion .isAfter(self.beginLifespanVersion)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49041_70706">
@@ -622,6 +642,16 @@
     <characterizedBy idref="_ATas51431"></characterizedBy>
     <package idref="_P5431"></package>
     <type>Data Type</type>
+    <constraint>
+      <name>DesignatorEmpty</name>
+      <description>If no designator exists, a name is required.</description>
+      <expression>inv: self.designator-&gt;isEmpty() implies self.name-&gt;notEmpty()</expression>
+    </constraint>
+    <constraint>
+      <name>NameEmpty</name>
+      <description>If no name exists, a designator is required.</description>
+      <expression>inv: self.name-&gt;isEmpty() implies self.designator-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49053_70768">
@@ -857,6 +887,10 @@
     <characterizedBy idref="_ATas51427"></characterizedBy>
     <package idref="_P5431"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>EndLifeSpanVersion</name>
+      <expression>/* If date set endLifespanVersion must be later than beginLifespanVersion (if set) */&#xD;&#xA;inv: self.endLifespanVersion .isAfter(self.beginLifespanVersion)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49043_70717">
@@ -1853,6 +1887,20 @@
     <characterizedBy idref="_A49057_70784"></characterizedBy>
     <package idref="_P5431"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>PostCodeEmpty</name>
+      <description>If no post code exists, a post name is required.</description>
+      <expression>inv: self.postCode-&gt;isEmpty() implies self.postName-&gt;notEmpty()</expression>
+    </constraint>
+    <constraint>
+      <name>PostNameEmpty</name>
+      <description>If no post name exists, a post code is required.</description>
+      <expression>inv: self.postName-&gt;isEmpty() implies self.postCode-&gt;notEmpty()</expression>
+    </constraint>
+    <constraint>
+      <name>EndLifeSpanVersion</name>
+      <expression>/* If date set endLifespanVersion must be later than beginLifespanVersion (if set) */&#xD;&#xA;inv: self.endLifespanVersion .isAfter(self.beginLifespanVersion)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49057_70783">
@@ -1982,6 +2030,10 @@
     <characterizedBy idref="_ATas51426"></characterizedBy>
     <package idref="_P5431"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>EndLifeSpanVersion</name>
+      <expression>/* If date set endLifespanVersion must be later than beginLifespanVersion (if set) */&#xD;&#xA;inv: self.endLifespanVersion .isAfter(self.beginLifespanVersion)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49044_70719">
@@ -2454,6 +2506,18 @@
     <characterizedBy idref="_ATas51414"></characterizedBy>
     <package idref="_P5433"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>AdmininstrativeUnitHighestLevel</name>
+      <expression>/* No unit at highest level can associate units at a higher level. */&#xD;&#xA;&#xD;&#xA;inv: self.nationalLevel = '1stOrder' implies self.upperLevelUnit-&gt;isEmpty() and self.loweLevelUnit-&gt;notEmpty()</expression>
+    </constraint>
+    <constraint>
+      <name>AdministrativeUnitLowestLevel</name>
+      <expression>/* No unit at lowest level can associate units at lower level. */&#xD;&#xA;&#xD;&#xA;inv: self.nationalLevel = '6thOrder' implies self.lowerLevelUnit-&gt;isEmpty and self.upperLevelUnit-&gt;notEmpty</expression>
+    </constraint>
+    <constraint>
+      <name>CondominiumsAtCountryLevel</name>
+      <expression>/*Association role condominium applies only for administrative units which nationalLevel='1st order' (country level).  */&#xD;&#xA;&#xD;&#xA;inv: self.condominium-&gt;notEmpty implies self.nationalLevel = '1stOrder'</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49073_70806">
@@ -4622,6 +4686,10 @@
     <characterizedBy idref="_A49135_70911"></characterizedBy>
     <package idref="_P5455"></package>
     <type>Data Type</type>
+    <constraint>
+      <name>pronunciationSoundLink or pronunciationIPA not empty</name>
+      <expression>/* At least one of the two attributes pronunciationSoundLink and pronunciationIPA shall not be void. */&#xD;&#xA;inv: self.pronounciationIPA -&gt; notEmpty() or self.pronounciationSoundLink -&gt; notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49135_70910">
@@ -5222,6 +5290,10 @@
     <characterizedBy idref="_ATas51328"></characterizedBy>
     <package idref="_P5459"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>largestBasinIsRiverBasin</name>
+      <expression>/* A river basin may not be contained in any other basin */&#xD;&#xA;inv: self.containsBasin-&gt;forall(c | not c.oclIsTypeOf(RiverBasin))</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49179_71065">
@@ -5975,6 +6047,10 @@
     <subtypeOf idref="_C49179">DrainageBasin</subtypeOf>
     <package idref="_P5459"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>largestBasinIsRiverBasin</name>
+      <expression>/* A river basin may not be contained in any other basin */&#xD;&#xA;inv: self.containsBasin-&gt;forall(c | not c.oclIsTypeOf(RiverBasin))</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49154">
@@ -6264,6 +6340,11 @@
     <characterizedBy idref="_A49174_71023"></characterizedBy>
     <package idref="_P5459"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>geometryIsSurfaceOrPoint</name>
+      <description>Standing water geometry may be a surface or point</description>
+      <expression>inv: self.geometry.oclIsTypeOf(GM_Surface) or self.geometry.oclIsTypeOf(GM_Point)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49174_71021">
@@ -7133,6 +7214,19 @@
     <characterizedBy idref="_A49162_70994"></characterizedBy>
     <package idref="_P5459"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>banksShallBeDifferentShoreObjects</name>
+      <expression>/*The shores on either side of a watercourse shall be provided (using the bank property) as two separate Shore objects.*/</expression>
+    </constraint>
+    <constraint>
+      <name>geometryIsCurveOrSurface</name>
+      <description>Watercourse geometry may be a curve or surface</description>
+      <expression>inv: self.geometry.oclIsTypeOf(GM_Curve) or self.geometry.oclIsTypeOf(GM_Surface)</expression>
+    </constraint>
+    <constraint>
+      <name>onlyManmadeHasConditionAttr</name>
+      <expression>/* A condition attribute may be specified only for a man-made watercourse */&#xD;&#xA;inv: (self-&gt;count(condition)=1) implies (self.origin=OriginType::manMade)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49162_70989">
@@ -7482,6 +7576,10 @@
     <characterizedBy idref="_A49245_71385"></characterizedBy>
     <package idref="_P5464"></package>
     <type>Data Type</type>
+    <constraint>
+      <name>DesignationConstraint</name>
+      <expression>/*Sites must use designations from an appropriate designation scheme, and the designation code value must agree with the designation scheme.*/&#xD;&#xA;inv: self.designationScheme = DesignationSchemeValue::natura2000 implies self.designation.oclIsKindOf(DesignationValueNatura2000) and&#xD;&#xA;self.designationScheme = DesignationSchemeValue::emeraldNetwork implies self.designation.oclIsKindOf(DesignationValueEmeraldNetwork) and&#xD;&#xA;self.designationScheme = DesignationSchemeValue::ramsar implies self.designation.oclIsKindOf(DesignationValueRamsar) and&#xD;&#xA;self.designationScheme = DesignationSchemeValue::UNESCOWorldHeritage implies self.designation.oclIsKindOf(DesignationValueUNESCOWorldHeritage) and&#xD;&#xA;self.designationScheme = DesignationSchemeValue::IUCN implies self.designation.oclIsKindOf(DesignationValueIUCN) and&#xD;&#xA;self.designationScheme = DesignationSchemeValue::UNESCOManAndBiosphereProgramme implies self.designation.oclIsKindOf(DesignationValueUNESCOManAndBiosphereProgramme) and&#xD;&#xA;self.designationScheme = DesignationSchemeValue::nationalMonumentsRecord implies self.designation.oclIsKindOf(DesignationValueNationalMonumentsRecord)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49245_71383">
@@ -8262,6 +8360,11 @@
     <characterizedBy idref="_A49275_71394"></characterizedBy>
     <package idref="_P5469"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport links have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49275_71394">
@@ -8286,6 +8389,16 @@
     <subtypeOf idref="_C49378">TransportLinkSequence</subtypeOf>
     <package idref="_P5469"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All components belong to same transport network</name>
+      <description>A transport link sequence must be composed of transport links that all belong to the same transport network.</description>
+      <expression>inv: link-&gt;forAll(l | l.link.inNetwork = self.inNetwork)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport link sequences have an external object identifier.</description>
+      <expression>inv: inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49274">
@@ -8295,6 +8408,16 @@
     <subtypeOf idref="_C49383">TransportLinkSet</subtypeOf>
     <package idref="_P5469"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All components belong to same transport network</name>
+      <description>A transport link set must be composed of transport links and or transport link sequences that all belong to the same transport network.</description>
+      <expression>inv: link-&gt;forAll(l | l.inNetwork = self.inNetwork)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport link sets have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49273">
@@ -8304,6 +8427,11 @@
     <subtypeOf idref="_C49384">TransportNode</subtypeOf>
     <package idref="_P5469"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport nodes have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49271">
@@ -8375,6 +8503,11 @@
     <subtypeOf idref="_C49372">TransportArea</subtypeOf>
     <package idref="_P5471"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport areas have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49296">
@@ -8385,6 +8518,15 @@
     <characterizedBy idref="_A49296_71426"></characterizedBy>
     <package idref="_P5471"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Applies to AerodromeNode and AerodromeArea only</name>
+      <expression>/* This property can only be associated with a spatial object that is an Aerodrome Node or an Aerodrome Area. */&#xD;&#xA;inv: networkRef.element.oclIsKindOf(AerodromeNode) or networkRef.element.oclIsKindOf(AerodromeArea)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49296_71426">
@@ -8466,6 +8608,11 @@
     <characterizedBy idref="_ATas51267"></characterizedBy>
     <package idref="_P5471"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport nodes have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49292_71422">
@@ -8543,6 +8690,15 @@
     <characterizedBy idref="_A49319_71459"></characterizedBy>
     <package idref="_P5471"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Applies to AerodromeNode and AerodromeArea only</name>
+      <expression>/* This property can only be associated with a spatial object that is an Aerodrome Node or Aerodrome Area. */&#xD;&#xA;inv: networkRef.element.oclIsKindOf(AerodromeNode) or networkRef.element.oclIsKindOf(AerodromeArea)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49319_71459">
@@ -8643,6 +8799,11 @@
     <subtypeOf idref="_C49388">TransportLink</subtypeOf>
     <package idref="_P5471"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport links have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49320">
@@ -8657,6 +8818,16 @@
     <subtypeOf idref="_C49378">TransportLinkSequence</subtypeOf>
     <package idref="_P5471"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All components belong to same transport network</name>
+      <description>A transport link sequence must be composed of transport links that all belong to the same transport network.</description>
+      <expression>inv: link-&gt;forAll(l | l.link.inNetwork = self.inNetwork)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport link sequences have an external object identifier.</description>
+      <expression>inv: inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49318">
@@ -8668,6 +8839,11 @@
     <characterizedBy idref="_A49318_71458"></characterizedBy>
     <package idref="_P5471"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport nodes have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49318_71458">
@@ -8701,6 +8877,16 @@
     <characterizedBy idref="_A49285_71398"></characterizedBy>
     <package idref="_P5471"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All components belong to same transport network</name>
+      <description>A transport link set must be composed of transport links and or transport link sequences that all belong to the same transport network.</description>
+      <expression>inv: link-&gt;forAll(l | l.inNetwork = self.inNetwork)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport link sets have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49285_71397">
@@ -8745,6 +8931,11 @@
     <characterizedBy idref="_A49312_71448"></characterizedBy>
     <package idref="_P5471"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport links have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49312_71448">
@@ -8925,6 +9116,11 @@
     <characterizedBy idref="_A49284_71396"></characterizedBy>
     <package idref="_P5471"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport areas have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49284_71396">
@@ -9132,6 +9328,11 @@
     <subtypeOf idref="_C49372">TransportArea</subtypeOf>
     <package idref="_P5471"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport areas have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49314">
@@ -9141,6 +9342,15 @@
     <subtypeOf idref="_C49375">ConditionOfFacility</subtypeOf>
     <package idref="_P5471"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Applies only to AerodromeNode, AerodromeArea and RunwayArea</name>
+      <expression>/* This property can only be associated with a spatial object that is an Aerodrome Node, an Aerodrome Area or a Runway Area. */&#xD;&#xA;inv: networkRef.element.oclIsKindOf(AerodromeNode) or networkRef.element.oclIsKindOf(AerodromeArea) or networkRef.element.oclIsKindOf(RunwayArea)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49283">
@@ -9156,6 +9366,11 @@
     <characterizedBy idref="_A49283_71395"></characterizedBy>
     <package idref="_P5471"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport nodes have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49283_71395">
@@ -9183,6 +9398,15 @@
     <characterizedBy idref="_A49294_71425"></characterizedBy>
     <package idref="_P5471"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Applies to RunwayArea, TaxiwayArea and TouchDownLiftOff only</name>
+      <expression>/* This property can only be associated with a spatial object that is a Runway Area, Taxiway Area or Touch Down Lift Off. */&#xD;&#xA;inv: networkRef.element.oclIsKindOf(RunwayArea) or&#xD;&#xA;networkRef.element.oclIsKindOf(TaxiwayArea) or&#xD;&#xA;networkRef.element.oclIsKindOf(TouchDownLiftOff)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49294_71425">
@@ -9212,6 +9436,15 @@
     <characterizedBy idref="_A49301_71434"></characterizedBy>
     <package idref="_P5471"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Applies to RunwayArea, TaxiwayArea and TouchDownLiftOff only</name>
+      <expression>/* This property can only be associated with a spatial object that is a Runway Area, Taxiway Area or Touch Down Lift Off. */&#xD;&#xA;inv: networkRef.element.oclIsKindOf(RunwayArea) or&#xD;&#xA;networkRef.element.oclIsKindOf(TaxiwayArea) or&#xD;&#xA;networkRef.element.oclIsKindOf(TouchDownLiftOff)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49301_71434">
@@ -9246,6 +9479,15 @@
     <characterizedBy idref="_A49310_71443"></characterizedBy>
     <package idref="_P5471"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Applies to AerodromeNode and AerodromeArea only</name>
+      <expression>/* This property can only be associated with a spatial object that is an Aerodrome Node or Aerodrome Area. */&#xD;&#xA;inv: networkRef.element.oclIsKindOf(AerodromeNode) or&#xD;&#xA;networkRef.element.oclIsKindOf(AerodromeArea)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49310_71443">
@@ -9276,6 +9518,11 @@
     <subtypeOf idref="_C49305">ProcedureLink</subtypeOf>
     <package idref="_P5471"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport links have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49286">
@@ -9289,6 +9536,15 @@
     <characterizedBy idref="_A49286_71399"></characterizedBy>
     <package idref="_P5471"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Applies to AirRouteLink and AirspaceArea only</name>
+      <expression>/* This property can only be associated with a spatial object that is an Air Route Link or Airspace Area. */&#xD;&#xA;inv: networkRef.element.oclIsKindOf(AirRouteLink) or&#xD;&#xA;networkRef.element.oclIsKindOf(AirspaceArea)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49286_71399">
@@ -9320,6 +9576,11 @@
     <characterizedBy idref="_A49300_71433"></characterizedBy>
     <package idref="_P5471"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport nodes have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49300_71432">
@@ -9717,6 +9978,11 @@
     <subtypeOf idref="_C49295">AirLink</subtypeOf>
     <package idref="_P5471"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport links have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49297">
@@ -9735,6 +10001,11 @@
     <characterizedBy idref="_A49297_71428"></characterizedBy>
     <package idref="_P5471"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport areas have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49297_71427">
@@ -9786,6 +10057,11 @@
     <characterizedBy idref="_A49291_71421"></characterizedBy>
     <package idref="_P5471"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport nodes have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49291_71421">
@@ -9866,6 +10142,11 @@
     <characterizedBy idref="_A49289_71404"></characterizedBy>
     <package idref="_P5471"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport links have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49289_71404">
@@ -9898,6 +10179,11 @@
     <characterizedBy idref="_A49293_71424"></characterizedBy>
     <package idref="_P5471"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport links have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49293_71424">
@@ -9923,6 +10209,15 @@
     <characterizedBy idref="_A49317_71457"></characterizedBy>
     <package idref="_P5471"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Applies to RunwayArea, TaxiwayArea, ApronArea and TouchDownLiftOff only</name>
+      <expression>/* This property can only be associated with a spatial object that is a Runway Area, Taxiway Area, Apron Area or Touch Down Lift Off. */&#xD;&#xA;inv: networkRef.element.oclIsKindOf(RunwayArea) or&#xD;&#xA;networkRef.element.oclIsKindOf(TaxiwayArea) or&#xD;&#xA;networkRef.element.oclIsKindOf(ApronArea) or&#xD;&#xA;networkRef.element.oclIsKindOf(TouchDownLiftOff)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49317_71457">
@@ -10010,6 +10305,11 @@
     <characterizedBy idref="_A49288_71403"></characterizedBy>
     <package idref="_P5471"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport areas have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49288_71403">
@@ -10038,6 +10338,11 @@
     <characterizedBy idref="_A49304_71437"></characterizedBy>
     <package idref="_P5471"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport nodes have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49304_71437">
@@ -10063,6 +10368,15 @@
     <characterizedBy idref="_A49299_71431"></characterizedBy>
     <package idref="_P5471"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Applies to AirRouteLink and AirspaceArea only</name>
+      <expression>/* This property can only be associated with a spatial object that is an Air Route Link or Airspace Area. */&#xD;&#xA;inv: networkRef.element.oclIsKindOf(AirRouteLink) or&#xD;&#xA;networkRef.element.oclIsKindOf(AirspaceArea)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49299_71431">
@@ -10085,6 +10399,15 @@
     <characterizedBy idref="_A49313_71449"></characterizedBy>
     <package idref="_P5471"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Applies to AirRoute, AirLinks, AirNodes and AerodromeArea only</name>
+      <expression>/* This property can only be associated with a spatial object that is an Air Route, Air Link (or specialized Air Link), Air Node (or specialized Air Node) or Aerodrome Area. */&#xD;&#xA;inv: networkRef.element.oclIsKindOf(AirRoute) or&#xD;&#xA;networkRef.element.oclIsKindOf(AirLink) or&#xD;&#xA;networkRef.element.oclIsKindOf(AirNode) or&#xD;&#xA;networkRef.element.oclIsKindOf(AerodromeArea)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49313_71449">
@@ -10116,6 +10439,15 @@
     <characterizedBy idref="_A49325_71476"></characterizedBy>
     <package idref="_P5472"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Applies to railway transport classes only</name>
+      <expression>/* This property can only be associated with a spatial object that is part of a railway transport network. */&#xD;&#xA;inv: networkRef.element.oclIsKindOf(RailwayArea) or networkRef.element.oclIsKindOf(RailwayYardArea) or networkRef.element.oclIsKindOf(RailwayStationArea) or networkRef.element.oclIsKindOf(RailwayLine) or networkRef.element.oclIsKindOf(RailwayLinkSequence) or&#xD;&#xA;networkRef.element.oclIsKindOf(RailwayLink) or&#xD;&#xA;networkRef.element.oclIsKindOf(RailwayNode)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49325_71476">
@@ -10251,6 +10583,15 @@
     <characterizedBy idref="_A49338_71495"></characterizedBy>
     <package idref="_P5472"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Applies to railway transport classes only</name>
+      <expression>/* This property can only be associated with a spatial object that is part of a railway transport network. */&#xD;&#xA;inv: networkRef.element.oclIsKindOf(RailwayArea) or networkRef.element.oclIsKindOf(RailwayYardArea) or networkRef.element.oclIsKindOf(RailwayStationArea) or networkRef.element.oclIsKindOf(RailwayLine) or networkRef.element.oclIsKindOf(RailwayLinkSequence) or&#xD;&#xA;networkRef.element.oclIsKindOf(RailwayLink) or&#xD;&#xA;networkRef.element.oclIsKindOf(RailwayNode)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49338_71494">
@@ -10293,6 +10634,15 @@
     <characterizedBy idref="_A49341_71505"></characterizedBy>
     <package idref="_P5472"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Applies to railway transport classes only</name>
+      <expression>/* This property can only be associated with a spatial object that is part of a railway transport network. */&#xD;&#xA;inv: networkRef.element.oclIsKindOf(RailwayArea) or networkRef.element.oclIsKindOf(RailwayYardArea) or networkRef.element.oclIsKindOf(RailwayStationArea) or networkRef.element.oclIsKindOf(RailwayLine) or networkRef.element.oclIsKindOf(RailwayLinkSequence) or&#xD;&#xA;networkRef.element.oclIsKindOf(RailwayLink) or&#xD;&#xA;networkRef.element.oclIsKindOf(RailwayNode)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49341_71504">
@@ -10332,6 +10682,11 @@
     <subtypeOf idref="_C49372">TransportArea</subtypeOf>
     <package idref="_P5472"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport areas have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49323">
@@ -10342,6 +10697,15 @@
     <characterizedBy idref="_A49323_71470"></characterizedBy>
     <package idref="_P5472"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Applies to railway transport classes only</name>
+      <expression>/* This property can only be associated with a spatial object that is part of a railway transport network. */&#xD;&#xA;inv: networkRef.element.oclIsKindOf(RailwayArea) or networkRef.element.oclIsKindOf(RailwayYardArea) or networkRef.element.oclIsKindOf(RailwayStationArea) or networkRef.element.oclIsKindOf(RailwayLine) or networkRef.element.oclIsKindOf(RailwayLinkSequence) or&#xD;&#xA;networkRef.element.oclIsKindOf(RailwayLink) or&#xD;&#xA;networkRef.element.oclIsKindOf(RailwayNode)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49323_71470">
@@ -10367,6 +10731,16 @@
     <characterizedBy idref="_A49336_71489"></characterizedBy>
     <package idref="_P5472"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All components belong to same transport network</name>
+      <description>A transport link set must be composed of transport links and or transport link sequences that all belong to the same transport network.</description>
+      <expression>inv: link-&gt;forAll(l | l.inNetwork = self.inNetwork)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport link sets have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49336_71489">
@@ -10392,6 +10766,11 @@
     <characterizedBy idref="_A49333_71483"></characterizedBy>
     <package idref="_P5472"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport links have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49333_71483">
@@ -10416,6 +10795,16 @@
     <subtypeOf idref="_C49378">TransportLinkSequence</subtypeOf>
     <package idref="_P5472"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All components belong to same transport network</name>
+      <description>A transport link sequence must be composed of transport links that all belong to the same transport network.</description>
+      <expression>inv: link-&gt;forAll(l | l.link.inNetwork = self.inNetwork)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport link sequences have an external object identifier.</description>
+      <expression>inv: inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49327">
@@ -10426,6 +10815,11 @@
     <characterizedBy idref="_A49327_71477"></characterizedBy>
     <package idref="_P5472"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport nodes have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49327_71477">
@@ -10452,6 +10846,11 @@
     <subtypeOf idref="_C49372">TransportArea</subtypeOf>
     <package idref="_P5472"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport areas have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49322">
@@ -10462,6 +10861,15 @@
     <characterizedBy idref="_A49322_71469"></characterizedBy>
     <package idref="_P5472"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Applies to Railway Transport classes only</name>
+      <expression>/* This property can only be associated with a spatial object that is part of a railway transport network. */&#xD;&#xA;inv: networkRef.element.oclIsKindOf(RailwayArea) or networkRef.element.oclIsKindOf(RailwayYardArea) or networkRef.element.oclIsKindOf(RailwayStationArea) or networkRef.element.oclIsKindOf(RailwayLine) or networkRef.element.oclIsKindOf(RailwayLinkSequence) or&#xD;&#xA;networkRef.element.oclIsKindOf(RailwayLink) or&#xD;&#xA;networkRef.element.oclIsKindOf(RailwayNode)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49322_71469">
@@ -10484,6 +10892,15 @@
     <characterizedBy idref="_A49329_71478"></characterizedBy>
     <package idref="_P5472"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>formOfNode is always RailwayStop</name>
+      <expression>/* For a railway station node, the value for the "formOfNode" attribute shall always be "RailwayStop". */&#xD;&#xA;formOfNode = FormOfRailwayNodeValue::railwayStop</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport nodes have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49329_71478">
@@ -10506,6 +10923,15 @@
     <characterizedBy idref="_A49335_71488"></characterizedBy>
     <package idref="_P5472"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Applies to railway transport classes only</name>
+      <expression>/* This property can only be associated with a spatial object that is part of a railway transport network. */&#xD;&#xA;inv: networkRef.element.oclIsKindOf(RailwayArea) or networkRef.element.oclIsKindOf(RailwayYardArea) or networkRef.element.oclIsKindOf(RailwayStationArea) or networkRef.element.oclIsKindOf(RailwayLine) or networkRef.element.oclIsKindOf(RailwayLinkSequence) or&#xD;&#xA;networkRef.element.oclIsKindOf(RailwayLink) or&#xD;&#xA;networkRef.element.oclIsKindOf(RailwayNode)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49335_71488">
@@ -10649,6 +11075,15 @@
     <characterizedBy idref="_A49332_71482"></characterizedBy>
     <package idref="_P5472"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Applies to Railway Transport classes only</name>
+      <expression>/* This property can only be associated with a spatial object that is part of a railway transport network. */&#xD;&#xA;inv: networkRef.element.oclIsKindOf(RailwayArea) or networkRef.element.oclIsKindOf(RailwayYardArea) or networkRef.element.oclIsKindOf(RailwayStationArea) or networkRef.element.oclIsKindOf(RailwayLine) or networkRef.element.oclIsKindOf(RailwayLinkSequence) or&#xD;&#xA;networkRef.element.oclIsKindOf(RailwayLink) or&#xD;&#xA;networkRef.element.oclIsKindOf(RailwayNode)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49332_71482">
@@ -10732,6 +11167,11 @@
     <subtypeOf idref="_C49372">TransportArea</subtypeOf>
     <package idref="_P5472"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport areas have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49342">
@@ -10743,6 +11183,15 @@
     <subtypeOf idref="_C49327">RailwayNode</subtypeOf>
     <package idref="_P5472"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>formOfNode is always RailwayStop</name>
+      <expression>/* For a railway yard node, the value for the "formOfNode" attribute shall always be "RailwayStop". */&#xD;&#xA;formOfNode = FormOfRailwayNodeValue::railwayStop</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport nodes have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49334">
@@ -10821,6 +11270,11 @@
     <subtypeOf idref="_C49382">TransportPoint</subtypeOf>
     <package idref="_P5473"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport points have an external object identfier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49354">
@@ -10835,6 +11289,11 @@
     <subtypeOf idref="_C49382">TransportPoint</subtypeOf>
     <package idref="_P5473"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport points have an external object identfier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49348">
@@ -10845,6 +11304,15 @@
     <characterizedBy idref="_A49348_71512"></characterizedBy>
     <package idref="_P5473"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Applies to InlandWaterway only</name>
+      <expression>/* This property can only be associated with a spatial object that is part of a water transport network. */&#xD;&#xA;inv: networkRef.element.oclIsKindOf(InlandWaterway)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49348_71512">
@@ -11004,6 +11472,15 @@
     <subtypeOf idref="_C49375">ConditionOfFacility</subtypeOf>
     <package idref="_P5473"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Applies to PortNode and PortArea only</name>
+      <expression>/* This property can only be associated with a spatial object that is part of a water transport network. */&#xD;&#xA;inv: networkRef.element.oclIsKindOf(PortArea) or networkRef.element.oclIsKindOf(PortNode)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49343">
@@ -11018,6 +11495,11 @@
     <subtypeOf idref="_C49372">TransportArea</subtypeOf>
     <package idref="_P5473"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport areas have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49344">
@@ -11027,6 +11509,16 @@
     <subtypeOf idref="_C49368">Waterway</subtypeOf>
     <package idref="_P5473"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All components belong to same transport network</name>
+      <description>A transport link set must be composed of transport links and or transport link sequences that all belong to the same transport network.</description>
+      <expression>inv: link-&gt;forAll(l | l.inNetwork = self.inNetwork)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport link sets have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49347">
@@ -11037,6 +11529,15 @@
     <characterizedBy idref="_A49347_71511"></characterizedBy>
     <package idref="_P5473"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Applies to FerryCrossing only</name>
+      <expression>/* This property can only be associated with a spatial object that is part of a water transport network. */&#xD;&#xA;inv: networkRef.element.oclIsKindOf(FerryCrossing)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49347_71511">
@@ -11225,6 +11726,16 @@
     <subtypeOf idref="_C49368">Waterway</subtypeOf>
     <package idref="_P5473"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All components belong to same transport network</name>
+      <description>A transport link set must be composed of transport links and or transport link sequences that all belong to the same transport network.</description>
+      <expression>inv: link-&gt;forAll(l | l.inNetwork = self.inNetwork)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport link sets have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49356">
@@ -11235,6 +11746,16 @@
     <characterizedBy idref="_A49356_71519"></characterizedBy>
     <package idref="_P5473"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All components belong to same transport network</name>
+      <description>A transport link set must be composed of transport links and or transport link sequences that all belong to the same transport network.</description>
+      <expression>inv: link-&gt;forAll(l | l.inNetwork = self.inNetwork)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport link sets have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49356_71519">
@@ -11258,6 +11779,11 @@
     <subtypeOf idref="_C49372">TransportArea</subtypeOf>
     <package idref="_P5473"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport areas have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49352">
@@ -11270,6 +11796,11 @@
     <subtypeOf idref="_C49351">WaterNode</subtypeOf>
     <package idref="_P5473"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport nodes have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49369">
@@ -11279,6 +11810,15 @@
     <subtypeOf idref="_C49379">RestrictionForVehicles</subtypeOf>
     <package idref="_P5473"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Applies to WaterwayLink and WaterwayNode only</name>
+      <expression>/* This property can only be associated with a spatial object that is part of a water transport network. */&#xD;&#xA;inv: networkRef.element.oclIsKindOf(WaterwayLink) or&#xD;&#xA;networkRef.element.oclIsKindOf(WaterwayNode)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49350">
@@ -11425,6 +11965,11 @@
     <subtypeOf idref="_C49372">TransportArea</subtypeOf>
     <package idref="_P5473"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport areas have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49363">
@@ -11437,6 +11982,11 @@
     <subtypeOf idref="_C49371">TrafficSeparationSchemeArea</subtypeOf>
     <package idref="_P5473"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport areas have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49359">
@@ -11449,6 +11999,11 @@
     <subtypeOf idref="_C49371">TrafficSeparationSchemeArea</subtypeOf>
     <package idref="_P5473"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport areas have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49346">
@@ -11461,6 +12016,11 @@
     <subtypeOf idref="_C49371">TrafficSeparationSchemeArea</subtypeOf>
     <package idref="_P5473"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport areas have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49361">
@@ -11473,6 +12033,11 @@
     <subtypeOf idref="_C49371">TrafficSeparationSchemeArea</subtypeOf>
     <package idref="_P5473"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport areas have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49358">
@@ -11485,6 +12050,16 @@
     <subtypeOf idref="_C49378">TransportLinkSequence</subtypeOf>
     <package idref="_P5473"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All components belong to same transport network</name>
+      <description>A transport link sequence must be composed of transport links that all belong to the same transport network.</description>
+      <expression>inv: link-&gt;forAll(l | l.link.inNetwork = self.inNetwork)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport link sequences have an external object identifier.</description>
+      <expression>inv: inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49351">
@@ -11498,6 +12073,11 @@
     <subtypeOf idref="_C49384">TransportNode</subtypeOf>
     <package idref="_P5473"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport nodes have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49370">
@@ -11507,6 +12087,19 @@
     <subtypeOf idref="_C49377">TrafficFlowDirection</subtypeOf>
     <package idref="_P5473"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Applies to WaterwayLink and WaterLinkSequence only</name>
+      <expression>/* This property can only be associated with a spatial object that is part of a water transport network. */&#xD;&#xA;inv: networkRef.element.oclIsKindOf(WaterLinkSequence) or&#xD;&#xA;networkRef.element.oclIsKindOf(WaterwayLink)</expression>
+    </constraint>
+    <constraint>
+      <name>Applies to Link and LinkSequence only</name>
+      <expression>/* This property can only be associated with a spatial object of the type Link or LinkSequence. */&#xD;&#xA;inv: networkRef.element.oclIsKindOf(LinkReference)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49368">
@@ -11517,6 +12110,16 @@
     <subtypeOf idref="_C49383">TransportLinkSet</subtypeOf>
     <package idref="_P5473"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All components belong to same transport network</name>
+      <description>A transport link set must be composed of transport links and or transport link sequences that all belong to the same transport network.</description>
+      <expression>inv: link-&gt;forAll(l | l.inNetwork = self.inNetwork)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport link sets have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49353">
@@ -11529,6 +12132,11 @@
     <subtypeOf idref="_C49388">TransportLink</subtypeOf>
     <package idref="_P5473"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport links have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49360">
@@ -11539,6 +12147,11 @@
     <characterizedBy idref="_A49360_71520"></characterizedBy>
     <package idref="_P5473"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport nodes have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49360_71520">
@@ -11574,6 +12187,11 @@
     <characterizedBy idref="_A49385_71556"></characterizedBy>
     <package idref="_P5474"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49385_71556">
@@ -11682,6 +12300,11 @@
     <characterizedBy idref="_A49375_71540"></characterizedBy>
     <package idref="_P5474"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49375_71540">
@@ -11709,6 +12332,11 @@
     <characterizedBy idref="_A49380_71547"></characterizedBy>
     <package idref="_P5474"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49380_71547">
@@ -11735,6 +12363,11 @@
     <characterizedBy idref="_ATas51187"></characterizedBy>
     <package idref="_P5474"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport points have an external object identfier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49381_71548">
@@ -11788,6 +12421,11 @@
     <characterizedBy idref="_A49376_71541"></characterizedBy>
     <package idref="_P5474"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49376_71541">
@@ -11811,6 +12449,11 @@
     <characterizedBy idref="_A49379_71546"></characterizedBy>
     <package idref="_P5474"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49379_71545">
@@ -11977,6 +12620,15 @@
     <characterizedBy idref="_A49377_71542"></characterizedBy>
     <package idref="_P5474"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Applies to Link and LinkSequence only</name>
+      <expression>/* This property can only be associated with a spatial object of the type Link or LinkSequence. */&#xD;&#xA;inv: networkRef.element.oclIsKindOf(LinkReference)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49377_71542">
@@ -12005,6 +12657,11 @@
     <characterizedBy idref="_A49372_71532"></characterizedBy>
     <package idref="_P5474"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport areas have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49372_71531">
@@ -12042,6 +12699,11 @@
     <characterizedBy idref="_A49388_71567"></characterizedBy>
     <package idref="_P5474"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport links have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49388_71566">
@@ -12079,6 +12741,16 @@
     <characterizedBy idref="_A49378_71544"></characterizedBy>
     <package idref="_P5474"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All components belong to same transport network</name>
+      <description>A transport link sequence must be composed of transport links that all belong to the same transport network.</description>
+      <expression>inv: link-&gt;forAll(l | l.link.inNetwork = self.inNetwork)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport link sequences have an external object identifier.</description>
+      <expression>inv: inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49378_71543">
@@ -12124,6 +12796,16 @@
     <characterizedBy idref="_ASas51187"></characterizedBy>
     <package idref="_P5474"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All components belong to same transport network</name>
+      <description>A transport link set must be composed of transport links and or transport link sequences that all belong to the same transport network.</description>
+      <expression>inv: link-&gt;forAll(l | l.inNetwork = self.inNetwork)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport link sets have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49383_71552">
@@ -12209,6 +12891,11 @@
     <characterizedBy idref="_A49384_71555"></characterizedBy>
     <package idref="_P5474"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport nodes have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49384_71554">
@@ -12271,6 +12958,11 @@
     <characterizedBy idref="_A49382_71551"></characterizedBy>
     <package idref="_P5474"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport points have an external object identfier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49382_71549">
@@ -12319,6 +13011,11 @@
     <characterizedBy idref="_A49386_71558"></characterizedBy>
     <package idref="_P5474"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49386_71557">
@@ -12421,6 +13118,11 @@
     <characterizedBy idref="_A49373_71533"></characterizedBy>
     <package idref="_P5474"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49373_71533">
@@ -12557,6 +13259,16 @@
     <characterizedBy idref="_A49427_71698"></characterizedBy>
     <package idref="_P5475"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All components belong to same transport network</name>
+      <description>A transport link set must be composed of transport links and or transport link sequences that all belong to the same transport network.</description>
+      <expression>inv: link-&gt;forAll(l | l.inNetwork = self.inNetwork)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport link sets have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49427_71698">
@@ -12698,6 +13410,15 @@
     <characterizedBy idref="_A49406_71628"></characterizedBy>
     <package idref="_P5475"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Applies to road transport elements only</name>
+      <expression>/* This property can only be associated with a spatial object that is part of a road transport network. */&#xD;&#xA;inv: networkRef.element.oclIsKindOf(Road) or networkRef.element.oclIsKindOf(ERoad) or networkRef.element.oclIsKindOf(RoadLink) or networkRef.element.oclIsKindOf(RoadLinkSequence) or networkRef.element.oclIsKindOf(RoadNode) or&#xD;&#xA;networkRef.element.oclIsKindOf(RoadArea) or&#xD;&#xA;networkRef.element.oclIsKindOf(RoadServiceArea) or&#xD;&#xA;networkRef.element.oclIsKindOf(VehicleTrafficArea)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49406_71628">
@@ -12985,6 +13706,15 @@
     <characterizedBy idref="_A49423_71685"></characterizedBy>
     <package idref="_P5475"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Applies to road transport elements only</name>
+      <expression>/* This property can only be associated with a spatial object that is part of a road transport network. */&#xD;&#xA;inv: networkRef.element.oclIsKindOf(Road) or networkRef.element.oclIsKindOf(ERoad) or networkRef.element.oclIsKindOf(RoadLink) or networkRef.element.oclIsKindOf(RoadLinkSequence) or networkRef.element.oclIsKindOf(RoadNode) or&#xD;&#xA;networkRef.element.oclIsKindOf(RoadArea) or&#xD;&#xA;networkRef.element.oclIsKindOf(RoadServiceArea) or&#xD;&#xA;networkRef.element.oclIsKindOf(VehicleTrafficArea)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49423_71685">
@@ -13244,6 +13974,15 @@
     <characterizedBy idref="_A49405_71627"></characterizedBy>
     <package idref="_P5475"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Applies to road transport elements only</name>
+      <expression>/* This property can only be associated with a spatial object that is part of a road transport network. */&#xD;&#xA;inv: networkRef.element.oclIsKindOf(Road) or networkRef.element.oclIsKindOf(ERoad) or networkRef.element.oclIsKindOf(RoadLink) or networkRef.element.oclIsKindOf(RoadLinkSequence) or networkRef.element.oclIsKindOf(RoadNode) or&#xD;&#xA;networkRef.element.oclIsKindOf(RoadArea) or&#xD;&#xA;networkRef.element.oclIsKindOf(RoadServiceArea) or&#xD;&#xA;networkRef.element.oclIsKindOf(VehicleTrafficArea)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49405_71625">
@@ -13313,6 +14052,16 @@
     <characterizedBy idref="_A49420_71680"></characterizedBy>
     <package idref="_P5475"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All components belong to same transport network</name>
+      <description>A transport link set must be composed of transport links and or transport link sequences that all belong to the same transport network.</description>
+      <expression>inv: link-&gt;forAll(l | l.inNetwork = self.inNetwork)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport link sets have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49420_71679">
@@ -13352,6 +14101,11 @@
     <subtypeOf idref="_C49372">TransportArea</subtypeOf>
     <package idref="_P5475"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport areas have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49413">
@@ -13362,6 +14116,11 @@
     <subtypeOf idref="_C49388">TransportLink</subtypeOf>
     <package idref="_P5475"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport links have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49414">
@@ -13371,6 +14130,16 @@
     <subtypeOf idref="_C49378">TransportLinkSequence</subtypeOf>
     <package idref="_P5475"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All components belong to same transport network</name>
+      <description>A transport link sequence must be composed of transport links that all belong to the same transport network.</description>
+      <expression>inv: link-&gt;forAll(l | l.link.inNetwork = self.inNetwork)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport link sequences have an external object identifier.</description>
+      <expression>inv: inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49416">
@@ -13381,6 +14150,15 @@
     <characterizedBy idref="_A49416_71671"></characterizedBy>
     <package idref="_P5475"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Applies to road transport elements only</name>
+      <expression>/* This property can only be associated with a spatial object that is part of a road transport network. */&#xD;&#xA;inv: networkRef.element.oclIsKindOf(Road) or networkRef.element.oclIsKindOf(ERoad) or networkRef.element.oclIsKindOf(RoadLink) or networkRef.element.oclIsKindOf(RoadLinkSequence) or networkRef.element.oclIsKindOf(RoadNode) or&#xD;&#xA;networkRef.element.oclIsKindOf(RoadArea) or&#xD;&#xA;networkRef.element.oclIsKindOf(RoadServiceArea) or&#xD;&#xA;networkRef.element.oclIsKindOf(VehicleTrafficArea)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49416_71671">
@@ -13403,6 +14181,11 @@
     <characterizedBy idref="_A49400_71586"></characterizedBy>
     <package idref="_P5475"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport nodes have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49400_71586">
@@ -13467,6 +14250,11 @@
     <subtypeOf idref="_C49372">TransportArea</subtypeOf>
     <package idref="_P5475"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport areas have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49401">
@@ -13478,6 +14266,15 @@
     <characterizedBy idref="_A49401_71588"></characterizedBy>
     <package idref="_P5475"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Applies to road service areas only</name>
+      <expression>/* This property can only be associated with a spatial object of the type RoadServiceArea or RoadNode (when formOfRoadNode=roadServiceArea). */&#xD;&#xA;inv: networkRef.element.oclIsKindOf(RoadServiceArea) or&#xD;&#xA;(networkRef.element.oclIsKindOf(RoadNode) and networkRef.element. formOfRoadNode = FormOfRoadNodeValue::roadServiceArea)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49401_71587">
@@ -13582,6 +14379,15 @@
     <characterizedBy idref="_A49412_71662"></characterizedBy>
     <package idref="_P5475"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Applies to road transport elements only</name>
+      <expression>/* This property can only be associated with a spatial object that is part of a road transport network. */&#xD;&#xA;inv: networkRef.element.oclIsKindOf(Road) or networkRef.element.oclIsKindOf(ERoad) or networkRef.element.oclIsKindOf(RoadLink) or networkRef.element.oclIsKindOf(RoadLinkSequence) or networkRef.element.oclIsKindOf(RoadNode) or&#xD;&#xA;networkRef.element.oclIsKindOf(RoadArea) or&#xD;&#xA;networkRef.element.oclIsKindOf(RoadServiceArea) or&#xD;&#xA;networkRef.element.oclIsKindOf(VehicleTrafficArea)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49412_71662">
@@ -13652,6 +14458,15 @@
     <characterizedBy idref="_A49425_71697"></characterizedBy>
     <package idref="_P5475"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Applies to road transport elements only</name>
+      <expression>/* This property can only be associated with a spatial object that is part of a road transport network. */&#xD;&#xA;inv: networkRef.element.oclIsKindOf(Road) or networkRef.element.oclIsKindOf(ERoad) or networkRef.element.oclIsKindOf(RoadLink) or networkRef.element.oclIsKindOf(RoadLinkSequence) or networkRef.element.oclIsKindOf(RoadNode) or&#xD;&#xA;networkRef.element.oclIsKindOf(RoadArea) or&#xD;&#xA;networkRef.element.oclIsKindOf(RoadServiceArea) or&#xD;&#xA;networkRef.element.oclIsKindOf(VehicleTrafficArea)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49425_71696">
@@ -13792,6 +14607,15 @@
     <characterizedBy idref="_A49424_71695"></characterizedBy>
     <package idref="_P5475"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Applies to road transport elements only</name>
+      <expression>/* This property can only be associated with a spatial object that is part of a road transport network. */&#xD;&#xA;inv: networkRef.element.oclIsKindOf(Road) or networkRef.element.oclIsKindOf(ERoad) or networkRef.element.oclIsKindOf(RoadLink) or networkRef.element.oclIsKindOf(RoadLinkSequence) or networkRef.element.oclIsKindOf(RoadNode) or&#xD;&#xA;networkRef.element.oclIsKindOf(RoadArea) or&#xD;&#xA;networkRef.element.oclIsKindOf(RoadServiceArea) or&#xD;&#xA;networkRef.element.oclIsKindOf(VehicleTrafficArea)</expression>
+    </constraint>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport properties have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49424_71686">
@@ -14123,6 +14947,11 @@
     <subtypeOf idref="_C49372">TransportArea</subtypeOf>
     <package idref="_P5475"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All objects have inspireId</name>
+      <description>All transport areas have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C49404">
@@ -14803,6 +15632,44 @@
     <characterizedBy idref="_ASas51154"></characterizedBy>
     <package idref="_P5479"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>domainDimensionIs2</name>
+      <expression>/* The grid dimension shall always be 2 for an elevation grid coverage */&#xD;&#xA;inv: domainSet.dimension=2</expression>
+    </constraint>
+    <constraint>
+      <name>domainExtentContainsGeographicElement</name>
+      <description>The domainExtent shall be at least populated with a subtype of EX_GeographicExtent</description>
+      <expression>inv: domainExtent.geographicElement-&gt;size()&gt;=1</expression>
+    </constraint>
+    <constraint>
+      <name>domainRequiresCRS</name>
+      <expression>/* The coordinate reference system used to reference the grid shall be provided */&#xD;&#xA;inv: domainSet.origin.coordinateReferenceSystem-&gt;notEmpty</expression>
+    </constraint>
+    <constraint>
+      <name>identicalOffsetVectorsWithinElevationCoverageAggregation</name>
+      <expression>/* All the ElevationGridCoverage instances to which an aggregated ElevationGridCoverage instance refers, shall share the same orientation of grid axes and the same grid spacing in each direction*/ &#xD;&#xA;Inv: contributingElevationCoverage-&gt;forAll(v | v.domainSet.offsetVectors = self.domainSet.offsetVectors)</expression>
+    </constraint>
+    <constraint>
+      <name>originDimensionIs2</name>
+      <expression>/* The origin of the grid shall be described in two dimensions */&#xD;&#xA;inv: domainSet.origin.dimension=2</expression>
+    </constraint>
+    <constraint>
+      <name>rangeSetValuesAreOfTypeFloat</name>
+      <expression>/* The values in the range set shall be described by the Float type */&#xD;&#xA;inv: rangeSet-&gt;forAll(v | v.oclIsKindOf(Float))</expression>
+    </constraint>
+    <constraint>
+      <name>domainIsRectifiedGrid</name>
+      <description>The domain shall be a rectified grid.</description>
+      <expression>inv: domainSet.oclIsKindOf(CV_RectifiedGrid)</expression>
+    </constraint>
+    <constraint>
+      <name>grid points shall coincide with grid cell centres</name>
+      <expression>/*Grid points of a RectifiedGridCoverage shall coincide with the centres of cells of the geographical grids defined in Section 2.2 of Annex II at any resolution level.*/</expression>
+    </constraint>
+    <constraint>
+      <name>gridFunctionRequiresGridDomain</name>
+      <expression>/*The grid function shall only be valid for domains that are grids */&#xD;&#xA;inv: coverageFunction.gridFunction.notEmpty() implies domainSet.oclIsKindOf(CV_Grid)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49438_71704">
@@ -15246,6 +16113,15 @@
     <characterizedBy idref="_A49440_71713"></characterizedBy>
     <package idref="_P5480"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>propertyValueDimensionIs1</name>
+      <description>The dimension of the property value coordinate shall be 1</description>
+      <expression>inv: propertyValue.dimension=1</expression>
+    </constraint>
+    <constraint>
+      <name>propertyValueIsReferredToVerticalCRS</name>
+      <expression>/*The property value shall be expressed referring to a vertical coordinate reference system*/&#xD;&#xA;inv: propertyValue.coordinateReferenceSystem.oclIsKindOf(SC_VerticalCRS)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49440_71710">
@@ -15522,6 +16398,15 @@
     <characterizedBy idref="_A49450_71731"></characterizedBy>
     <package idref="_P5480"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>propertyValueDimensionIs1</name>
+      <description>The dimension of the property value coordinate shall be 1</description>
+      <expression>inv: propertyValue.dimension=1</expression>
+    </constraint>
+    <constraint>
+      <name>propertyValueIsReferredToVerticalCRS</name>
+      <expression>/*The property value shall be expressed referring to a vertical coordinate reference system*/&#xD;&#xA;inv: propertyValue.coordinateReferenceSystem.oclIsKindOf(SC_VerticalCRS)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49450_71727">
@@ -18437,6 +19322,14 @@
     <characterizedBy idref="_A49514_71822"></characterizedBy>
     <package idref="_P5484"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>shape must be GM_Surface</name>
+      <expression>/* The shape attribute shall be of type GM_Surface */&#xD;&#xA;inv: shape.oclIsKindOf(GM_Surface)</expression>
+    </constraint>
+    <constraint>
+      <name>projectedGeometry must be GM_Point, GM_Curve or GM_Surface</name>
+      <expression>/* The projectedGeometry shall be of type GM_Point, GM_Curve or GM_Surface */&#xD;&#xA;inv: projectedGeometry.oclIsKindOf(GM_Point) or projectedGeometry.oclIsKindOf(GM_Curve) or projectedGeometry.oclIsKindOf(GM_Surface) </expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49514_71819">
@@ -18528,6 +19421,10 @@
     <characterizedBy idref="_A49512_71818"></characterizedBy>
     <package idref="_P5484"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>projectedGeometry must be GM_Point, GM_Curve or GM_Surface</name>
+      <expression>/* The projectedGeometry shall be of type GM_Point, GM_Curve or GM_Surface */&#xD;&#xA;inv: projectedGeometry.oclIsKindOf(GM_Point) or projectedGeometry.oclIsKindOf(GM_Curve) or projectedGeometry.oclIsKindOf(GM_Surface) </expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49512_71816">
@@ -18595,6 +19492,10 @@
     <characterizedBy idref="_A49510_71815"></characterizedBy>
     <package idref="_P5484"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>projectedGeometry must be GM_Point, GM_Curve or GM_Surface</name>
+      <expression>/* The projectedGeometry shall be of type GM_Point, GM_Curve or GM_Surface */&#xD;&#xA;inv: projectedGeometry.oclIsKindOf(GM_Point) or projectedGeometry.oclIsKindOf(GM_Curve) or projectedGeometry.oclIsKindOf(GM_Surface) </expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49510_71810">
@@ -18702,6 +19603,10 @@
     <characterizedBy idref="_A49515_71828"></characterizedBy>
     <package idref="_P5484"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>projectedGeometry must be GM_Point, GM_Curve or GM_Surface</name>
+      <expression>/* The projectedGeometry shall be of type GM_Point, GM_Curve or GM_Surface */&#xD;&#xA;inv: projectedGeometry.oclIsKindOf(GM_Point) or projectedGeometry.oclIsKindOf(GM_Curve) or projectedGeometry.oclIsKindOf(GM_Surface) </expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49515_71823">
@@ -18807,6 +19712,14 @@
     <characterizedBy idref="_A49521_71832"></characterizedBy>
     <package idref="_P5484"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>shape must be GM_Curve</name>
+      <expression>/* The shape attribute shall be of type GM_Curve */&#xD;&#xA;inv: shape.oclIsKindOf(GM_Curve)</expression>
+    </constraint>
+    <constraint>
+      <name>projectedGeometry must be GM_Point, GM_Curve or GM_Surface</name>
+      <expression>/* The projectedGeometry shall be of type GM_Point, GM_Curve or GM_Surface */&#xD;&#xA;inv: projectedGeometry.oclIsKindOf(GM_Point) or projectedGeometry.oclIsKindOf(GM_Curve) or projectedGeometry.oclIsKindOf(GM_Surface) </expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49521_71832">
@@ -18837,6 +19750,14 @@
     <characterizedBy idref="_A49516_71830"></characterizedBy>
     <package idref="_P5484"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>shape must be GM_Point</name>
+      <expression>/* The shape attribute shall be of type GM_Point */&#xD;&#xA;inv: shape.oclIsKindOf(GM_Point)</expression>
+    </constraint>
+    <constraint>
+      <name>projectedGeometry must be GM_Point, GM_Curve or GM_Surface</name>
+      <expression>/* The projectedGeometry shall be of type GM_Point, GM_Curve or GM_Surface */&#xD;&#xA;inv: projectedGeometry.oclIsKindOf(GM_Point) or projectedGeometry.oclIsKindOf(GM_Curve) or projectedGeometry.oclIsKindOf(GM_Surface) </expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49516_71829">
@@ -18883,6 +19804,14 @@
     <characterizedBy idref="_A49518_71831"></characterizedBy>
     <package idref="_P5484"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>shape must be GM_Surface</name>
+      <expression>/* The shape attribute shall be of type GM_Surface */&#xD;&#xA;inv: shape.oclIsKindOf(GM_Surface)</expression>
+    </constraint>
+    <constraint>
+      <name>projectedGeometry must be GM_Point, GM_Curve or GM_Surface</name>
+      <expression>/* The projectedGeometry shall be of type GM_Point, GM_Curve or GM_Surface */&#xD;&#xA;inv: projectedGeometry.oclIsKindOf(GM_Point) or projectedGeometry.oclIsKindOf(GM_Curve) or projectedGeometry.oclIsKindOf(GM_Surface) </expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49518_71831">
@@ -19055,6 +19984,10 @@
     <characterizedBy idref="_A49529_71837"></characterizedBy>
     <package idref="_P5486"></package>
     <type>Data Type</type>
+    <constraint>
+      <name>ExternalOrEmbeddedDescription</name>
+      <expression>/* The embedded description or the external desciption shall be provided. */</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49529_71833">
@@ -19169,6 +20102,24 @@
     <characterizedBy idref="_A49531_71845"></characterizedBy>
     <package idref="_P5487"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>rangeSetIsKindOfLandCoverClassValue</name>
+      <description>The values in the range set are restricted to Integer</description>
+      <expression>inv: rangeSet-&gt;forAll(v | v.oclIsKindOf(LandCoverNomenclature::LandCoverClassValue))</expression>
+    </constraint>
+    <constraint>
+      <name>domainIsRectifiedGrid</name>
+      <description>The domain shall be a rectified grid.</description>
+      <expression>inv: domainSet.oclIsKindOf(CV_RectifiedGrid)</expression>
+    </constraint>
+    <constraint>
+      <name>grid points shall coincide with grid cell centres</name>
+      <expression>/*Grid points of a RectifiedGridCoverage shall coincide with the centres of cells of the geographical grids defined in Section 2.2 of Annex II at any resolution level.*/</expression>
+    </constraint>
+    <constraint>
+      <name>gridFunctionRequiresGridDomain</name>
+      <expression>/*The grid function shall only be valid for domains that are grids */&#xD;&#xA;inv: coverageFunction.gridFunction.notEmpty() implies domainSet.oclIsKindOf(CV_Grid)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49531_71838">
@@ -19503,6 +20454,10 @@
     <characterizedBy idref="_A49536_71856"></characterizedBy>
     <package idref="_P5488"></package>
     <type>Data Type</type>
+    <constraint>
+      <name>coveredPercentagesLowerThan100</name>
+      <expression>/* The sum of all coveredPercentage attributes attached to each LandCoverObservation shall be lower or equal to 100*/&#xD;&#xA;inv:mosaic.coveredPercentage.sum() &lt;= 100</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49536_71854">
@@ -19576,6 +20531,11 @@
     <characterizedBy idref="_A49538_71863"></characterizedBy>
     <package idref="_P5488"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>geometryIsKindOfGM_PointOrGM_Surface</name>
+      <description>geometries shall be points or surfaces</description>
+      <expression>inv: self.geometry-&gt;forAll(l | l.oclIsKindOf(GM_Surface) or l.oclIsKindOf(GM_Point))</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49538_71859">
@@ -19884,6 +20844,50 @@
     <characterizedBy idref="_ATas51084"></characterizedBy>
     <package idref="_P5491"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>acquisitionTimeRequired</name>
+      <description>The acquisition time of the orthoimage coverage shall be provided through the phenomenonTime attribute or the mosaicElement association</description>
+      <expression>inv: phenomenonTime-&gt;notEmpty() or mosaicElement-&gt;notEmpty()</expression>
+    </constraint>
+    <constraint>
+      <name>domainDimensionIs2</name>
+      <expression>/* The dimension of the grid used shall always be 2 */&#xD;&#xA;inv: domainSet.dimension=2</expression>
+    </constraint>
+    <constraint>
+      <name>domainExtentContainsGeographicElement</name>
+      <description>The domainExtent attribute shall be at least populated with a subtype of EX_GeographicExtent</description>
+      <expression>inv: domainExtent.geographicElement-&gt;size()&gt;=1</expression>
+    </constraint>
+    <constraint>
+      <name>domainRequiresCRS</name>
+      <expression>/* The coordinate reference system used to reference the grid shall be provided */&#xD;&#xA;inv: domainSet.origin.coordinateReferenceSystem-&gt;notEmpty()</expression>
+    </constraint>
+    <constraint>
+      <name>identicalOffsetVectorsWithinOrthoimageAggregation</name>
+      <expression>/*All the OrthoimageCoverage instances to which an aggregated OrthoimageCoverage instance refers shall share the same orientation of grid axes and the same grid spacing in each direction*/ &#xD;&#xA;Inv: contributingOrthoimageCoverage-&gt;forAll(v | v.domainSet.offsetVectors = self.domainSet.offsetVectors)</expression>
+    </constraint>
+    <constraint>
+      <name>originDimensionIs2</name>
+      <expression>/* The origin of the grid shall be described in two dimensions */&#xD;&#xA;inv: domainSet.origin.dimension=2</expression>
+    </constraint>
+    <constraint>
+      <name>rangeSetValuesAreOfTypeInteger</name>
+      <description>The values in the range set shall be described by the Integer type</description>
+      <expression>inv: rangeSet-&gt;forAll(v | v.oclIsKindOf(Integer))</expression>
+    </constraint>
+    <constraint>
+      <name>domainIsRectifiedGrid</name>
+      <description>The domain shall be a rectified grid.</description>
+      <expression>inv: domainSet.oclIsKindOf(CV_RectifiedGrid)</expression>
+    </constraint>
+    <constraint>
+      <name>grid points shall coincide with grid cell centres</name>
+      <expression>/*Grid points of a RectifiedGridCoverage shall coincide with the centres of cells of the geographical grids defined in Section 2.2 of Annex II at any resolution level.*/</expression>
+    </constraint>
+    <constraint>
+      <name>gridFunctionRequiresGridDomain</name>
+      <expression>/*The grid function shall only be valid for domains that are grids */&#xD;&#xA;inv: coverageFunction.gridFunction.notEmpty() implies domainSet.oclIsKindOf(CV_Grid)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49542_71864">
@@ -20585,6 +21589,24 @@
     <characterizedBy idref="_A49596_71897"></characterizedBy>
     <package idref="_P5496"></package>
     <type>Data Type</type>
+    <constraint>
+      <name>geometryIsPointOrSurfaceOrMultiSurface</name>
+      <expression>/*Geometry shall be of type GM_Point or GM_Surface or GM_MultiSurface.*/</expression>
+    </constraint>
+    <constraint>
+      <name>horizontalGeometryEstimatedAccuracyUoMIsMetre</name>
+      <description>The value of horizontalGeometryEstimatedAccuracy shall be given in meters.</description>
+      <expression>inv: self.horizontalGeometryEstimatedAccuracy.uom.uomSymbol='m'</expression>
+    </constraint>
+    <constraint>
+      <name>referenceGeometry</name>
+      <expression>/*For exactly one item of BuildingGeometry, the value of the attribute referenceGeometry shall be 'true'.*/</expression>
+    </constraint>
+    <constraint>
+      <name>verticalGeometryEstimatedAccuracyUoMIsMetre</name>
+      <description>The Value of verticalGeometryEstimatedAccuracy has to be given in meters.</description>
+      <expression>inv: self.verticalGeometryEstimatedAccuracy.uom.uomSymbol='m'</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49596_71892">
@@ -20754,6 +21776,10 @@
     <characterizedBy idref="_A49593_71891"></characterizedBy>
     <package idref="_P5496"></package>
     <type>Data Type</type>
+    <constraint>
+      <name>percentageSum</name>
+      <expression>/* The total of all percentages shall be less or equal to 100. */&#xD;&#xA;inv: self.percentage.sum()&lt;=100</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49593_71890">
@@ -20824,6 +21850,14 @@
     <characterizedBy idref="_A49590_71886"></characterizedBy>
     <package idref="_P5496"></package>
     <type>Data Type</type>
+    <constraint>
+      <name>atLeastOneEvent</name>
+      <expression>/*At least, one of the attributes beginning, end or anyPoint shall be supplied.*/&#xD;&#xA;inv: dateOfEvent-&gt;notEmpty()</expression>
+    </constraint>
+    <constraint>
+      <name>beginning is before anyPoint is before end</name>
+      <expression>inv: beginning &lt;= anyPoint and anyPoint &lt;= end and beginning &lt;= end</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49590_71884">
@@ -21012,6 +22046,11 @@
     <characterizedBy idref="_A49598_71912"></characterizedBy>
     <package idref="_P5496"></package>
     <type>Data Type</type>
+    <constraint>
+      <name>valueUoMIsMetre</name>
+      <description>Value shall be in meters.</description>
+      <expression>inv: self.value.uom.uomSymbol='m'</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49598_71909">
@@ -21137,6 +22176,15 @@
     <characterizedBy idref="_A49599_71913"></characterizedBy>
     <package idref="_P5497"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Building parts shall be 2D</name>
+      <expression>/*The parts of the building shall be represented using the BuildingPart type of the Buildings2D package.*/&#xD;&#xA;inv: self.parts-&gt;oclIsKindOf(Buildings2D::BuildingPart)</expression>
+    </constraint>
+    <constraint>
+      <name>singleReferenceGeometry</name>
+      <description>Exactly one geometry2D attribute must be a reference geometry, i.e. the referenceGeometry attribute must be 'true'.</description>
+      <expression>inv: self.geometry2D-&gt;select(referenceGeometry=true)-&gt;size() = 1</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49599_71913">
@@ -21174,6 +22222,11 @@
     <characterizedBy idref="_A49600_71914"></characterizedBy>
     <package idref="_P5497"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>singleReferenceGeometry</name>
+      <description>Exactly one geometry2D attribute must be a reference geometry, i.e. the referenceGeometry attribute must be 'true'.</description>
+      <expression>inv: self.geometry2D-&gt;select(referenceGeometry=true)-&gt;size() = 1</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49600_71914">
@@ -21219,6 +22272,14 @@
     <characterizedBy idref="_A49606_71933"></characterizedBy>
     <package idref="_P5498"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Building parts shall be 3D</name>
+      <expression>/*The parts of the building shall be represented using the BuildingPart type of the Buildings3D package.*/&#xD;&#xA;inv: self.parts-&gt;oclIsKindOf(Buildings3D::BuildingPart)</expression>
+    </constraint>
+    <constraint>
+      <name>GeometryWhenNoParts</name>
+      <expression>/*If a Building does not have any BuildingParts, at least the geometry3DLoD1 or geometry3DLoD2 or geometry3DLoD3 or geometry3DLoD4 attributes shall be provided.*/</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49606_71929">
@@ -21320,6 +22381,11 @@
     <characterizedBy idref="_A49604_71926"></characterizedBy>
     <package idref="_P5498"></package>
     <type>Data Type</type>
+    <constraint>
+      <name>oneGeometryToBeProvided</name>
+      <description>Either the geometryMultiSurface or the geometrySolid attribute shall be provided.</description>
+      <expression>inv: self.geometryMultiSurface-&gt;notEmpty() or self.geometrySolid-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49604_71921">
@@ -21434,6 +22500,15 @@
     <characterizedBy idref="_A49605_71928"></characterizedBy>
     <package idref="_P5498"></package>
     <type>Data Type</type>
+    <constraint>
+      <name>no point referencing in 3D</name>
+      <expression>/*The horizontalGeometryReference attribute shall not take the value entrancePoint, pointInsideBuilding or pointInsideCadastralParcel.*/&#xD;&#xA;inv: self.horizontalGeometryReference-&gt;excludesAll(Set{HorizontalGeometryReferenceValue::entrancePoint, HorizontalGeometryReferenceValue::pointInsideBuilding , HorizontalGeometryReferenceValue::pointInsideCadastralParcel})</expression>
+    </constraint>
+    <constraint>
+      <name>oneGeometryToBeProvided</name>
+      <description>Either the geometryMultiSurface or the geometrySolid attribute shall be provided.</description>
+      <expression>inv: self.geometryMultiSurface-&gt;notEmpty() or self.geometrySolid-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49605_71927">
@@ -21486,6 +22561,15 @@
     <characterizedBy idref="_A49602_71915"></characterizedBy>
     <package idref="_P5498"></package>
     <type>Data Type</type>
+    <constraint>
+      <name>no point referencing in 3D</name>
+      <expression>/*The horizontalGeometryReference attribute shall not take the value entrancePoint, pointInsideBuilding or pointInsideCadastralParcel.*/&#xD;&#xA;inv: self.horizontalGeometryReference-&gt;excludesAll(Set{HorizontalGeometryReferenceValue::entrancePoint, HorizontalGeometryReferenceValue::pointInsideBuilding , HorizontalGeometryReferenceValue::pointInsideCadastralParcel})</expression>
+    </constraint>
+    <constraint>
+      <name>oneGeometryToBeProvided</name>
+      <description>Either the geometryMultiSurface or the geometrySolid attribute shall be provided.</description>
+      <expression>inv: self.geometryMultiSurface-&gt;notEmpty() or self.geometrySolid-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49602_71915">
@@ -21526,6 +22610,10 @@
     <characterizedBy idref="_A49603_71920"></characterizedBy>
     <package idref="_P5498"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>MandatoryGeometry</name>
+      <expression>/*At least one of the geometry3DLoD1 or geometry3DLoD2 or geometry3DLoD3 or geometry3DLoD4 attributes shall be provided.*/</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49603_71916">
@@ -21715,6 +22803,10 @@
     <characterizedBy idref="_ASas51063"></characterizedBy>
     <package idref="_P5500"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>ActivityValueNACE</name>
+      <expression>At least one of the function attributes of the Holding spatial object shall be provided using the EconomicActivityNACEValue code list (for the activity attribute of the Function data type).</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureRelationship id="__Sas51063">
@@ -21988,6 +23080,14 @@
     <characterizedBy idref="_ATas51058"></characterizedBy>
     <package idref="_P5502"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Specify at least the most specific legal instrument.</name>
+      <expression>/*At least the most specific legal instrument that required the establishment of zone shall be provided using the legalBasis association role.*/</expression>
+    </constraint>
+    <constraint>
+      <name>competentAuthority.role shall be "authority"</name>
+      <expression>/*The role attribute of the competentAuthority shall take the value &amp;ldquo;authority&amp;rdquo;.*/&#xD;&#xA;inv: competentAuthority.role = RelatedPartyRoleValue::authority</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49617_71958">
@@ -23995,6 +25095,10 @@
     <characterizedBy idref="_ATas51037"></characterizedBy>
     <package idref="_P5509"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Observation and ObservingCapability</name>
+      <expression>/* If observation(s) are attached to an AbstractMonitoringFeature this shall have an ObservingCapability attached to it. The ObservingCapability shall reference the same Domain, Phenomenon and ProcessUsed as the observation(s). */&#xD;&#xA;inv: hasObservation-&gt;notEmpty() implies observingCapability-&gt;notEmpty() and hasObservation.OM_Observation.featureOfInterest = observingCapability.featureOfInterest and hasObservation.OM_Observation.observedProperty = observingCapability.observedProperty and&#xD;&#xA;hasObservation.OM_Observation.procedure = observingCapability.procedure</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49654_72097">
@@ -24478,6 +25582,15 @@
     <characterizedBy idref="_ASas51041"></characterizedBy>
     <package idref="_P5509"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>GeometryRequired</name>
+      <description>Geometry and representativePoint cannot both be empty.</description>
+      <expression>inv: geometry -&gt;notEmpty() or representativePoint -&gt;notEmpty()</expression>
+    </constraint>
+    <constraint>
+      <name>Observation and ObservingCapability</name>
+      <expression>/* If observation(s) are attached to an AbstractMonitoringFeature this shall have an ObservingCapability attached to it. The ObservingCapability shall reference the same Domain, Phenomenon and ProcessUsed as the observation(s). */&#xD;&#xA;inv: hasObservation-&gt;notEmpty() implies observingCapability-&gt;notEmpty() and hasObservation.OM_Observation.featureOfInterest = observingCapability.featureOfInterest and hasObservation.OM_Observation.observedProperty = observingCapability.observedProperty and&#xD;&#xA;hasObservation.OM_Observation.procedure = observingCapability.procedure</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49646_72091">
@@ -24651,6 +25764,10 @@
     <characterizedBy idref="_ATas51041"></characterizedBy>
     <package idref="_P5509"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Observation and ObservingCapability</name>
+      <expression>/* If observation(s) are attached to an AbstractMonitoringFeature this shall have an ObservingCapability attached to it. The ObservingCapability shall reference the same Domain, Phenomenon and ProcessUsed as the observation(s). */&#xD;&#xA;inv: hasObservation-&gt;notEmpty() implies observingCapability-&gt;notEmpty() and hasObservation.OM_Observation.featureOfInterest = observingCapability.featureOfInterest and hasObservation.OM_Observation.observedProperty = observingCapability.observedProperty and&#xD;&#xA;hasObservation.OM_Observation.procedure = observingCapability.procedure</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49669_72115">
@@ -25695,6 +26812,15 @@
     <characterizedBy idref="_A49891_72134"></characterizedBy>
     <package idref="_P5518"></package>
     <type>Data Type</type>
+    <constraint>
+      <name>LowerBoundUoMShallBeMeter</name>
+      <expression>/* Value of lowerBound shall be expressed in meters. */&#xD;&#xA;inv: self.lowerbound.uom.uomSymbol='m'</expression>
+    </constraint>
+    <constraint>
+      <name>UpperBoundUoMShallBeMeter</name>
+      <description>Value of upperBound shall be expressed in meters.</description>
+      <expression>inv: self.upperBound.uom.uomSymbol='m'</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49891_72133">
@@ -25793,6 +26919,11 @@
     <characterizedBy idref="_A49896_72151"></characterizedBy>
     <package idref="_P5518"></package>
     <type>Union Data Type</type>
+    <constraint>
+      <name>ScalarUoMShallBeMeter</name>
+      <description>Value of scalar shall be expressed in meters.</description>
+      <expression>inv: self.scalar.uom.uomSymbol='m'</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49896_72150">
@@ -26600,6 +27731,19 @@
     <characterizedBy idref="_A49912_72206"></characterizedBy>
     <package idref="_P5520"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>domainIsRectifiedGrid</name>
+      <description>the domain shall be a rectified grid.</description>
+      <expression>inv: domainSet.oclIsKindOf(CV_RectifiedGrid)</expression>
+    </constraint>
+    <constraint>
+      <name>rangeSetValuesAreOfTypeMeasure</name>
+      <expression>/* the rangeSet values shall be of type Measure. */&#xD;&#xA;inv: rangeSet.forAll(oclIsKindOf(Measure))</expression>
+    </constraint>
+    <constraint>
+      <name>gridFunctionRequiresGridDomain</name>
+      <expression>/*The grid function shall only be valid for domains that are grids */&#xD;&#xA;inv: coverageFunction.gridFunction.notEmpty() implies domainSet.oclIsKindOf(CV_Grid)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49912_72197">
@@ -28077,6 +29221,10 @@
     <characterizedBy idref="_A49931_72252"></characterizedBy>
     <package idref="_P5524"></package>
     <type>Data Type</type>
+    <constraint>
+      <name>CI95ofGMandGeometricMeanTogether</name>
+      <expression>/* CI95ofGM should be provided when geometric mean is provided */</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49931_72243">
@@ -28444,6 +29592,14 @@
     <characterizedBy idref="_A49940_72265"></characterizedBy>
     <package idref="_P5524"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>CODusability</name>
+      <expression>/* The COD code list shall be used only if the diseaseMeasureType attribute of diseaseMeasure  takes a value that represents mortality. */</expression>
+    </constraint>
+    <constraint>
+      <name>pathologiOrCODnotempty</name>
+      <expression>/* At least one of pathology and COD attributes must not be empty.  */&#xD;&#xA;&#xD;&#xA;inv: self.COD-&gt;Empty implies self.pathology-&gt; notEmpty&#xD;&#xA;inv: self.pathology-&gt;Empty implies self.COD -&gt; notEmpty</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49940_72260">
@@ -29653,6 +30809,23 @@
     <characterizedBy idref="_A49993_72354"></characterizedBy>
     <package idref="_P5529"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>rangeIsCategoryOrNill</name>
+      <expression>/*rangeSet values shall be of type CategoryOrNilReason&#xD;&#xA;&#xD;&#xA;NOTE:Range is based on either HILUCS or on a specific land use classification sytem defined by the data provider&#xD;&#xA;*/&#xD;&#xA;inv: rangeSet.forAll(oclIsKindOf(CategoryOrNilReason))</expression>
+    </constraint>
+    <constraint>
+      <name>domainIsRectifiedGrid</name>
+      <description>The domain shall be a rectified grid.</description>
+      <expression>inv: domainSet.oclIsKindOf(CV_RectifiedGrid)</expression>
+    </constraint>
+    <constraint>
+      <name>grid points shall coincide with grid cell centres</name>
+      <expression>/*Grid points of a RectifiedGridCoverage shall coincide with the centres of cells of the geographical grids defined in Section 2.2 of Annex II at any resolution level.*/</expression>
+    </constraint>
+    <constraint>
+      <name>gridFunctionRequiresGridDomain</name>
+      <expression>/*The grid function shall only be valid for domains that are grids */&#xD;&#xA;inv: coverageFunction.gridFunction.notEmpty() implies domainSet.oclIsKindOf(CV_Grid)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A49993_72348">
@@ -30151,6 +31324,10 @@
     <characterizedBy idref="_A50019_72418"></characterizedBy>
     <package idref="_P5531"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>OneMustBeFilled</name>
+      <expression>/*&#xD;&#xA;** At least one of the values must be populated with a non-void value&#xD;&#xA;*/</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50019_72415">
@@ -33362,6 +34539,10 @@
     <characterizedBy idref="_A50105_72529"></characterizedBy>
     <package idref="_P5537"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>If the "source of spatial representation" is empty, the geometry AbstractExposedElement spatial object shall be provided.</name>
+      <expression>/*If the "source of spatial representation" is empty, the geometry AbstractExposedElement spatial object shall be provided.*/&#xD;&#xA;inv: AbstractExposedElement.sourceOfSpatialRepresentation. isEmpty() implies ExposedElement.geometry.notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50105_72525">
@@ -33860,6 +35041,10 @@
     <characterizedBy idref="_A50093_72508"></characterizedBy>
     <package idref="_P5537"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>If the "source of spatial representation" is empty, the geometry AbstractExposedElement spatial object shall be provided.</name>
+      <expression>/*If the "source of spatial representation" is empty, the geometry AbstractExposedElement spatial object shall be provided.*/&#xD;&#xA;inv: AbstractExposedElement.sourceOfSpatialRepresentation. isEmpty() implies ExposedElement.geometry.notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50093_72507">
@@ -33944,6 +35129,23 @@
     <characterizedBy idref="_A50087_72498"></characterizedBy>
     <package idref="_P5537"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>DomainisrectifedGridOrReferenceableGrid</name>
+      <description>A domain is a rectified grid or referenceable grid</description>
+      <expression>inv: domainSet.oclIsKindOf(CV_RectifiedGrid) or domainSet.oclIsKindOf(CV_ReferenceableGrid)</expression>
+    </constraint>
+    <constraint>
+      <name>Range set is the levelOfVulnerability of VulnerabilityAssessment</name>
+      <expression>/* Range set is the level, or intensity, of the vulnerability assessment */ &#xD;&#xA;inv: rangeSet.oclIsKindOf(VulnerabilityAssessment.levelOfVulnerability)</expression>
+    </constraint>
+    <constraint>
+      <name>If the "source of spatial representation" is empty, the geometry AbstractExposedElement spatial object shall be provided.</name>
+      <expression>/*If the "source of spatial representation" is empty, the geometry AbstractExposedElement spatial object shall be provided.*/&#xD;&#xA;inv: AbstractExposedElement.sourceOfSpatialRepresentation. isEmpty() implies ExposedElement.geometry.notEmpty()</expression>
+    </constraint>
+    <constraint>
+      <name>gridFunctionRequiresGridDomain</name>
+      <expression>/*The grid function shall only be valid for domains that are grids */&#xD;&#xA;inv: coverageFunction.gridFunction.notEmpty() implies domainSet.oclIsKindOf(CV_Grid)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50087_72498">
@@ -34017,6 +35219,19 @@
     <subtypeOf idref="_C50397">CoverageByDomainAndRange</subtypeOf>
     <package idref="_P5537"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>DomainIsRectifiedGridOrReferenceableGrid</name>
+      <description>A domain is a rectified grid or referenceable grid</description>
+      <expression>inv: domainSet.oclIsKindOf(CV_RectifiedGrid) or domainSet.oclIsKindOf(CV_ReferenceableGrid)</expression>
+    </constraint>
+    <constraint>
+      <name>RangeSet is levelOrIntensity, or likelihoodOfOccurrence</name>
+      <expression>/*A range set is described by magnitude or intensity, or by the likelihood of occurence. As "magnitude or intensity" is modelled by the "LevelOrIntensity" data type, the constraint refers to this data type */&#xD;&#xA;&#xD;&#xA;inv: rangeSet.oclIsKindOf(levelOrIntensity) or rangeSet.oclIsKindOf(LikelihoodOfOccurrence)</expression>
+    </constraint>
+    <constraint>
+      <name>gridFunctionRequiresGridDomain</name>
+      <expression>/*The grid function shall only be valid for domains that are grids */&#xD;&#xA;inv: coverageFunction.gridFunction.notEmpty() implies domainSet.oclIsKindOf(CV_Grid)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C50098">
@@ -34031,6 +35246,10 @@
     <characterizedBy idref="_A50098_72517"></characterizedBy>
     <package idref="_P5537"></package>
     <type>Data Type</type>
+    <constraint>
+      <name>either the quantitative value or the qualitative value must be completed.</name>
+      <expression>/*either the qualitative value or the quantitative value must be completed. */&#xD;&#xA;inv: self.qualitativeValue.isEmpty()&#xD;&#xA;implies self.quantitativeValue.notEmpty()&#xD;&#xA;and self.quantitativeValue.isEmpty() implies &#xD;&#xA;self.qualitativeValue.notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50098_72515">
@@ -34081,6 +35300,10 @@
     <characterizedBy idref="_A50109_72539"></characterizedBy>
     <package idref="_P5537"></package>
     <type>Data Type</type>
+    <constraint>
+      <name>Either the qualitative likelihood or the quantitative likelihood must be completed.</name>
+      <expression>/*either the qualitative likelihood or the quantitative likelihood must be completed. */&#xD;&#xA;inv: self.qualitativeLikelihood.isEmpty()&#xD;&#xA;implies self.quantitativeLikelihood.notEmpty()&#xD;&#xA;and self.quantitativeLikelihood.isEmpty() implies &#xD;&#xA;self.qualitativeLikelihood.notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50109_72537">
@@ -34218,6 +35441,19 @@
     <subtypeOf idref="_C50397">CoverageByDomainAndRange</subtypeOf>
     <package idref="_P5537"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>DomainIsRectifiedGridOrReferenceableGrid</name>
+      <description>A domain is a rectified grid or referenceable grid</description>
+      <expression>inv: domainSet.oclIsKindOf(CV_RectifiedGrid) or domainSet.oclIsKindOf(CV_ReferenceableGrid)</expression>
+    </constraint>
+    <constraint>
+      <name>RangeSet is levelOrIntensityOr LikelihoodOfOccurrence</name>
+      <expression>/*range set is described by magnitude or intensity, or by the likelihood of occurence. As "magnitude or intensity is modeled by the "LevelOrIntensity" data type, the constraint refers to this data type */&#xD;&#xA;&#xD;&#xA;inv: rangeSet.oclIsKindOf(levelOrIntensity) or rangeSet.oclIsKindOf(LikelihoodOfOccurrence)</expression>
+    </constraint>
+    <constraint>
+      <name>gridFunctionRequiresGridDomain</name>
+      <expression>/*The grid function shall only be valid for domains that are grids */&#xD;&#xA;inv: coverageFunction.gridFunction.notEmpty() implies domainSet.oclIsKindOf(CV_Grid)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C50106">
@@ -34266,6 +35502,19 @@
     <subtypeOf idref="_C50397">CoverageByDomainAndRange</subtypeOf>
     <package idref="_P5537"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>DomainIsRectifedGridOrReferenceableGrid</name>
+      <description>A domain is a rectified grid or referenceable grid</description>
+      <expression>inv: domainSet.oclIsKindOf(CV_RectifiedGrid) or domainSet.oclIsKindOf(CV_ReferenceableGrid)</expression>
+    </constraint>
+    <constraint>
+      <name>Range set is levelOrIntensity</name>
+      <expression>/* A range set is described by level, or intensity */&#xD;&#xA;&#xD;&#xA;inv: rangeSet.oclIsKindOf(LevelOrIntensity) </expression>
+    </constraint>
+    <constraint>
+      <name>gridFunctionRequiresGridDomain</name>
+      <expression>/*The grid function shall only be valid for domains that are grids */&#xD;&#xA;inv: coverageFunction.gridFunction.notEmpty() implies domainSet.oclIsKindOf(CV_Grid)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C50101">
@@ -35085,6 +36334,10 @@
     <characterizedBy idref="_ATas50831"></characterizedBy>
     <package idref="_P5542"></package>
     <type>Data Type</type>
+    <constraint>
+      <name>valueOrSpecialValue</name>
+      <expression>/* Either the value or the specialValue attribute shall be provided. */</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50131_72556">
@@ -35347,6 +36600,9 @@
     <characterizedBy idref="_ATas51073"></characterizedBy>
     <package idref="_P5544"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>Geometry must be provided only in case that not  linkage with a building schema  entity was stablished</name>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50162_72577">
@@ -37734,6 +38990,10 @@
     <characterizedBy idref="_A50188_72643"></characterizedBy>
     <package idref="_P5546"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>noGeometry</name>
+      <expression>/* If geometry has no value, a reference to a spatial object needs to be provided. */&#xD;&#xA;inv: self.geometry-&gt;isEmpty() implies self.spatialObject-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50188_72638">
@@ -38058,6 +39318,18 @@
     <characterizedBy idref="_ASas50804"></characterizedBy>
     <package idref="_P5548"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>FoI of soil profile observations</name>
+      <expression>/*To fill the featureOfInterest property of the soil profile observations of a SoilProfile object, that same SoilProfile object shall be used.*/&#xD;&#xA;inv: self.soilProfileObservation.featureOfInterest = self</expression>
+    </constraint>
+    <constraint>
+      <name>code list for soil profile observations</name>
+      <expression>/*The observedProperty of the soil profile observation shall be specified using a value from the SoilProfileParameterNameValue code list.*/&#xD;&#xA;inv: self.soilProfileParameter.observedProperty-&gt;oclIsKindOf(SoilProfileParameterNameValue)</expression>
+    </constraint>
+    <constraint>
+      <name>result of soil profile observations</name>
+      <expression>/*The result of the soil profile observation shall be of type Number, CharacterString or RangeType.*/&#xD;&#xA;inv: self.soilProfileObservation.result-&gt;oclIsKindOf(Number) or self.soilProfileObservation.result-&gt;oclIsKindOf(CharacterString) or self.soilProfileObservation.result-&gt;oclIsKindOf(RangeType)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureRelationship id="__Sas50804">
@@ -38353,6 +39625,18 @@
     <characterizedBy idref="_ATas50803"></characterizedBy>
     <package idref="_P5548"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>FoI of soil profile observations</name>
+      <expression>/*To fill the featureOfInterest property of the soil profile observations of a SoilProfile object, that same SoilProfile object shall be used.*/&#xD;&#xA;inv: self.soilProfileObservation.featureOfInterest = self</expression>
+    </constraint>
+    <constraint>
+      <name>code list for soil profile observations</name>
+      <expression>/*The observedProperty of the soil profile observation shall be specified using a value from the SoilProfileParameterNameValue code list.*/&#xD;&#xA;inv: self.soilProfileParameter.observedProperty-&gt;oclIsKindOf(SoilProfileParameterNameValue)</expression>
+    </constraint>
+    <constraint>
+      <name>result of soil profile observations</name>
+      <expression>/*The result of the soil profile observation shall be of type Number, CharacterString or RangeType.*/&#xD;&#xA;inv: self.soilProfileObservation.result-&gt;oclIsKindOf(Number) or self.soilProfileObservation.result-&gt;oclIsKindOf(CharacterString) or self.soilProfileObservation.result-&gt;oclIsKindOf(RangeType)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureRelationship id="__Tas50803">
@@ -38608,6 +39892,18 @@
     <characterizedBy idref="_ATas50796"></characterizedBy>
     <package idref="_P5548"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>FoI of profile element observations</name>
+      <expression>/*To fill the featureOfInterest property of the profile element observations of a ProfileElement object, that same ProfileElement object shall be used.*/&#xD;&#xA;inv: self.profileElementObservation.featureOfInterest = self</expression>
+    </constraint>
+    <constraint>
+      <name>code list for profile element observations</name>
+      <expression>/*The observedProperty of the  profile element observation shall be specified using a value from the ProfileElementParameterNameValue code list.*/&#xD;&#xA;inv: self.profileElementParameter.observedProperty-&gt;oclIsKindOf(ProfileElementParameterNameValue)</expression>
+    </constraint>
+    <constraint>
+      <name>result of profile element observations</name>
+      <expression>/*The result of the profile element observation shall be of type Number, CharacterString or RangeType.*/&#xD;&#xA;inv: self.profileElementObservation.result-&gt;oclIsKindOf(Number) or self.profileElementObservation.result-&gt;oclIsKindOf(CharacterString) or self.profileElementObservation.result-&gt;oclIsKindOf(RangeType)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50246_72733">
@@ -38806,6 +40102,11 @@
     <characterizedBy idref="_A50210_72702"></characterizedBy>
     <package idref="_P5548"></package>
     <type>Data Type</type>
+    <constraint>
+      <name>intervalConstraint</name>
+      <description>at least one of the values shall not be empty</description>
+      <expression>inv: self.upperValue-&gt;notEmpty() or self.lowerValue-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50210_72700">
@@ -39010,6 +40311,18 @@
     <characterizedBy idref="_ATas50801"></characterizedBy>
     <package idref="_P5548"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>FoI of Soil derived object observations</name>
+      <expression>/*To fill the featureOfInterest property of the soil derived object observation, the same SoilDerivedObject object shall be used.*/&#xD;&#xA;inv: self.soilDerivedObjectObservation.featureOfInterest = self</expression>
+    </constraint>
+    <constraint>
+      <name>code list for parameter of soil derived objects</name>
+      <expression>/*The observedProperty of the soil derived object observation shall be specified using a value from the SoilDerivedObjectParameterNameValue code list.*/&#xD;&#xA;inv: self.soilDerivedObjectParameter.observedProperty-&gt;oclIsKindOf(SoilDerivedObjectParameterNameValue)</expression>
+    </constraint>
+    <constraint>
+      <name>results of soil derived object observations</name>
+      <expression>/*The result of the soil derived object observation shall be of type Number, CharacterString or RangeType.*/&#xD;&#xA;inv: self.soilDerivedObjectObservation.result-&gt;oclIsKindOf(Number) or self.soilDerivedObjectObservation.result-&gt;oclIsKindOf(CharacterString) or self.soilDerivedObjectObservation.result-&gt;oclIsKindOf(RangeType)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50212_72703">
@@ -39214,6 +40527,18 @@
     <characterizedBy idref="_A50258_72760"></characterizedBy>
     <package idref="_P5548"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>FoI of profile element observations</name>
+      <expression>/*To fill the featureOfInterest property of the profile element observations of a ProfileElement object, that same ProfileElement object shall be used.*/&#xD;&#xA;inv: self.profileElementObservation.featureOfInterest = self</expression>
+    </constraint>
+    <constraint>
+      <name>code list for profile element observations</name>
+      <expression>/*The observedProperty of the  profile element observation shall be specified using a value from the ProfileElementParameterNameValue code list.*/&#xD;&#xA;inv: self.profileElementParameter.observedProperty-&gt;oclIsKindOf(ProfileElementParameterNameValue)</expression>
+    </constraint>
+    <constraint>
+      <name>result of profile element observations</name>
+      <expression>/*The result of the profile element observation shall be of type Number, CharacterString or RangeType.*/&#xD;&#xA;inv: self.profileElementObservation.result-&gt;oclIsKindOf(Number) or self.profileElementObservation.result-&gt;oclIsKindOf(CharacterString) or self.profileElementObservation.result-&gt;oclIsKindOf(RangeType)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50258_72759">
@@ -39302,6 +40627,22 @@
     <characterizedBy idref="_A50205_72696"></characterizedBy>
     <package idref="_P5548"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>geogenicConstraint</name>
+      <expression>/*The attributes layerGenesisProcess, layerGenesisEnvironment, layerGenesisProcessState and layerRockType are only needed when layerType is of the value 'geogenic'*/&#xD;&#xA;&#xD;&#xA;inv: self.layerType = LayerTypeValue::geogenic implies (self.layerGenisisEnvironment.isNotEmpty() and self.layerGenisisProcess.isNotEmpty() and self.layerRockType.isNotEmpty() and layerGenesisProcessState.isNotEmpty())</expression>
+    </constraint>
+    <constraint>
+      <name>FoI of profile element observations</name>
+      <expression>/*To fill the featureOfInterest property of the profile element observations of a ProfileElement object, that same ProfileElement object shall be used.*/&#xD;&#xA;inv: self.profileElementObservation.featureOfInterest = self</expression>
+    </constraint>
+    <constraint>
+      <name>code list for profile element observations</name>
+      <expression>/*The observedProperty of the  profile element observation shall be specified using a value from the ProfileElementParameterNameValue code list.*/&#xD;&#xA;inv: self.profileElementParameter.observedProperty-&gt;oclIsKindOf(ProfileElementParameterNameValue)</expression>
+    </constraint>
+    <constraint>
+      <name>result of profile element observations</name>
+      <expression>/*The result of the profile element observation shall be of type Number, CharacterString or RangeType.*/&#xD;&#xA;inv: self.profileElementObservation.result-&gt;oclIsKindOf(Number) or self.profileElementObservation.result-&gt;oclIsKindOf(CharacterString) or self.profileElementObservation.result-&gt;oclIsKindOf(RangeType)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50205_72692">
@@ -39589,6 +40930,18 @@
     <characterizedBy idref="_ASas50796"></characterizedBy>
     <package idref="_P5548"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>FoI of soil profile observations</name>
+      <expression>/*To fill the featureOfInterest property of the soil profile observations of a SoilProfile object, that same SoilProfile object shall be used.*/&#xD;&#xA;inv: self.soilProfileObservation.featureOfInterest = self</expression>
+    </constraint>
+    <constraint>
+      <name>code list for soil profile observations</name>
+      <expression>/*The observedProperty of the soil profile observation shall be specified using a value from the SoilProfileParameterNameValue code list.*/&#xD;&#xA;inv: self.soilProfileParameter.observedProperty-&gt;oclIsKindOf(SoilProfileParameterNameValue)</expression>
+    </constraint>
+    <constraint>
+      <name>result of soil profile observations</name>
+      <expression>/*The result of the soil profile observation shall be of type Number, CharacterString or RangeType.*/&#xD;&#xA;inv: self.soilProfileObservation.result-&gt;oclIsKindOf(Number) or self.soilProfileObservation.result-&gt;oclIsKindOf(CharacterString) or self.soilProfileObservation.result-&gt;oclIsKindOf(RangeType)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50244_72721">
@@ -39814,6 +41167,18 @@
     <characterizedBy idref="_ATas50798"></characterizedBy>
     <package idref="_P5548"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>FoI of soil site observations</name>
+      <expression>/*To fill the featureOfInterest property of the soil site observations of a SoilSite object, that same SoilSite object shall be used.*/&#xD;&#xA;inv: self.soilSiteObservation.featureOfInterest = self</expression>
+    </constraint>
+    <constraint>
+      <name>code list for soil site observations</name>
+      <expression>/*The observedProperty of the soil site observation shall be specified using a value from the SoilSiteParameterNameValue code list.*/&#xD;&#xA;inv: self.soilSiteParameter.observedProperty-&gt;oclIsKindOf(SoilSiteParameterNameValue)</expression>
+    </constraint>
+    <constraint>
+      <name>result of soil site observations</name>
+      <expression>/*The result of the soil site observation shall be of type Number, CharacterString or RangeType.*/&#xD;&#xA;inv: self.soilSiteObservation.result-&gt;oclIsKindOf(Number) or self.soilSiteObservation.result-&gt;oclIsKindOf(CharacterString) or self.soilSiteObservation.result-&gt;oclIsKindOf(RangeType)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50254_72748">
@@ -40008,6 +41373,23 @@
     <characterizedBy idref="_ATas50793"></characterizedBy>
     <package idref="_P5548"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>rangeSetValuesConstraint</name>
+      <expression>/*rangeSet values shall be of type Number, CharacterString or RangeType.*/&#xD;&#xA;inv: rangeSet-&gt;oclIsKindOf(Number) or rangeSet-&gt;oclIsKindOf(Characterstring) or rangeSet-&gt;oclIsKindOf(RangeType)</expression>
+    </constraint>
+    <constraint>
+      <name>domainIsRectifiedGrid</name>
+      <description>The domain shall be a rectified grid.</description>
+      <expression>inv: domainSet.oclIsKindOf(CV_RectifiedGrid)</expression>
+    </constraint>
+    <constraint>
+      <name>grid points shall coincide with grid cell centres</name>
+      <expression>/*Grid points of a RectifiedGridCoverage shall coincide with the centres of cells of the geographical grids defined in Section 2.2 of Annex II at any resolution level.*/</expression>
+    </constraint>
+    <constraint>
+      <name>gridFunctionRequiresGridDomain</name>
+      <expression>/*The grid function shall only be valid for domains that are grids */&#xD;&#xA;inv: coverageFunction.gridFunction.notEmpty() implies domainSet.oclIsKindOf(CV_Grid)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50252_72740">
@@ -40163,6 +41545,23 @@
     <characterizedBy idref="_ASas50793"></characterizedBy>
     <package idref="_P5548"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>rangeSetValuesConstraint</name>
+      <expression>/*rangeSet values shall be of type Number, CharacterString or RangeType.*/&#xD;&#xA;inv: rangeSet-&gt;oclIsKindOf(Number) or rangeSet-&gt;oclIsKindOf(Characterstring) or rangeSet-&gt;oclIsKindOf(RangeType)</expression>
+    </constraint>
+    <constraint>
+      <name>domainIsRectifiedGrid</name>
+      <description>The domain shall be a rectified grid.</description>
+      <expression>inv: domainSet.oclIsKindOf(CV_RectifiedGrid)</expression>
+    </constraint>
+    <constraint>
+      <name>grid points shall coincide with grid cell centres</name>
+      <expression>/*Grid points of a RectifiedGridCoverage shall coincide with the centres of cells of the geographical grids defined in Section 2.2 of Annex II at any resolution level.*/</expression>
+    </constraint>
+    <constraint>
+      <name>gridFunctionRequiresGridDomain</name>
+      <expression>/*The grid function shall only be valid for domains that are grids */&#xD;&#xA;inv: coverageFunction.gridFunction.notEmpty() implies domainSet.oclIsKindOf(CV_Grid)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50245_72729">
@@ -40654,6 +42053,10 @@
     <subtypeOf idref="_C50278">Shoreline</subtypeOf>
     <package idref="_P5550"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>coastline is special case of shoreline at Mean High Water Level</name>
+      <expression>/*Coastline is a special case of shoreline at Mean High Water Level. Coastline is the boundary between land and sea to be used for viewing, discovery and general purpose applications where a land/marine boundary is required. Where there is not significant variation in water level, MSL can be used as a substitute for MHW */</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C50288">
@@ -41076,6 +42479,10 @@
     <characterizedBy idref="_ATas50782"></characterizedBy>
     <package idref="_P5550"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>geometry should be a GM_Point or GM_Surface</name>
+      <expression>&#xD;&#xA;/* A Marine Layer can be represented as either a surface or a point.  The point type geometry reflects the reality that many Marine Layers are identified by point observations. */&#xD;&#xA;inv:self.geometry.oclIsKindOf(GM_Point) OR self.geometry.oclIsKindOf(GM_Surface)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50284_72782">
@@ -41209,6 +42616,11 @@
     <characterizedBy idref="_A50269_72765"></characterizedBy>
     <package idref="_P5550"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>extent.waterLevel must be meanHighWater</name>
+      <description>Sea is defined at Mean High Water.  This constraint can be relaxed if there is not significant tidal variation in water level</description>
+      <expression>inv: self.extent.waterLevel = 'meanHighWater'</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50269_72765">
@@ -41404,6 +42816,10 @@
     <characterizedBy idref="_A50275_72771"></characterizedBy>
     <package idref="_P5550"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>geometry should be a GM_Point or GM_Surface</name>
+      <expression>&#xD;&#xA;/* A Marine Layer can be represented as either a surface or a point.  The point type geometry reflects the reality that many Marine Layers are identified by point observations. */&#xD;&#xA;inv:self.geometry.oclIsKindOf(GM_Point) OR self.geometry.oclIsKindOf(GM_Surface)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50275_72771">
@@ -41458,6 +42874,10 @@
     <characterizedBy idref="_A50268_72764"></characterizedBy>
     <package idref="_P5550"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>geometry should be a GM_Point or GM_Surface</name>
+      <expression>&#xD;&#xA;/* A Marine Layer can be represented as either a surface or a point.  The point type geometry reflects the reality that many Marine Layers are identified by point observations. */&#xD;&#xA;inv:self.geometry.oclIsKindOf(GM_Point) OR self.geometry.oclIsKindOf(GM_Surface)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50268_72764">
@@ -41800,6 +43220,10 @@
     <characterizedBy idref="_ATas50774"></characterizedBy>
     <package idref="_P5553"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>resolutionTypeConstraint</name>
+      <expression>/* If the coordinate reference system is a projected one, the resolution shall be a length. Otherwise, it shall be an angle. */</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50303_72791">
@@ -41991,6 +43415,22 @@
     <characterizedBy idref="_ATas50772"></characterizedBy>
     <package idref="_P5553"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>cellCodeConstraint</name>
+      <expression>/*&#xD;&#xA;The code shall be composed of:&#xD;&#xA;(1)	A coordinate reference system part, represented by the word CRS, followed by the EPSG code.&#xD;&#xA;(2)	A resolution and position part:&#xD;&#xA;&amp;ndash;	If the coordinate reference system is projected, the word RES followed by the grid resolution in meters and the letter m. Then, the letter N followed by the northing value in meters, and the letter E followed by the easting value in meters.&#xD;&#xA;&amp;ndash;	If the coordinate reference system is not projected, the word RES followed by the grid resolution in degree-minute-second, followed by the word dms. Then the word LON followed by the longitude value in degree-minute-second, and word LAT followed by the latitude value in degree-minute-second.&#xD;&#xA;For both cases, the given position shall be the position of the lower left cell corner.&#xD;&#xA;*/</expression>
+    </constraint>
+    <constraint>
+      <name>gridPositionRangeConstraint</name>
+      <expression>/* The cell position should be within the grid, according to its width and height */</expression>
+    </constraint>
+    <constraint>
+      <name>spatialRepresentationConstraint</name>
+      <expression>/* At least one of the attributes code, geographicalPosition, gridPosition or geometry shall be provided */</expression>
+    </constraint>
+    <constraint>
+      <name>spatialRepresentationsConsistencyConstraint</name>
+      <expression>/* Where several spatial representations are provided (code, geographicalPosition, gridPosition and geometry), they shall be consistent */</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50305_72799">
@@ -42173,6 +43613,14 @@
     <characterizedBy idref="_ATas50764"></characterizedBy>
     <package idref="_P5554"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>AreaStatisticalUnitsGeometryConstraint</name>
+      <expression>/* The reference geometry of an area statistical units should be a GM_MultiSurface. */</expression>
+    </constraint>
+    <constraint>
+      <name>AreaStatisticalUnitsConstraint</name>
+      <expression>/* Vector statistical units with a reference geometry instance of GM_MultiSurface must be instances of the specialised class AreaStatisticalUnit. */</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50312_72814">
@@ -42356,6 +43804,30 @@
     <characterizedBy idref="_ATas50771"></characterizedBy>
     <package idref="_P5554"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>AggregationConstraint</name>
+      <expression>/* An evolution with a typeValue "aggregation" shall have at least two initial unit versions (the units to be aggregated) and a single final one (the resulting aggregation). */</expression>
+    </constraint>
+    <constraint>
+      <name>ChangeConstraint</name>
+      <expression>/* An evolution with a typeValue "change" shall have one initial unit version and one final one. */</expression>
+    </constraint>
+    <constraint>
+      <name>ConsistencyConstraint</name>
+      <expression>/* Evolution representations shall be consistent with the versions of the concerned objects. */</expression>
+    </constraint>
+    <constraint>
+      <name>CreationConstraint</name>
+      <expression>/* An evolution with a typeValue "creation" shall not have any initial unit versions and only one final one. */</expression>
+    </constraint>
+    <constraint>
+      <name>DeletionConstraint</name>
+      <expression>/* An evolution with a typeValue "deletion" shall have one initial unit version and no final one. */</expression>
+    </constraint>
+    <constraint>
+      <name>SplittingConstraint</name>
+      <expression>/* An evolution with a typeValue "splitting" shall have a single initial unit version (the unit to split), and at least two final ones (the units resulting from the splitting). */</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50314_72817">
@@ -42536,6 +44008,14 @@
     <characterizedBy idref="_A50315_72823"></characterizedBy>
     <package idref="_P5554"></package>
     <type>Data Type</type>
+    <constraint>
+      <name>GeneralisedGeometryConstraint</name>
+      <expression>/* The mostDetailedScale and leastDetailedScale fields shall be provided only for geometry descriptors with a type generalisedGeometry */</expression>
+    </constraint>
+    <constraint>
+      <name>ScaleRelationConstraint</name>
+      <expression>/* If provided, mostDetailedScale shall be smaller than leastDetailedScale */</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50315_72821">
@@ -42687,6 +44167,10 @@
     <characterizedBy idref="_ASas50769"></characterizedBy>
     <package idref="_P5554"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>AreaStatisticalUnitsConstraint</name>
+      <expression>/* Vector statistical units with a reference geometry instance of GM_MultiSurface must be instances of the specialised class AreaStatisticalUnit. */</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50307_72805">
@@ -43029,6 +44513,10 @@
     <characterizedBy idref="_A50324_72837"></characterizedBy>
     <package idref="_P5556"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>endLifespanVersion</name>
+      <expression>/* If set, the date endLifespanVersion shall be later than beginLifespanVersion. */&#xD;&#xA;inv: self.endLifespanVersion .isAfter(self.beginLifespanVersion)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50324_72831">
@@ -43476,6 +44964,14 @@
     <characterizedBy idref="_A50357_72878"></characterizedBy>
     <package idref="_P5559"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>"TelecommunicationsAppurtenanceTypeValue" is not in IR</name>
+    </constraint>
+    <constraint>
+      <name>All utility node objects have inspireId</name>
+      <description>All utility node objects have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50357_72877">
@@ -43554,6 +45050,11 @@
     <subtypeOf idref="_C50344">UtilityLinkSet</subtypeOf>
     <package idref="_P5559"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All utility link objects have inspireId</name>
+      <description>All utility link objects have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C50348">
@@ -43574,6 +45075,16 @@
     <characterizedBy idref="_ASas50740"></characterizedBy>
     <package idref="_P5559"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>"Duct" shall not have a "utilityDeliveryType"</name>
+      <description>The multiplicity of "utilityDeliveryType" shall be 0</description>
+      <expression>inv: utilityDeliveryType-&gt;size()=0</expression>
+    </constraint>
+    <constraint>
+      <name>All utility link objects have inspireId</name>
+      <description>All utility link objects have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50348_72865">
@@ -43727,6 +45238,11 @@
     <characterizedBy idref="_ASas50751"></characterizedBy>
     <package idref="_P5559"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All utility link objects have inspireId</name>
+      <description>All utility link objects have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50345_72860">
@@ -44013,6 +45529,11 @@
     <characterizedBy idref="_A50344_72859"></characterizedBy>
     <package idref="_P5559"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All utility link objects have inspireId</name>
+      <description>All utility link objects have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50344_72858">
@@ -44078,6 +45599,14 @@
     <characterizedBy idref="_ASas50759"></characterizedBy>
     <package idref="_P5559"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>"telecommunications" value of "utilityNetworkType" is not in IR</name>
+      <expression>/*The multiplicity of "telecommunications" shall be 0*/&#xD;&#xA;inv: telecommunications-&gt;size()=0</expression>
+    </constraint>
+    <constraint>
+      <name>All utility network objects have inspireId</name>
+      <expression>/* All utility network objects have an external object identifier. */&#xD;&#xA;inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50341_72848">
@@ -44403,6 +45932,11 @@
     <subtypeOf idref="_C50434">Node</subtypeOf>
     <package idref="_P5559"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All utility node objects have inspireId</name>
+      <description>All utility node objects have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C50346">
@@ -44975,6 +46509,11 @@
     <characterizedBy idref="_A50363_72911"></characterizedBy>
     <package idref="_P5560"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All utility link objects have inspireId</name>
+      <description>All utility link objects have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50363_72910">
@@ -45133,6 +46672,11 @@
     <characterizedBy idref="_A50364_72912"></characterizedBy>
     <package idref="_P5561"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All utility link objects have inspireId</name>
+      <description>All utility link objects have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50364_72912">
@@ -45941,6 +47485,11 @@
     <characterizedBy idref="_A50368_72970"></characterizedBy>
     <package idref="_P5562"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All utility link objects have inspireId</name>
+      <description>All utility link objects have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50368_72970">
@@ -46354,6 +47903,14 @@
     <characterizedBy idref="_A50372_73013"></characterizedBy>
     <package idref="_P5563"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>"TelecommunicationsCable" is not in IR</name>
+    </constraint>
+    <constraint>
+      <name>All utility link objects have inspireId</name>
+      <description>All utility link objects have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50372_73013">
@@ -46483,6 +48040,11 @@
     <characterizedBy idref="_A50373_73014"></characterizedBy>
     <package idref="_P5564"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All utility link objects have inspireId</name>
+      <description>All utility link objects have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50373_73014">
@@ -46926,6 +48488,11 @@
     <characterizedBy idref="_A50375_73015"></characterizedBy>
     <package idref="_P5565"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>All utility link objects have inspireId</name>
+      <description>All utility link objects have an external object identifier.</description>
+      <expression>inv:inspireId-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50375_73015">
@@ -47198,6 +48765,10 @@
     <subtypeOf idref="_C50401">DiscreteCoverageGeometryValuePairs</subtypeOf>
     <package idref="_P5571"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>geometryIsTimeInstant</name>
+      <expression>/* domain elements are points */&#xD;&#xA;inv: element.geometry.oclIsKindOf(TM_Instant)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <ApplicationSchema id="_P5575">
@@ -48279,6 +49850,18 @@
     <definition>The result of a GridObservation is a discrete coverage within a compound spatiotemporal CRS where the domain consists of a two- or three-dimensional grid of points, all having the same time instant temporal component.</definition>
     <package idref="_P5581"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>featureOfInterest must be a SF_SamplingSolid or SF_SamplingSurface</name>
+      <expression>/*featureOfInterest must be a SF_SamplingSolid or SF_SamplingSurface */&#xD;&#xA;inv: self.featureOfInterest-&gt;forAll(oclIsKindOf(SF_SamplingSolid))&#xD;&#xA;OR&#xD;&#xA;inv: self.featureOfInterest-&gt;forAll(oclIsKindOf(SF_SamplingSurface))</expression>
+    </constraint>
+    <constraint>
+      <name>phenomenonTime must be a TM_Instant</name>
+      <expression>/*phenomenonTime must be a TM_Instant*/&#xD;&#xA;inv: self.phenomenonTime.oclIsKindOf(TM_Instant)</expression>
+    </constraint>
+    <constraint>
+      <name>result must be a RectifiedGridCoverage or ReferenceableGridCoverage</name>
+      <expression>/*result must be a RectifiedGridCoverage or RefererencableGridCoverage*/&#xD;&#xA;inv: self.result.oclIsKindOf(RectifiedGridCoverage) OR self.result.oclIsKindOf(ReferenceableGridCoverage)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C50475">
@@ -48293,6 +49876,21 @@
     <definition>The result of a GridSeriesObservation is a discrete coverage within a compound spatiotemporal CRS where the domain consists of a series of two- or three-dimensional grids of points, each at a successive time instant.</definition>
     <package idref="_P5581"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>One of the axes of the domain must be a temporal axis.</name>
+    </constraint>
+    <constraint>
+      <name>featureOfInterest must be a SF_SamplingSolid</name>
+      <expression>/*featureOfInterest must be a SF_SamplingSolid */&#xD;&#xA;inv: self.featureOfInterest-&gt;forAll(oclIsKindOf(SF_SamplingSolid))</expression>
+    </constraint>
+    <constraint>
+      <name>phenomenonTime must be a TM_Period</name>
+      <expression>/* phenomenonTime must be a TM_Period */&#xD;&#xA;inv: self.phenomenonTime.oclIsKindOf(TM_Period)</expression>
+    </constraint>
+    <constraint>
+      <name>result must be a RectifiedGridCoverage or ReferenceableGridCoverage</name>
+      <expression>/* result must be a RectifiedGridCoverage or a ReferenceableGridCoverage */&#xD;&#xA;inv: self.result.oclIsKindOf(RectifiedGridCoverage) OR self.result.oclIsKindOf(ReferenceableGridCoverage)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C50491">
@@ -48305,6 +49903,18 @@
     <definition>The MultiPointObservation is an Observation that represents a set of measurements all made at exactly the same time but at different locations, for example a distributed sensor network reporting the temperature at 10am. The result of this observation is a MultiPointCoverage.</definition>
     <package idref="_P5582"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>featureOfInterest shall be a SF_SamplingSurface</name>
+      <expression>/* featureOfInterest must be a SF_SamplingSurface */ &#xD;&#xA;inv: self.featureOfInterest-&gt;forAll(oclIsKindOf(SF_SamplingSurface))</expression>
+    </constraint>
+    <constraint>
+      <name>phenomenonTime shall be a TM_Instant</name>
+      <expression>/*phenomenonTime must be a TM_Instant */&#xD;&#xA;inv: self.phenomenonTime.oclIsKindOf(TM_Instant)</expression>
+    </constraint>
+    <constraint>
+      <name>result must be a MultiPointCoverage</name>
+      <expression>/* result must be a MultiPointCoverage */&#xD;&#xA;inv: self.result.oclIsKindOf(MultiPointCoverage)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C50492">
@@ -48317,6 +49927,18 @@
     <definition>The PointObservation represents a single measurement or estimation of a property at a single point in time and space. For example a single temperture measurement at a fixed weather station.</definition>
     <package idref="_P5582"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>featureOfInterest must be a SF_SamplingPoint</name>
+      <expression>/* featureOfInterest must be a SF_SamplingPoint */&#xD;&#xA;inv: self.featureOfInterest-&gt;forAll(oclIsKindOf(SF_SamplingPoint))</expression>
+    </constraint>
+    <constraint>
+      <name>phenomenonTime must be a TM_Instant</name>
+      <expression>/* phenomenonTime must be a TM_Instant */&#xD;&#xA;inv: self.phenomenonTime.oclIsKindOf(TM_Instant)</expression>
+    </constraint>
+    <constraint>
+      <name>result must be a CV_DiscretePointCoverage</name>
+      <expression>/* result must be a CV_DiscretePointCoverage */&#xD;&#xA;inv: self.result.oclIsKindOf(CV_DiscretePointCoverage)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C50485">
@@ -48330,6 +49952,10 @@
     <subtypeOf idref="_C50457">ObservationSet</subtypeOf>
     <package idref="_P5582"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>member shall be of type PointObservation</name>
+      <expression>/* each member shall be a PointObservation */&#xD;&#xA;inv: self.member.oclIsKindOf(PointObservation)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C50498">
@@ -48342,6 +49968,18 @@
     <definition>A PointTimeSeriesObservation is a time series of observations made at the same fixed spatial location e.g. Measurements made repeatedly by a fixed monitoring instrument.</definition>
     <package idref="_P5582"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>featureOfInterest must be a SF_SamplingPoint</name>
+      <expression>/* featureOfInterest must be a SF_SamplingPoint */&#xD;&#xA;inv: self.featureOfInterest-&gt;forAll(oclIsKindOf(SF_SamplingPoint))</expression>
+    </constraint>
+    <constraint>
+      <name>phenomenonTime must be a TM_Period</name>
+      <expression>/*phenomenonTime must be a TM_Period */&#xD;&#xA;inv: self.phenomenonTime.oclIsKindOf(TM_Period)</expression>
+    </constraint>
+    <constraint>
+      <name>result must be a TimeSeries</name>
+      <expression>/* result must be a Timeseries */&#xD;&#xA;inv: self.result.oclIsKindOf(TimeSeries)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C50513">
@@ -48356,6 +49994,21 @@
     <definition>A ProfileObservatation is an Observation representing  the measurement of a property along a vertical profice in space at a single time instant. For example a CTD profile measuring salinty at different depths in the ocean.</definition>
     <package idref="_P5583"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>featureOfInterest must be a SF_SamplingCurve</name>
+      <expression>/* featureOfInterest must be a SF_SamplingCurve */&#xD;&#xA;inv: self.featureOfInterest-&gt;forAll(oclIsKindOf(SF_SamplingCurvet))</expression>
+    </constraint>
+    <constraint>
+      <name>phenomenonTime must be a TM_Instant</name>
+      <expression>/*phenomenonTime must be a TM_Instant */&#xD;&#xA;inv: self.phenomenonTime.oclIsKindOf(TM_Instant)</expression>
+    </constraint>
+    <constraint>
+      <name>result must be a ReferenceableGridCoverage or RectifiedGridCoverage</name>
+      <expression>/*result must be a ReferenceableGridCoverage or a RectifiedGridCoverage */&#xD;&#xA;inv: self.result.oclIsKindOf(ReferenceableGridCoverage)&#xD;&#xA;OR&#xD;&#xA;inv: self.result.oclIsKindOf(RectifiedGridCoverage)</expression>
+    </constraint>
+    <constraint>
+      <name>spatial domain of the result shall contain one axis and that shall be vertical</name>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureType id="_C50509">
@@ -48397,6 +50050,22 @@
     <definition>A TrajectoryObservatation is an Observation representing  the measurement of a property along a meandering curve in time and space. For example a Pollutant concentration from a mobile air quality sensor.</definition>
     <package idref="_P5583"></package>
     <type>Spatial Object Type</type>
+    <constraint>
+      <name>featureOfInterest must be a SF_SamplingCurve</name>
+      <expression>/*featureOfInterest must be a SF_SamplingPoint*/&#xD;&#xA;inv: self.featureOfInterest-&gt;forAll(oclIsKindOf(SF_SamplingPoint))</expression>
+    </constraint>
+    <constraint>
+      <name>phenomenonTime must be a TM_Period</name>
+      <expression>/* phenomenonTime must be a TM_Period */&#xD;&#xA;inv: self.phenomenonTime.oclIsKindOf(TM_Period)</expression>
+    </constraint>
+    <constraint>
+      <name>result must be a TimeSeries</name>
+      <expression>/* result must be a Timeseries */&#xD;&#xA;inv: self.result.oclIsKindOf(TimeSeries)</expression>
+    </constraint>
+    <constraint>
+      <name>result.point must be TimeLocationValueTriple</name>
+      <expression>/* each point in the result must be a TimeLocationValueTriple */&#xD;&#xA;inv: self.result.point.oclIsKindOf(TimeLocationValueTriple)</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <ApplicationSchema id="_P5584">
@@ -50593,6 +52262,11 @@
     <characterizedBy idref="_A50549_73232"></characterizedBy>
     <package idref="_P5587"></package>
     <type>Object Type</type>
+    <constraint>
+      <name>Provide_linkToLegislativeInstrument_or_journalCitation</name>
+      <description>If the link attribute is void, the journal citation shall be provided.</description>
+      <expression>inv: link-&gt;notEmpty() or  journalCitation-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50549_73227">
@@ -50884,6 +52558,11 @@
     <characterizedBy idref="_A50546_73220"></characterizedBy>
     <package idref="_P5587"></package>
     <type>Data Type</type>
+    <constraint>
+      <name>individual, organisation or position name shall be provided</name>
+      <description>At least the individual, organisation or position name shall be provided.</description>
+      <expression>inv: individualName-&gt;notEmpty() or organisationName-&gt;notEmpty() or positionName-&gt;notEmpty()</expression>
+    </constraint>
     <taggedValues></taggedValues>
   </FeatureType>
   <FeatureAttribute id="_A50546_73216">

@@ -110,7 +110,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../EA13/EA11/EA2776.htm">MD_StandardOrderProcess</a></i><br /><strong>&nbsp;&nbsp;accessProperties</strong>
+					<i>Public <a href="../../EA7/EA1/EA2/EA2/EA1556.htm">GenericName</a></i><br /><strong>&nbsp;&nbsp;serviceType</strong>
 				</td>
 			</tr>
 			<tr>
@@ -136,7 +136,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes5357_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes5357_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -159,7 +159,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			A entity imported from ISO 19115, including:&lt;br/&gt;- Fees&lt;br/&gt;-Planned availability date and time&lt;br/&gt;- Ordering instructions&lt;br/&gt;-Turnaround&lt;br/&gt;
+			A service type name from a registry of services. For, example, OGC may be the name space and catalogue may be the identifier.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -168,7 +168,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA3625.htm">SV_CoupledResource</a></i><br /><strong>&nbsp;&nbsp;couplingResource</strong>
+					<i>Public <a href="../../EA7/EA1/EA3/EA5/EA1709.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;serviceTypeVersion</strong>
 				</td>
 			</tr>
 			<tr>
@@ -211,12 +211,22 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						&nbsp;
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Provides for searching based on the version of serviceType. For example, we may only be interested in OGC Catalogue V1.1 Services. By maintaining version as a separate attribute, users can easily search for all services of a type regardless of the version.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public SV_CouplingType</i><br /><strong>&nbsp;&nbsp;couplingType</strong>
+					<i>Public <a href="../../EA13/EA11/EA2776.htm">MD_StandardOrderProcess</a></i><br /><strong>&nbsp;&nbsp;accessProperties</strong>
 				</td>
 			</tr>
 			<tr>
@@ -242,7 +252,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes5359_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes5359_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -259,12 +269,22 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						&nbsp;
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			A entity imported from ISO 19115, including:&lt;br/&gt;- Fees&lt;br/&gt;-Planned availability date and time&lt;br/&gt;- Ordering instructions&lt;br/&gt;-Turnaround&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public EX_Extent</i><br /><strong>&nbsp;&nbsp;extent</strong>
+					<i>Public <a href="../../EA13/EA4/EA2528.htm">MD_Constraints</a></i><br /><strong>&nbsp;&nbsp;restrictions</strong>
 				</td>
 			</tr>
 			<tr>
@@ -290,7 +310,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes5360_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to *</td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes5360_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -312,7 +332,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../EA13/EA4/EA2528.htm">MD_Constraints</a></i><br /><strong>&nbsp;&nbsp;restrictions</strong>
+					<i>Public EX_Extent</i><br /><strong>&nbsp;&nbsp;extent</strong>
 				</td>
 			</tr>
 			<tr>
@@ -338,7 +358,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes5361_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
+							<td>Range:0 to *</td>
 						</tr>
 						<tr id="DetailsImageAttributes5361_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -360,7 +380,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../EA7/EA1/EA2/EA2/EA1556.htm">GenericName</a></i><br /><strong>&nbsp;&nbsp;serviceType</strong>
+					<i>Public SV_CouplingType</i><br /><strong>&nbsp;&nbsp;couplingType</strong>
 				</td>
 			</tr>
 			<tr>
@@ -403,22 +423,12 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			A service type name from a registry of services. For, example, OGC may be the name space and catalogue may be the identifier.&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
+						&nbsp;
 						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../EA7/EA1/EA3/EA5/EA1709.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;serviceTypeVersion</strong>
+					<i>Public <a href="EA3625.htm">SV_CoupledResource</a></i><br /><strong>&nbsp;&nbsp;couplingResource</strong>
 				</td>
 			</tr>
 			<tr>
@@ -461,17 +471,7 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Provides for searching based on the version of serviceType. For example, we may only be interested in OGC Catalogue V1.1 Services. By maintaining version as a separate attribute, users can easily search for all services of a type regardless of the version.&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
+						&nbsp;
 						
 				</td>
 			</tr>

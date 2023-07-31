@@ -110,7 +110,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../EA2/EA2/EA1/EA8069.htm">EventEnvironmentTerm</a></i><br /><strong>&nbsp;&nbsp;layerGenesisEnvironment</strong>
+					<i>Public <a href="EA9126.htm">LayerTypeValue</a></i><br /><strong>&nbsp;&nbsp;layerType</strong>
 				</td>
 			</tr>
 			<tr>
@@ -128,7 +128,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes15028_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td>&lt;&lt;voidable&gt;&gt;</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes15028_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
@@ -136,7 +136,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes15028_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes15028_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -159,16 +159,26 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Name --&lt;br/&gt;layer genesis environment&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;setting in which the last non-pedogenic process (geologic or anthropogenic) that coined the material composition and internal structure of the layer took place.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;The material in which a soil develops is influenced by the environmental situation in which the processes of its formation took place, e.g. sedimentation from water results in quite differently structured layers when it has been deposited in running water than in a lake.&lt;br/&gt;&lt;br/&gt;
+			-- Name --&lt;br/&gt;layer type&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;assignation of a layer according to the concept that fits its kind.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;EXAMPLE Topsoil: meaning the upper part of the natural mineral soil that is generally dark coloured and has a higher content of organic matter and nutrients when compared to the mineral horizons below.&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
 
-						
+						<i>Constraints:</i><br><span style= "margin-left: .5cm;">&nbsp; layer name constraint </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			::/*one concept of layer naming in a profile is &quot;topsoil - subsoil&quot;, other concepts are possible f.e. geological approach, two different concepts should not be mixed in one profile description*/
+		</td>
+	</td>
+</table> 
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../EA2/EA2/EA1/EA8070.htm">EventProcessTerm</a></i><br /><strong>&nbsp;&nbsp;layerGenesisProcess</strong>
+					<i>Public <a href="../../../EA2/EA2/EA1/EA8083.htm">LithologyTerm</a></i><br /><strong>&nbsp;&nbsp;layerRockType</strong>
 				</td>
 			</tr>
 			<tr>
@@ -194,7 +204,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes15029_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
+							<td>Range:0 to *</td>
 						</tr>
 						<tr id="DetailsImageAttributes15029_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -217,7 +227,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Name --&lt;br/&gt;layer genesis process&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;last non-pedogenic process (geologic or anthropogenic) that coined the material composition and internal structure of the layer.&lt;br/&gt;&lt;br/&gt;
+			-- Name --&lt;br/&gt;layer rock type&lt;br/&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;br/&gt;&lt;/font&gt;-- Definition --&lt;br/&gt;type of the material in which the layer developed.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;simplified list of&#160;&#160;terms to &ldquo;classify&rdquo; geologic units&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -226,7 +236,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA9125.htm">LayerGenesisProcessStateValue</a></i><br /><strong>&nbsp;&nbsp;layerGenesisProcessState</strong>
+					<i>Public <a href="../../../EA2/EA2/EA1/EA8070.htm">EventProcessTerm</a></i><br /><strong>&nbsp;&nbsp;layerGenesisProcess</strong>
 				</td>
 			</tr>
 			<tr>
@@ -268,14 +278,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					Obligation=implementingRule<br>
+					obligation=implementingRule<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Name --&lt;br/&gt;layer genesis process state&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;indication whether the process specified in layerGenesisProcess is on-going or seized in the past.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;Process state gives an idea whether current non-pedogenic processes affect the soil or not. E.g. on current floodplains, input of sediments during seasonal flooding events is received, with comparatively young soil development in it, while in older fluvial sediments that are no longer under a regime of seasonal or irregular flooding, soil development might be more advanced.&lt;br/&gt;&lt;br/&gt;
+			-- Name --&lt;br/&gt;layer genesis process&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;last non-pedogenic process (geologic or anthropogenic) that coined the material composition and internal structure of the layer.&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -284,7 +294,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../EA2/EA2/EA1/EA8083.htm">LithologyTerm</a></i><br /><strong>&nbsp;&nbsp;layerRockType</strong>
+					<i>Public <a href="../../../EA2/EA2/EA1/EA8069.htm">EventEnvironmentTerm</a></i><br /><strong>&nbsp;&nbsp;layerGenesisEnvironment</strong>
 				</td>
 			</tr>
 			<tr>
@@ -310,7 +320,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes15031_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to *</td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes15031_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -333,7 +343,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Name --&lt;br/&gt;layer rock type&lt;br/&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;br/&gt;&lt;/font&gt;-- Definition --&lt;br/&gt;type of the material in which the layer developed.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;simplified list of&#160;&#160;terms to &ldquo;classify&rdquo; geologic units&lt;br/&gt;&lt;br/&gt;
+			-- Name --&lt;br/&gt;layer genesis environment&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;setting in which the last non-pedogenic process (geologic or anthropogenic) that coined the material composition and internal structure of the layer took place.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;The material in which a soil develops is influenced by the environmental situation in which the processes of its formation took place, e.g. sedimentation from water results in quite differently structured layers when it has been deposited in running water than in a lake.&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -342,7 +352,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA9126.htm">LayerTypeValue</a></i><br /><strong>&nbsp;&nbsp;layerType</strong>
+					<i>Public <a href="EA9125.htm">LayerGenesisProcessStateValue</a></i><br /><strong>&nbsp;&nbsp;layerGenesisProcessState</strong>
 				</td>
 			</tr>
 			<tr>
@@ -360,7 +370,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes15032_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
+							<td>&lt;&lt;voidable&gt;&gt;</td>
 						</tr>
 						<tr id="DetailsImageAttributes15032_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
@@ -368,7 +378,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes15032_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes15032_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -384,29 +394,19 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					obligation=implementingRule<br>
+					Obligation=implementingRule<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Name --&lt;br/&gt;layer type&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;assignation of a layer according to the concept that fits its kind.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;EXAMPLE Topsoil: meaning the upper part of the natural mineral soil that is generally dark coloured and has a higher content of organic matter and nutrients when compared to the mineral horizons below.&lt;br/&gt;&lt;br/&gt;
+			-- Name --&lt;br/&gt;layer genesis process state&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;indication whether the process specified in layerGenesisProcess is on-going or seized in the past.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;Process state gives an idea whether current non-pedogenic processes affect the soil or not. E.g. on current floodplains, input of sediments during seasonal flooding events is received, with comparatively young soil development in it, while in older fluvial sediments that are no longer under a regime of seasonal or irregular flooding, soil development might be more advanced.&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
 
-						<i>Constraints:</i><br><span style= "margin-left: .5cm;">&nbsp; layer name constraint </span>
-<table>
-	<tr>
-		<td>
-			<span style= "margin-left: 1.5cm;"> <span>
-		</td>
-		<td>
-			::/*one concept of layer naming in a profile is &quot;topsoil - subsoil&quot;, other concepts are possible f.e. geological approach, two different concepts should not be mixed in one profile description*/
-		</td>
-	</td>
-</table> 
+						
 				</td>
 			</tr>
 	</table>

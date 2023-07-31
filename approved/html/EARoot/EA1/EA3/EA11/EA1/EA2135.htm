@@ -111,7 +111,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../EA13/EA5/EA2621.htm">DQ_PositionalAccuracy</a></i><br /><strong>&nbsp;&nbsp;coordinateOperationAccuracy</strong>
+					<i>Public <a href="../../EA7/EA1/EA3/EA5/EA1709.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;operationVersion</strong>
 				</td>
 			</tr>
 			<tr>
@@ -137,7 +137,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes2708_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to *</td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes2708_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -160,7 +160,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Estimate(s) of the impact of this coordinate operation on point accuracy. Gives position error estimates for target coordinates of this coordinate operation, assuming no errors in source coordinates.&lt;br/&gt;&lt;br/&gt;
+			Version of the coordinate transformation (i.e. instantiation due to the stochastic nature of the parameters). Mandatory when describing a coordinate transformation, and should not be supplied for a coordinate conversion. &lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -227,7 +227,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../EA7/EA1/EA3/EA5/EA1709.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;operationVersion</strong>
+					<i>Public <a href="../../EA7/EA1/EA3/EA5/EA1709.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;scope</strong>
 				</td>
 			</tr>
 			<tr>
@@ -253,7 +253,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes2710_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes2710_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -276,7 +276,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Version of the coordinate transformation (i.e. instantiation due to the stochastic nature of the parameters). Mandatory when describing a coordinate transformation, and should not be supplied for a coordinate conversion. &lt;br/&gt;&lt;br/&gt;
+			Description of usage, or limitations of usage, for which this coordinate operation is valid. If unknown, enter &quot;not known&quot;.&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -285,7 +285,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../EA7/EA1/EA3/EA5/EA1709.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;scope</strong>
+					<i>Public <a href="../../EA13/EA5/EA2621.htm">DQ_PositionalAccuracy</a></i><br /><strong>&nbsp;&nbsp;coordinateOperationAccuracy</strong>
 				</td>
 			</tr>
 			<tr>
@@ -311,7 +311,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes2711_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to *</td>
 						</tr>
 						<tr id="DetailsImageAttributes2711_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -334,7 +334,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Description of usage, or limitations of usage, for which this coordinate operation is valid. If unknown, enter &quot;not known&quot;.&lt;br/&gt;&lt;br/&gt;
+			Estimate(s) of the impact of this coordinate operation on point accuracy. Gives position error estimates for target coordinates of this coordinate operation, assuming no errors in source coordinates.&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>

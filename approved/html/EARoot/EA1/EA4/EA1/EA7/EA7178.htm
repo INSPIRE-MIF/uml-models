@@ -109,7 +109,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public CharacterString</i><br /><strong>&nbsp;&nbsp;blockSeparator</strong>
+					<i>Public CharacterString</i><br /><strong>&nbsp;&nbsp;tokenSeparator</strong>
 				</td>
 			</tr>
 			<tr>
@@ -158,7 +158,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Character sequence used as the block separator (i.e. between two successive blocks in the data set. The end of a block is reached once all values from the data tree have been encoded once)&lt;br/&gt;&lt;br/&gt;
+			Character sequence used as the token separator (i.e. between two successive values)&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -167,7 +167,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public Boolean</i><br /><strong>&nbsp;&nbsp;collapseWhiteSpaces</strong>
+					<i>Public CharacterString</i><br /><strong>&nbsp;&nbsp;blockSeparator</strong>
 				</td>
 			</tr>
 			<tr>
@@ -181,7 +181,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes9175_01" style="display: none;">
 							<td width="75"><i>Initial:</i></td>
-							<td>true</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes9175_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
@@ -193,7 +193,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes9175_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes9175_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -216,7 +216,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Indicates whether white spaces (i.e. space, tab, CR, LF) should be collapsed with separators when parsing the data stream&lt;br/&gt;&lt;br/&gt;
+			Character sequence used as the block separator (i.e. between two successive blocks in the data set. The end of a block is reached once all values from the data tree have been encoded once)&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -283,7 +283,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public CharacterString</i><br /><strong>&nbsp;&nbsp;tokenSeparator</strong>
+					<i>Public Boolean</i><br /><strong>&nbsp;&nbsp;collapseWhiteSpaces</strong>
 				</td>
 			</tr>
 			<tr>
@@ -297,7 +297,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes9177_01" style="display: none;">
 							<td width="75"><i>Initial:</i></td>
-							<td></td>
+							<td>true</td>
 						</tr>
 						<tr id="DetailsImageAttributes9177_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
@@ -309,7 +309,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes9177_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes9177_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -332,7 +332,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Character sequence used as the token separator (i.e. between two successive values)&lt;br/&gt;&lt;br/&gt;
+			Indicates whether white spaces (i.e. space, tab, CR, LF) should be collapsed with separators when parsing the data stream&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>

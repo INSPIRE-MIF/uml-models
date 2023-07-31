@@ -108,7 +108,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA4251.htm">LBS_RouteConstraint</a></i><br /><strong>&nbsp;&nbsp;constraints</strong>
+					<i>Public <a href="EA4243.htm">LBS_Location</a></i><br /><strong>&nbsp;&nbsp;start</strong>
 				</td>
 			</tr>
 			<tr>
@@ -134,7 +134,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes5815_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to *</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes5815_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -157,7 +157,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The &quot;constraints&quot; indicate logical, legal or temporal limits to the type of route that is acceptable. For example, in vehicle navigation, the type of vehicle or its physical limitation put constraints on the types of road segment usable in the route. In multimodal navigation, if the traveller is handicapped, then there is a constraint on access. &lt;br/&gt;
+			The &quot;start&quot; of the route is the location from which the traveller plans to begin navigation. &lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -166,7 +166,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA4235.htm">LBS_CostFunction</a></i><br /><strong>&nbsp;&nbsp;costFunction</strong>
+					<i>Public <a href="EA4243.htm">LBS_Location</a></i><br /><strong>&nbsp;&nbsp;wayPoints</strong>
 				</td>
 			</tr>
 			<tr>
@@ -192,7 +192,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes5816_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to *</td>
 						</tr>
 						<tr id="DetailsImageAttributes5816_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -215,7 +215,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The &quot;costFunction&quot; indicated to the routing service what the user wishes to optimize. With the exception of the preferences, the route returned should be an optimal or near optimal choice among all possibilities satisfying the constraints of the request, and passing from start to finish though the way points. &lt;br/&gt;
+			The &quot;waypoints&quot; of the route are the locations through which the traveller wishes the route to pass. The constraints may indicate that the interior way points (not &#39;start&#39; or &#39;end&#39;) are to be navigated in order or not. The default is order free, since a restriction on order can be accomplished by requesting several routes at one time.&#160;&#160;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -282,7 +282,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA4249.htm">LBS_Preference</a></i><br /><strong>&nbsp;&nbsp;preferences</strong>
+					<i>Public <a href="EA4251.htm">LBS_RouteConstraint</a></i><br /><strong>&nbsp;&nbsp;constraints</strong>
 				</td>
 			</tr>
 			<tr>
@@ -331,7 +331,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			&quot;Preference&quot; are weaker than constraints in that they are not logically necessary to the use of a route, but if they can be added to the constraints without incurring much cost (as set by the user preference), then the user would prefer the alternate. &lt;br/&gt;
+			The &quot;constraints&quot; indicate logical, legal or temporal limits to the type of route that is acceptable. For example, in vehicle navigation, the type of vehicle or its physical limitation put constraints on the types of road segment usable in the route. In multimodal navigation, if the traveller is handicapped, then there is a constraint on access. &lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -340,7 +340,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA4243.htm">LBS_Location</a></i><br /><strong>&nbsp;&nbsp;start</strong>
+					<i>Public <a href="EA4249.htm">LBS_Preference</a></i><br /><strong>&nbsp;&nbsp;preferences</strong>
 				</td>
 			</tr>
 			<tr>
@@ -366,7 +366,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes5819_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to *</td>
 						</tr>
 						<tr id="DetailsImageAttributes5819_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -389,7 +389,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The &quot;start&quot; of the route is the location from which the traveller plans to begin navigation. &lt;br/&gt;
+			&quot;Preference&quot; are weaker than constraints in that they are not logically necessary to the use of a route, but if they can be added to the constraints without incurring much cost (as set by the user preference), then the user would prefer the alternate. &lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -398,7 +398,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA4243.htm">LBS_Location</a></i><br /><strong>&nbsp;&nbsp;wayPoints</strong>
+					<i>Public <a href="EA4235.htm">LBS_CostFunction</a></i><br /><strong>&nbsp;&nbsp;costFunction</strong>
 				</td>
 			</tr>
 			<tr>
@@ -424,7 +424,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes5820_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to *</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes5820_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -447,7 +447,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The &quot;waypoints&quot; of the route are the locations through which the traveller wishes the route to pass. The constraints may indicate that the interior way points (not &#39;start&#39; or &#39;end&#39;) are to be navigated in order or not. The default is order free, since a restriction on order can be accomplished by requesting several routes at one time.&#160;&#160;&lt;br/&gt;
+			The &quot;costFunction&quot; indicated to the routing service what the user wishes to optimize. With the exception of the preferences, the route returned should be an optimal or near optimal choice among all possibilities satisfying the constraints of the request, and passing from start to finish though the way points. &lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
