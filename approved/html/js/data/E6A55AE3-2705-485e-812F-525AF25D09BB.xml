@@ -1,3 +1,3 @@
-tocTab[tocTab.length] = new Array("0.2.3.2.2:1", "", "Buildings - Core 2D", "EARoot/EA2/EA3/EA2/EA2/EA8258.htm", "175.png", "27413", "0", "", "Logical diagram0","{1F629B24-657D-4a6b-A0C0-C70AA732B9AD}");
-tocTab[tocTab.length] = new Array("0.2.3.2.2:2", "", "«featureType» Building", "EARoot/EA2/EA3/EA2/EA2/EA8262.htm", "5.png", "E49599", "0", "", "Class0","{0402980C-094D-4600-8F27-52D910AC4941}");
-tocTab[tocTab.length] = new Array("0.2.3.2.2:3", "", "«featureType» BuildingPart", "EARoot/EA2/EA3/EA2/EA2/EA8263.htm", "5.png", "E49600", "0", "", "Class0","{CD95B963-CB1C-4211-9460-7D02690805EC}");
+tocTab[tocTab.length] = new Array("0.2.3.5.2:1", "", "Buildings - Core 2D", "EARoot/EA2/EA3/EA5/EA2/EA8314.htm", "175.png", "27413", "0", "", "Logical diagram0","{1F629B24-657D-4a6b-A0C0-C70AA732B9AD}");
+tocTab[tocTab.length] = new Array("0.2.3.5.2:2", "", "«featureType» Building", "EARoot/EA2/EA3/EA5/EA2/EA8318.htm", "5.png", "E49599", "0", "", "Class0","{0402980C-094D-4600-8F27-52D910AC4941}");
+tocTab[tocTab.length] = new Array("0.2.3.5.2:3", "", "«featureType» BuildingPart", "EARoot/EA2/EA3/EA5/EA2/EA8319.htm", "5.png", "E49600", "0", "", "Class0","{CD95B963-CB1C-4211-9460-7D02690805EC}");

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Road Transport Network::RoadLink</title>
+<title>Multi-modal public transport itinerary planning (HASTUS)</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("RoadLink", " : "))</script>  : Public  &lt;&lt;featureType&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Multi-modal public transport itinerary planning (HASTUS)", " : "))</script>  : Public   UseCase</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">10/03/2008 16:13:25</td>
+			<td width="85%" class="ObjectDetailsValue">19/06/2008 09:20:52</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">17/06/2009 16:16:48</td>
+			<td class="ObjectDetailsValue">19/06/2008 09:26:19</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,91 +87,138 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{8C6C069A-D86C-404c-B5D5-3F0C804C0D1C}</td>
+			<td class="ObjectDetailsValue">{EB09EEE3-4855-4024-ACF8-8E16B1371F52}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA7938.htm">Road Transport Network</a>, <a href="EA7940.htm">Road Transport Network Overview</a>, <a href="EA7944.htm">Road Transport Network: Spatial object types - Links,  Nodes and Areas</a></td>
+			<td class="ObjectDetailsValue"><a href="EA7970.htm">TWG Usecases</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">-- Definition --&lt;br/&gt;A linear spatial object that describes the geometry and connectivity of a road network between two points in the network.&lt;br/&gt;Road links can represent paths, bicycle roads, single carriageways, multiple carriageway roads and even fictitious trajectories across traffic squares.&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">-- Definition --&lt;br/&gt;A multi-modal itinerary is calculated based on starting point, destination and travel details provided by the user through a web interface. Travel details include time of departure/arrival and mode of transport. A proposed itinerary is displayed on the screen and can be printed by the user.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
-			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
-			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('Requirements');" id="RequirementsTitle">Requirements</li>
+			<li onClick="parent.toggleItem('Scenario');" id="ScenarioTitle">Scenarios</li>
 		</ul>
-<div class="ItemBody" id="TaggedValTable">
-	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
-		<tr>
-			<td width="50%" class="TableHeading">Tag</td>
-			<td width="50%" class="TableHeading">Value</td>
-		</tr>
-					<tr>
-				<td width="50%" class="TableRow" valign="top">byValuePropertyType</td>
-				<td width="50%" class="TableRow" valign="top">false</td>
-			</tr>	
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario11616" onclick="parent.toggleDiv('detailsDIVScenario11616','DetailsImageScenario11616')" />Details:
-						<div id="detailsDIVScenario11616" class="DetailsDiv" >
-						&nbsp;
-						</div>
-					</div>
-				</td>
-			</tr>			<tr>
-				<td width="50%" class="TableRow" valign="top">isCollection</td>
-				<td width="50%" class="TableRow" valign="top">false</td>
-			</tr>	
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario11617" onclick="parent.toggleDiv('detailsDIVScenario11617','DetailsImageScenario11617')" />Details:
-						<div id="detailsDIVScenario11617" class="DetailsDiv" >
-						&nbsp;
-						</div>
-					</div>
-				</td>
-			</tr>			<tr>
-				<td width="50%" class="TableRow" valign="top">noPropertyType</td>
-				<td width="50%" class="TableRow" valign="top">false</td>
-			</tr>	
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario11618" onclick="parent.toggleDiv('detailsDIVScenario11618','DetailsImageScenario11618')" />Details:
-						<div id="detailsDIVScenario11618" class="DetailsDiv" >
-						&nbsp;
-						</div>
-					</div>
-				</td>
-			</tr>			<tr>
-				<td width="50%" class="TableRow" valign="top">xsdEncodingRule</td>
-				<td width="50%" class="TableRow" valign="top">iso19136_2007_INSPIRE_Extensions</td>
-			</tr>	
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario11619" onclick="parent.toggleDiv('detailsDIVScenario11619','DetailsImageScenario11619')" />Details:
-						<div id="detailsDIVScenario11619" class="DetailsDiv" >
-						&nbsp;
-						</div>
-					</div>
-				</td>
-			</tr>
-	</table>
-</div>		<div class="ItemBody" id="LinksTable">
-			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
-					<td width="30%" class="TableHeading">Object</td>
-					<td width="10%" class="TableHeading">Type</td>
-					<td width="10%" class="TableHeading">Connection</td>
-					<td width="10%" class="TableHeading">Direction</td>
-					<td width="40%" class="TableHeading">Notes</td>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA6/EA7925.htm">«featureType» TransportLink</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA7973.htm">Citizen</a><br />
+						Actor &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink11635" onclick="parent.toggleDiv('detailsDIVLink11635','DetailsImageLink11635')" />Details:
+							<div id="detailsDIVLink11635" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="RequirementsTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="60%" class="TableHeading">Requirement</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Status</td>
+					<td width="10%" class="TableHeading">Difficulty</td>
+					<td width="10%" class="TableHeading">Priority</td>
+					<td width="10%" class="TableHeading">Stability</td>
+				</tr>
+				<tr>
+					<td width="60%" class="TableRow">Precondition</td>
+					<td width="10%" class="TableRow">&nbsp;</td>
+					<td width="10%" class="TableRow">Proposed</td>
+					<td width="10%" class="TableRow">Medium</td>
+					<td width="10%" class="TableRow">Medium</td>
+					<td width="10%" class="TableRow">&nbsp;</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="6">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageRequirement11636" onclick="parent.toggleDiv('detailsDIVRequirement11636','DetailsImageRequirement11636')" />Details:
+							<div id="detailsDIVRequirement11636" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">The user needs to know the address of the start and end points or the name of the neirest transport network node (bus stop, train station,? ).&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="ScenarioTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="90%" class="TableHeading">Scenario</td>
+					<td width="10%" class="TableHeading">Type</td>
+				</tr>
+				<tr>
+					<td width="90%" class="TableRow">Main flow</td>
+					<td width="10%" class="TableRow">Basic Path</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario11637" onclick="parent.toggleDiv('detailsDIVScenario11637','DetailsImageScenario11637')" />Details:
+							<div id="detailsDIVScenario11637" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">User types in a location for the starting point or searches in a list of known locations.&lt;br/&gt;&lt;br/&gt;User types in a location for the destination or searches in a list of known locations&lt;br/&gt;&lt;br/&gt;User chooses time of departure or arrival.&lt;br/&gt;&lt;br/&gt;User selects one or more acceptable modes of transport.&lt;br/&gt;&lt;br/&gt;The system checks starting point and destination locations (address or transport network node) against a database of known locations.&lt;br/&gt;If both locations are found, the system calculates an itinerary.&lt;br/&gt;&lt;br/&gt;If an itinerary is found, it is displayed on the screen.&lt;br/&gt;&lt;br/&gt;User prints out details of itinerary.&lt;br/&gt;</div>
+
+							</div>
+						</div>
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td width="90%" class="TableRow">alternative 1</td>
+					<td width="10%" class="TableRow">Alternate</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario11638" onclick="parent.toggleDiv('detailsDIVScenario11638','DetailsImageScenario11638')" />Details:
+							<div id="detailsDIVScenario11638" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">If a location is not found, the system proposes a known location or asks the user to check against a list of known locations&lt;br/&gt;</div>
+
+							</div>
+						</div>
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td width="90%" class="TableRow">Alternative 2</td>
+					<td width="10%" class="TableRow">Alternate</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario11639" onclick="parent.toggleDiv('detailsDIVScenario11639','DetailsImageScenario11639')" />Details:
+							<div id="detailsDIVScenario11639" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">If an itinerary is not found, the system asks the user to change the starting point/destination locations or travel details.&lt;br/&gt;</div>
+
+							</div>
+						</div>
+						
+						
+					</td>
 				</tr>
 
 			</table>
