@@ -1,3 +1,3 @@
-tocTab[tocTab.length] = new Array("0.2.3.20.1", "1", "«applicationSchema» AdministrativeAndSocialGovernmentalServices", "EARoot/EA2/EA3/EA20/EA1/EA9236.htm", "4.png", "", "", "{73626FCA-8EAE-41fe-8335-E48CC0EFE088}", "Package");
-tocTab[tocTab.length] = new Array("0.2.3.20.2", "1", "«applicationSchema» Environmental Management Facilities", "EARoot/EA2/EA3/EA20/EA2/EA9248.htm", "4.png", "", "", "{B4F9359B-48FD-4778-9F4B-539FEFFF2D88}", "Package");
-tocTab[tocTab.length] = new Array("0.2.3.20.3", "1", "Utility Networks Profile", "EARoot/EA2/EA3/EA20/EA3/EA9264.htm", "4.png", "", "", "{820B4611-8B17-4801-B4C8-1A0AB4D3EF07}", "Package");
+tocTab[tocTab.length] = new Array("0.2.3.20.1", "1", "«applicationSchema» AdministrativeAndSocialGovernmentalServices", "EARoot/EA2/EA3/EA20/EA1/EA9221.htm", "4.png", "", "", "{73626FCA-8EAE-41fe-8335-E48CC0EFE088}", "Package");
+tocTab[tocTab.length] = new Array("0.2.3.20.2", "1", "«applicationSchema» Environmental Management Facilities", "EARoot/EA2/EA3/EA20/EA2/EA9233.htm", "4.png", "", "", "{B4F9359B-48FD-4778-9F4B-539FEFFF2D88}", "Package");
+tocTab[tocTab.length] = new Array("0.2.3.20.3", "1", "Utility Networks Profile", "EARoot/EA2/EA3/EA20/EA3/EA9249.htm", "4.png", "", "", "{820B4611-8B17-4801-B4C8-1A0AB4D3EF07}", "Package");

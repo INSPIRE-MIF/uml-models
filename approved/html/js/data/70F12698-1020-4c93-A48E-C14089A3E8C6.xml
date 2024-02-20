@@ -1,4 +1,4 @@
-tocTab[tocTab.length] = new Array("0.2.1.6.2:1", "", "using GeographicalName", "EARoot/EA2/EA1/EA6/EA2/EA7588.htm", "175.png", "27305", "0", "", "Logical diagram0","{92AA457A-A97A-4bcb-A256-69AE09CDE382}");
-tocTab[tocTab.length] = new Array("0.2.1.6.2:2", "", "using GeographicalName - rich", "EARoot/EA2/EA1/EA6/EA2/EA7590.htm", "175.png", "27307", "0", "", "Logical diagram0","{E81055F2-2D8A-4707-BEA8-BD3F5B0B5A8C}");
-tocTab[tocTab.length] = new Array("0.2.1.6.2:3", "", "using GeographicalName - simple", "EARoot/EA2/EA1/EA6/EA2/EA7592.htm", "175.png", "27306", "0", "", "Logical diagram0","{290E2271-534F-4c84-B2D7-90C98921DC86}");
-tocTab[tocTab.length] = new Array("0.2.1.6.2:4", "", "INSPIRE THEME XX::SpatialObjectWithAName", "EARoot/EA2/EA1/EA6/EA2/EA7595.htm", "5.png", "E49131", "0", "", "Class0","{674ECF55-D578-48fa-A529-7232C2D1285D}");
+tocTab[tocTab.length] = new Array("0.2.1.6.2:1", "", "using GeographicalName", "EARoot/EA2/EA1/EA6/EA2/EA7576.htm", "175.png", "27305", "0", "", "Logical diagram0","{92AA457A-A97A-4bcb-A256-69AE09CDE382}");
+tocTab[tocTab.length] = new Array("0.2.1.6.2:2", "", "using GeographicalName - rich", "EARoot/EA2/EA1/EA6/EA2/EA7578.htm", "175.png", "27307", "0", "", "Logical diagram0","{E81055F2-2D8A-4707-BEA8-BD3F5B0B5A8C}");
+tocTab[tocTab.length] = new Array("0.2.1.6.2:3", "", "using GeographicalName - simple", "EARoot/EA2/EA1/EA6/EA2/EA7580.htm", "175.png", "27306", "0", "", "Logical diagram0","{290E2271-534F-4c84-B2D7-90C98921DC86}");
+tocTab[tocTab.length] = new Array("0.2.1.6.2:4", "", "INSPIRE THEME XX::SpatialObjectWithAName", "EARoot/EA2/EA1/EA6/EA2/EA7583.htm", "5.png", "E49131", "0", "", "Class0","{674ECF55-D578-48fa-A529-7232C2D1285D}");

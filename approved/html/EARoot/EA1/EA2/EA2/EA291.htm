@@ -178,30 +178,6 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA288.htm">«Type» ControlledConcept</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> linkToTarget<br />
-						Links the source ControlledConcept to the appropriate VocabRelation that specifies the target ControlledConcept
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> source<br />
-						The 'source' ControlledConcept in theVocabRelation relationship.	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink611" onclick="parent.toggleDiv('detailsDIVLink611','DetailsImageLink611')" />Details:
-							<div id="detailsDIVLink611" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">Link ControlledConcept that is the source in the relationship. Link is bidirectional to allow travesing from a concept to related concepts.&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
 						<a href="EA289.htm">«Type» GeologicVocabulary</a><br />
 						Class &nbsp;
 					</td>
@@ -216,9 +192,33 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink611" onclick="parent.toggleDiv('detailsDIVLink611','DetailsImageLink611')" />Details:
+							<div id="detailsDIVLink611" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">a VocabRelation is owned by some GeologicVocabulary. Link must be by reference to avoid circularity from &lt;br/&gt;GeologicVocabulary.member to VocabItem.vocabulary to GeologicVocabulary.&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA288.htm">«Type» ControlledConcept</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> linkToTarget<br />
+						Links the source ControlledConcept to the appropriate VocabRelation that specifies the target ControlledConcept
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> source<br />
+						The 'source' ControlledConcept in theVocabRelation relationship.	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink612" onclick="parent.toggleDiv('detailsDIVLink612','DetailsImageLink612')" />Details:
 							<div id="detailsDIVLink612" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">a VocabRelation is owned by some GeologicVocabulary. Link must be by reference to avoid circularity from &lt;br/&gt;GeologicVocabulary.member to VocabItem.vocabulary to GeologicVocabulary.&lt;br/&gt;</div>
+							<div class="ObjectDetailsNotes">Link ControlledConcept that is the source in the relationship. Link is bidirectional to allow travesing from a concept to related concepts.&lt;br/&gt;</div>
 
 							</div>
 						</div>

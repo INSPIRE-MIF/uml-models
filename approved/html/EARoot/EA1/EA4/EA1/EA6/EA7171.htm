@@ -114,64 +114,6 @@ function nameClassifier(name, separator)
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes9160')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes9160" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes9160_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes9160_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes9160_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td>&lt;&lt;property&gt;&gt;</td>
-						</tr>
-						<tr id="DetailsImageAttributes9160_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes9160_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
-						</tr>
-						<tr id="DetailsImageAttributes9160_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes9160_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes9160_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					asXMLAttribute=true<br>inlineOrByReference=inlineOrByReference<br>isMetadata=false<br>
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Specifies the origin of the temporal reference frame as an ISO8601 date (used to specify time after an epoch that is to say in a custom frame)&lt;br/&gt;&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public TM_TemporalCRS</i><br /><strong>&nbsp;&nbsp;localFrame</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
 					<a href="#" onclick="parent.toggleData('DetailsImageAttributes9161')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes9161" border="0" />Details:</a>
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
 					
@@ -216,7 +158,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Temporal frame of reference whose origin is located by the value of this component&lt;br/&gt;&lt;br/&gt;
+			Specifies the origin of the temporal reference frame as an ISO8601 date (used to specify time after an epoch that is to say in a custom frame)&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -225,7 +167,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public UomTime</i><br /><strong>&nbsp;&nbsp;uom</strong>
+					<i>Public TM_TemporalCRS</i><br /><strong>&nbsp;&nbsp;localFrame</strong>
 				</td>
 			</tr>
 			<tr>
@@ -251,7 +193,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes9162_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes9162_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -267,14 +209,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					inlineOrByReference=inlineOrByReference<br>isMetadata=false<br>sequenceNumber=1<br>
+					asXMLAttribute=true<br>inlineOrByReference=inlineOrByReference<br>isMetadata=false<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Temporal unit of measure used to express the value of this data component&lt;br/&gt;&lt;br/&gt;
+			Temporal frame of reference whose origin is located by the value of this component&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -283,7 +225,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA7154.htm">AllowedTimes</a></i><br /><strong>&nbsp;&nbsp;constraint</strong>
+					<i>Public UomTime</i><br /><strong>&nbsp;&nbsp;uom</strong>
 				</td>
 			</tr>
 			<tr>
@@ -309,7 +251,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes9163_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes9163_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -325,13 +267,23 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					inlineOrByReference=inlineOrByReference<br>isMetadata=false<br>sequenceNumber=2<br>
-						&nbsp;
+					inlineOrByReference=inlineOrByReference<br>isMetadata=false<br>sequenceNumber=1<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Temporal unit of measure used to express the value of this data component&lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../EA2/EA7114.htm">TimePair</a></i><br /><strong>&nbsp;&nbsp;value</strong>
+					<i>Public <a href="EA7154.htm">AllowedTimes</a></i><br /><strong>&nbsp;&nbsp;constraint</strong>
 				</td>
 			</tr>
 			<tr>
@@ -373,6 +325,54 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
+					inlineOrByReference=inlineOrByReference<br>isMetadata=false<br>sequenceNumber=2<br>
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../EA2/EA7114.htm">TimePair</a></i><br /><strong>&nbsp;&nbsp;value</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes9165')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes9165" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes9165_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes9165_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes9165_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td>&lt;&lt;property&gt;&gt;</td>
+						</tr>
+						<tr id="DetailsImageAttributes9165_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes9165_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes9165_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes9165_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes9165_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
 					inlineOrByReference=inlineOrByReference<br>isMetadata=false<br>sequenceNumber=3<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
@@ -402,8 +402,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario9165" onclick="parent.toggleDiv('detailsDIVScenario9165','DetailsImageScenario9165')" />Details:
-						<div id="detailsDIVScenario9165" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario9166" onclick="parent.toggleDiv('detailsDIVScenario9166','DetailsImageScenario9166')" />Details:
+						<div id="detailsDIVScenario9166" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: attribute group gml:AggregationAttributeGroup is added to the complex type of the feature type<br /></div>
 
 						</div>
@@ -415,8 +415,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario9166" onclick="parent.toggleDiv('detailsDIVScenario9166','DetailsImageScenario9166')" />Details:
-						<div id="detailsDIVScenario9166" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario9167" onclick="parent.toggleDiv('detailsDIVScenario9167','DetailsImageScenario9167')" />Details:
+						<div id="detailsDIVScenario9167" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: true | false<br />Default: false<br />Description: suppress automatic creation of *PropertyType complexType<br /></div>
 
 						</div>
@@ -428,8 +428,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario9167" onclick="parent.toggleDiv('detailsDIVScenario9167','DetailsImageScenario9167')" />Details:
-						<div id="detailsDIVScenario9167" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario9168" onclick="parent.toggleDiv('detailsDIVScenario9168','DetailsImageScenario9168')" />Details:
+						<div id="detailsDIVScenario9168" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: true | false<br />Default: true<br />Description: class implemented as new type + element, or by applying constraints only<br /></div>
 
 						</div>

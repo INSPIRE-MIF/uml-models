@@ -1,3 +1,3 @@
-tocTab[tocTab.length] = new Array("0.2.3.7.1", "1", "«applicationSchema» Energy Resources Base", "EARoot/EA2/EA3/EA7/EA1/EA8653.htm", "4.png", "", "", "{4D933BE4-8507-43e5-B7F7-EEE09B170E53}", "Package");
-tocTab[tocTab.length] = new Array("0.2.3.7.2", "1", "«applicationSchema» Energy Resources Vector", "EARoot/EA2/EA3/EA7/EA2/EA8671.htm", "4.png", "", "", "{E1261F15-67F0-4595-836D-800DA610A579}", "Package");
-tocTab[tocTab.length] = new Array("0.2.3.7.3", "1", "«applicationSchema» Energy Resources Coverage", "EARoot/EA2/EA3/EA7/EA3/EA8684.htm", "4.png", "", "", "{CFA9D620-82B0-41b4-B61B-F1EB27EA2A99}", "Package");
+tocTab[tocTab.length] = new Array("0.2.3.7.1", "1", "«applicationSchema» Energy Resources Base", "EARoot/EA2/EA3/EA7/EA1/EA8640.htm", "4.png", "", "", "{4D933BE4-8507-43e5-B7F7-EEE09B170E53}", "Package");
+tocTab[tocTab.length] = new Array("0.2.3.7.2", "1", "«applicationSchema» Energy Resources Vector", "EARoot/EA2/EA3/EA7/EA2/EA8658.htm", "4.png", "", "", "{E1261F15-67F0-4595-836D-800DA610A579}", "Package");
+tocTab[tocTab.length] = new Array("0.2.3.7.3", "1", "«applicationSchema» Energy Resources Coverage", "EARoot/EA2/EA3/EA7/EA3/EA8671.htm", "4.png", "", "", "{CFA9D620-82B0-41b4-B61B-F1EB27EA2A99}", "Package");

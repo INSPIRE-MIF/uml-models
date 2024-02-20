@@ -1,3 +1,3 @@
-tocTab[tocTab.length] = new Array("0.2.2.3.1", "1", "«applicationSchema» LandCoverNomenclature", "EARoot/EA2/EA2/EA3/EA1/EA8152.htm", "4.png", "", "", "{5901D3D1-8277-4f7d-88A6-4F5D3A80A689}", "Package");
-tocTab[tocTab.length] = new Array("0.2.2.3.2", "1", "«applicationSchema» LandCoverRaster", "EARoot/EA2/EA2/EA3/EA2/EA8158.htm", "4.png", "", "", "{009F9068-E3CD-47f3-9F08-26FA6343246E}", "Package");
-tocTab[tocTab.length] = new Array("0.2.2.3.3", "1", "«applicationSchema» LandCoverVector", "EARoot/EA2/EA2/EA3/EA3/EA8163.htm", "4.png", "", "", "{E472AAE5-2300-4aa0-811D-16BD0A370DAB}", "Package");
+tocTab[tocTab.length] = new Array("0.2.2.3.1", "1", "«applicationSchema» LandCoverNomenclature", "EARoot/EA2/EA2/EA3/EA1/EA8139.htm", "4.png", "", "", "{5901D3D1-8277-4f7d-88A6-4F5D3A80A689}", "Package");
+tocTab[tocTab.length] = new Array("0.2.2.3.2", "1", "«applicationSchema» LandCoverRaster", "EARoot/EA2/EA2/EA3/EA2/EA8145.htm", "4.png", "", "", "{009F9068-E3CD-47f3-9F08-26FA6343246E}", "Package");
+tocTab[tocTab.length] = new Array("0.2.2.3.3", "1", "«applicationSchema» LandCoverVector", "EARoot/EA2/EA2/EA3/EA3/EA8150.htm", "4.png", "", "", "{E472AAE5-2300-4aa0-811D-16BD0A370DAB}", "Package");

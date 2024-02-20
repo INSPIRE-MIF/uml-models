@@ -1,5 +1,5 @@
-tocTab[tocTab.length] = new Array("0.2.1.7.1:1", "", "Hydro - base: datatypes", "EARoot/EA2/EA1/EA7/EA1/EA7607.htm", "175.png", "27318", "0", "", "Logical diagram0","{40B6B538-20CC-43dd-B114-258AAEEB6B55}");
-tocTab[tocTab.length] = new Array("0.2.1.7.1:2", "", "Hydro - base: imported types", "EARoot/EA2/EA1/EA7/EA1/EA7609.htm", "175.png", "27317", "0", "", "Logical diagram0","{BA04798A-43E3-496e-B2B6-4F50F6CDA722}");
-tocTab[tocTab.length] = new Array("0.2.1.7.1:3", "", "Hydro - base: spatial object types", "EARoot/EA2/EA1/EA7/EA1/EA7611.htm", "175.png", "27316", "0", "", "Logical diagram0","{AA75475D-89E5-40b1-9D4B-D4385B8884D6}");
-tocTab[tocTab.length] = new Array("0.2.1.7.1:4", "", "«dataType» HydroIdentifier", "EARoot/EA2/EA1/EA7/EA1/EA7614.htm", "5.png", "E49147", "0", "", "Class0","{976B7808-A2A4-4775-99E4-FC68001EA1C7}");
-tocTab[tocTab.length] = new Array("0.2.1.7.1:5", "", "«featureType» HydroObject", "EARoot/EA2/EA1/EA7/EA1/EA7615.htm", "5.png", "E49148", "0", "", "Class0","{FE3FAE2F-E75A-4a25-A151-BD73A0DF51AD}");
+tocTab[tocTab.length] = new Array("0.2.1.7.1:1", "", "Hydro - base: datatypes", "EARoot/EA2/EA1/EA7/EA1/EA7595.htm", "175.png", "27318", "0", "", "Logical diagram0","{40B6B538-20CC-43dd-B114-258AAEEB6B55}");
+tocTab[tocTab.length] = new Array("0.2.1.7.1:2", "", "Hydro - base: imported types", "EARoot/EA2/EA1/EA7/EA1/EA7597.htm", "175.png", "27317", "0", "", "Logical diagram0","{BA04798A-43E3-496e-B2B6-4F50F6CDA722}");
+tocTab[tocTab.length] = new Array("0.2.1.7.1:3", "", "Hydro - base: spatial object types", "EARoot/EA2/EA1/EA7/EA1/EA7599.htm", "175.png", "27316", "0", "", "Logical diagram0","{AA75475D-89E5-40b1-9D4B-D4385B8884D6}");
+tocTab[tocTab.length] = new Array("0.2.1.7.1:4", "", "«dataType» HydroIdentifier", "EARoot/EA2/EA1/EA7/EA1/EA7602.htm", "5.png", "E49147", "0", "", "Class0","{976B7808-A2A4-4775-99E4-FC68001EA1C7}");
+tocTab[tocTab.length] = new Array("0.2.1.7.1:5", "", "«featureType» HydroObject", "EARoot/EA2/EA1/EA7/EA1/EA7603.htm", "5.png", "E49148", "0", "", "Class0","{FE3FAE2F-E75A-4a25-A151-BD73A0DF51AD}");

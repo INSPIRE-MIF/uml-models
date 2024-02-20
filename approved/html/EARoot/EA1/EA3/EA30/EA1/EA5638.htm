@@ -116,64 +116,6 @@ function nameClassifier(name, separator)
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes7087')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes7087" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes7087_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes7087_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes7087_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes7087_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes7087_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes7087_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes7087_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes7087_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			The derived attribute &quot;beginDomain&quot; shall contain the value of the time parameter at the start of the domain of the one-parameter geometry.&#160;&#160;&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public <a href="../../EA9/EA2/EA1957.htm">TM_Coordinate</a></i><br /><strong>&nbsp;&nbsp;endDomain</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
 					<a href="#" onclick="parent.toggleData('DetailsImageAttributes7088')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes7088" border="0" />Details:</a>
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
 					
@@ -218,7 +160,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The derived attribute &quot;endDomain&quot; shall contain the value of the time&#160;&#160;parameter at the end of the domain for the trajectory.&#160;&#160;&lt;br/&gt;
+			The derived attribute &quot;beginDomain&quot; shall contain the value of the time parameter at the start of the domain of the one-parameter geometry.&#160;&#160;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -227,7 +169,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public GM_Curve[1..*]</i><br /><strong>&nbsp;&nbsp;graphTimeToPoint</strong>
+					<i>Public <a href="../../EA9/EA2/EA1957.htm">TM_Coordinate</a></i><br /><strong>&nbsp;&nbsp;endDomain</strong>
 				</td>
 			</tr>
 			<tr>
@@ -241,7 +183,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes7089_01" style="display: none;">
 							<td width="75"><i>Initial:</i></td>
-							<td>graphParameterToPoint</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes7089_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
@@ -270,12 +212,22 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						&nbsp;
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The derived attribute &quot;endDomain&quot; shall contain the value of the time&#160;&#160;parameter at the end of the domain for the trajectory.&#160;&#160;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public GM_Curve[1..*]</i><br /><strong>&nbsp;&nbsp;graphTimeToVelocity</strong>
+					<i>Public GM_Curve[1..*]</i><br /><strong>&nbsp;&nbsp;graphTimeToPoint</strong>
 				</td>
 			</tr>
 			<tr>
@@ -289,7 +241,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes7090_01" style="display: none;">
 							<td width="75"><i>Initial:</i></td>
-							<td></td>
+							<td>graphParameterToPoint</td>
 						</tr>
 						<tr id="DetailsImageAttributes7090_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
@@ -323,7 +275,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public GM_Curve[1..*]</i><br /><strong>&nbsp;&nbsp;graphTimeToAcceleration</strong>
+					<i>Public GM_Curve[1..*]</i><br /><strong>&nbsp;&nbsp;graphTimeToVelocity</strong>
 				</td>
 			</tr>
 			<tr>
@@ -371,7 +323,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public GM_Curve[1..*]</i><br /><strong>&nbsp;&nbsp;graphTimeToDistance</strong>
+					<i>Public GM_Curve[1..*]</i><br /><strong>&nbsp;&nbsp;graphTimeToAcceleration</strong>
 				</td>
 			</tr>
 			<tr>
@@ -419,7 +371,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public GM_Curve[1..*]</i><br /><strong>&nbsp;&nbsp;graphTimeToCumulativeDistance</strong>
+					<i>Public GM_Curve[1..*]</i><br /><strong>&nbsp;&nbsp;graphTimeToDistance</strong>
 				</td>
 			</tr>
 			<tr>
@@ -465,6 +417,54 @@ function nameClassifier(name, separator)
 						&nbsp;
 						
 				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public GM_Curve[1..*]</i><br /><strong>&nbsp;&nbsp;graphTimeToCumulativeDistance</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes7094')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes7094" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes7094_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes7094_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes7094_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes7094_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes7094_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes7094_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes7094_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes7094_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						&nbsp;
+						
+				</td>
 			</tr>
 	</table>
 </div>
@@ -500,8 +500,8 @@ function nameClassifier(name, separator)
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations7094" onclick="parent.toggleDiv('detailsDIVOperations7094','DetailsImageOperations7094')" />Details:
-						<div id="detailsDIVOperations7094" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations7095" onclick="parent.toggleDiv('detailsDIVOperations7095','DetailsImageOperations7095')" />Details:
+						<div id="detailsDIVOperations7095" class="DetailsDiv" >
 					<i>sequential  </i>
 					<table>
 						<tr>
@@ -543,8 +543,8 @@ function nameClassifier(name, separator)
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations7095" onclick="parent.toggleDiv('detailsDIVOperations7095','DetailsImageOperations7095')" />Details:
-						<div id="detailsDIVOperations7095" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations7096" onclick="parent.toggleDiv('detailsDIVOperations7096','DetailsImageOperations7096')" />Details:
+						<div id="detailsDIVOperations7096" class="DetailsDiv" >
 					<i>sequential  </i>
 					<table>
 						<tr>
@@ -586,8 +586,8 @@ function nameClassifier(name, separator)
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations7096" onclick="parent.toggleDiv('detailsDIVOperations7096','DetailsImageOperations7096')" />Details:
-						<div id="detailsDIVOperations7096" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations7097" onclick="parent.toggleDiv('detailsDIVOperations7097','DetailsImageOperations7097')" />Details:
+						<div id="detailsDIVOperations7097" class="DetailsDiv" >
 					<i>sequential  </i>
 					<table>
 						<tr>
@@ -629,8 +629,8 @@ function nameClassifier(name, separator)
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations7097" onclick="parent.toggleDiv('detailsDIVOperations7097','DetailsImageOperations7097')" />Details:
-						<div id="detailsDIVOperations7097" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations7098" onclick="parent.toggleDiv('detailsDIVOperations7098','DetailsImageOperations7098')" />Details:
+						<div id="detailsDIVOperations7098" class="DetailsDiv" >
 					<i>sequential  </i>
 					<table>
 						<tr>
@@ -672,8 +672,8 @@ function nameClassifier(name, separator)
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations7098" onclick="parent.toggleDiv('detailsDIVOperations7098','DetailsImageOperations7098')" />Details:
-						<div id="detailsDIVOperations7098" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations7099" onclick="parent.toggleDiv('detailsDIVOperations7099','DetailsImageOperations7099')" />Details:
+						<div id="detailsDIVOperations7099" class="DetailsDiv" >
 					<i>sequential  </i>
 					<table>
 						<tr>
@@ -715,8 +715,8 @@ function nameClassifier(name, separator)
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations7099" onclick="parent.toggleDiv('detailsDIVOperations7099','DetailsImageOperations7099')" />Details:
-						<div id="detailsDIVOperations7099" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations7100" onclick="parent.toggleDiv('detailsDIVOperations7100','DetailsImageOperations7100')" />Details:
+						<div id="detailsDIVOperations7100" class="DetailsDiv" >
 					<i>sequential  </i>
 					<table>
 						<tr>
@@ -758,8 +758,8 @@ function nameClassifier(name, separator)
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations7100" onclick="parent.toggleDiv('detailsDIVOperations7100','DetailsImageOperations7100')" />Details:
-						<div id="detailsDIVOperations7100" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations7101" onclick="parent.toggleDiv('detailsDIVOperations7101','DetailsImageOperations7101')" />Details:
+						<div id="detailsDIVOperations7101" class="DetailsDiv" >
 					<i>sequential  </i>
 					<table>
 						<tr>
@@ -801,8 +801,8 @@ function nameClassifier(name, separator)
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations7101" onclick="parent.toggleDiv('detailsDIVOperations7101','DetailsImageOperations7101')" />Details:
-						<div id="detailsDIVOperations7101" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations7102" onclick="parent.toggleDiv('detailsDIVOperations7102','DetailsImageOperations7102')" />Details:
+						<div id="detailsDIVOperations7102" class="DetailsDiv" >
 					<i>sequential  </i>
 					<table>
 						<tr>
@@ -863,8 +863,8 @@ function nameClassifier(name, separator)
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations7102" onclick="parent.toggleDiv('detailsDIVOperations7102','DetailsImageOperations7102')" />Details:
-						<div id="detailsDIVOperations7102" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations7103" onclick="parent.toggleDiv('detailsDIVOperations7103','DetailsImageOperations7103')" />Details:
+						<div id="detailsDIVOperations7103" class="DetailsDiv" >
 					<i>sequential  </i>
 					<table>
 						<tr>
@@ -906,8 +906,8 @@ function nameClassifier(name, separator)
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations7103" onclick="parent.toggleDiv('detailsDIVOperations7103','DetailsImageOperations7103')" />Details:
-						<div id="detailsDIVOperations7103" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations7104" onclick="parent.toggleDiv('detailsDIVOperations7104','DetailsImageOperations7104')" />Details:
+						<div id="detailsDIVOperations7104" class="DetailsDiv" >
 					<i>sequential  </i>
 					<table>
 						<tr>
@@ -949,8 +949,8 @@ function nameClassifier(name, separator)
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations7104" onclick="parent.toggleDiv('detailsDIVOperations7104','DetailsImageOperations7104')" />Details:
-						<div id="detailsDIVOperations7104" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations7105" onclick="parent.toggleDiv('detailsDIVOperations7105','DetailsImageOperations7105')" />Details:
+						<div id="detailsDIVOperations7105" class="DetailsDiv" >
 					<i>sequential  </i>
 					<table>
 						<tr>
@@ -992,8 +992,8 @@ function nameClassifier(name, separator)
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations7105" onclick="parent.toggleDiv('detailsDIVOperations7105','DetailsImageOperations7105')" />Details:
-						<div id="detailsDIVOperations7105" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations7106" onclick="parent.toggleDiv('detailsDIVOperations7106','DetailsImageOperations7106')" />Details:
+						<div id="detailsDIVOperations7106" class="DetailsDiv" >
 					<i>sequential  </i>
 					<table>
 						<tr>
@@ -1026,8 +1026,8 @@ function nameClassifier(name, separator)
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations7106" onclick="parent.toggleDiv('detailsDIVOperations7106','DetailsImageOperations7106')" />Details:
-						<div id="detailsDIVOperations7106" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations7107" onclick="parent.toggleDiv('detailsDIVOperations7107','DetailsImageOperations7107')" />Details:
+						<div id="detailsDIVOperations7107" class="DetailsDiv" >
 					<i>sequential  </i>
 					<table>
 						<tr>
@@ -1050,8 +1050,8 @@ function nameClassifier(name, separator)
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations7107" onclick="parent.toggleDiv('detailsDIVOperations7107','DetailsImageOperations7107')" />Details:
-						<div id="detailsDIVOperations7107" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations7108" onclick="parent.toggleDiv('detailsDIVOperations7108','DetailsImageOperations7108')" />Details:
+						<div id="detailsDIVOperations7108" class="DetailsDiv" >
 					<i>sequential  </i>
 					<table>
 						<tr>
@@ -1093,8 +1093,8 @@ function nameClassifier(name, separator)
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations7108" onclick="parent.toggleDiv('detailsDIVOperations7108','DetailsImageOperations7108')" />Details:
-						<div id="detailsDIVOperations7108" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations7109" onclick="parent.toggleDiv('detailsDIVOperations7109','DetailsImageOperations7109')" />Details:
+						<div id="detailsDIVOperations7109" class="DetailsDiv" >
 					<i>sequential  </i>
 					<table>
 						<tr>
@@ -1134,8 +1134,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink7109" onclick="parent.toggleDiv('detailsDIVLink7109','DetailsImageLink7109')" />Details:
-							<div id="detailsDIVLink7109" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink7110" onclick="parent.toggleDiv('detailsDIVLink7110','DetailsImageLink7110')" />Details:
+							<div id="detailsDIVLink7110" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -1156,8 +1156,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario7110" onclick="parent.toggleDiv('detailsDIVScenario7110','DetailsImageScenario7110')" />Details:
-						<div id="detailsDIVScenario7110" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario7111" onclick="parent.toggleDiv('detailsDIVScenario7111','DetailsImageScenario7111')" />Details:
+						<div id="detailsDIVScenario7111" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
@@ -1174,13 +1174,6 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA2/EA5666.htm">«type» MF_RigidTemporalGeometry</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
 					<td width="30%" class="TableRow" valign="top"><a href="EA5637.htm">«type» MF_TemporalGeometry</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
@@ -1192,6 +1185,13 @@ function nameClassifier(name, separator)
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA2/EA5666.htm">«type» MF_RigidTemporalGeometry</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 

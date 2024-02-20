@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Common Utility Network Elements::Appurtenance</title>
+<title>Common Utility Network Elements::UtilityNetwork</title>
 <link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Appurtenance", " : "))</script>  : Public  &lt;&lt;featureType&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("UtilityNetwork", " : "))</script>  : Public  &lt;&lt;featureType&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">29/03/2012 23:17:23</td>
+			<td width="85%" class="ObjectDetailsValue">06/10/2010 09:19:45</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">03/08/2023 13:57:33</td>
+			<td class="ObjectDetailsValue">09/10/2012 16:05:54</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -51,7 +51,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td class="ObjectDetailsValue">Administrator</td>
+			<td class="ObjectDetailsValue">Maksim Sestic</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
@@ -87,18 +87,20 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{B44D49A3-FBD6-4571-AEEC-B82F21351229}</td>
+			<td class="ObjectDetailsValue">{00E9204C-185D-43d2-AB0C-2DD0ECBAA095}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA9260.htm">Utility Networks Profile - Full Hierarchy Example</a>, <a href="EA9274.htm">Utility Networks Profile -  Common Types</a>, <a href="../EA2/EA9298.htm">Electricity Network</a>, <a href="../EA3/EA9303.htm">Oil-Gas-Chemicals Network</a>, <a href="../EA4/EA9309.htm">Sewer Network</a>, <a href="../EA5/EA9315.htm">Telecommunications Network</a>, <a href="../EA6/EA9321.htm">Thermal Network</a>, <a href="../EA7/EA9326.htm">Water Network</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA9245.htm">Utility Networks Profile - Full Hierarchy Example</a>, <a href="EA9259.htm">Utility Networks Profile - Common Types</a>, <a href="../EA2/EA9283.htm">Electricity Network</a>, <a href="../EA3/EA9288.htm">Oil-Gas-Chemicals Network</a>, <a href="../EA4/EA9294.htm">Sewer Network</a>, <a href="../EA5/EA9300.htm">Telecommunications Network</a>, <a href="../EA6/EA9306.htm">Thermal Network</a>, <a href="../EA7/EA9311.htm">Water Network</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">-- Name --&lt;br/&gt;appurtenance&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;An appurtenance is a node object that is described by its type (via the attribute &quot;appurtenanceType&quot;).&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;The &quot;appurtenanceType&quot; attribute uses the &quot;AppurtenanceTypeValue&quot; codelist for its values. But this is an empty codelist that needs to be extended by a concrete codelist of appurtenance types for each utility network type. &lt;br/&gt;So e.g. for the electricity network, the &quot;ElectricityAppurtenanceTypeValue&quot; codelist should be used.&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">-- Name --&lt;br/&gt;utility network&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Collection of network elements that belong to a single type of utility network.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;In the real world, objects are connected to each other: an optical cable is connected to a multiplexer that in turn is connected to copper cables connecting into our homes to provide cable TV, telephony and internet access. Using GIS to support network utility management typically involves many types of features that may have connectivity to each other. Topology in GIS is generally defined as the spatial relationship between connecting or adjacent features, and is an essential prerequisite for many spatial operations such as network analysis. Utility networks can be described as NaN (Node-Arc-Node) network using two basic geometric types: points (aka &lt;i&gt;nodes&lt;/i&gt;) and polylines (aka &lt;i&gt;arcs&lt;/i&gt;). NaN topologies can be directed or un-directed, depending on specific type of network (i.e. water networks are directed, while telecommunications networks are not). Such topology structure provides an automated way to handle digitising and editing errors, and enable advanced spatial analyses such as adjacency, connectivity and containment. Infrastructure networks rely on Generic network model developed during Annex I.&lt;br/&gt;&lt;br/&gt;Note: &lt;br/&gt;Via the attribute &quot;utilityNetworkType&quot;, that uses the &quot;UtilityNetworkTypeValue&quot; codelist, the type of utility network can be defined. E.g. by selecting the &quot;sewer&quot; value, the utility network becomes a &quot;sewer utility network&quot;.&lt;br/&gt;Using the &quot;crossTheme&quot; value, a utility network can be created that contains e.g. ducts, which can contain pipes and cables from various utility network types.&lt;br/&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 			<li onClick="parent.toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
@@ -110,43 +112,43 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA9278.htm">AppurtenanceTypeValue</a></i><br /><strong>&nbsp;&nbsp;appurtenanceType</strong>
+					<i>Public <a href="EA9279.htm">UtilityNetworkTypeValue</a></i><br /><strong>&nbsp;&nbsp;utilityNetworkType</strong>
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes15578')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes15578" border="0" />Details:</a>
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes15732')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes15732" border="0" />Details:</a>
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
 					
-						<tr id="DetailsImageAttributes15578_00" style="display: none;">
+						<tr id="DetailsImageAttributes15732_00" style="display: none;">
 							<td width="75"><i>Alias:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes15578_01" style="display: none;">
+						<tr id="DetailsImageAttributes15732_01" style="display: none;">
 							<td width="75"><i>Initial:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes15578_02" style="display: none;">
+						<tr id="DetailsImageAttributes15732_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td>&lt;&lt;voidable&gt;&gt;</td>
+							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes15578_03" style="display: none;">
+						<tr id="DetailsImageAttributes15732_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes15578_04" style="display: none;">
+						<tr id="DetailsImageAttributes15732_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes15578_05" style="display: none;">
+						<tr id="DetailsImageAttributes15732_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
 							<td>False</td>
 						</tr>
-						<tr id="DetailsImageAttributes15578_06" style="display: none;">
+						<tr id="DetailsImageAttributes15732_06" style="display: none;">
 							<td width="75"><i>Derived: </i></td>
 							<td>False</td>
 						</tr>
-							<tr id="DetailsImageAttributes15578_07" style="display: none;">
+							<tr id="DetailsImageAttributes15732_07" style="display: none;">
 							<td width="75"><i>IsID: </i></td>
 						<td>False</td>
 						</tr>
@@ -159,7 +161,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Name --&lt;br/&gt;appurtenance type value&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;&lt;br/&gt;Type of appurtenance&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;The &quot;AppurtenanceTypeValue&quot; codelist is an abstract codelist that can be replaced by the various appurtenance type value codelists for each utility network.&lt;br/&gt;
+			-- Name --&lt;br/&gt;utility network type&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;The type of utility network or the utilily network theme.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;Uses the codelist &quot;UtilityNetworkTypeValue&quot; to describe the possible utility networks. This also contains the &quot;crossTheme&quot; value to be used for utility networks that can contain cables or pipes from various themes, typically used by utility network providers that provide ducts.&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -168,43 +170,159 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA9286.htm">SpecificAppurtenanceTypeValue</a></i><br /><strong>&nbsp;&nbsp;specificAppurtenanceType</strong>
+					<i>Public <a href="../../../../../EA3/EA2/EA2/EA9584.htm">RelatedParty</a></i><br /><strong>&nbsp;&nbsp;authorityRole</strong>
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes15579')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes15579" border="0" />Details:</a>
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes15733')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes15733" border="0" />Details:</a>
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
 					
-						<tr id="DetailsImageAttributes15579_00" style="display: none;">
+						<tr id="DetailsImageAttributes15733_00" style="display: none;">
 							<td width="75"><i>Alias:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes15579_01" style="display: none;">
+						<tr id="DetailsImageAttributes15733_01" style="display: none;">
 							<td width="75"><i>Initial:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes15579_02" style="display: none;">
+						<tr id="DetailsImageAttributes15733_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td>&lt;&lt;voidable&gt;&gt;</td>
+							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes15579_03" style="display: none;">
+						<tr id="DetailsImageAttributes15733_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes15579_04" style="display: none;">
+						<tr id="DetailsImageAttributes15733_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
+							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes15579_05" style="display: none;">
+						<tr id="DetailsImageAttributes15733_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
 							<td>False</td>
 						</tr>
-						<tr id="DetailsImageAttributes15579_06" style="display: none;">
+						<tr id="DetailsImageAttributes15733_06" style="display: none;">
 							<td width="75"><i>Derived: </i></td>
 							<td>False</td>
 						</tr>
-							<tr id="DetailsImageAttributes15579_07" style="display: none;">
+							<tr id="DetailsImageAttributes15733_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					inlineOrByReference=byReference<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			-- Name --&lt;br/&gt;authority role&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Parties authorized to manage a utility network, such as maintainers, operators or owners.&lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../../../../../EA3/EA1/EA4/EA1/EA9383.htm">ActivityComplex</a></i><br /><strong>&nbsp;&nbsp;utilityFacilityReference</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes15734')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes15734" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes15734_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15734_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15734_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td>&lt;&lt;voidable&gt;&gt;</td>
+						</tr>
+						<tr id="DetailsImageAttributes15734_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15734_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to *</td>
+						</tr>
+						<tr id="DetailsImageAttributes15734_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes15734_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes15734_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					inlineOrByReference=byReference<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			-- Name --&lt;br/&gt;utility facility reference&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Reference to a facility activity complex that is linked to (e.g. part of) this utility network.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;This reference can be used to link utility facilities - having a more complex geometry - to a utility network. &lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public PT_FreeText</i><br /><strong>&nbsp;&nbsp;disclaimer</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes15735')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes15735" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes15735_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15735_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15735_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td>&lt;&lt;voidable&gt;&gt;</td>
+						</tr>
+						<tr id="DetailsImageAttributes15735_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15735_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to *</td>
+						</tr>
+						<tr id="DetailsImageAttributes15735_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes15735_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes15735_07" style="display: none;">
 							<td width="75"><i>IsID: </i></td>
 						<td>False</td>
 						</tr>
@@ -217,7 +335,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Name --&lt;br/&gt;specific appurtenance type&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Type of appurtenance according to a domain-specific classification.&lt;br/&gt;
+			-- Name --&lt;br/&gt;disclaimer&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Legal text describing confidentiality clauses applying to the utility network information.&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -227,6 +345,82 @@ function nameClassifier(name, separator)
 			</tr>
 	</table>
 </div>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA9277.htm">«featureType» UtilityNetwork</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> networks<br />
+						-- Name --
+networks
+
+-- Definition --
+A single sub-network that can be considered as part of a higher-order utility network.
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink15736" onclick="parent.toggleDiv('detailsDIVLink15736','DetailsImageLink15736')" />Details:
+							<div id="detailsDIVLink15736" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">-- Name --&lt;br/&gt;networks&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Utility networks may contain sub-networks.&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA9277.htm">«featureType» UtilityNetwork</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> networks<br />
+						-- Name --
+networks
+
+-- Definition --
+A single sub-network that can be considered as part of a higher-order utility network.
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink15737" onclick="parent.toggleDiv('detailsDIVLink15737','DetailsImageLink15737')" />Details:
+							<div id="detailsDIVLink15737" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">-- Name --&lt;br/&gt;networks&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Utility networks may contain sub-networks.&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
 <div class="ItemBody" id="TaggedValTable">
 	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 		<tr>
@@ -239,8 +433,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15580" onclick="parent.toggleDiv('detailsDIVScenario15580','DetailsImageScenario15580')" />Details:
-						<div id="detailsDIVScenario15580" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15738" onclick="parent.toggleDiv('detailsDIVScenario15738','DetailsImageScenario15738')" />Details:
+						<div id="detailsDIVScenario15738" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: Create a property type that requires that the instance is encoded inline (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.<br /></div>
 
 						</div>
@@ -252,8 +446,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15581" onclick="parent.toggleDiv('detailsDIVScenario15581','DetailsImageScenario15581')" />Details:
-						<div id="detailsDIVScenario15581" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15739" onclick="parent.toggleDiv('detailsDIVScenario15739','DetailsImageScenario15739')" />Details:
+						<div id="detailsDIVScenario15739" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: true | false<br />Default: false<br />Description: Identifies the feature type as a mixin type that will not be encoded as a separate element/type in the GML encoding.<br /></div>
 
 						</div>
@@ -265,8 +459,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15582" onclick="parent.toggleDiv('detailsDIVScenario15582','DetailsImageScenario15582')" />Details:
-						<div id="detailsDIVScenario15582" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15740" onclick="parent.toggleDiv('detailsDIVScenario15740','DetailsImageScenario15740')" />Details:
+						<div id="detailsDIVScenario15740" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Default: FIXME<br />Description: URN reference to the feature concept in the INSPIRE Feature Concept Dictionary Register<br /></div>
 
 						</div>
@@ -278,8 +472,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15583" onclick="parent.toggleDiv('detailsDIVScenario15583','DetailsImageScenario15583')" />Details:
-						<div id="detailsDIVScenario15583" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15741" onclick="parent.toggleDiv('detailsDIVScenario15741','DetailsImageScenario15741')" />Details:
+						<div id="detailsDIVScenario15741" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: true | false<br />Default: false<br />Description: Identifies the feature type as a feature collection.<br /></div>
 
 						</div>
@@ -291,8 +485,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15584" onclick="parent.toggleDiv('detailsDIVScenario15584','DetailsImageScenario15584')" />Details:
-						<div id="detailsDIVScenario15584" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15742" onclick="parent.toggleDiv('detailsDIVScenario15742','DetailsImageScenario15742')" />Details:
+						<div id="detailsDIVScenario15742" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: Surpress creation of a standard property type that supports inline or by-reference encoding (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.<br /></div>
 
 						</div>
@@ -304,8 +498,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15585" onclick="parent.toggleDiv('detailsDIVScenario15585','DetailsImageScenario15585')" />Details:
-						<div id="detailsDIVScenario15585" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15743" onclick="parent.toggleDiv('detailsDIVScenario15743','DetailsImageScenario15743')" />Details:
+						<div id="detailsDIVScenario15743" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions<br />Default: iso19136_2007_INSPIRE_Extensions<br />Description: XML Schema encoding rule to apply<br /></div>
 
 						</div>
@@ -321,15 +515,31 @@ function nameClassifier(name, separator)
 					<td width="10%" class="TableHeading">Status</td>
 				</tr>
 				<tr>
-					<td width="80%" class="TableRow">"TelecommunicationsAppurtenanceTypeValue" is not in IR</td>
+					<td width="80%" class="TableRow">All utility network objects have inspireId</td>
 					<td width="10%" class="TableRow">OCL</td>
 					<td width="10%" class="TableRow">Proposed</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints15586" onclick="parent.toggleDiv('detailsDIVConstraints15586','DetailsImageConstraints15586')" />Details:
-							<div id="detailsDIVConstraints15586" class="DetailsDiv" >
-							&nbsp;
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints15744" onclick="parent.toggleDiv('detailsDIVConstraints15744','DetailsImageConstraints15744')" />Details:
+							<div id="detailsDIVConstraints15744" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">/* All utility network objects have an external object identifier. */&lt;br/&gt;inv:inspireId-#gt;notEmpty()&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">"telecommunications" value of "utilityNetworkType" is not in IR</td>
+					<td width="10%" class="TableRow">OCL</td>
+					<td width="10%" class="TableRow">Proposed</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints15745" onclick="parent.toggleDiv('detailsDIVConstraints15745','DetailsImageConstraints15745')" />Details:
+							<div id="detailsDIVConstraints15745" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">/*The multiplicity of &quot;telecommunications&quot; shall be 0*/&lt;br/&gt;inv: telecommunications-#gt;size()=0&lt;br/&gt;&lt;br/&gt;</div>
+
 							</div>
 						</div>
 					</td>
@@ -347,7 +557,7 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA9295.htm">«featureType» UtilityNode</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../../EA3/EA1/EA5/EA9414.htm">«featureType» Network</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>

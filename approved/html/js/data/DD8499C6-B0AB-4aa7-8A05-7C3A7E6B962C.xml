@@ -1,2 +1,2 @@
-tocTab[tocTab.length] = new Array("0.2.2.4.1:1", "", "Package Structure", "EARoot/EA2/EA2/EA4/EA1/EA8172.htm", "176.png", "27403", "0", "", "Package diagram0","{F5EFB8E7-BADC-4d23-8FC8-F33EA5B7E134}");
-tocTab[tocTab.length] = new Array("0.2.2.4.1.1", "1", "«applicationSchema» Orthoimagery", "EARoot/EA2/EA2/EA4/EA1/EA1/EA8178.htm", "4.png", "", "", "{D97F292C-CD87-4cc6-9AFD-DF7B355DE11B}", "Package");
+tocTab[tocTab.length] = new Array("0.2.2.4.1:1", "", "Package Structure", "EARoot/EA2/EA2/EA4/EA1/EA8159.htm", "176.png", "27403", "0", "", "Package diagram0","{F5EFB8E7-BADC-4d23-8FC8-F33EA5B7E134}");
+tocTab[tocTab.length] = new Array("0.2.2.4.1.1", "1", "«applicationSchema» Orthoimagery", "EARoot/EA2/EA2/EA4/EA1/EA1/EA8165.htm", "4.png", "", "", "{D97F292C-CD87-4cc6-9AFD-DF7B355DE11B}", "Package");

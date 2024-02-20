@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title></title>
+<title>Point Observations::MultiPointObservation</title>
 <link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("", " : "))</script>  : Public   Note</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("MultiPointObservation", " : "))</script>  : Public  &lt;&lt;featureType&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">17/04/2012 16:21:23</td>
+			<td width="85%" class="ObjectDetailsValue">09/12/2011 14:48:22</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">18/04/2012 09:32:53</td>
+			<td class="ObjectDetailsValue">28/11/2012 16:07:59</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,15 +87,162 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{1D5914CC-8D9D-4aef-856C-A7E07979BD8C}</td>
+			<td class="ObjectDetailsValue">{61D191DD-95E9-42e2-BF7D-263F842E144B}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA9498.htm">PointTimeSeriesObservation</a></td>
+			<td class="ObjectDetailsValue"><a href="../../../../../EA2/EA3/EA1/EA1/EA8205.htm">AC-MF : Overview</a>, <a href="../../../../../EA2/EA3/EA13/EA1/EA1/EA8946.htm">Oceanographic Geographical Features - Overview</a>, <a href="../EA9446.htm">Specialised Observations  - Overview</a>, <a href="EA9477.htm">Point Observation Types - Overview</a>, <a href="EA9485.htm">MultiPointObservation</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">«OCL»&lt;br/&gt;{featureOfInterest must be a SF_SamplingPoint : /* featureOfInterest must be a SF_SamplingPoint */&lt;br/&gt;inv: self.featureOfInterest-#gt;forAll(oclIsKindOf(SF_SamplingPoint))}&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">-- Name --&lt;br/&gt;MultiPointObservation &lt;br/&gt;-- Definition --&lt;br/&gt;Observation that represents a set of measurements all made at exactly the same time but at different locations&lt;br/&gt;-- Description --&lt;br/&gt;The MultiPointObservation is an Observation that represents a set of measurements all made at exactly the same time but at different locations, for example a distributed sensor network reporting the temperature at 10am. The result of this observation is a MultiPointCoverage.&lt;br/&gt;</div>
 
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
+		</ul>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">byValuePropertyType</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario16561" onclick="parent.toggleDiv('detailsDIVScenario16561','DetailsImageScenario16561')" />Details:
+						<div id="detailsDIVScenario16561" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: Create a property type that requires that the instance is encoded inline (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">gmlMixin</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario16562" onclick="parent.toggleDiv('detailsDIVScenario16562','DetailsImageScenario16562')" />Details:
+						<div id="detailsDIVScenario16562" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: true | false<br />Default: false<br />Description: Identifies the feature type as a mixin type that will not be encoded as a separate element/type in the GML encoding.<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">inspireConcept</td>
+				<td width="50%" class="TableRow" valign="top">FIXME</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario16563" onclick="parent.toggleDiv('detailsDIVScenario16563','DetailsImageScenario16563')" />Details:
+						<div id="detailsDIVScenario16563" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Default: FIXME<br />Description: URN reference to the feature concept in the INSPIRE Feature Concept Dictionary Register<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">isCollection</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario16564" onclick="parent.toggleDiv('detailsDIVScenario16564','DetailsImageScenario16564')" />Details:
+						<div id="detailsDIVScenario16564" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: true | false<br />Default: false<br />Description: Identifies the feature type as a feature collection.<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">noPropertyType</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario16565" onclick="parent.toggleDiv('detailsDIVScenario16565','DetailsImageScenario16565')" />Details:
+						<div id="detailsDIVScenario16565" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: Surpress creation of a standard property type that supports inline or by-reference encoding (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">xsdEncodingRule</td>
+				<td width="50%" class="TableRow" valign="top">iso19136_2007_INSPIRE_Extensions</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario16566" onclick="parent.toggleDiv('detailsDIVScenario16566','DetailsImageScenario16566')" />Details:
+						<div id="detailsDIVScenario16566" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions<br />Default: iso19136_2007_INSPIRE_Extensions<br />Description: XML Schema encoding rule to apply<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="ConstraintsTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+			  	<tr>
+					<td width="80%" class="TableHeading">Constraint</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Status</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">featureOfInterest shall be a SF_SamplingSurface</td>
+					<td width="10%" class="TableRow">OCL</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints16567" onclick="parent.toggleDiv('detailsDIVConstraints16567','DetailsImageConstraints16567')" />Details:
+							<div id="detailsDIVConstraints16567" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">/* featureOfInterest must be a SF_SamplingSurface */ &lt;br/&gt;inv: self.featureOfInterest-#gt;forAll(oclIsKindOf(SF_SamplingSurface))&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">phenomenonTime shall be a TM_Instant</td>
+					<td width="10%" class="TableRow">OCL</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints16568" onclick="parent.toggleDiv('detailsDIVConstraints16568','DetailsImageConstraints16568')" />Details:
+							<div id="detailsDIVConstraints16568" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">/*phenomenonTime must be a TM_Instant */&lt;br/&gt;inv: self.phenomenonTime.oclIsKindOf(TM_Instant)&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">result must be a MultiPointCoverage</td>
+					<td width="10%" class="TableRow">OCL</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints16569" onclick="parent.toggleDiv('detailsDIVConstraints16569','DetailsImageConstraints16569')" />Details:
+							<div id="detailsDIVConstraints16569" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">/* result must be a MultiPointCoverage */&lt;br/&gt;inv: self.result.oclIsKindOf(MultiPointCoverage)&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
 <div class="pageFooter"></div>
  
 </body>
