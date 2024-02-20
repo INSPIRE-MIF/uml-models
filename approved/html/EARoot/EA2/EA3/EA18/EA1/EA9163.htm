@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Sea Regions</title>
+<title>Sea Regions::MarineLayer</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Sea Regions", " : "))</script>  : Public  &lt;&lt;applicationSchema&gt;&gt; Package</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("MarineLayer", " : "))</script>  : Public abstract &lt;&lt;featureType&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">17/03/2014 10:39:16</td>
+			<td width="85%" class="ObjectDetailsValue">02/11/2010 16:12:34</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">17/03/2014 10:39:16</td>
+			<td class="ObjectDetailsValue">19/10/2012 11:04:46</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -51,7 +51,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td class="ObjectDetailsValue">aw56</td>
+			<td class="ObjectDetailsValue">dom</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
@@ -87,20 +87,232 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{9F4CDA25-5E2F-4fb4-BD63-A0C0414B9607}</td>
+			<td class="ObjectDetailsValue">{B6713C57-FFF0-4fb9-BA2E-00E726F86E91}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../../../EA1/EA7/EA7598.htm">Hydrography package imports</a></td>
+			<td class="ObjectDetailsValue"><a href="EA9146.htm">Sea Regions</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">-- Name --&lt;br/&gt;Sea Regions Application Schema&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Physical conditions of seas and saline water bodies divided into regions and sub-regions with common characteristics. (2007/2/EC)&lt;br/&gt;&lt;br/&gt;A historical version of the theme definition is found in the INSPIRE IMS paper:&lt;br/&gt;&bull; Seas and saline water bodies divided into regions and sub-regions. Each region with common characteristics, concerning water flow/ circulation, adjacent river catchments, bio-chemical or temperature of water, based on scientific criteria. Detailed information at regional level exist. (INSPIRE IMS, 2003)&lt;br/&gt;&lt;br/&gt;Both &#39;Oceanographic geographical features&#39; and &#39;Sea-regions&#39; are concerned with physical conditions of marine water-masses. (This is a similar overlap to that which exists for themes 7.13 &quot;Atmospheric Conditions&quot; and 7.14 &quot;Meteorological geographical features&quot;.) To resolve the ambiguity, we consider the multi-level approach to data needs assessment applied in ETC. Data at local or regional level are often needed for management and policy implementation, while lower resolution (&#39;smaller scale&#39;) data are often required for reporting and policy development/evaluation. The latter includes summaries and integrated data products.&lt;br/&gt;&lt;br/&gt;We regard the &quot;Sea regions&quot; theme as focussing on the local/regional level coastal zone.&lt;br/&gt;&lt;br/&gt;Whereas 7.15 &#39;Oceanographic geographical features&#39; focuses on physical conditions and general circulation of offshore oceanic waters, the &#39;Sea regions&#39; theme is concerned with marine features of the coastal zone ? regions defined as &#39;transitional waters&#39; and &#39;coastal waters&#39; in the Water Framework Directive:&lt;br/&gt;&bull; transitional waters: bodies of surface water in the vicinity of river mouths which are partly saline in character as a result of their proximity to coastal waters but which are substantially influenced by freshwater flows&lt;br/&gt;&bull; coastal waters: surface water on the landward side of a line, every point of which is at a distance of one nautical mile on the seaward side from the nearest point of the baseline from which the breadth of territorial waters is measured, extending where appropriate up to the outer limit of transitional waters&lt;br/&gt;&lt;br/&gt;The World Meteorological Organisation also has a geometry-based sea region classification, dividing the ocean into Marsden Squares.&lt;br/&gt;Both biotic and physical parameters and indicators are important in the classification and delineation of sea regions. Physical data requirements for important indicators defined in the WFD and the Integrated Coastal Zone Management policy are outlined in the ETC paper. These include:&lt;br/&gt;&bull; nutrients (nitrate, phosphate and nitrogen: phosphorus ratio) by regional sea and water body type&lt;br/&gt;&bull; concentrations of hazardous substances and pollutants (incl. heavy metals, persistent organic pollutants)&lt;br/&gt;&bull; productivity indicators (incl. surface cholorophyll-a)&lt;br/&gt;&bull; biological classification of waters&lt;br/&gt;&bull; water masses/layers characterised by bulk temperature and salinity properties&lt;br/&gt;&bull; polar area features (incl. pack ice)&lt;br/&gt;&bull; wind (climatological and meteorolog&bull; benthic parameters (sediment, benthic communities/habitats)&lt;br/&gt;&bull; sea level&lt;br/&gt;&bull; chemical species and concentrations&lt;br/&gt;&bull; physical characteristics (incl. temperature, salinity)&lt;br/&gt;&bull; currents (including surface currents)&lt;br/&gt;&bull; tidal zones&lt;br/&gt;&bull; wavesrequired&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">-- Name --&lt;br/&gt;Marine Layer&lt;br/&gt;-- Definition --&lt;br/&gt;A Marine Layer describes any layer that may cover any part of a sea surface or sea bottom.&lt;br/&gt;-- Description --&lt;br/&gt;&lt;br/&gt;Examples of surface layers identified in the reference material include oil, algal blooms and ice.&#160;&#160;Examples of seabed layer identified in the reference material include sediment type and presence or absence of vegetation.&lt;br/&gt;As these phenomena have a dynamic characteristic, the extent they describe (GM_Surface) has a validity period. A marineLayer may not be associated with a particular SeaArea. A SeaArea may have multiple MarineLayers and MarineLayers can overlap each other.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Attribute</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../../../../EA1/EA3/EA6/EA1/EA5/EA1219.htm">GM_Object</a></i><br /><strong>&nbsp;&nbsp;geometry</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes15260')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes15260" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes15260_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15260_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15260_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15260_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15260_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes15260_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes15260_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes15260_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			-- Name --&lt;br/&gt;Geometry&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Geometry of the marine layer.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						<i>Constraints:</i><br><span style= "margin-left: .5cm;">&nbsp; geometry should be a GM_Point or GM_Surface </span>
+<table>
+	<tr>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
+		</td>
+		<td>
+			&nbsp;
+		</td>
+	</td>
+</table> 
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../../../../EA1/EA3/EA9/EA1/EA1891.htm">TM_Period</a></i><br /><strong>&nbsp;&nbsp;validTime</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes15261')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes15261" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes15261_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15261_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15261_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15261_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15261_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15261_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes15261_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes15261_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			-- Name --&lt;br/&gt;Valid Time&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Time period for which the marine layer is valid.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>
+	</table>
+</div>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA9163.htm">«featureType» MarineLayer</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> subLayer<br />
+						-- Name --
+Sub layer
+
+-- Definition --
+A marine layer may have a sub-layer, for example an Oil Slick may have a main slick with several smaller sub-slicks.	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink15262" onclick="parent.toggleDiv('detailsDIVLink15262','DetailsImageLink15262')" />Details:
+							<div id="detailsDIVLink15262" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA9163.htm">«featureType» MarineLayer</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> subLayer<br />
+						-- Name --
+Sub layer
+
+-- Definition --
+A marine layer may have a sub-layer, for example an Oil Slick may have a main slick with several smaller sub-slicks.	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink15263" onclick="parent.toggleDiv('detailsDIVLink15263','DetailsImageLink15263')" />Details:
+							<div id="detailsDIVLink15263" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
 <div class="ItemBody" id="TaggedValTable">
 	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 		<tr>
@@ -108,53 +320,66 @@ function nameClassifier(name, separator)
 			<td width="50%" class="TableHeading">Value</td>
 		</tr>
 					<tr>
-				<td width="50%" class="TableRow" valign="top">targetNamespace</td>
-				<td width="50%" class="TableRow" valign="top">&lt;a href=&quot;http://inspire.ec.europa.eu/schemas/sr/4.0&quot; target=&quot;_blank&quot; &gt;http://inspire.ec.europa.eu/schemas/sr/4.0&lt;/a&gt;</td>
+				<td width="50%" class="TableRow" valign="top">byValuePropertyType</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15174" onclick="parent.toggleDiv('detailsDIVScenario15174','DetailsImageScenario15174')" />Details:
-						<div id="detailsDIVScenario15174" class="DetailsDiv" >
-						<div class="ObjectDetailsNotes">Default: FIXME<br />Description: Target XML namespace of the application schema<br /></div>
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15264" onclick="parent.toggleDiv('detailsDIVScenario15264','DetailsImageScenario15264')" />Details:
+						<div id="detailsDIVScenario15264" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: Create a property type that requires that the instance is encoded inline (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.<br /></div>
 
 						</div>
 					</div>
 				</td>
 			</tr>			<tr>
-				<td width="50%" class="TableRow" valign="top">version</td>
-				<td width="50%" class="TableRow" valign="top">4.0</td>
+				<td width="50%" class="TableRow" valign="top">gmlMixin</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15175" onclick="parent.toggleDiv('detailsDIVScenario15175','DetailsImageScenario15175')" />Details:
-						<div id="detailsDIVScenario15175" class="DetailsDiv" >
-						<div class="ObjectDetailsNotes">Default: FIXME<br />Description: Current version of the application schema<br /></div>
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15265" onclick="parent.toggleDiv('detailsDIVScenario15265','DetailsImageScenario15265')" />Details:
+						<div id="detailsDIVScenario15265" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: true | false<br />Default: false<br />Description: Identifies the feature type as a mixin type that will not be encoded as a separate element/type in the GML encoding.<br /></div>
 
 						</div>
 					</div>
 				</td>
 			</tr>			<tr>
-				<td width="50%" class="TableRow" valign="top">xmlns</td>
-				<td width="50%" class="TableRow" valign="top">sr</td>
+				<td width="50%" class="TableRow" valign="top">inspireConcept</td>
+				<td width="50%" class="TableRow" valign="top">FIXME</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15176" onclick="parent.toggleDiv('detailsDIVScenario15176','DetailsImageScenario15176')" />Details:
-						<div id="detailsDIVScenario15176" class="DetailsDiv" >
-						<div class="ObjectDetailsNotes">Default: FIXME<br />Description: Namespace prefix to be used as short form of the target namespace<br /></div>
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15266" onclick="parent.toggleDiv('detailsDIVScenario15266','DetailsImageScenario15266')" />Details:
+						<div id="detailsDIVScenario15266" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Default: FIXME<br />Description: URN reference to the feature concept in the INSPIRE Feature Concept Dictionary Register<br /></div>
 
 						</div>
 					</div>
 				</td>
 			</tr>			<tr>
-				<td width="50%" class="TableRow" valign="top">xsdDocument</td>
-				<td width="50%" class="TableRow" valign="top">SeaRegions.xsd</td>
+				<td width="50%" class="TableRow" valign="top">isCollection</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15177" onclick="parent.toggleDiv('detailsDIVScenario15177','DetailsImageScenario15177')" />Details:
-						<div id="detailsDIVScenario15177" class="DetailsDiv" >
-						<div class="ObjectDetailsNotes">Default: FIXME<br />Description: Name of an XML Schema document to create representing the content of this package<br /></div>
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15267" onclick="parent.toggleDiv('detailsDIVScenario15267','DetailsImageScenario15267')" />Details:
+						<div id="detailsDIVScenario15267" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: true | false<br />Default: false<br />Description: Identifies the feature type as a feature collection.<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">noPropertyType</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15268" onclick="parent.toggleDiv('detailsDIVScenario15268','DetailsImageScenario15268')" />Details:
+						<div id="detailsDIVScenario15268" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: Surpress creation of a standard property type that supports inline or by-reference encoding (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.<br /></div>
 
 						</div>
 					</div>
@@ -165,8 +390,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15178" onclick="parent.toggleDiv('detailsDIVScenario15178','DetailsImageScenario15178')" />Details:
-						<div id="detailsDIVScenario15178" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15269" onclick="parent.toggleDiv('detailsDIVScenario15269','DetailsImageScenario15269')" />Details:
+						<div id="detailsDIVScenario15269" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions<br />Default: iso19136_2007_INSPIRE_Extensions<br />Description: XML Schema encoding rule to apply<br /></div>
 
 						</div>
@@ -174,7 +399,32 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>
 	</table>
-</div>		<div class="ItemBody" id="LinksTable">
+</div>		<div class="ItemBody" id="ConstraintsTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+			  	<tr>
+					<td width="80%" class="TableHeading">Constraint</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Status</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">geometry should be a GM_Point or GM_Surface</td>
+					<td width="10%" class="TableRow">OCL</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints15270" onclick="parent.toggleDiv('detailsDIVConstraints15270','DetailsImageConstraints15270')" />Details:
+							<div id="detailsDIVConstraints15270" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">&lt;br/&gt;/* A Marine Layer can be represented as either a surface or a point.&#160;&#160;The point type geometry reflects the reality that many Marine Layers are identified by point observations. */&lt;br/&gt;inv:self.geometry.oclIsKindOf(GM_Point) OR self.geometry.oclIsKindOf(GM_Surface)&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="LinksTable">
 			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="30%" class="TableHeading">Object</td>
@@ -184,17 +434,17 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../../../EA3/EA2/EA1/EA9569.htm">«applicationSchema» Base Types</a></td>
-					<td width="10%" class="TableRow" valign="top">Package</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA9168.htm">«featureType» SeaBedArea</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../../EA1/EA7/EA3/EA7644.htm">«applicationSchema» Hydro - Physical Waters</a></td>
-					<td width="10%" class="TableRow" valign="top">Package</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA9170.htm">«featureType» SeaSurfaceArea</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 

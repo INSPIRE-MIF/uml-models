@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Air Transport Network::AirRouteLink</title>
+<title>Air Transport Network::LowerAltitudeLimit</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("AirRouteLink", " : "))</script>  : Public  &lt;&lt;featureType&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("LowerAltitudeLimit", " : "))</script>  : Public  &lt;&lt;featureType&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">11/09/2008 10:49:57</td>
+			<td width="85%" class="ObjectDetailsValue">23/06/2009 12:31:37</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">15/07/2009 15:18:39</td>
+			<td class="ObjectDetailsValue">20/01/2010 09:18:03</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -51,7 +51,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td class="ObjectDetailsValue">lars</td>
+			<td class="ObjectDetailsValue">j.escriu</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
@@ -87,19 +87,20 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{C04D93CC-5933-4341-A0C5-BAA2BCF808EB}</td>
+			<td class="ObjectDetailsValue">{19D883A8-7F6F-4a46-B792-EEC9D912B168}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA7736.htm">Air Transport Network</a>, <a href="EA7738.htm">Air Transport Network Overview</a>, <a href="EA7742.htm">Air Transport Network: Spatial object types - Links and Areas</a></td>
+			<td class="ObjectDetailsValue"><a href="EA7723.htm">Air Transport Network</a>, <a href="EA7733.htm">Air Transport Network: Spatial object types - Transport Properties</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">-- Definition --&lt;br/&gt;A portion of a route to be flown usually without an intermediate stop, as defined by two consecutive significant points.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;SOURCE [AirRouteSegment - AIXM5.0].&lt;br/&gt;&lt;br/&gt;NOTE The presence of air nodes (normally defining Significant Points) is not mandated.&lt;br/&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">-- Definition --&lt;br/&gt;Altitude that defines the lower limit of an air transport network object.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE When applied to an AirRouteLink it corresponds to the Lowest Safe Altitude, which is defined in order to provide safety for navigation.&lt;br/&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
@@ -109,43 +110,43 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA7762.htm">AirRouteLinkClassValue</a></i><br /><strong>&nbsp;&nbsp;airRouteLinkClass</strong>
+					<i>Public Measure</i><br /><strong>&nbsp;&nbsp;altitude</strong>
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes10679')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes10679" border="0" />Details:</a>
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes10791')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes10791" border="0" />Details:</a>
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
 					
-						<tr id="DetailsImageAttributes10679_00" style="display: none;">
+						<tr id="DetailsImageAttributes10791_00" style="display: none;">
 							<td width="75"><i>Alias:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes10679_01" style="display: none;">
+						<tr id="DetailsImageAttributes10791_01" style="display: none;">
 							<td width="75"><i>Initial:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes10679_02" style="display: none;">
+						<tr id="DetailsImageAttributes10791_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td>&lt;&lt;voidable&gt;&gt;</td>
+							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes10679_03" style="display: none;">
+						<tr id="DetailsImageAttributes10791_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes10679_04" style="display: none;">
+						<tr id="DetailsImageAttributes10791_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes10679_05" style="display: none;">
+						<tr id="DetailsImageAttributes10791_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
 							<td>False</td>
 						</tr>
-						<tr id="DetailsImageAttributes10679_06" style="display: none;">
+						<tr id="DetailsImageAttributes10791_06" style="display: none;">
 							<td width="75"><i>Derived: </i></td>
 							<td>False</td>
 						</tr>
-							<tr id="DetailsImageAttributes10679_07" style="display: none;">
+							<tr id="DetailsImageAttributes10791_07" style="display: none;">
 							<td width="75"><i>IsID: </i></td>
 						<td>False</td>
 						</tr>
@@ -158,7 +159,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Definition --&lt;br/&gt;The class or type of an air route link.&lt;br/&gt;&lt;br/&gt;
+			-- Definition --&lt;br/&gt;Value of the altitude limit.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -180,8 +181,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario10680" onclick="parent.toggleDiv('detailsDIVScenario10680','DetailsImageScenario10680')" />Details:
-						<div id="detailsDIVScenario10680" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario10792" onclick="parent.toggleDiv('detailsDIVScenario10792','DetailsImageScenario10792')" />Details:
+						<div id="detailsDIVScenario10792" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: Create a property type that requires that the instance is encoded inline (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.<br /></div>
 
 						</div>
@@ -193,8 +194,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario10681" onclick="parent.toggleDiv('detailsDIVScenario10681','DetailsImageScenario10681')" />Details:
-						<div id="detailsDIVScenario10681" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario10793" onclick="parent.toggleDiv('detailsDIVScenario10793','DetailsImageScenario10793')" />Details:
+						<div id="detailsDIVScenario10793" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: true | false<br />Default: false<br />Description: Identifies the feature type as a mixin type that will not be encoded as a separate element/type in the GML encoding.<br /></div>
 
 						</div>
@@ -206,8 +207,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario10682" onclick="parent.toggleDiv('detailsDIVScenario10682','DetailsImageScenario10682')" />Details:
-						<div id="detailsDIVScenario10682" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario10794" onclick="parent.toggleDiv('detailsDIVScenario10794','DetailsImageScenario10794')" />Details:
+						<div id="detailsDIVScenario10794" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Default: FIXME<br />Description: URN reference to the feature concept in the INSPIRE Feature Concept Dictionary Register<br /></div>
 
 						</div>
@@ -219,8 +220,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario10683" onclick="parent.toggleDiv('detailsDIVScenario10683','DetailsImageScenario10683')" />Details:
-						<div id="detailsDIVScenario10683" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario10795" onclick="parent.toggleDiv('detailsDIVScenario10795','DetailsImageScenario10795')" />Details:
+						<div id="detailsDIVScenario10795" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: true | false<br />Default: false<br />Description: Identifies the feature type as a feature collection.<br /></div>
 
 						</div>
@@ -232,8 +233,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario10684" onclick="parent.toggleDiv('detailsDIVScenario10684','DetailsImageScenario10684')" />Details:
-						<div id="detailsDIVScenario10684" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario10796" onclick="parent.toggleDiv('detailsDIVScenario10796','DetailsImageScenario10796')" />Details:
+						<div id="detailsDIVScenario10796" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: Surpress creation of a standard property type that supports inline or by-reference encoding (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.<br /></div>
 
 						</div>
@@ -245,8 +246,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario10685" onclick="parent.toggleDiv('detailsDIVScenario10685','DetailsImageScenario10685')" />Details:
-						<div id="detailsDIVScenario10685" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario10797" onclick="parent.toggleDiv('detailsDIVScenario10797','DetailsImageScenario10797')" />Details:
+						<div id="detailsDIVScenario10797" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions<br />Default: iso19136_2007_INSPIRE_Extensions<br />Description: XML Schema encoding rule to apply<br /></div>
 
 						</div>
@@ -254,7 +255,32 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>
 	</table>
-</div>		<div class="ItemBody" id="LinksTable">
+</div>		<div class="ItemBody" id="ConstraintsTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+			  	<tr>
+					<td width="80%" class="TableHeading">Constraint</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Status</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">Applies to AirRouteLink and AirspaceArea only</td>
+					<td width="10%" class="TableRow">Invariant</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints10798" onclick="parent.toggleDiv('detailsDIVConstraints10798','DetailsImageConstraints10798')" />Details:
+							<div id="detailsDIVConstraints10798" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">/* This property can only be associated with a spatial object that is an Air Route Link or Airspace Area. */&lt;br/&gt;inv: networkRef.element.oclIsKindOf(AirRouteLink) or&lt;br/&gt;networkRef.element.oclIsKindOf(AirspaceArea)&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="LinksTable">
 			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="30%" class="TableHeading">Object</td>
@@ -264,7 +290,7 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA7757.htm">«featureType» AirLink</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA5/EA7909.htm">«featureType» TransportProperty</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>

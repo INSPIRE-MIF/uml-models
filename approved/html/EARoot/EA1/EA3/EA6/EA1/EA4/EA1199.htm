@@ -188,29 +188,6 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA1196.htm">«type» GM_OrientablePrimitive</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> primitive<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> proxy<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1665" onclick="parent.toggleDiv('detailsDIVLink1665','DetailsImageLink1665')" />Details:
-							<div id="detailsDIVLink1665" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
 						<a href="../EA3/EA1132.htm">«type» GM_Composite</a><br />
 						Class &nbsp;
 					</td>
@@ -225,9 +202,33 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1665" onclick="parent.toggleDiv('detailsDIVLink1665','DetailsImageLink1665')" />Details:
+							<div id="detailsDIVLink1665" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA1199.htm">«type» GM_Primitive</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> containedPrimitive<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> containingPrimitive<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1666" onclick="parent.toggleDiv('detailsDIVLink1666','DetailsImageLink1666')" />Details:
 							<div id="detailsDIVLink1666" class="DetailsDiv" >
-							&nbsp;
+							<div class="ObjectDetailsNotes">The subelement is restricted to be contained upon the super element in question. &lt;br/&gt;&lt;br/&gt;The dimension of the subelement must be less than that of the super element.&lt;br/&gt;&lt;br/&gt;GM_Primitive&lt;br/&gt;dimension()&#160;&#160;#gt;&#160;&#160;coincidentSubelement.dimension()+The &quot;Interior To&quot; association associates GM_Primitives which are by definition coincident with one another. This association will normally be empty when the GM_Primitives are within a GM_Complex, since in that case the boundary information is sufficient for most cases.&lt;br/&gt;GM_Primitive::coincidentSubelement [0..*] : Reference#lt;GM_Primitive#gt;&lt;br/&gt;GM_Primitive::superElement [0..*]&#160;&#160;: Reference#lt;GM_Primitive#gt;&lt;br/&gt;This association is constrained by the set theory operators and dimension operators defined at GM_Object. &lt;br/&gt;GM_Primitive:&lt;br/&gt;superElement-#gt;includes(p: GM_Primitive) = GM_Object::contains(p)&lt;br/&gt;dimension() #gt;= coincidentSubelement.dimension()&lt;br/&gt;</div>
+
 							</div>
 						</div>
 					</td>
@@ -257,15 +258,15 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA1199.htm">«type» GM_Primitive</a><br />
+						<a href="EA1196.htm">«type» GM_OrientablePrimitive</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> containedPrimitive<br />
+						<strong>Name:</strong> primitive<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> containingPrimitive<br />
+						<strong>Name:</strong> proxy<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -273,8 +274,7 @@ function nameClassifier(name, separator)
 					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1668" onclick="parent.toggleDiv('detailsDIVLink1668','DetailsImageLink1668')" />Details:
 							<div id="detailsDIVLink1668" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">The subelement is restricted to be contained upon the super element in question. &lt;br/&gt;&lt;br/&gt;The dimension of the subelement must be less than that of the super element.&lt;br/&gt;&lt;br/&gt;GM_Primitive&lt;br/&gt;dimension()&#160;&#160;#gt;&#160;&#160;coincidentSubelement.dimension()+The &quot;Interior To&quot; association associates GM_Primitives which are by definition coincident with one another. This association will normally be empty when the GM_Primitives are within a GM_Complex, since in that case the boundary information is sufficient for most cases.&lt;br/&gt;GM_Primitive::coincidentSubelement [0..*] : Reference#lt;GM_Primitive#gt;&lt;br/&gt;GM_Primitive::superElement [0..*]&#160;&#160;: Reference#lt;GM_Primitive#gt;&lt;br/&gt;This association is constrained by the set theory operators and dimension operators defined at GM_Object. &lt;br/&gt;GM_Primitive:&lt;br/&gt;superElement-#gt;includes(p: GM_Primitive) = GM_Object::contains(p)&lt;br/&gt;dimension() #gt;= coincidentSubelement.dimension()&lt;br/&gt;</div>
-
+							&nbsp;
 							</div>
 						</div>
 					</td>
@@ -394,17 +394,17 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA1198.htm">«type» GM_Point</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA1196.htm">«type» GM_OrientablePrimitive</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA5/EA1219.htm">«type» GM_Object</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA1198.htm">«type» GM_Point</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
@@ -415,10 +415,10 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA1196.htm">«type» GM_OrientablePrimitive</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA5/EA1219.htm">«type» GM_Object</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 

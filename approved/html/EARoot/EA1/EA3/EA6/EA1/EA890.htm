@@ -91,7 +91,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA854.htm">Fig 03: Geometry and Topology Packages</a>, <a href="EA881.htm">Fig 04: Geometry Packages</a>, <a href="EA877.htm">Context Diagram: Package Suppliers of Geometric primitive</a>, <a href="EA875.htm">Context Diagram: Package Suppliers of Geometric complex</a>, <a href="EA865.htm">Context Diagram: Package Clients of Geometric complex</a>, <a href="EA861.htm">Context Diagram: Package Clients of Coordinate geometry</a>, <a href="EA879.htm">Context Diagram: Package Suppliers of Geometry root</a>, <a href="EA869.htm">Context Diagram: Package Clients of Geometry root</a>, <a href="EA873.htm">Context Diagram: Package Suppliers of Geometric aggregates</a>, <a href="../../EA7/EA1/EA1/EA1378.htm">Context Diagram: Package Clients of Units of Measure</a>, <a href="../../EA7/EA1/EA2/EA1468.htm">Context Diagram: Package Clients of Collections</a>, <a href="../../EA7/EA1/EA3/EA1607.htm">Context Diagram: Package Clients of Numerics</a>, <a href="../../EA7/EA1/EA3/EA1611.htm">Context Diagram: Package Clients of Truth</a>, <a href="../../EA8/EA1739.htm">Main</a>, <a href="../../EA8/EA1737.htm">Context Diagram: Package Suppliers of General Feature Model</a>, <a href="../../EA13/EA2373.htm">Context Diagram: Package Suppliers of Extent information</a>, <a href="../../EA15/EA2969.htm">Context Diagram: Package Suppliers of Acquisition information - Imagery</a>, <a href="../../EA18/EA1/EA3375.htm">Context Diagram: Package Suppliers of Quadrilateral Grid</a>, <a href="../../EA18/EA1/EA3369.htm">Context Diagram: Package Suppliers of Coverage Core</a>, <a href="../../EA24/EA4022.htm">Context Diagram: Package Suppliers of Message Data Types</a>, <a href="../../EA29/EA5573.htm">Context Diagram: Package Suppliers of Geometry</a>, <a href="../../EA29/EA1/EA5585.htm">Dependencies</a>, <a href="../../EA30/EA5607.htm">Main</a>, <a href="../../EA30/EA5603.htm">Context Diagram: Package Suppliers of Geometry Types</a>, <a href="../../EA30/EA5605.htm">Context Diagram: Package Suppliers of Prism Geometry</a>, <a href="../../../../EA2/EA3/EA10/EA1/EA8774.htm">Land Use Package Structure</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA854.htm">Fig 03: Geometry and Topology Packages</a>, <a href="EA881.htm">Fig 04: Geometry Packages</a>, <a href="EA877.htm">Context Diagram: Package Suppliers of Geometric primitive</a>, <a href="EA875.htm">Context Diagram: Package Suppliers of Geometric complex</a>, <a href="EA865.htm">Context Diagram: Package Clients of Geometric complex</a>, <a href="EA861.htm">Context Diagram: Package Clients of Coordinate geometry</a>, <a href="EA879.htm">Context Diagram: Package Suppliers of Geometry root</a>, <a href="EA869.htm">Context Diagram: Package Clients of Geometry root</a>, <a href="EA873.htm">Context Diagram: Package Suppliers of Geometric aggregates</a>, <a href="../../EA7/EA1/EA1/EA1378.htm">Context Diagram: Package Clients of Units of Measure</a>, <a href="../../EA7/EA1/EA2/EA1468.htm">Context Diagram: Package Clients of Collections</a>, <a href="../../EA7/EA1/EA3/EA1607.htm">Context Diagram: Package Clients of Numerics</a>, <a href="../../EA7/EA1/EA3/EA1611.htm">Context Diagram: Package Clients of Truth</a>, <a href="../../EA8/EA1739.htm">Main</a>, <a href="../../EA8/EA1737.htm">Context Diagram: Package Suppliers of General Feature Model</a>, <a href="../../EA13/EA2373.htm">Context Diagram: Package Suppliers of Extent information</a>, <a href="../../EA15/EA2969.htm">Context Diagram: Package Suppliers of Acquisition information - Imagery</a>, <a href="../../EA18/EA1/EA3375.htm">Context Diagram: Package Suppliers of Quadrilateral Grid</a>, <a href="../../EA18/EA1/EA3369.htm">Context Diagram: Package Suppliers of Coverage Core</a>, <a href="../../EA24/EA4022.htm">Context Diagram: Package Suppliers of Message Data Types</a>, <a href="../../EA29/EA5573.htm">Context Diagram: Package Suppliers of Geometry</a>, <a href="../../EA29/EA1/EA5585.htm">Dependencies</a>, <a href="../../EA30/EA5607.htm">Main</a>, <a href="../../EA30/EA5603.htm">Context Diagram: Package Suppliers of Geometry Types</a>, <a href="../../EA30/EA5605.htm">Context Diagram: Package Suppliers of Prism Geometry</a>, <a href="../../../../EA2/EA3/EA10/EA1/EA8759.htm">Land Use Package Structure</a></td>
 		</tr>
 	</table>
 	<div class="ObjectDetailsNotes">A geometric object shall be a combination of a coordinate geometry and a coordinate reference system. In all of the operations, all geometric calculations shall be done in the coordinate reference system of the first geometric object accessed, which is normally the object whose operation is being invoked. Returned objects shall be in the coordinate reference system in which the calculations are done unless explicitly stated otherwise. The interface protocols defined in this section are basically those of set theory. In general a geometric object is a set of geometric points, represented by DirectPosition (see 6.4.1). Object instantiations of geometric objects are GM_Objects. Object instantiations of geometric points, when used as values, are DirectPositions. General set theory operations defined at GM_Object differentiate further down the class hierarchy depending on whether or not the boundary DirectPositions are included as set elements. Subtypes of GM_Primitive do not contain boundary points, while subtypes of GM_Complex do.&lt;br/&gt;GM_Object and GM_Primitive are purely abstract in the sense that no object or data structure from an application schema can instantiate them directly. Instances of these classes must be instances of one of their non-abstract subtypes, such as GM_Point, GM_Curve, or GM_Surface.&#160;&#160;This is not the case for GM_Complex, which can be directly instantiated by an application schema, and need not be an instance of one of the non-abstract subclasses of GM_Composite. Although GM_Complex is not explicitly implemented by this International Standard, it would be valid for an application schema to include a concrete class called &quot;GM_Complex&quot; in a class library conformant to this International Standard. Recall that the name space of the application schema is different form that of the standard and such seemingly logical abuses of name are valid. This is not the case for the abstract classes within this standard. These classes are logically incapable of supporting an implementation directly. Constructors on these classes result in instances of concrete subclasses of these types, not in direct logical instances of the abstract type. &lt;br/&gt;This is a stricter interpretation of &quot;abstract&quot; than is commonly used in UML, but it is appropriate here as a guide to application schema developers.&lt;br/&gt;</div>
@@ -110,14 +110,42 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA7/EA1/EA1/EA1/EA1440.htm">«Leaf» Units of Measure</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA7/EA1/EA3/EA4/EA1688.htm">«Leaf» Numerics</a></td>
 					<td width="10%" class="TableRow" valign="top">Package</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA15/EA5/EA3107.htm">«Leaf» Acquisition information - Imagery</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA29/EA1/EA5591.htm">Geometry</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="./EA1/EA1001.htm">«Leaf» Coordinate geometry</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="./EA3/EA1126.htm">«Leaf» Geometric complex</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA18/EA1/EA4/EA3527.htm">«Leaf» Quadrilateral Grid</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA13/EA14/EA2825.htm">«Leaf» Extent information</a></td>
 					<td width="10%" class="TableRow" valign="top">Package</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
@@ -131,24 +159,10 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA8/EA1/EA1795.htm">«Leaf» General Feature Model</a></td>
-					<td width="10%" class="TableRow" valign="top">Package</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="./EA3/EA1126.htm">«Leaf» Geometric complex</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA7/EA1/EA1/EA1/EA1440.htm">«Leaf» Units of Measure</a></td>
 					<td width="10%" class="TableRow" valign="top">Package</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA13/EA14/EA2825.htm">«Leaf» Extent information</a></td>
-					<td width="10%" class="TableRow" valign="top">Package</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
@@ -156,13 +170,6 @@ function nameClassifier(name, separator)
 					<td width="10%" class="TableRow" valign="top">Package</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA7/EA1/EA3/EA4/EA1688.htm">«Leaf» Numerics</a></td>
-					<td width="10%" class="TableRow" valign="top">Package</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
@@ -173,7 +180,21 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA18/EA1/EA4/EA3527.htm">«Leaf» Quadrilateral Grid</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA8/EA1/EA1795.htm">«Leaf» General Feature Model</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA11/EA2/EA2172.htm">Coordinate Reference Systems</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA15/EA5/EA3107.htm">«Leaf» Acquisition information - Imagery</a></td>
 					<td width="10%" class="TableRow" valign="top">Package</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
@@ -187,7 +208,7 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA29/EA1/EA5591.htm">Geometry</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA18/EA1/EA1/EA3419.htm">«Leaf» Coverage Core</a></td>
 					<td width="10%" class="TableRow" valign="top">Package</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
@@ -198,13 +219,6 @@ function nameClassifier(name, separator)
 					<td width="10%" class="TableRow" valign="top">Package</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA7/EA1/EA2/EA1/EA1526.htm">«Leaf» Collections</a></td>
-					<td width="10%" class="TableRow" valign="top">Package</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
@@ -222,21 +236,7 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA18/EA1/EA1/EA3419.htm">«Leaf» Coverage Core</a></td>
-					<td width="10%" class="TableRow" valign="top">Package</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA11/EA2/EA2172.htm">Coordinate Reference Systems</a></td>
-					<td width="10%" class="TableRow" valign="top">Package</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="./EA1/EA1001.htm">«Leaf» Coordinate geometry</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA7/EA1/EA2/EA1/EA1526.htm">«Leaf» Collections</a></td>
 					<td width="10%" class="TableRow" valign="top">Package</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">To</td>

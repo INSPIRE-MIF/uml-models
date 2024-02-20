@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Common Utility Network Elements::Cable</title>
+<title>Common Utility Network Elements::UtilityNode</title>
 <link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Cable", " : "))</script>  : Public abstract &lt;&lt;featureType&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("UtilityNode", " : "))</script>  : Public abstract &lt;&lt;featureType&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">09/10/2010 15:23:36</td>
+			<td width="85%" class="ObjectDetailsValue">06/10/2010 09:23:35</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">10/12/2013 18:42:23</td>
+			<td class="ObjectDetailsValue">10/12/2013 19:01:49</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,19 +87,20 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{65CB964F-228F-4410-B894-67B149DABA42}</td>
+			<td class="ObjectDetailsValue">{99267C10-BAC4-454f-93BD-BC60014596C3}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA9260.htm">Utility Networks Profile - Full Hierarchy Example</a>, <a href="EA9274.htm">Utility Networks Profile -  Common Types</a>, <a href="../EA2/EA9298.htm">Electricity Network</a>, <a href="../EA5/EA9315.htm">Telecommunications Network</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA9245.htm">Utility Networks Profile - Full Hierarchy Example</a>, <a href="EA9257.htm">Utility Networks Profile - Abstract Types</a>, <a href="EA9259.htm">Utility Networks Profile - Common Types</a>, <a href="../EA2/EA9283.htm">Electricity Network</a>, <a href="../EA3/EA9288.htm">Oil-Gas-Chemicals Network</a>, <a href="../EA4/EA9294.htm">Sewer Network</a>, <a href="../EA5/EA9300.htm">Telecommunications Network</a>, <a href="../EA6/EA9306.htm">Thermal Network</a>, <a href="../EA7/EA9311.htm">Water Network</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">-- Name --&lt;br/&gt;cable&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;A utility link or link sequence used to convey electricity or data from one location to another.&lt;br/&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">-- Name --&lt;br/&gt;utility node&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;A point spatial object which is used for connectivity.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;Nodes are found at both ends of the UtilityLink.&lt;br/&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 		<div class="ItemBody" id="AssociationsToTable">
@@ -111,55 +112,28 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA9281.htm">«featureType» Duct</a><br />
+						<a href="EA9281.htm">«featureType» UtilityNodeContainer</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> cables<br />
+						<strong>Name:</strong> nodes<br />
 						-- Name --
-cables
+nodes
 
 -- Definition --
-A duct may contain one or more cables.
+Contained utility nodes.
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
+						-- Definition --
+Utility node(s) container, e.g. manhole or pole.	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink15597" onclick="parent.toggleDiv('detailsDIVLink15597','DetailsImageLink15597')" />Details:
-							<div id="detailsDIVLink15597" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">-- Name --&lt;br/&gt;cables&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Ducts (duct banks, or inner-ducts) may contain cables.&lt;br/&gt;&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA9284.htm">«featureType» Pipe</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> cables<br />
-						-- Name --
-cables
-
--- Definition --
-A pipe may contain one or more cables.
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink15598" onclick="parent.toggleDiv('detailsDIVLink15598','DetailsImageLink15598')" />Details:
-							<div id="detailsDIVLink15598" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">-- Name --&lt;br/&gt;cables&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;A pipe may contain one or more cables.&lt;br/&gt;&lt;br/&gt;</div>
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink15768" onclick="parent.toggleDiv('detailsDIVLink15768','DetailsImageLink15768')" />Details:
+							<div id="detailsDIVLink15768" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">-- Name --&lt;br/&gt;nodes&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Utility node container may contain other utility objects, e.g. manhole may contain other utility equipment.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -180,8 +154,8 @@ A pipe may contain one or more cables.
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15599" onclick="parent.toggleDiv('detailsDIVScenario15599','DetailsImageScenario15599')" />Details:
-						<div id="detailsDIVScenario15599" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15769" onclick="parent.toggleDiv('detailsDIVScenario15769','DetailsImageScenario15769')" />Details:
+						<div id="detailsDIVScenario15769" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: Create a property type that requires that the instance is encoded inline (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.<br /></div>
 
 						</div>
@@ -193,8 +167,8 @@ A pipe may contain one or more cables.
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15600" onclick="parent.toggleDiv('detailsDIVScenario15600','DetailsImageScenario15600')" />Details:
-						<div id="detailsDIVScenario15600" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15770" onclick="parent.toggleDiv('detailsDIVScenario15770','DetailsImageScenario15770')" />Details:
+						<div id="detailsDIVScenario15770" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: true | false<br />Default: false<br />Description: Identifies the feature type as a mixin type that will not be encoded as a separate element/type in the GML encoding.<br /></div>
 
 						</div>
@@ -206,8 +180,8 @@ A pipe may contain one or more cables.
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15601" onclick="parent.toggleDiv('detailsDIVScenario15601','DetailsImageScenario15601')" />Details:
-						<div id="detailsDIVScenario15601" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15771" onclick="parent.toggleDiv('detailsDIVScenario15771','DetailsImageScenario15771')" />Details:
+						<div id="detailsDIVScenario15771" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Default: FIXME<br />Description: URN reference to the feature concept in the INSPIRE Feature Concept Dictionary Register<br /></div>
 
 						</div>
@@ -219,8 +193,8 @@ A pipe may contain one or more cables.
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15602" onclick="parent.toggleDiv('detailsDIVScenario15602','DetailsImageScenario15602')" />Details:
-						<div id="detailsDIVScenario15602" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15772" onclick="parent.toggleDiv('detailsDIVScenario15772','DetailsImageScenario15772')" />Details:
+						<div id="detailsDIVScenario15772" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: true | false<br />Default: false<br />Description: Identifies the feature type as a feature collection.<br /></div>
 
 						</div>
@@ -232,8 +206,8 @@ A pipe may contain one or more cables.
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15603" onclick="parent.toggleDiv('detailsDIVScenario15603','DetailsImageScenario15603')" />Details:
-						<div id="detailsDIVScenario15603" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15773" onclick="parent.toggleDiv('detailsDIVScenario15773','DetailsImageScenario15773')" />Details:
+						<div id="detailsDIVScenario15773" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: Surpress creation of a standard property type that supports inline or by-reference encoding (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.<br /></div>
 
 						</div>
@@ -245,8 +219,8 @@ A pipe may contain one or more cables.
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15604" onclick="parent.toggleDiv('detailsDIVScenario15604','DetailsImageScenario15604')" />Details:
-						<div id="detailsDIVScenario15604" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15774" onclick="parent.toggleDiv('detailsDIVScenario15774','DetailsImageScenario15774')" />Details:
+						<div id="detailsDIVScenario15774" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions<br />Default: iso19136_2007_INSPIRE_Extensions<br />Description: XML Schema encoding rule to apply<br /></div>
 
 						</div>
@@ -254,7 +228,32 @@ A pipe may contain one or more cables.
 				</td>
 			</tr>
 	</table>
-</div>		<div class="ItemBody" id="LinksTable">
+</div>		<div class="ItemBody" id="ConstraintsTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+			  	<tr>
+					<td width="80%" class="TableHeading">Constraint</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Status</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">All utility node objects have inspireId</td>
+					<td width="10%" class="TableRow">OCL</td>
+					<td width="10%" class="TableRow">Proposed</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints15775" onclick="parent.toggleDiv('detailsDIVConstraints15775','DetailsImageConstraints15775')" />Details:
+							<div id="detailsDIVConstraints15775" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">/* All utility node objects have an external object identifier. */&lt;br/&gt;inv:inspireId-#gt;notEmpty()&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="LinksTable">
 			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="30%" class="TableHeading">Object</td>
@@ -264,33 +263,34 @@ A pipe may contain one or more cables.
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA9291.htm">«featureType» UtilityLinkSet</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA5/EA9319.htm">«featureType» TelecommunicationsCable</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA9284.htm">«featureType» Pipe</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA9281.htm">«featureType» UtilityNodeContainer</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Weak</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
 					<td width="40%" class="TableRow" valign="top">-- Name --
-cables
+nodes
 
 -- Definition --
-A pipe may contain one or more cables.
+Utility node container may contain other utility objects, e.g. manhole may contain other utility equipment.
+
 </td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA2/EA9302.htm">«featureType» ElectricityCable</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../../EA3/EA1/EA5/EA9420.htm">«featureType» Node</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA9278.htm">«featureType» UtilityNetworkElement</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA9262.htm">«featureType» Appurtenance</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>

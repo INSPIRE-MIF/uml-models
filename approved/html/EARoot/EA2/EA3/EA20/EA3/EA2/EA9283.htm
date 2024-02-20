@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Electricity Network</title>
+<link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA9284.png" usemap="#EA9284" border="0" />
+
+<MAP NAME="EA9284">
+<area shape="rect" coords="870,18,1166,106" href="../../../../../EA3/EA1/EA5/EA9414.htm" target="_self">
+<area shape="rect" coords="18,764,481,958" href="../EA1/EA9282.htm" target="_self">
+<area shape="rect" coords="10,507,510,717" href="../EA1/EA9273.htm" target="_self">
+<area shape="rect" coords="714,455,886,571" href="../EA1/EA9263.htm" target="_self">
+<area shape="rect" coords="582,630,1027,1242" href="EA9286.htm" target="_self">
+<area shape="rect" coords="382,194,798,344" href="../EA1/EA9262.htm" target="_self">
+<area shape="rect" coords="1074,446,1264,642" href="../EA1/EA9279.htm" target="_self">
+<area shape="rect" coords="43,17,371,157" href="../EA1/EA9276.htm" target="_self">
+<area shape="rect" coords="129,204,293,294" href="../EA1/EA9265.htm" target="_self">
+<area shape="rect" coords="825,176,1211,374" href="../EA1/EA9277.htm" target="_self">
+<area shape="rect" coords="492,10,686,138" href="../EA1/EA9280.htm" target="_self">
+<area shape="rect" coords="110,335,304,435" href="EA9287.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">Electricity Network : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">06/10/2010 11:39:54</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">10/12/2013 18:42:23</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">Maksim Sestic</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{4D67F217-C2C9-4dfc-8919-DD7CAD35EBFC}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">-- Definition --&lt;br/&gt;Electricity network sub-domain diagram.&lt;br/&gt;&lt;br/&gt;</div>
+
+</div>
+ 
+</body>
+</html>

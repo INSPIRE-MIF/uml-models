@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>HumanHealth::DiseaseMeasureTypeValue</title>
+<title>HumanHealth::MeasureCategoryTypeValue</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("DiseaseMeasureTypeValue", " : "))</script>  : Public  &lt;&lt;codeList&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("MeasureCategoryTypeValue", " : "))</script>  : Public  &lt;&lt;codeList&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">18/01/2011 10:24:03</td>
+			<td width="85%" class="ObjectDetailsValue">31/01/2024 13:24:53</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">01/10/2012 21:46:56</td>
+			<td class="ObjectDetailsValue">31/01/2024 13:24:53</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -51,7 +51,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td class="ObjectDetailsValue">luciano massetti</td>
+			<td class="ObjectDetailsValue">Stefania Morrone</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{86B4DC3D-9989-4708-95E9-7DD964546908}</td>
+			<td class="ObjectDetailsValue">{392D687F-2C7A-46e5-BD33-84489BF5048C}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA8718.htm">CodelistEnumeration</a></td>
+			<td class="ObjectDetailsValue"><a href="EA8707.htm">EnvHealthDeterminant base</a>, <a href="EA8705.htm">Codelists</a>, <a href="EA8711.htm">EnvHealthDeterminant noise</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">-- Name --&lt;br/&gt;Disease measure type&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Different ways how data on diseases and related health problems in a population can be reported.&lt;br/&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">&lt;i&gt;Name:&lt;/i&gt;&lt;br/&gt;Measure Category Type &lt;br/&gt;&lt;i&gt;&lt;br/&gt;&lt;/i&gt;&lt;i&gt;Definition:&lt;/i&gt; &lt;br/&gt;The measure categories. &lt;br/&gt;&lt;br/&gt;Description:&lt;br/&gt;Empty code list to be used as a super-class for a number of domain-specific code lists (e.g. for the Environmental Noise Directive purposes)&lt;br/&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -107,26 +107,54 @@ function nameClassifier(name, separator)
 			<td width="50%" class="TableHeading">Value</td>
 		</tr>
 					<tr>
-				<td width="50%" class="TableRow" valign="top">extensibility</td>
-				<td width="50%" class="TableRow" valign="top">none</td>
+				<td width="50%" class="TableRow" valign="top">asDictionary</td>
+				<td width="50%" class="TableRow" valign="top">true</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario13647" onclick="parent.toggleDiv('detailsDIVScenario13647','DetailsImageScenario13647')" />Details:
-						<div id="detailsDIVScenario13647" class="DetailsDiv" >
-						&nbsp;
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario13701" onclick="parent.toggleDiv('detailsDIVScenario13701','DetailsImageScenario13701')" />Details:
+						<div id="detailsDIVScenario13701" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: true<br />Default: true<br />Description: Encode code list as externally managed dictionary (applies to ISO 19136:2007 encoding rule). Always true in INSPIRE.<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">extensibility</td>
+				<td width="50%" class="TableRow" valign="top">any</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario13702" onclick="parent.toggleDiv('detailsDIVScenario13702','DetailsImageScenario13702')" />Details:
+						<div id="detailsDIVScenario13702" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: none | narrower | any<br />Default: any<br />Description: This refers to extensions by a third party, not to extensions by the owner of the vocabulary; the owner will always be able to revise the vocabulary. I.e., if the value is &#39;none&#39;, the referenced vocabulary may not be extended by third parties; if the value is &#39;narrower&#39;, the vocabulary may be extended by narrower terms that have an existing term as a parent; if the value is &#39;any&#39;, the vocabulary may be extended by additional terms on any level. This value must be &#39;all&#39;, empty or missing, if the value &#39;vocabulary&#39; is empty or missing; in this case any vocabulary may be used.<br /></div>
+
 						</div>
 					</div>
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow" valign="top">vocabulary</td>
-				<td width="50%" class="TableRow" valign="top">&lt;a href=&quot;http://inspire.ec.europa.eu/codelist/DiseaseMeasureTypeValue&quot; target=&quot;_blank&quot; &gt;http://inspire.ec.europa.eu/codelist/DiseaseMeasureTypeValue&lt;/a&gt;</td>
+				<td width="50%" class="TableRow" valign="top">&lt;a href=&quot;http://inspire.ec.europa.eu/codelist/MeasureCategoryTypeValue&quot; target=&quot;_blank&quot; &gt;http://inspire.ec.europa.eu/codelist/MeasureCategoryTypeValue&lt;/a&gt;</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario13648" onclick="parent.toggleDiv('detailsDIVScenario13648','DetailsImageScenario13648')" />Details:
-						<div id="detailsDIVScenario13648" class="DetailsDiv" >
-						&nbsp;
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario13703" onclick="parent.toggleDiv('detailsDIVScenario13703','DetailsImageScenario13703')" />Details:
+						<div id="detailsDIVScenario13703" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Description: URI of the vocabulary/code list in the INSPIRE code list registry or in some external registry. The value has to be provided, if an online version of the vocabulary exists.<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">xsdEncodingRule</td>
+				<td width="50%" class="TableRow" valign="top">iso19136_2007_INSPIRE_Extensions</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario13704" onclick="parent.toggleDiv('detailsDIVScenario13704','DetailsImageScenario13704')" />Details:
+						<div id="detailsDIVScenario13704" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions<br />Default: iso19136_2007_INSPIRE_Extensions<br />Description: XML Schema encoding rule to apply<br /></div>
+
 						</div>
 					</div>
 				</td>

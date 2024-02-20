@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Common Utility Network Elements</title>
+<title>Common Utility Network Elements::UtilityLinkSet</title>
 <link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Common Utility Network Elements", " : "))</script>  : Public  &lt;&lt;applicationSchema&gt;&gt; Package</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("UtilityLinkSet", " : "))</script>  : Public abstract &lt;&lt;featureType&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">16/03/2012 14:47:09</td>
+			<td width="85%" class="ObjectDetailsValue">31/01/2012 09:18:15</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">08/10/2012 11:36:28</td>
+			<td class="ObjectDetailsValue">13/12/2013 17:36:24</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -51,7 +51,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td class="ObjectDetailsValue">lutzmic</td>
+			<td class="ObjectDetailsValue">Administrator</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
@@ -87,19 +87,146 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{D77A003D-F9B7-47b6-B734-589C1C716D0E}</td>
+			<td class="ObjectDetailsValue">{21CC1E68-B71C-4ae4-9FBE-F20241FA71D8}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"></td>
+			<td class="ObjectDetailsValue"><a href="../EA9245.htm">Utility Networks Profile - Full Hierarchy Example</a>, <a href="EA9257.htm">Utility Networks Profile - Abstract Types</a>, <a href="EA9259.htm">Utility Networks Profile - Common Types</a>, <a href="../EA2/EA9283.htm">Electricity Network</a>, <a href="../EA3/EA9288.htm">Oil-Gas-Chemicals Network</a>, <a href="../EA4/EA9294.htm">Sewer Network</a>, <a href="../EA5/EA9300.htm">Telecommunications Network</a>, <a href="../EA6/EA9306.htm">Thermal Network</a>, <a href="../EA7/EA9311.htm">Water Network</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">-- Name --&lt;br/&gt;common utility network elements&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Common Utility Network Elements&lt;br/&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">-- Name --&lt;br/&gt;utility linkset&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;&lt;font color=&quot;#1a1a1a&quot;&gt;An abstract utility network class which groups common properties of Cable, Pipe and Duct featureTypes.&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;&lt;font color=&quot;#1a1a1a&quot;&gt;This class also extends the LinkSet featureType, which allows Cable, Pipe and Duct classes to use either the (more complex) LinkSequence or (more simple) Link class.&lt;/font&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Attribute</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public UtilityDeliveryTypeValue</i><br /><strong>&nbsp;&nbsp;utilityDeliveryType</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes15723')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes15723" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes15723_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15723_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15723_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td>&lt;&lt;voidable&gt;&gt;</td>
+						</tr>
+						<tr id="DetailsImageAttributes15723_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15723_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes15723_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes15723_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes15723_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					obligation=implementingRule<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			-- Name --&lt;br/&gt;utility delivery type&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Kind of utility delivery network e.g. transport, distribution, collection ...&lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="EA9282.htm">WarningTypeValue</a></i><br /><strong>&nbsp;&nbsp;warningType</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes15724')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes15724" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes15724_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15724_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15724_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td>&lt;&lt;voidable&gt;&gt;</td>
+						</tr>
+						<tr id="DetailsImageAttributes15724_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15724_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15724_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes15724_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes15724_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					obligation=implementingRule<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			-- Name --&lt;br/&gt;warning type&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Kind of overground visible warning mechanism used to indicate an underground utility network element.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>
+	</table>
+</div>
 <div class="ItemBody" id="TaggedValTable">
 	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 		<tr>
@@ -107,53 +234,66 @@ function nameClassifier(name, separator)
 			<td width="50%" class="TableHeading">Value</td>
 		</tr>
 					<tr>
-				<td width="50%" class="TableRow" valign="top">targetNamespace</td>
-				<td width="50%" class="TableRow" valign="top">&lt;a href=&quot;http://inspire.ec.europa.eu/schemas/us-net-common/4.0&quot; target=&quot;_blank&quot; &gt;http://inspire.ec.europa.eu/schemas/us-net-common/4.0&lt;/a&gt;</td>
+				<td width="50%" class="TableRow" valign="top">byValuePropertyType</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15573" onclick="parent.toggleDiv('detailsDIVScenario15573','DetailsImageScenario15573')" />Details:
-						<div id="detailsDIVScenario15573" class="DetailsDiv" >
-						<div class="ObjectDetailsNotes">Default: FIXME<br />Description: Target XML namespace of the application schema<br /></div>
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15725" onclick="parent.toggleDiv('detailsDIVScenario15725','DetailsImageScenario15725')" />Details:
+						<div id="detailsDIVScenario15725" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: Create a property type that requires that the instance is encoded inline (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.<br /></div>
 
 						</div>
 					</div>
 				</td>
 			</tr>			<tr>
-				<td width="50%" class="TableRow" valign="top">version</td>
-				<td width="50%" class="TableRow" valign="top">4.0</td>
+				<td width="50%" class="TableRow" valign="top">gmlMixin</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15574" onclick="parent.toggleDiv('detailsDIVScenario15574','DetailsImageScenario15574')" />Details:
-						<div id="detailsDIVScenario15574" class="DetailsDiv" >
-						<div class="ObjectDetailsNotes">Default: FIXME<br />Description: Current version of the application schema<br /></div>
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15726" onclick="parent.toggleDiv('detailsDIVScenario15726','DetailsImageScenario15726')" />Details:
+						<div id="detailsDIVScenario15726" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: true | false<br />Default: false<br />Description: Identifies the feature type as a mixin type that will not be encoded as a separate element/type in the GML encoding.<br /></div>
 
 						</div>
 					</div>
 				</td>
 			</tr>			<tr>
-				<td width="50%" class="TableRow" valign="top">xmlns</td>
-				<td width="50%" class="TableRow" valign="top">us-net-common</td>
+				<td width="50%" class="TableRow" valign="top">inspireConcept</td>
+				<td width="50%" class="TableRow" valign="top">FIXME</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15575" onclick="parent.toggleDiv('detailsDIVScenario15575','DetailsImageScenario15575')" />Details:
-						<div id="detailsDIVScenario15575" class="DetailsDiv" >
-						<div class="ObjectDetailsNotes">Default: FIXME<br />Description: Namespace prefix to be used as short form of the target namespace<br /></div>
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15727" onclick="parent.toggleDiv('detailsDIVScenario15727','DetailsImageScenario15727')" />Details:
+						<div id="detailsDIVScenario15727" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Default: FIXME<br />Description: URN reference to the feature concept in the INSPIRE Feature Concept Dictionary Register<br /></div>
 
 						</div>
 					</div>
 				</td>
 			</tr>			<tr>
-				<td width="50%" class="TableRow" valign="top">xsdDocument</td>
-				<td width="50%" class="TableRow" valign="top">UtilityNetworksCommon.xsd</td>
+				<td width="50%" class="TableRow" valign="top">isCollection</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15576" onclick="parent.toggleDiv('detailsDIVScenario15576','DetailsImageScenario15576')" />Details:
-						<div id="detailsDIVScenario15576" class="DetailsDiv" >
-						<div class="ObjectDetailsNotes">Default: FIXME<br />Description: Name of an XML Schema document to create representing the content of this package<br /></div>
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15728" onclick="parent.toggleDiv('detailsDIVScenario15728','DetailsImageScenario15728')" />Details:
+						<div id="detailsDIVScenario15728" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: true | false<br />Default: false<br />Description: Identifies the feature type as a feature collection.<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">noPropertyType</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15729" onclick="parent.toggleDiv('detailsDIVScenario15729','DetailsImageScenario15729')" />Details:
+						<div id="detailsDIVScenario15729" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: Surpress creation of a standard property type that supports inline or by-reference encoding (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.<br /></div>
 
 						</div>
 					</div>
@@ -164,8 +304,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15577" onclick="parent.toggleDiv('detailsDIVScenario15577','DetailsImageScenario15577')" />Details:
-						<div id="detailsDIVScenario15577" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15730" onclick="parent.toggleDiv('detailsDIVScenario15730','DetailsImageScenario15730')" />Details:
+						<div id="detailsDIVScenario15730" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions<br />Default: iso19136_2007_INSPIRE_Extensions<br />Description: XML Schema encoding rule to apply<br /></div>
 
 						</div>
@@ -173,7 +313,79 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>
 	</table>
-</div>	</div>
+</div>		<div class="ItemBody" id="ConstraintsTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+			  	<tr>
+					<td width="80%" class="TableHeading">Constraint</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Status</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">All utility link objects have inspireId</td>
+					<td width="10%" class="TableRow">OCL</td>
+					<td width="10%" class="TableRow">Proposed</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints15731" onclick="parent.toggleDiv('detailsDIVConstraints15731','DetailsImageConstraints15731')" />Details:
+							<div id="detailsDIVConstraints15731" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">/* All utility link objects have an external object identifier. */&lt;br/&gt;inv:inspireId-#gt;notEmpty()&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA9265.htm">«featureType» Cable</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA9278.htm">«featureType» UtilityNetworkElement</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA9269.htm">«featureType» Pipe</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA9266.htm">«featureType» Duct</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../../EA3/EA1/EA5/EA9413.htm">«featureType» LinkSet</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
 <div class="pageFooter"></div>
  
 </body>

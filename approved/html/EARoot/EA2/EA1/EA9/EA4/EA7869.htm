@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Water Transport Network::PortArea</title>
+<title>Water Transport Network::WaterwayLink</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("PortArea", " : "))</script>  : Public  &lt;&lt;featureType&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("WaterwayLink", " : "))</script>  : Public  &lt;&lt;featureType&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">27/11/2008 12:03:36</td>
+			<td width="85%" class="ObjectDetailsValue">10/09/2008 17:39:19</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">15/07/2009 17:06:23</td>
+			<td class="ObjectDetailsValue">15/07/2009 17:10:18</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -51,7 +51,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td class="ObjectDetailsValue">j.escriu</td>
+			<td class="ObjectDetailsValue">lars</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{7316689E-6A41-4347-AB99-9502C7D4F2EA}</td>
+			<td class="ObjectDetailsValue">{5DB830CF-7CC1-4fb3-94CA-343E27F5E212}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA7840.htm">Water Transport Network</a>, <a href="EA7842.htm">Water Transport Network Overview</a>, <a href="EA7846.htm">Water Transport Networks: Spatial object types - Links,  Areas and Points</a></td>
+			<td class="ObjectDetailsValue"><a href="EA7827.htm">Water Transport Network</a>, <a href="EA7829.htm">Water Transport Network Overview</a>, <a href="EA7833.htm">Water Transport Networks: Spatial object types - Links,  Areas and Points</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">-- Definition --&lt;br/&gt;An area spatial object which is used to represent the physical limits of all the facilities which constitute the terrestrial zone of a sea or inland port.&lt;br/&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">-- Definition --&lt;br/&gt;A linear spatial object that describes the geometry or connectivity of the water transport network between two consecutive waterway or watercourse nodes. It represents a linear section across a body of water which is used for shipping.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE Water Transport Networks will use the &lt;i&gt;WatercourseLink&lt;/i&gt; class - provided by the INSPIRE Hydrography Data Specification - wherever possible.&lt;br/&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -113,9 +113,23 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario11153" onclick="parent.toggleDiv('detailsDIVScenario11153','DetailsImageScenario11153')" />Details:
-						<div id="detailsDIVScenario11153" class="DetailsDiv" >
-						&nbsp;
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario11230" onclick="parent.toggleDiv('detailsDIVScenario11230','DetailsImageScenario11230')" />Details:
+						<div id="detailsDIVScenario11230" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: Create a property type that requires that the instance is encoded inline (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">inspireConcept</td>
+				<td width="50%" class="TableRow" valign="top">FIXME</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario11231" onclick="parent.toggleDiv('detailsDIVScenario11231','DetailsImageScenario11231')" />Details:
+						<div id="detailsDIVScenario11231" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Default: FIXME<br />Description: URN reference to the feature concept in the INSPIRE Feature Concept Dictionary Register<br /></div>
+
 						</div>
 					</div>
 				</td>
@@ -125,9 +139,10 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario11154" onclick="parent.toggleDiv('detailsDIVScenario11154','DetailsImageScenario11154')" />Details:
-						<div id="detailsDIVScenario11154" class="DetailsDiv" >
-						&nbsp;
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario11232" onclick="parent.toggleDiv('detailsDIVScenario11232','DetailsImageScenario11232')" />Details:
+						<div id="detailsDIVScenario11232" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: true | false<br />Default: false<br />Description: Identifies the feature type as a feature collection.<br /></div>
+
 						</div>
 					</div>
 				</td>
@@ -137,9 +152,10 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario11155" onclick="parent.toggleDiv('detailsDIVScenario11155','DetailsImageScenario11155')" />Details:
-						<div id="detailsDIVScenario11155" class="DetailsDiv" >
-						&nbsp;
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario11233" onclick="parent.toggleDiv('detailsDIVScenario11233','DetailsImageScenario11233')" />Details:
+						<div id="detailsDIVScenario11233" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: Surpress creation of a standard property type that supports inline or by-reference encoding (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.<br /></div>
+
 						</div>
 					</div>
 				</td>
@@ -149,9 +165,10 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario11156" onclick="parent.toggleDiv('detailsDIVScenario11156','DetailsImageScenario11156')" />Details:
-						<div id="detailsDIVScenario11156" class="DetailsDiv" >
-						&nbsp;
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario11234" onclick="parent.toggleDiv('detailsDIVScenario11234','DetailsImageScenario11234')" />Details:
+						<div id="detailsDIVScenario11234" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: iso19136_2007 | iso19139_2007<br />Default: iso19136_2007<br />Description: XML Schema encoding rule to apply<br /></div>
+
 						</div>
 					</div>
 				</td>
@@ -167,7 +184,7 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA5/EA7914.htm">«featureType» TransportArea</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA5/EA7902.htm">«featureType» TransportLink</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>

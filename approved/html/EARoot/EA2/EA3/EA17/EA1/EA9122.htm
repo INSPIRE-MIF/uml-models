@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Soil::FAOHorizonSubordinateValue</title>
+<title>Soil::SoilDerivedObject</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("FAOHorizonSubordinateValue", " : "))</script>  : Public  &lt;&lt;codeList&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("SoilDerivedObject", " : "))</script>  : Public  &lt;&lt;featureType&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">20/04/2011 14:17:51</td>
+			<td width="85%" class="ObjectDetailsValue">09/03/2011 08:56:33</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">04/12/2012 13:21:57</td>
+			<td class="ObjectDetailsValue">04/12/2012 11:52:45</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,19 +87,298 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{A6B642BD-A515-4f56-A8D4-22651C525AB7}</td>
+			<td class="ObjectDetailsValue">{3CEFFB24-01B3-4b66-9C26-2A17C155C52A}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA9092.htm">Soil: Codelists</a></td>
+			<td class="ObjectDetailsValue"><a href="EA9075.htm">Soil: O&M</a>, <a href="EA9067.htm">Soil: Overview</a>, <a href="EA9071.htm">Soil: Overview - Vector</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">-- Name --&lt;br/&gt;FAO horizon subordinate value&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;A code list of designations of subordinate distinctions and features within the master horizons and layers which are based on profile characteristics observable in the field and are applied during the description of the soil at the site.&lt;br/&gt;&lt;br/&gt;The allowed values for this code list comprise only the values specified in &lt;i&gt;Guidelines for soil description, 4th edition&lt;/i&gt;, Food and Agriculture Organization of the United Nations, Rome, 2006, pp. 67-77.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;Lower case letters are used as suffixes to designate specific kinds of master horizons and layers, and other features.&lt;br/&gt;SOURCE &lt;i&gt;Guidelines for soil description, 4th edition&lt;/i&gt;, Food and Agriculture Organization of the United Nations, Rome, 2006, pp. 67-77, table 85&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">-- Name --&lt;br/&gt;soil derived object&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;A spatial object type for representing spatial objects with soil-related property derived from one or more soil and possibly other non soil properties.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE Soil thematic maps can be derived directly from the involved soil database (organic matter content, pH, texture, etc.) or they can be derived by using pedotransfer functions or pedotransfer rules (e.g. plant available water in the rooting depth). Derivation can be simple extraction from a single data field, or a complex combination of different kind of data and application of e.g. mathematical or expert knowledge-based procedures.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
 		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Attribute</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../../../../EA3/EA2/EA1/EA9556.htm">Identifier</a></i><br /><strong>&nbsp;&nbsp;inspireId</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes15037')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes15037" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes15037_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15037_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15037_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15037_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15037_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes15037_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes15037_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes15037_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			-- Name --&lt;br/&gt;inspire Id&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;External object identifier of the SoilDerivedObject.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE An external object identifier is a unique object identifier published by the responsible body, which may be used by external applications to reference the spatial object. The identifier is an identifier of the spatial object, not an identifier of the real-world phenomenon.&lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../../../../EA1/EA3/EA6/EA1/EA5/EA1219.htm">GM_Object</a></i><br /><strong>&nbsp;&nbsp;geometry</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes15038')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes15038" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes15038_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15038_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15038_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15038_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15038_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15038_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes15038_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes15038_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			-- Name --&lt;br/&gt;geometry&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;the geometry defining the soil derived object.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;A spatial representation of soil information becomes spatially explicit by delineating areas with similar values according to the soil (or other) property that is represented.&lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>
+	</table>
+</div>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA9122.htm">«featureType» SoilDerivedObject</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> isBasedOnSoilDerivedObject<br />
+						-- Definition --
+Link to a soil derived object on whose properties the derived value is based.
+-- Description --
+A soil derived object can be created based on the properties of one or more other soil derived objects. If this information shall not be included or does not apply, the association can be empty.	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink15039" onclick="parent.toggleDiv('detailsDIVLink15039','DetailsImageLink15039')" />Details:
+							<div id="detailsDIVLink15039" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA9112.htm">«featureType» ObservedSoilProfile</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> isBasedOnObservedSoilProfile<br />
+						-- Definition --
+Link to an observed soil profile on whose properties the derived value is based.
+-- Description --
+A soil derived object can be created based on the soil properties of one or more observed soil profiles. If this information shall not be included or does not apply, the association can be empty.	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink15040" onclick="parent.toggleDiv('detailsDIVLink15040','DetailsImageLink15040')" />Details:
+							<div id="detailsDIVLink15040" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../../../EA1/EA3/EA37/EA1/EA1/EA1/EA6746.htm">«FeatureType» OM_Observation</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> soilDerivedObjectObservation<br />
+						-- Name --
+soil derived object observation
+
+-- Definition --
+Observation of a soil property for characterizing the soil derived object.	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink15041" onclick="parent.toggleDiv('detailsDIVLink15041','DetailsImageLink15041')" />Details:
+							<div id="detailsDIVLink15041" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA9121.htm">«featureType» SoilBody</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> isBasedOnSoilBody<br />
+						-- Definition --
+Link to a soil body on whose properties the derived value is based.
+-- Description --
+A soil derived object can be created based on the soil properties of one or more soil bodies. If this information shall not be included or does not apply, the association can be empty.	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink15042" onclick="parent.toggleDiv('detailsDIVLink15042','DetailsImageLink15042')" />Details:
+							<div id="detailsDIVLink15042" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA9122.htm">«featureType» SoilDerivedObject</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> isBasedOnSoilDerivedObject<br />
+						-- Definition --
+Link to a soil derived object on whose properties the derived value is based.
+-- Description --
+A soil derived object can be created based on the properties of one or more other soil derived objects. If this information shall not be included or does not apply, the association can be empty.	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink15043" onclick="parent.toggleDiv('detailsDIVLink15043','DetailsImageLink15043')" />Details:
+							<div id="detailsDIVLink15043" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
 <div class="ItemBody" id="TaggedValTable">
 	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 		<tr>
@@ -107,40 +386,66 @@ function nameClassifier(name, separator)
 			<td width="50%" class="TableHeading">Value</td>
 		</tr>
 					<tr>
-				<td width="50%" class="TableRow" valign="top">asDictionary</td>
-				<td width="50%" class="TableRow" valign="top">true</td>
+				<td width="50%" class="TableRow" valign="top">byValuePropertyType</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario14907" onclick="parent.toggleDiv('detailsDIVScenario14907','DetailsImageScenario14907')" />Details:
-						<div id="detailsDIVScenario14907" class="DetailsDiv" >
-						<div class="ObjectDetailsNotes">Values: true<br />Default: true<br />Description: Encode code list as externally managed dictionary (applies to ISO 19136:2007 encoding rule). Always true in INSPIRE.<br /></div>
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15044" onclick="parent.toggleDiv('detailsDIVScenario15044','DetailsImageScenario15044')" />Details:
+						<div id="detailsDIVScenario15044" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: Create a property type that requires that the instance is encoded inline (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.<br /></div>
 
 						</div>
 					</div>
 				</td>
 			</tr>			<tr>
-				<td width="50%" class="TableRow" valign="top">extensibility</td>
-				<td width="50%" class="TableRow" valign="top">none</td>
+				<td width="50%" class="TableRow" valign="top">gmlMixin</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario14908" onclick="parent.toggleDiv('detailsDIVScenario14908','DetailsImageScenario14908')" />Details:
-						<div id="detailsDIVScenario14908" class="DetailsDiv" >
-						<div class="ObjectDetailsNotes">Values: none | narrower | any<br />Default: any<br />Description: This refers to extensions by a third party, not to extensions by the owner of the vocabulary; the owner will always be able to revise the vocabulary. I.e., if the value is &#39;none&#39;, the referenced vocabulary may not be extended by third parties; if the value is &#39;narrower&#39;, the vocabulary may be extended by narrower terms that have an existing term as a parent; if the value is &#39;any&#39;, the vocabulary may be extended by additional terms on any level. This value must be &#39;all&#39;, empty or missing, if the value &#39;vocabulary&#39; is empty or missing; in this case any vocabulary may be used.<br /></div>
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15045" onclick="parent.toggleDiv('detailsDIVScenario15045','DetailsImageScenario15045')" />Details:
+						<div id="detailsDIVScenario15045" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: true | false<br />Default: false<br />Description: Identifies the feature type as a mixin type that will not be encoded as a separate element/type in the GML encoding.<br /></div>
 
 						</div>
 					</div>
 				</td>
 			</tr>			<tr>
-				<td width="50%" class="TableRow" valign="top">vocabulary</td>
-				<td width="50%" class="TableRow" valign="top">&lt;a href=&quot;http://inspire.ec.europa.eu/codeList/FAOHorizonSubordinateValue&quot; target=&quot;_blank&quot; &gt;http://inspire.ec.europa.eu/codeList/FAOHorizonSubordinateValue&lt;/a&gt;</td>
+				<td width="50%" class="TableRow" valign="top">inspireConcept</td>
+				<td width="50%" class="TableRow" valign="top">FIXME</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario14909" onclick="parent.toggleDiv('detailsDIVScenario14909','DetailsImageScenario14909')" />Details:
-						<div id="detailsDIVScenario14909" class="DetailsDiv" >
-						<div class="ObjectDetailsNotes">Description: URI of the vocabulary/code list in the INSPIRE code list registry or in some external registry. The value has to be provided, if an online version of the vocabulary exists.<br /></div>
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15046" onclick="parent.toggleDiv('detailsDIVScenario15046','DetailsImageScenario15046')" />Details:
+						<div id="detailsDIVScenario15046" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Default: FIXME<br />Description: URN reference to the feature concept in the INSPIRE Feature Concept Dictionary Register<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">isCollection</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15047" onclick="parent.toggleDiv('detailsDIVScenario15047','DetailsImageScenario15047')" />Details:
+						<div id="detailsDIVScenario15047" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: true | false<br />Default: false<br />Description: Identifies the feature type as a feature collection.<br /></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">noPropertyType</td>
+				<td width="50%" class="TableRow" valign="top">false</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15048" onclick="parent.toggleDiv('detailsDIVScenario15048','DetailsImageScenario15048')" />Details:
+						<div id="detailsDIVScenario15048" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: Surpress creation of a standard property type that supports inline or by-reference encoding (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.<br /></div>
 
 						</div>
 					</div>
@@ -151,8 +456,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario14910" onclick="parent.toggleDiv('detailsDIVScenario14910','DetailsImageScenario14910')" />Details:
-						<div id="detailsDIVScenario14910" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15049" onclick="parent.toggleDiv('detailsDIVScenario15049','DetailsImageScenario15049')" />Details:
+						<div id="detailsDIVScenario15049" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions<br />Default: iso19136_2007_INSPIRE_Extensions<br />Description: XML Schema encoding rule to apply<br /></div>
 
 						</div>
@@ -160,7 +465,62 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>
 	</table>
-</div>	</div>
+</div>		<div class="ItemBody" id="ConstraintsTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+			  	<tr>
+					<td width="80%" class="TableHeading">Constraint</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Status</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">code list for parameter of soil derived objects</td>
+					<td width="10%" class="TableRow">Invariant</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints15050" onclick="parent.toggleDiv('detailsDIVConstraints15050','DetailsImageConstraints15050')" />Details:
+							<div id="detailsDIVConstraints15050" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">/*The observedProperty of the soil derived object observation shall be specified using a value from the SoilDerivedObjectParameterNameValue code list.*/&lt;br/&gt;inv: self.soilDerivedObjectParameter.observedProperty-#gt;oclIsKindOf(SoilDerivedObjectParameterNameValue)&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">FoI of Soil derived object observations</td>
+					<td width="10%" class="TableRow">Invariant</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints15051" onclick="parent.toggleDiv('detailsDIVConstraints15051','DetailsImageConstraints15051')" />Details:
+							<div id="detailsDIVConstraints15051" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">/*To fill the featureOfInterest property of the soil derived object observation, the same SoilDerivedObject object shall be used.*/&lt;br/&gt;inv: self.soilDerivedObjectObservation.featureOfInterest = self&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">results of soil derived object observations</td>
+					<td width="10%" class="TableRow">OCL</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints15052" onclick="parent.toggleDiv('detailsDIVConstraints15052','DetailsImageConstraints15052')" />Details:
+							<div id="detailsDIVConstraints15052" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">/*The result of the soil derived object observation shall be of type Number, CharacterString or RangeType.*/&lt;br/&gt;inv: self.soilDerivedObjectObservation.result-#gt;oclIsKindOf(Number) or self.soilDerivedObjectObservation.result-#gt;oclIsKindOf(CharacterString) or self.soilDerivedObjectObservation.result-#gt;oclIsKindOf(RangeType)&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
 <div class="pageFooter"></div>
  
 </body>
