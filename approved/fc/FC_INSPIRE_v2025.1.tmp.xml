@@ -7,7 +7,7 @@
   <scope>For the normative requirements, please refer to the &lt;a href='https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02010R1089-20231119'&gt;COMMISSION REGULATION (EU) No 1089/2010 of 23 November 2010 on the interoperability of spatial data sets and services&lt;/a&gt;.</scope>
   <scope>For a more detailed description of the application schemas, see the data specification guidance documents in the &lt;a href='https://knowledge-base.inspire.ec.europa.eu/tools/inspire-themes_en'&gt;INSPIRE Knowledge Base.</scope>
   <versionNumber>n/a (each application schema is versioned separately)</versionNumber>
-  <versionDate>31/01/2024</versionDate>
+  <versionDate>31/01/2025</versionDate>
   <producer>INSPIRE Maintenance and Implementation Group (MIG)</producer>
   <ApplicationSchema id="_P5431">
     <name>Addresses</name>
@@ -23890,7 +23890,7 @@
     <definition></definition>
     <definition>-- Definition --</definition>
     <definition>The Area Management Restriction and Regulation Zones application schema contains the spatial object that represents zones or areas established to protect the environment via management, restriction or regulation.</definition>
-    <versionNumber>4.0</versionNumber>
+    <versionNumber>4.1</versionNumber>
     <taggedValues></taggedValues>
   </ApplicationSchema>
   <FeatureType id="_C49620">
@@ -24181,7 +24181,7 @@
     <definition>specialisedZoneType = lessSensitiveNitrates</definition>
     <definition>specialisedZoneType = lessSensitiveEutrophic</definition>
     <definition>specialisedZoneType = lessSensitiveShellfish</definition>
-    <cardinality>0..1</cardinality>
+    <cardinality>0..*</cardinality>
     <taggedValues>
       <taggedValue tag="obligation">technicalGuidance</taggedValue>
     </taggedValues>

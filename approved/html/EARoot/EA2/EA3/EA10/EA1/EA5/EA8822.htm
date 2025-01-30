@@ -109,7 +109,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../../../EA3/EA2/EA1/EA9556.htm">Identifier</a></i><br /><strong>&nbsp;&nbsp;inspireId</strong>
+					<i>Public <a href="../../../../../EA1/EA3/EA7/EA1/EA3/EA1/EA1650.htm">DateTime</a></i><br /><strong>&nbsp;&nbsp;beginLifespanVersion</strong>
 				</td>
 			</tr>
 			<tr>
@@ -127,7 +127,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes13996_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
+							<td>&lt;&lt;lifeCycleInfo&gt;&gt;</td>
 						</tr>
 						<tr id="DetailsImageAttributes13996_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
@@ -158,7 +158,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Definition --&lt;br/&gt;External object identifier of the land use sample.&lt;br/&gt;-- Description --&lt;br/&gt;An external object identifier is a unique object identifier published by the responsible body, which may be used by external applications to reference the spatial object. The identifier is an identifier of the spatial object, not an identifier of the real-world phenomenon.&lt;br/&gt;
+			-- Definition --&lt;br/&gt;Date and time at which this version of the spatial object was inserted or changed in the spatial data set.&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -167,7 +167,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../../../EA1/EA3/EA6/EA1/EA4/EA1198.htm">GM_Point</a></i><br /><strong>&nbsp;&nbsp;location</strong>
+					<i>Public <a href="../../../../../EA1/EA3/EA7/EA1/EA3/EA1/EA1650.htm">DateTime</a></i><br /><strong>&nbsp;&nbsp;endLifespanVersion</strong>
 				</td>
 			</tr>
 			<tr>
@@ -185,7 +185,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes13997_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
+							<td>&lt;&lt;lifeCycleInfo&gt;&gt;</td>
 						</tr>
 						<tr id="DetailsImageAttributes13997_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
@@ -193,7 +193,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes13997_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes13997_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -216,7 +216,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Definition --&lt;br/&gt;Location where the land use sample is taken.&lt;br/&gt;
+			-- Definition --&lt;br/&gt;Date and time at which this version of the spatial object was superseded or retired in the spatial data set.&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -225,7 +225,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../../../EA1/EA3/EA7/EA1/EA3/EA1/EA1650.htm">DateTime</a></i><br /><strong>&nbsp;&nbsp;beginLifespanVersion</strong>
+					<i>Public <a href="../EA3/EA8785.htm">HILUCSValue</a></i><br /><strong>&nbsp;&nbsp;hilucsLandUse</strong>
 				</td>
 			</tr>
 			<tr>
@@ -243,7 +243,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes13998_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td>&lt;&lt;lifeCycleInfo&gt;&gt;</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes13998_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
@@ -274,7 +274,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Definition --&lt;br/&gt;Date and time at which this version of the spatial object was inserted or changed in the spatial data set.&lt;br/&gt;&lt;br/&gt;
+			-- Definition --&lt;br/&gt;Land use HILUCS classes that are present in this existing land use sample.&lt;br/&gt;-- Description --&lt;br/&gt;NOTE The Sampled Existing Land Use model enables the provision of information on land uses inside one land use object. The ExistingLandUseObject may be associated with 1 to many HILUCSLandUse that represents the Land Uses for the polygon from the economical point of view. It makes possible the assignment of more than one HILUCSLandUse existences when they cannot be managed by HILUCSPresences.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -283,7 +283,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../EA3/EA8785.htm">HILUCSValue</a></i><br /><strong>&nbsp;&nbsp;hilucsLandUse</strong>
+					<i>Public <a href="../EA3/EA8784.htm">HILUCSPresence</a></i><br /><strong>&nbsp;&nbsp;hilucsPresence</strong>
 				</td>
 			</tr>
 			<tr>
@@ -301,7 +301,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes13999_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
+							<td>&lt;&lt;voidable&gt;&gt;</td>
 						</tr>
 						<tr id="DetailsImageAttributes13999_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
@@ -332,7 +332,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Definition --&lt;br/&gt;Land use HILUCS classes that are present in this existing land use sample.&lt;br/&gt;-- Description --&lt;br/&gt;NOTE The Sampled Existing Land Use model enables the provision of information on land uses inside one land use object. The ExistingLandUseObject may be associated with 1 to many HILUCSLandUse that represents the Land Uses for the polygon from the economical point of view. It makes possible the assignment of more than one HILUCSLandUse existences when they cannot be managed by HILUCSPresences.&lt;br/&gt;
+			-- Name --&lt;br/&gt;land use presence&lt;br/&gt;-- Definition --&lt;br/&gt;Actual presence of a land use category according to HILUCS within the object.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -341,7 +341,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../EA3/EA8784.htm">HILUCSPresence</a></i><br /><strong>&nbsp;&nbsp;hilucsPresence</strong>
+					<i>Public <a href="../../../../../EA3/EA2/EA1/EA9556.htm">Identifier</a></i><br /><strong>&nbsp;&nbsp;inspireId</strong>
 				</td>
 			</tr>
 			<tr>
@@ -359,7 +359,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes14000_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td>&lt;&lt;voidable&gt;&gt;</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes14000_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
@@ -390,7 +390,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Name --&lt;br/&gt;land use presence&lt;br/&gt;-- Definition --&lt;br/&gt;Actual presence of a land use category according to HILUCS within the object.&lt;br/&gt;
+			-- Definition --&lt;br/&gt;External object identifier of the land use sample.&lt;br/&gt;-- Description --&lt;br/&gt;An external object identifier is a unique object identifier published by the responsible body, which may be used by external applications to reference the spatial object. The identifier is an identifier of the spatial object, not an identifier of the real-world phenomenon.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -399,7 +399,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../EA3/EA8786.htm">LandUseClassificationValue</a></i><br /><strong>&nbsp;&nbsp;specificLandUse</strong>
+					<i>Public <a href="../../../../../EA1/EA3/EA6/EA1/EA4/EA1198.htm">GM_Point</a></i><br /><strong>&nbsp;&nbsp;location</strong>
 				</td>
 			</tr>
 			<tr>
@@ -417,7 +417,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes14001_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td>&lt;&lt;voidable&gt;&gt;</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes14001_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
@@ -448,7 +448,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Definition --&lt;br/&gt;Land Use Category according to the nomenclature specific to this data set.&lt;br/&gt;-- Description --&lt;br/&gt;Reference to an entry in the classfication that is part of the SpecificLandUseClassification provided by the data producer.&lt;br/&gt;
+			-- Definition --&lt;br/&gt;Location where the land use sample is taken.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -515,7 +515,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../EA3/EA8788.htm">SpecificPresence</a></i><br /><strong>&nbsp;&nbsp;specificPresence</strong>
+					<i>Public <a href="../EA3/EA8786.htm">LandUseClassificationValue</a></i><br /><strong>&nbsp;&nbsp;specificLandUse</strong>
 				</td>
 			</tr>
 			<tr>
@@ -564,7 +564,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Definition --&lt;br/&gt;Actual presence of a land use category within the object.&lt;br/&gt;
+			-- Definition --&lt;br/&gt;Land Use Category according to the nomenclature specific to this data set.&lt;br/&gt;-- Description --&lt;br/&gt;Reference to an entry in the classfication that is part of the SpecificLandUseClassification provided by the data producer.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -573,7 +573,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../../../EA1/EA3/EA7/EA1/EA3/EA1/EA1650.htm">DateTime</a></i><br /><strong>&nbsp;&nbsp;endLifespanVersion</strong>
+					<i>Public <a href="../EA3/EA8788.htm">SpecificPresence</a></i><br /><strong>&nbsp;&nbsp;specificPresence</strong>
 				</td>
 			</tr>
 			<tr>
@@ -591,7 +591,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes14004_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td>&lt;&lt;lifeCycleInfo&gt;&gt;</td>
+							<td>&lt;&lt;voidable&gt;&gt;</td>
 						</tr>
 						<tr id="DetailsImageAttributes14004_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
@@ -599,7 +599,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes14004_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes14004_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -622,7 +622,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Definition --&lt;br/&gt;Date and time at which this version of the spatial object was superseded or retired in the spatial data set.&lt;br/&gt;&lt;br/&gt;
+			-- Definition --&lt;br/&gt;Actual presence of a land use category within the object.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>

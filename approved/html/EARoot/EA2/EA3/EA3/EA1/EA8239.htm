@@ -111,7 +111,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../../EA3/EA2/EA1/EA9556.htm">Identifier</a></i><br /><strong>&nbsp;&nbsp;inspireId</strong>
+					<i>Public <a href="../../../../EA1/EA3/EA7/EA1/EA3/EA1/EA1650.htm">DateTime</a></i><br /><strong>&nbsp;&nbsp;beginLifespanVersion</strong>
 				</td>
 			</tr>
 			<tr>
@@ -129,7 +129,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes12579_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
+							<td>&lt;&lt;voidable&gt;&gt;</td>
 						</tr>
 						<tr id="DetailsImageAttributes12579_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
@@ -160,7 +160,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Name --&lt;br/&gt;inspireID&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;External object identifier of the spatial object.&lt;br/&gt;&lt;br/&gt;-- Description -- &lt;br/&gt;An external object identifier is a unique object identifier published by the responsible body, which may be used by external application to reference the spatial object. The identifier is an identifier of the spatial object, not an identifier of the real-world phenomenon.&lt;br/&gt;&lt;br/&gt;NOTE: ManagementRestrictionOrRegulationZone spatial objects commonly perform the role/function of &lt;i&gt;&quot;Reporting Unit&quot;&lt;/i&gt; for non-spatial reported data. The reported data shall contain object references to ManagementRestrictionOrRegulationZones. Therefore, all spatial objects shall be assigned an inspireID. &lt;br/&gt;
+			-- Name --&lt;br/&gt;begin lifespan version&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Date and time at which this version of the spatial object was inserted or changed in the spatial data set.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -169,7 +169,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../../EA3/EA2/EA2/EA9586.htm">ThematicIdentifier</a></i><br /><strong>&nbsp;&nbsp;thematicId</strong>
+					<i>Public <a href="../../../../EA3/EA2/EA2/EA9584.htm">RelatedParty</a></i><br /><strong>&nbsp;&nbsp;competentAuthority</strong>
 				</td>
 			</tr>
 			<tr>
@@ -195,7 +195,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes12580_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to *</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes12580_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -218,7 +218,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Name --&lt;br/&gt;thematic identifier&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Descriptive unique object identifier applied to spatial objects in a defined information theme. &lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;Some management, restriction or regulation zones may be assigned multiple thematic identifiers. These may have been established to meet the reporting requirements of different legislative instruments at International, European or at Member State levels.&#160;&#160;&lt;br/&gt;&lt;br/&gt;Where multiple thematicIDs exist all should be provided. This shall allow any external dataset that uses thematicIDs to referencing to the zone to continue to be linked to the spatial object.&lt;br/&gt;
+			-- Name --&lt;br/&gt;competent authority&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Description of the organisation(s) responsible for managing, restricting or regulating measures or activities within the zone. &lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -227,7 +227,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../EA1/EA6/EA1/EA7567.htm">GeographicalName</a></i><br /><strong>&nbsp;&nbsp;name</strong>
+					<i>Public <a href="../../../../EA1/EA3/EA9/EA1/EA1891.htm">TM_Period</a></i><br /><strong>&nbsp;&nbsp;designationPeriod</strong>
 				</td>
 			</tr>
 			<tr>
@@ -253,7 +253,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes12581_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to *</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes12581_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -276,7 +276,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Name --&lt;br/&gt;name&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;A geographical name that is used to identify the management, restriction or&#160;&#160;regulation zone in the real world. It provides a &#39;key&#39; for implicitly associating different representations of the object.&lt;br/&gt;
+			-- Name --&lt;br/&gt;designation period&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Time period defining when the management, restriction or regulation zone was legally designated or became effective in the real world.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE: designationPeriod uses the ISO 19108 TM_Period which is comprised of two properties - gml:beginPosition and gml:endPosition. &lt;br/&gt;If the zone shall remain in force for an indeterminate period of time then the endPosition/indeterminatePosition=&quot;unknown&quot; can be used to state that the zone is still effective.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -285,7 +285,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../../EA1/EA3/EA6/EA1/EA5/EA1219.htm">GM_Object</a></i><br /><strong>&nbsp;&nbsp;geometry</strong>
+					<i>Public <a href="../../../../EA1/EA3/EA7/EA1/EA3/EA1/EA1650.htm">DateTime</a></i><br /><strong>&nbsp;&nbsp;endLifespanVersion</strong>
 				</td>
 			</tr>
 			<tr>
@@ -303,7 +303,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes12582_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
+							<td>&lt;&lt;voidable&gt;&gt;</td>
 						</tr>
 						<tr id="DetailsImageAttributes12582_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
@@ -311,7 +311,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes12582_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes12582_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -334,7 +334,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Name&lt;br/&gt;geometry&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;The geometry representing the spatial extent of the spatial object.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;The geometry of a Management Area, Restriction or Regulation Zone can be defined using any geometry representation. Typically this shall be either a GM_Surface or GM_MultiSurface. &lt;br/&gt;&lt;br/&gt;NOTE: Where a zone forms as a polygon, this should be encoded as a GM_Surface or GM_MultiSurface not a GM_Curve.&lt;br/&gt;
+			-- Name --&lt;br/&gt;end lifespan version&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Date and time at which this version of the spatial object was superseded or retired in the spatial data set.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -343,7 +343,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA8241.htm">ZoneTypeCode</a></i><br /><strong>&nbsp;&nbsp;zoneType</strong>
+					<i>Public <a href="EA8237.htm">EnvironmentalDomain</a></i><br /><strong>&nbsp;&nbsp;environmentalDomain</strong>
 				</td>
 			</tr>
 			<tr>
@@ -392,7 +392,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Name --&lt;br/&gt;zone type&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;High level classification defining the type of management, restriction or regulation zone. &lt;br/&gt;
+			-- Name --&lt;br/&gt;environmental domain&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Classification of the environment domain(s) for which, through the establishment of the zone, certain environmental objectives shall be reached.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;A zone may be established within one environmental domain (e.g. water) or may to cover a wide range of environmental objectives that cross-cut several domains. For example, Marine Regions may relate to water,&#160;&#160;land use, sustainable development.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -401,7 +401,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA8240.htm">SpecialisedZoneTypeCode</a></i><br /><strong>&nbsp;&nbsp;specialisedZoneType</strong>
+					<i>Public <a href="../../../../EA1/EA3/EA6/EA1/EA5/EA1219.htm">GM_Object</a></i><br /><strong>&nbsp;&nbsp;geometry</strong>
 				</td>
 			</tr>
 			<tr>
@@ -419,7 +419,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes12584_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td>&lt;&lt;voidable&gt;&gt;</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes12584_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
@@ -427,7 +427,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes12584_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes12584_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -443,14 +443,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					obligation=technicalGuidance<br>
+					
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Name --&lt;br/&gt;specialised zone type&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Additional classification value which further specialises the type of management, regulation or restriction zone relevant to the domain. &lt;br/&gt;&lt;br/&gt;-- Description -- &lt;br/&gt;NOTE: This value should be derived from a relevant domain-specific controlled vocabulary, where available.&lt;br/&gt;&lt;br/&gt;EXAMPLE 1: A ManagementRestrictionOrRegulationZone where the zoneType value = airQualityManagementZone could be further classified as either:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt; specialisedZoneType = agglomeration or &lt;/li&gt;&lt;li&gt; specialisedZoneType =nonAgglomeration&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;EXAMPLE 2: A ManagementRestrictionOrRegulationZone where the zoneType value = sensitiveArea could be further classified as either:&lt;br/&gt; specialisedZoneType = lessSensitiveArea&lt;br/&gt; specialisedZoneType = lessSensitiveNitrates&lt;br/&gt; specialisedZoneType = lessSensitiveEutrophic&lt;br/&gt; specialisedZoneType = lessSensitiveShellfish&lt;br/&gt;
+			-- Name&lt;br/&gt;geometry&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;The geometry representing the spatial extent of the spatial object.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;The geometry of a Management Area, Restriction or Regulation Zone can be defined using any geometry representation. Typically this shall be either a GM_Surface or GM_MultiSurface. &lt;br/&gt;&lt;br/&gt;NOTE: Where a zone forms as a polygon, this should be encoded as a GM_Surface or GM_MultiSurface not a GM_Curve.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -459,7 +459,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../../EA1/EA3/EA9/EA1/EA1891.htm">TM_Period</a></i><br /><strong>&nbsp;&nbsp;designationPeriod</strong>
+					<i>Public <a href="../../../../EA3/EA2/EA1/EA9556.htm">Identifier</a></i><br /><strong>&nbsp;&nbsp;inspireId</strong>
 				</td>
 			</tr>
 			<tr>
@@ -477,7 +477,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes12585_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td>&lt;&lt;voidable&gt;&gt;</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes12585_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
@@ -508,7 +508,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Name --&lt;br/&gt;designation period&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Time period defining when the management, restriction or regulation zone was legally designated or became effective in the real world.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE: designationPeriod uses the ISO 19108 TM_Period which is comprised of two properties - gml:beginPosition and gml:endPosition. &lt;br/&gt;If the zone shall remain in force for an indeterminate period of time then the endPosition/indeterminatePosition=&quot;unknown&quot; can be used to state that the zone is still effective.&lt;br/&gt;
+			-- Name --&lt;br/&gt;inspireID&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;External object identifier of the spatial object.&lt;br/&gt;&lt;br/&gt;-- Description -- &lt;br/&gt;An external object identifier is a unique object identifier published by the responsible body, which may be used by external application to reference the spatial object. The identifier is an identifier of the spatial object, not an identifier of the real-world phenomenon.&lt;br/&gt;&lt;br/&gt;NOTE: ManagementRestrictionOrRegulationZone spatial objects commonly perform the role/function of &lt;i&gt;&quot;Reporting Unit&quot;&lt;/i&gt; for non-spatial reported data. The reported data shall contain object references to ManagementRestrictionOrRegulationZones. Therefore, all spatial objects shall be assigned an inspireID. &lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -517,7 +517,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA8237.htm">EnvironmentalDomain</a></i><br /><strong>&nbsp;&nbsp;environmentalDomain</strong>
+					<i>Public <a href="../../../EA1/EA6/EA1/EA7567.htm">GeographicalName</a></i><br /><strong>&nbsp;&nbsp;name</strong>
 				</td>
 			</tr>
 			<tr>
@@ -535,7 +535,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes12586_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
+							<td>&lt;&lt;voidable&gt;&gt;</td>
 						</tr>
 						<tr id="DetailsImageAttributes12586_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
@@ -543,7 +543,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes12586_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to *</td>
 						</tr>
 						<tr id="DetailsImageAttributes12586_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -559,14 +559,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					obligation=implementingRule<br>
+					
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Name --&lt;br/&gt;environmental domain&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Classification of the environment domain(s) for which, through the establishment of the zone, certain environmental objectives shall be reached.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;A zone may be established within one environmental domain (e.g. water) or may to cover a wide range of environmental objectives that cross-cut several domains. For example, Marine Regions may relate to water,&#160;&#160;land use, sustainable development.&lt;br/&gt;
+			-- Name --&lt;br/&gt;name&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;A geographical name that is used to identify the management, restriction or&#160;&#160;regulation zone in the real world. It provides a &#39;key&#39; for implicitly associating different representations of the object.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -575,7 +575,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../../EA3/EA2/EA2/EA9584.htm">RelatedParty</a></i><br /><strong>&nbsp;&nbsp;competentAuthority</strong>
+					<i>Public <a href="EA8240.htm">SpecialisedZoneTypeCode</a></i><br /><strong>&nbsp;&nbsp;specialisedZoneType</strong>
 				</td>
 			</tr>
 			<tr>
@@ -601,7 +601,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes12587_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to *</td>
 						</tr>
 						<tr id="DetailsImageAttributes12587_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -617,14 +617,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					
+					obligation=technicalGuidance<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Name --&lt;br/&gt;competent authority&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Description of the organisation(s) responsible for managing, restricting or regulating measures or activities within the zone. &lt;br/&gt;
+			-- Name --&lt;br/&gt;specialised zone type&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Additional classification value which further specialises the type of management, regulation or restriction zone relevant to the domain. &lt;br/&gt;&lt;br/&gt;-- Description -- &lt;br/&gt;NOTE: This value should be derived from a relevant domain-specific controlled vocabulary, where available.&lt;br/&gt;&lt;br/&gt;EXAMPLE 1: A ManagementRestrictionOrRegulationZone where the zoneType value = airQualityManagementZone could be further classified as either:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt; specialisedZoneType = agglomeration or &lt;/li&gt;&lt;li&gt; specialisedZoneType =nonAgglomeration&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;EXAMPLE 2: A ManagementRestrictionOrRegulationZone where the zoneType value = sensitiveArea could be further classified as either:&lt;br/&gt; specialisedZoneType = lessSensitiveArea&lt;br/&gt; specialisedZoneType = lessSensitiveNitrates&lt;br/&gt; specialisedZoneType = lessSensitiveEutrophic&lt;br/&gt; specialisedZoneType = lessSensitiveShellfish&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -633,7 +633,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../../EA1/EA3/EA7/EA1/EA3/EA1/EA1650.htm">DateTime</a></i><br /><strong>&nbsp;&nbsp;beginLifespanVersion</strong>
+					<i>Public <a href="../../../../EA3/EA2/EA2/EA9586.htm">ThematicIdentifier</a></i><br /><strong>&nbsp;&nbsp;thematicId</strong>
 				</td>
 			</tr>
 			<tr>
@@ -659,7 +659,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes12588_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to *</td>
 						</tr>
 						<tr id="DetailsImageAttributes12588_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -682,7 +682,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Name --&lt;br/&gt;begin lifespan version&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Date and time at which this version of the spatial object was inserted or changed in the spatial data set.&lt;br/&gt;
+			-- Name --&lt;br/&gt;thematic identifier&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Descriptive unique object identifier applied to spatial objects in a defined information theme. &lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;Some management, restriction or regulation zones may be assigned multiple thematic identifiers. These may have been established to meet the reporting requirements of different legislative instruments at International, European or at Member State levels.&#160;&#160;&lt;br/&gt;&lt;br/&gt;Where multiple thematicIDs exist all should be provided. This shall allow any external dataset that uses thematicIDs to referencing to the zone to continue to be linked to the spatial object.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -691,7 +691,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../../EA1/EA3/EA7/EA1/EA3/EA1/EA1650.htm">DateTime</a></i><br /><strong>&nbsp;&nbsp;endLifespanVersion</strong>
+					<i>Public <a href="EA8241.htm">ZoneTypeCode</a></i><br /><strong>&nbsp;&nbsp;zoneType</strong>
 				</td>
 			</tr>
 			<tr>
@@ -709,7 +709,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes12589_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td>&lt;&lt;voidable&gt;&gt;</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes12589_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
@@ -717,7 +717,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes12589_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes12589_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -733,14 +733,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					
+					obligation=implementingRule<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Name --&lt;br/&gt;end lifespan version&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Date and time at which this version of the spatial object was superseded or retired in the spatial data set.&lt;br/&gt;
+			-- Name --&lt;br/&gt;zone type&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;High level classification defining the type of management, restriction or regulation zone. &lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
