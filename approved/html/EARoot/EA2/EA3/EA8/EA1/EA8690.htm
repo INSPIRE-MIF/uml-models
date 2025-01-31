@@ -108,7 +108,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../EA16/EA1/EA9059.htm">ReferenceSpeciesCodeValue</a></i><br /><strong>&nbsp;&nbsp;referenceSpeciesId</strong>
+					<i>Public <a href="EA8694.htm">LocalNameType</a></i><br /><strong>&nbsp;&nbsp;localSpeciesName</strong>
 				</td>
 			</tr>
 			<tr>
@@ -126,7 +126,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes13568_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
+							<td>&lt;&lt;voidable&gt;&gt;</td>
 						</tr>
 						<tr id="DetailsImageAttributes13568_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
@@ -134,7 +134,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes13568_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes13568_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -150,14 +150,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					obligation=implementingRule<br>
+					
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Name --&lt;br/&gt;reference species id&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Identifier of one of the reference lists given by the referenceSpeciesScheme.&lt;br/&gt;&lt;br/&gt;
+			-- Name --&lt;br/&gt;local species name&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Scientific name plus author used in national nomenclature with its national taxonomic concept.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;The LocalSpeciesName provides nomenclatural and taxonomical information about the locally used species name and the taxonomic concepts implied by the use of this name according to a given reference. If omitted the name and concept given by the referenceSpeciesId according to the referenceSpeciesScheme has been used locally.&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -166,7 +166,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../EA16/EA1/EA9060.htm">ReferenceSpeciesSchemeValue</a></i><br /><strong>&nbsp;&nbsp;referenceSpeciesScheme</strong>
+					<i>Public <a href="../../EA16/EA1/EA9059.htm">ReferenceSpeciesCodeValue</a></i><br /><strong>&nbsp;&nbsp;referenceSpeciesId</strong>
 				</td>
 			</tr>
 			<tr>
@@ -215,7 +215,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Name --&lt;br/&gt;reference species scheme&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Reference list defining a nomenclatural and taxonomical standard to which all local species names and taxonomic concepts shall be mapped to.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;Closed codelist of accepted PAN-european taxonomical reference lists defining the nomenclature and taxonomical concept of a given species name. This must not be regarded as the ultimate taxonomic truth: this will always change. It serves as a definition of a taxonomic concept described by systematic and synonym relations where other names and there inherent taxonomic concepts can be mapped to. The code list comprises of Eu-Nomen, EUNIS and Natura2000. In these sources harmonized species GUIDs and names are maintained by institutions with an assignment outside INSPIRE and the species names are to be retrieved through webservices using GUIDs. Only one of these list must be used for one taxon. The priority is as follows: 1) EU-Nomen, 2) EUNIS, 3) NatureDirectives. This implies: if a taxon is listed in EU-Nomen, this reference must be used as first choice. If it is not listed in EU-Nomen, the second choice is EUNIS, if not in EUNIS, NatureDirectives can be used.&lt;br/&gt;&lt;br/&gt;
+			-- Name --&lt;br/&gt;reference species id&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Identifier of one of the reference lists given by the referenceSpeciesScheme.&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -224,7 +224,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA8694.htm">LocalNameType</a></i><br /><strong>&nbsp;&nbsp;localSpeciesName</strong>
+					<i>Public <a href="../../EA16/EA1/EA9060.htm">ReferenceSpeciesSchemeValue</a></i><br /><strong>&nbsp;&nbsp;referenceSpeciesScheme</strong>
 				</td>
 			</tr>
 			<tr>
@@ -242,7 +242,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes13570_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td>&lt;&lt;voidable&gt;&gt;</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes13570_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
@@ -250,7 +250,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes13570_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes13570_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -266,14 +266,14 @@ function nameClassifier(name, separator)
 						</tr>
 					</table>
 					
-					
+					obligation=implementingRule<br>
 						<div class="ObjectDetailsNotes"><table>
 	<tr>
 		<td valign="top">
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Name --&lt;br/&gt;local species name&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Scientific name plus author used in national nomenclature with its national taxonomic concept.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;The LocalSpeciesName provides nomenclatural and taxonomical information about the locally used species name and the taxonomic concepts implied by the use of this name according to a given reference. If omitted the name and concept given by the referenceSpeciesId according to the referenceSpeciesScheme has been used locally.&lt;br/&gt;&lt;br/&gt;
+			-- Name --&lt;br/&gt;reference species scheme&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Reference list defining a nomenclatural and taxonomical standard to which all local species names and taxonomic concepts shall be mapped to.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;Closed codelist of accepted PAN-european taxonomical reference lists defining the nomenclature and taxonomical concept of a given species name. This must not be regarded as the ultimate taxonomic truth: this will always change. It serves as a definition of a taxonomic concept described by systematic and synonym relations where other names and there inherent taxonomic concepts can be mapped to. The code list comprises of Eu-Nomen, EUNIS and Natura2000. In these sources harmonized species GUIDs and names are maintained by institutions with an assignment outside INSPIRE and the species names are to be retrieved through webservices using GUIDs. Only one of these list must be used for one taxon. The priority is as follows: 1) EU-Nomen, 2) EUNIS, 3) NatureDirectives. This implies: if a taxon is listed in EU-Nomen, this reference must be used as first choice. If it is not listed in EU-Nomen, the second choice is EUNIS, if not in EUNIS, NatureDirectives can be used.&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>

@@ -109,7 +109,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../EA2/EA1/EA9556.htm">Identifier</a></i><br /><strong>&nbsp;&nbsp;inspireId</strong>
+					<i>Public DateTime</i><br /><strong>&nbsp;&nbsp;beginLifespanVersion</strong>
 				</td>
 			</tr>
 			<tr>
@@ -127,7 +127,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes16247_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
+							<td>&lt;&lt;voidable&gt;&gt;</td>
 						</tr>
 						<tr id="DetailsImageAttributes16247_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
@@ -158,7 +158,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Name --&lt;br/&gt;INSPIRE identifier&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;External object identifier of the &#8220;Activity Complex&#8221;.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;&lt;br/&gt;NOTE&#160;&#160;An external object identifier is a unique object identifier published by the responsible body, which may be used by external applications to reference the spatial object. The identifier is an identifier of the spatial object, not an identifier of the real-world phenomenon.&lt;br/&gt;
+			-- Name --&lt;br/&gt;begin lifespan version&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Date and time at which this version of the spatial object was inserted or changed in the spatial data set.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE This date is recorded to enable the generation of change only update files.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -167,7 +167,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../EA2/EA2/EA9586.htm">ThematicIdentifier</a></i><br /><strong>&nbsp;&nbsp;thematicId</strong>
+					<i>Public DateTime</i><br /><strong>&nbsp;&nbsp;endLifespanVersion</strong>
 				</td>
 			</tr>
 			<tr>
@@ -185,7 +185,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes16248_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
+							<td>&lt;&lt;voidable&gt;&gt;</td>
 						</tr>
 						<tr id="DetailsImageAttributes16248_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
@@ -193,7 +193,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes16248_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to *</td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes16248_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -216,7 +216,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Name --&lt;br/&gt;thematic identifier&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Thematic Activity Complex identifier.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE&#160;&#160;It may be the identification code provided or maintained by the Member States public authority to identify the object in the context of specific or general thematic scopes. &lt;br/&gt;&lt;br/&gt;EXAMPLE&#160;&#160;Assigned National PRTR Code.&lt;br/&gt;
+			-- Name --&lt;br/&gt;end lifespan version&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Date and time at which this version of the spatial object was superseded or retired in the spatial data set.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE This date is recorded primarily for those systems which &quot;close&quot; an entry in the spatial data set in the event of an attribute change.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -225,7 +225,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public CharacterString</i><br /><strong>&nbsp;&nbsp;name</strong>
+					<i>Public <a href="EA9390.htm">Function</a></i><br /><strong>&nbsp;&nbsp;function</strong>
 				</td>
 			</tr>
 			<tr>
@@ -243,7 +243,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes16249_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td>&lt;&lt;voidable&gt;&gt;</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes16249_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
@@ -251,7 +251,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes16249_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes16249_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -274,7 +274,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Name --&lt;br/&gt;name&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Descriptive name of the &ldquo;Activity Complex&rdquo;.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE 1 Several names in different languages may be expressed.&lt;br/&gt;&lt;br/&gt;NOTE 2 It is recommended that the language of the name (part of the Geographical/Name data type) be filled whenever possible.&lt;br/&gt;&lt;br/&gt;
+			-- Name --&lt;br/&gt;function&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;&lt;br/&gt;Activities performed by the activity complex. Function is described by the activity and potentially complemented with information about inputs and outputs as result of it.&lt;br/&gt;&lt;br/&gt;-- Description -- &lt;br/&gt;NOTE&#160;&#160;The Activity described as part of the Function &ldquo;Activity Complex&rdquo; should be recorded using a controlled vocabulary where a particular controlled vocabulary is in use within a given context, such as SIC codes in the UK, it is acceptable to use these, however, the preferred choice for European interoperability is whenever possible NACE [NACE].&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -341,7 +341,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA9390.htm">Function</a></i><br /><strong>&nbsp;&nbsp;function</strong>
+					<i>Public <a href="../../../EA2/EA1/EA9556.htm">Identifier</a></i><br /><strong>&nbsp;&nbsp;inspireId</strong>
 				</td>
 			</tr>
 			<tr>
@@ -390,7 +390,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Name --&lt;br/&gt;function&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;&lt;br/&gt;Activities performed by the activity complex. Function is described by the activity and potentially complemented with information about inputs and outputs as result of it.&lt;br/&gt;&lt;br/&gt;-- Description -- &lt;br/&gt;NOTE&#160;&#160;The Activity described as part of the Function &ldquo;Activity Complex&rdquo; should be recorded using a controlled vocabulary where a particular controlled vocabulary is in use within a given context, such as SIC codes in the UK, it is acceptable to use these, however, the preferred choice for European interoperability is whenever possible NACE [NACE].&lt;br/&gt;&lt;br/&gt;
+			-- Name --&lt;br/&gt;INSPIRE identifier&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;External object identifier of the &#8220;Activity Complex&#8221;.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;&lt;br/&gt;NOTE&#160;&#160;An external object identifier is a unique object identifier published by the responsible body, which may be used by external applications to reference the spatial object. The identifier is an identifier of the spatial object, not an identifier of the real-world phenomenon.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -399,7 +399,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public DateTime</i><br /><strong>&nbsp;&nbsp;validFrom</strong>
+					<i>Public CharacterString</i><br /><strong>&nbsp;&nbsp;name</strong>
 				</td>
 			</tr>
 			<tr>
@@ -425,7 +425,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes16252_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes16252_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -448,7 +448,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Name --&lt;br/&gt;valid from&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;The time when the activity complex started to exist in the real world. &lt;br/&gt;
+			-- Name --&lt;br/&gt;name&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Descriptive name of the &ldquo;Activity Complex&rdquo;.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE 1 Several names in different languages may be expressed.&lt;br/&gt;&lt;br/&gt;NOTE 2 It is recommended that the language of the name (part of the Geographical/Name data type) be filled whenever possible.&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -457,7 +457,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public DateTime</i><br /><strong>&nbsp;&nbsp;validTo</strong>
+					<i>Public <a href="../../../EA2/EA2/EA9586.htm">ThematicIdentifier</a></i><br /><strong>&nbsp;&nbsp;thematicId</strong>
 				</td>
 			</tr>
 			<tr>
@@ -475,7 +475,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes16253_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
-							<td>&lt;&lt;voidable&gt;&gt;</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes16253_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
@@ -483,7 +483,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes16253_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
+							<td>Range:0 to *</td>
 						</tr>
 						<tr id="DetailsImageAttributes16253_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -506,7 +506,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Name --&lt;br/&gt;valid to&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;The time when the activity complex no longer exists in the real world. &lt;br/&gt;
+			-- Name --&lt;br/&gt;thematic identifier&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Thematic Activity Complex identifier.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE&#160;&#160;It may be the identification code provided or maintained by the Member States public authority to identify the object in the context of specific or general thematic scopes. &lt;br/&gt;&lt;br/&gt;EXAMPLE&#160;&#160;Assigned National PRTR Code.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -515,7 +515,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public DateTime</i><br /><strong>&nbsp;&nbsp;beginLifespanVersion</strong>
+					<i>Public DateTime</i><br /><strong>&nbsp;&nbsp;validFrom</strong>
 				</td>
 			</tr>
 			<tr>
@@ -564,7 +564,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Name --&lt;br/&gt;begin lifespan version&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Date and time at which this version of the spatial object was inserted or changed in the spatial data set.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE This date is recorded to enable the generation of change only update files.&lt;br/&gt;
+			-- Name --&lt;br/&gt;valid from&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;The time when the activity complex started to exist in the real world. &lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -573,7 +573,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public DateTime</i><br /><strong>&nbsp;&nbsp;endLifespanVersion</strong>
+					<i>Public DateTime</i><br /><strong>&nbsp;&nbsp;validTo</strong>
 				</td>
 			</tr>
 			<tr>
@@ -622,7 +622,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			-- Name --&lt;br/&gt;end lifespan version&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;Date and time at which this version of the spatial object was superseded or retired in the spatial data set.&lt;br/&gt;&lt;br/&gt;-- Description --&lt;br/&gt;NOTE This date is recorded primarily for those systems which &quot;close&quot; an entry in the spatial data set in the event of an attribute change.&lt;br/&gt;
+			-- Name --&lt;br/&gt;valid to&lt;br/&gt;&lt;br/&gt;-- Definition --&lt;br/&gt;The time when the activity complex no longer exists in the real world. &lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
